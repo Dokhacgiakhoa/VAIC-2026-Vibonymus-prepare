@@ -1,7 +1,7 @@
 import { GitBranch, MessageCircle, Users } from 'lucide-react';
 
 export const roles = [
-  { key: 'kai', name: 'K.AI — PM / AI Engineer', aiTool: 'Claude Pro + Gemini Pro', color: 'var(--s1)' },
+  { key: 'kai', name: 'K.AI — PM / AI Engineer', aiTool: 'Claude Pro + 2x Gemini Pro', color: 'var(--s1)' },
   { key: 'quan', name: 'Quân — Backend / DB', aiTool: 'Claude Max 5x', color: 'var(--s2)' },
   { key: 'hieu', name: 'Hiếu — Frontend / UX', aiTool: 'Claude Max 5x', color: 'var(--s3)' }
 ];
@@ -105,7 +105,7 @@ export const timelineSteps = [
 export const aiCollaborationFlow = [
   {
     role: 'K.AI (PM / AI Engineer)',
-    aiTool: 'Claude Pro + Gemini Pro',
+    aiTool: 'Claude Pro + 2x Gemini Pro',
     usage: 'Brainstorm kiến trúc hệ thống, phân tích tài liệu kỹ thuật phức tạp, thiết lập logic cho AI Agents và tinh chỉnh prompt (System Prompt Engineering).',
     collaboration: 'Đầu ra là PRD chuẩn, file đặc tả API cho Quân và tài liệu hướng dẫn UX cho Hiếu.',
     tasks: [
