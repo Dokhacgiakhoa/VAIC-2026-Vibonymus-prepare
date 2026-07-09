@@ -103,6 +103,34 @@ VAIC-2026-Vibonymus-Prepare/
 
 ---
 
+## 🕵️ Cào dữ liệu đối thủ (Competitors Scraper)
+
+Trang **Competitors** dùng dữ liệu thật cào từ `hub.aiforvietnam.org` (169 đội thi VAIC 2026), không phải số liệu giả định. Chi tiết thiết kế đầy đủ ở [`SCRAPE_PLAN.md`](./SCRAPE_PLAN.md); dưới đây là hướng dẫn nhanh để bất kỳ thành viên nào cũng tự cào và đóng góp dữ liệu được.
+
+### Cách 1 — Chrome Extension (1 click, khuyến nghị)
+
+1. Mở `chrome://extensions/`, bật **Developer mode**.
+2. Bấm **Load unpacked**, chọn thư mục `extension/` trong repo này.
+3. Ghim icon extension lên toolbar, mở `hub.aiforvietnam.org` và đăng nhập bằng tài khoản của bạn (nếu chưa).
+4. Bấm icon extension → bấm **"Cào dữ liệu"**. Extension tự đọc phiên đăng nhập sẵn có của bạn (không mở trình duyệt tự động, không đụng Google OAuth), cào toàn bộ đội + thành viên, rồi tự tải 1 file JSON về `Downloads/vaic-scrapes/`.
+5. Copy file JSON đó vào thư mục `data/scrapes/` trong repo.
+6. Tạo branch mới, commit file, mở Pull Request.
+
+### Cách 2 — Script dòng lệnh (dự phòng)
+
+Nếu không dùng được extension:
+1. Mở `hub.aiforvietnam.org`, đăng nhập, nhấn F12 → Console → chạy `copy(localStorage.getItem('ai-hacks.authenticated_access_token'))`.
+2. Tạo file `.auth/token.txt`, dán token vào, lưu lại.
+3. Chạy `npm run scrape` (có thể thêm `-- --limit=5` để chạy thử với ít đội trước).
+
+### Sau khi PR được merge vào `main`
+
+Một **GitHub Action tự động** (`.github/workflows/rebuild-competitors-index.yml`) sẽ tự chạy `npm run rebuild-index` và commit lại `data/scrapes/latest.json`, `data/scrapes/CHANGELOG.md`, `src/data/competitors-data.json` — không cần ai chạy tay. Vào tab **Actions** trên GitHub để xem tiến trình, hoặc xem `data/scrapes/CHANGELOG.md` để biết dữ liệu vừa thay đổi gì so với lần cào trước.
+
+Nếu muốn chạy thủ công (ví dụ đang test local): `npm run rebuild-index`.
+
+---
+
 ## ⚠️ Lưu ý về Git Tracking
 
 Các tài liệu ôn tập lớn (đặc biệt là tệp `.pdf` lớn hơn 100MB và các định dạng `.docx`, `.xlsx`) cũng như thư mục cấu hình cục bộ của agent (`.claude/`) đã được cấu hình tự động trong `.gitignore` để tránh làm phình repository Git. Chỉ các file mã nguồn và tài liệu văn bản Markdown `.md` mới được phép đẩy lên Git.

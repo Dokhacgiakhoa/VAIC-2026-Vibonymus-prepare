@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "VAIC Competitors Scraper (Vibonymus)",
+  "version": "1.0.0",
+  "description": "Cào dữ liệu đội thi & thành viên VAIC 2026 phục vụ phân tích đối thủ cho team Vibonymus, chỉ dùng dữ liệu bạn đã có quyền xem qua tài khoản của mình.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": ["scripting", "downloads", "tabs", "storage", "alarms"],
+  "host_permissions": ["https://hub.aiforvietnam.org/*", "https://hub-api.aiforvietnam.org/*"]
+}

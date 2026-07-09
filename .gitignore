@@ -39,3 +39,7 @@ dist-ssr
 .env.development.local
 .env.test.local
 .env.production.local
+
+# Scraper: login session + raw fetch cache (never commit, machine/user specific)
+.auth/
+.cache/
