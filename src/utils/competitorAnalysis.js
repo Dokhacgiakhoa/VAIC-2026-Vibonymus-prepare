@@ -85,3 +85,42 @@ export function averageDevRatio(teams) {
   const totalMembers = others.reduce((acc, t) => acc + (t.memberCount || t.members.length), 0) || 1;
   return Math.round((totalDev / totalMembers) * 100);
 }
+
+const SKILLS_CAP = 8;
+
+/** Tính điểm mạnh của 1 cá nhân: đa dạng kỹ năng, nghề nghiệp kỹ thuật, có portfolio (github/linkedin/website), đa nghề. */
+export function computeMemberScore(member) {
+  const skillsScore = Math.round((Math.min(member.skills.length, SKILLS_CAP) / SKILLS_CAP) * 40);
+  const isTechnical = member.occupations.some((o) => TECHNICAL_OCCUPATIONS.includes(o));
+  const technicalBonus = isTechnical ? 30 : 0;
+  const linkCount = ['github', 'linkedin', 'website'].filter((k) => member.links?.[k]).length;
+  const portfolioScore = Math.round((linkCount / 3) * 20);
+  const multiRoleBonus = member.occupations.length > 1 ? 10 : 0;
+
+  return {
+    score: skillsScore + technicalBonus + portfolioScore + multiRoleBonus,
+    isTechnical,
+    linkCount,
+  };
+}
+
+/** Xếp hạng toàn bộ thành viên đối thủ (trừ Vibonymus) theo điểm mạnh cá nhân, trả về top N. */
+export function rankTopMembers(teams, topN = 10) {
+  const members = teams
+    .filter((t) => t.slug !== VIBONYMUS_SLUG)
+    .flatMap((t) => t.members.map((m) => ({ member: m, team: t, ...computeMemberScore(m) })));
+
+  return members.sort((a, b) => b.score - a.score).slice(0, topN);
+}
+
+/** Điểm mạnh trung bình của 1 danh sách thành viên đã xếp hạng (kết quả từ rankTopMembers). */
+export function averageMemberScore(ranked) {
+  const n = ranked.length || 1;
+  return Math.round(ranked.reduce((acc, r) => acc + r.score, 0) / n);
+}
+
+/** Điểm mạnh của từng thành viên Vibonymus (để so 1-1 với từng cá nhân đối thủ). */
+export function getVibonymusMemberStats(vibonymusTeam) {
+  if (!vibonymusTeam) return [];
+  return vibonymusTeam.members.map((member) => ({ member, team: vibonymusTeam, ...computeMemberScore(member) }));
+}
