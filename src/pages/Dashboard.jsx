@@ -62,41 +62,85 @@ const Dashboard = () => {
                 <div className="gantt-phase-label" style={{ marginTop: dIdx > 0 ? '1.5294rem' : '0' }}>
                   {day.label}
                 </div>
-                {day.lanes.map((lane, lIdx) => {
-                  const rows = Math.max(1, ...lane.bars.map((b) => (b.row ?? 0) + 1));
-                  return (
-                  <div className="gantt-row" style={{ '--cols': day.cols, '--rows': rows }} key={lIdx}>
-                    <div className="gantt-row-label">
-                      <span className="legend-dot" style={{ background: lane.color }}></span> {lane.roleLabel}
-                    </div>
-                    <div className="gantt-track" style={{ '--cols': day.cols, '--rows': rows }}>
-                      {lane.bars.map((bar, bIdx) => (
-                        <div
-                          className="bar-wrapper"
-                          style={{
-                            left: `${(bar.start / day.cols) * 100}%`,
-                            width: `${(bar.duration / day.cols) * 100}%`,
-                            opacity: bar.opacity ?? 1,
-                            '--row': bar.row ?? 0
-                          }}
-                          key={bIdx}
-                        >
-                          <div className={`bar ${bar.barClass}`}>{bar.title}</div>
-                          <div className="gantt-tooltip-css">
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.3529rem', marginBottom: '0.3529rem' }}>
-                              <span className="legend-dot" style={{ background: lane.color, width: '0.4706rem', height: '0.4706rem', borderRadius: '50%' }}></span>
-                              <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>{bar.category}</span>
-                            </div>
-                            <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '0.2353rem', color: 'var(--text-primary)' }}>{bar.title}</div>
-                            <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '0.3529rem', fontSize: '0.75rem' }}>{bar.timeLabel}</div>
-                            <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>{bar.desc}</div>
-                          </div>
+                {(() => {
+                  const groupedLanes = [];
+                  for (let i = 0; i < day.lanes.length; i += 2) {
+                    groupedLanes.push({
+                      mainLane: day.lanes[i],
+                      subLane: day.lanes[i + 1]
+                    });
+                  }
+
+                  return groupedLanes.map((group, gIdx) => {
+                    const mainRows = Math.max(1, ...group.mainLane.bars.map((b) => (b.row ?? 0) + 1));
+                    const subRows = group.subLane ? Math.max(1, ...group.subLane.bars.map((b) => (b.row ?? 0) + 1)) : 1;
+
+                    return (
+                      <div className="gantt-row" style={{ display: 'grid', gridTemplateColumns: '9.4118rem 1fr', alignItems: 'stretch', borderTop: gIdx > 0 ? '1px solid var(--grid)' : 'none', minHeight: '4.8rem' }} key={gIdx}>
+                        <div className="gantt-row-label" style={{ display: 'flex', alignItems: 'center', alignSelf: 'center', paddingRight: '0.7059rem' }}>
+                          <span className="legend-dot" style={{ background: group.mainLane.color }}></span> {group.mainLane.roleLabel}
                         </div>
-                      ))}
-                    </div>
-                  </div>
-                  );
-                })}
+                        <div className="gantt-tracks" style={{ display: 'flex', flexDirection: 'column', gap: '0.1765rem', padding: '0.2353rem 0', flexGrow: 1 }}>
+                          {/* Hàng phụ 1: Công việc chính */}
+                          <div className="gantt-track" style={{ '--cols': day.cols, '--rows': mainRows, margin: 0 }}>
+                            {group.mainLane.bars.map((bar, bIdx) => (
+                              <div
+                                className="bar-wrapper"
+                                style={{
+                                  left: `${(bar.start / day.cols) * 100}%`,
+                                  width: `${(bar.duration / day.cols) * 100}%`,
+                                  opacity: bar.opacity ?? 1,
+                                  '--row': bar.row ?? 0
+                                }}
+                                key={bIdx}
+                              >
+                                <div className={`bar ${bar.barClass}`}>{bar.title}</div>
+                                <div className="gantt-tooltip-css">
+                                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.3529rem', marginBottom: '0.3529rem' }}>
+                                    <span className="legend-dot" style={{ background: group.mainLane.color, width: '0.4706rem', height: '0.4706rem', borderRadius: '50%' }}></span>
+                                    <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>{bar.category}</span>
+                                  </div>
+                                  <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '0.2353rem', color: 'var(--text-primary)' }}>{bar.title}</div>
+                                  <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '0.3529rem', fontSize: '0.75rem' }}>{bar.timeLabel}</div>
+                                  <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>{bar.desc}</div>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+
+                          {/* Hàng phụ 2: Cửa sổ reset AI */}
+                          {group.subLane && (
+                            <div className="gantt-track" style={{ '--cols': day.cols, '--rows': subRows, margin: 0 }}>
+                              {group.subLane.bars.map((bar, bIdx) => (
+                                <div
+                                  className="bar-wrapper"
+                                  style={{
+                                    left: `${(bar.start / day.cols) * 100}%`,
+                                    width: `${(bar.duration / day.cols) * 100}%`,
+                                    opacity: bar.opacity ?? 1,
+                                    '--row': bar.row ?? 0
+                                  }}
+                                  key={bIdx}
+                                >
+                                  <div className={`bar ${bar.barClass}`}>{bar.title}</div>
+                                  <div className="gantt-tooltip-css">
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.3529rem', marginBottom: '0.3529rem' }}>
+                                      <span className="legend-dot" style={{ background: group.subLane.color, width: '0.4706rem', height: '0.4706rem', borderRadius: '50%' }}></span>
+                                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>{bar.category}</span>
+                                    </div>
+                                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '0.2353rem', color: 'var(--text-primary)' }}>{bar.title}</div>
+                                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '0.3529rem', fontSize: '0.75rem' }}>{bar.timeLabel}</div>
+                                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>{bar.desc}</div>
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    );
+                  });
+                })()}
                 <div className="axis-row">
                   <div></div>
                   <div className="axis-ticks" style={{ '--cols': day.cols }}>
