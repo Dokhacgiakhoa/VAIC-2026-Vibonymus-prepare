@@ -43,3 +43,6 @@ dist-ssr
 # Scraper: login session + raw fetch cache (never commit, machine/user specific)
 .auth/
 .cache/
+
+# Sheet scraper: bản đầy đủ có email cá nhân (PII) — không commit, chỉ data/sheet/latest.json (đã lược email) được commit
+data/sheet-raw/

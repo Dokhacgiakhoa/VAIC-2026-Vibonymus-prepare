@@ -9,6 +9,7 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "scrape": "node scripts/scrape-competitors.mjs",
+    "scrape-sheet": "node scripts/scrape-sheet.mjs",
     "rebuild-index": "node scripts/rebuild-index.mjs"
   },
   "dependencies": {

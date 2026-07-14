@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import { Users, Award, TrendingUp, BarChart2, Shield, Target, UserCheck, RotateCcw, Star, Code2, Link2, Globe } from 'lucide-react';
+import React, { useMemo, useState } from 'react';
+import { Users, Award, TrendingUp, BarChart2, Shield, Target, UserCheck, RotateCcw, Star, Code2, Link2, Globe, LayoutGrid, Building2, UserSquare2 } from 'lucide-react';
 import competitorsData from '../data/competitors-data.json';
+import sheetData from '../data/sheet-data.json';
 import {
   VIBONYMUS_SLUG,
   findTeamBySlug,
@@ -13,10 +14,20 @@ import {
   averageMemberScore,
   getVibonymusMemberStats,
 } from '../utils/competitorAnalysis';
+import { getAllTeams, getAllMembers, getSoloHackers } from '../utils/directoryUtils';
+import TeamsDirectory from './competitors/TeamsDirectory';
+import HackersDirectory from './competitors/HackersDirectory';
 
 const memberKey = (teamSlug, handle) => `${teamSlug}:${handle}`;
 
+const TABS = [
+  { id: 'analysis', label: 'Phân tích cạnh tranh', icon: LayoutGrid },
+  { id: 'teams', label: 'Tất cả đội thi', icon: Building2 },
+  { id: 'hackers', label: 'Tất cả hacker', icon: UserSquare2 },
+];
+
 const Teams = () => {
+  const [activeTab, setActiveTab] = useState('analysis');
   const [selectedSlug, setSelectedSlug] = useState(null);
   const [selectedMemberKey, setSelectedMemberKey] = useState(null);
 
@@ -52,8 +63,47 @@ const Teams = () => {
   const compareMemberScore = selectedMember ? selectedMember.score : topMembersAvgScore;
   const compareMemberLabel = selectedMember ? selectedMember.member.name : `Top ${topMembers.length} cá nhân (TB)`;
 
+  const allTeamsDirectory = useMemo(() => getAllTeams(allTeams, VIBONYMUS_SLUG), [allTeams]);
+  const allMembersDirectory = useMemo(() => getAllMembers(allTeams, VIBONYMUS_SLUG), [allTeams]);
+  const soloHackers = useMemo(() => getSoloHackers(sheetData), []);
+
   return (
     <div className="page-content">
+      {/* Tab điều hướng */}
+      <div style={{ display: 'flex', gap: '8px', marginBottom: '24px', borderBottom: '1px solid var(--border)' }}>
+        {TABS.map((tab) => {
+          const Icon = tab.icon;
+          const isActive = activeTab === tab.id;
+          return (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px',
+                padding: '10px 16px',
+                border: 'none',
+                background: 'none',
+                fontSize: '0.88rem',
+                fontWeight: 700,
+                color: isActive ? 'var(--theme-color)' : 'var(--text-secondary)',
+                borderBottom: isActive ? '2px solid var(--theme-color)' : '2px solid transparent',
+                cursor: 'pointer',
+                transition: 'all 0.15s ease',
+              }}
+            >
+              <Icon size={16} /> {tab.label}
+            </button>
+          );
+        })}
+      </div>
+
+      {activeTab === 'teams' && <TeamsDirectory teams={allTeamsDirectory} />}
+      {activeTab === 'hackers' && <HackersDirectory members={allMembersDirectory} soloHackers={soloHackers} />}
+
+      {activeTab === 'analysis' && (
+      <>
       {/* Overview Stat cards */}
       <div className="grid-3" style={{ marginBottom: '24px' }}>
         <div className="card" style={{ margin: 0, padding: '20px', display: 'flex', alignItems: 'center', gap: '16px' }}>
@@ -432,6 +482,8 @@ const Teams = () => {
           </p>
         </div>
       </div>
+      </>
+      )}
     </div>
   );
 };
