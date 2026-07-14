@@ -9,28 +9,56 @@ const AI_RESET_HOURS_BY_DAY = [
   [3, 8, 13, 18, 23],
 ];
 
+const formatHour = (val) => {
+  const hours = Math.floor(val);
+  const minutes = val % 1 === 0 ? '00' : '30';
+  return `${String(hours).padStart(2, '0')}:${minutes}`;
+};
+
 function aiResetBars(dayIdx, ownerLabel, toolLabel) {
-  return AI_RESET_HOURS_BY_DAY[dayIdx].map((h) => ({
-    start: h,
-    duration: 0.4,
-    title: '⚡ Reset',
-    category: `${ownerLabel} · Giới hạn AI`,
-    timeLabel: `Khung giờ: ${String(h).padStart(2, '0')}:00`,
-    desc: `Cửa sổ sử dụng ${toolLabel} làm mới (rolling 5 giờ, tính từ 11:00 17/07). Tranh thủ hỏi dồn các câu phức tạp ngay sau mốc này.`,
-    barClass: 'bar-ai-reset',
-  }));
+  return AI_RESET_HOURS_BY_DAY[dayIdx].flatMap((h) => [
+    {
+      start: h - 1.5,
+      duration: 1.5,
+      title: '⏳ Limit',
+      category: `${ownerLabel} · Quota sắp cạn`,
+      timeLabel: `Khung giờ: ${formatHour(h - 1.5)} - ${formatHour(h)}`,
+      desc: `Dự kiến chạm giới hạn sử dụng ${toolLabel}. Kế hoạch Backup: chuyển sang dùng tài khoản phụ Free, chia sẻ phiên làm việc (pair programming) với đồng đội chưa hết hạn, hoặc tập trung phân tích mã nguồn, kiểm thử, viết tài liệu thủ công để giữ tiến độ.`,
+      barClass: 'bar-ai-limit'
+    },
+    {
+      start: h,
+      duration: 0.4,
+      title: '⚡ Reset',
+      category: `${ownerLabel} · Giới hạn AI`,
+      timeLabel: `Khung giờ: ${formatHour(h)}`,
+      desc: `Cửa sổ sử dụng ${toolLabel} làm mới (rolling 5 giờ, tính từ 11:00 17/07). Tranh thủ hỏi dồn các câu phức tạp ngay sau mốc này.`,
+      barClass: 'bar-ai-reset'
+    }
+  ]);
 }
 
 function sharedAiResetBars(dayIdx) {
-  return AI_RESET_HOURS_BY_DAY[dayIdx].map((h) => ({
-    start: h,
-    duration: 0.4,
-    title: '⚡ Reset',
-    category: 'Cả team · Giới hạn AI',
-    timeLabel: `Khung giờ: ${String(h).padStart(2, '0')}:00`,
-    desc: 'Mốc làm mới giới hạn sử dụng chung cho cả 6 tài khoản AI (Claude Pro/Max 5x, Gemini Pro) — anchor 11:00 17/07, lặp lại mỗi 5 giờ.',
-    barClass: 'bar-ai-reset',
-  }));
+  return AI_RESET_HOURS_BY_DAY[dayIdx].flatMap((h) => [
+    {
+      start: h - 1.5,
+      duration: 1.5,
+      title: '⏳ Limit',
+      category: 'Cả team · Quota sắp cạn',
+      timeLabel: `Khung giờ: ${formatHour(h - 1.5)} - ${formatHour(h)}`,
+      desc: 'Khoảng thời gian dự kiến các thành viên cạn quota tài khoản trả phí. Thực thi phương án chuyển đổi tài khoản (Free tier), chia sẻ token, hoặc thực hiện review chéo, chuẩn bị slide, thiết kế demo offline.',
+      barClass: 'bar-ai-limit'
+    },
+    {
+      start: h,
+      duration: 0.4,
+      title: '⚡ Reset',
+      category: 'Cả team · Giới hạn AI',
+      timeLabel: `Khung giờ: ${formatHour(h)}`,
+      desc: 'Mốc làm mới giới hạn sử dụng chung cho cả 6 tài khoản AI (Claude Pro/Max 5x, Gemini Pro) — anchor 11:00 17/07, lặp lại mỗi 5 giờ.',
+      barClass: 'bar-ai-reset'
+    }
+  ]);
 }
 
 export const scoringCriteria = [
