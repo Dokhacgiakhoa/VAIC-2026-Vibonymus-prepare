@@ -37,7 +37,7 @@ const Dashboard = () => {
             </span>
             Vibonymus @ VAIC 2026
           </h1>
-          <p className="sub" style={{ margin: '0.4706rem 0 0.9412rem' }}>Kế hoạch chuẩn bị &amp; thi đấu — K.AI · Quân · Mai · Quang · Lâm · Yến &nbsp;|&nbsp; Hackathon 48h, 17–19/07/2026, NIC Hòa Lạc</p>
+          <p className="sub" style={{ margin: '0.4706rem 0 0.9412rem' }}>Kế hoạch chuẩn bị &amp; thi đấu — K.AI · Quân · Mai · Quang · Lâm · Yến &nbsp;|&nbsp; Hackathon 48h, 17–19/07/2026, 10 Phạm Văn Bạch, Cầu Giấy, Hà Nội</p>
           <div className="links">
             <a href="https://www.vietnamaichallenge.com/" target="_blank" rel="noopener noreferrer">Website <ExternalLink size={13} /></a>
             <a href="https://www.facebook.com/vietnamaiinnovationchallenge" target="_blank" rel="noopener noreferrer">Fanpage <ExternalLink size={13} /></a>

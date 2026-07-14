@@ -92,7 +92,7 @@ export const ganttDays = [
         color: 'var(--s4)',
         bars: [
           { start: 8, duration: 1.5, title: 'Check-in', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 08:00-09:30', desc: 'Check-in và kích hoạt không gian sự kiện. Nhận túi quà thông qua thẻ QR code. BTC không hỗ trợ check-in sau 09:00.', barClass: 'bar-critical' },
-          { start: 9.5, duration: 1, title: 'Khai mạc', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 09:30-10:30', desc: 'Lễ khai mạc chính thức của VAIC 2026 tại hội trường NIC Hòa Lạc.', barClass: 'bar-s4' },
+          { start: 9.5, duration: 1, title: 'Khai mạc', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 09:30-10:30', desc: 'Lễ khai mạc chính thức của VAIC 2026 tại 10 Phạm Văn Bạch, Cầu Giấy, Hà Nội.', barClass: 'bar-s4' },
           { start: 11, duration: 0.5, title: 'Đề bài', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 11:00', desc: 'Công bộ 8 track thi đấu chính thức trên hệ thống. Đếm ngược 48h bắt đầu.', barClass: 'bar-critical' },
           { start: 12, duration: 1, row: 0, title: 'Genius St.', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 12:00', desc: 'Genius Station mở cửa hỗ trợ kỹ thuật xoay ca liên tục 48 giờ.', barClass: 'bar-s4' },
           { start: 12, duration: 1, row: 1, title: 'Ăn trưa', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 12:00-13:00', desc: 'Thực đơn: Cơm sườn, dưa chuột, trái cây theo mùa.', barClass: 'bar-meal' },
