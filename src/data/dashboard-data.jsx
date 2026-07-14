@@ -91,10 +91,11 @@ export const ganttDays = [
         roleLabel: 'Agenda',
         color: 'var(--s4)',
         bars: [
-          { start: 8, duration: 1.5, title: 'Check-in', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 08:00-09:30', desc: 'Check-in và kích hoạt không gian sự kiện. Nhận túi quà thông qua thẻ QR code.', barClass: 'bar-s4' },
+          { start: 8, duration: 1.5, title: 'Check-in', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 08:00-09:30', desc: 'Check-in và kích hoạt không gian sự kiện. Nhận túi quà thông qua thẻ QR code. BTC không hỗ trợ check-in sau 09:00.', barClass: 'bar-critical' },
           { start: 9.5, duration: 1, title: 'Khai mạc', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 09:30-10:30', desc: 'Lễ khai mạc chính thức của VAIC 2026 tại hội trường NIC Hòa Lạc.', barClass: 'bar-s4' },
-          { start: 11, duration: 0.5, title: 'Đề bài', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 11:00', desc: 'Công bộ 8 track thi đấu chính thức trên hệ thống. Đếm ngược 48h bắt đầu.', barClass: 'bar-s4' },
-          { start: 12, duration: 1, title: 'Ăn trưa', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 12:00-13:00', desc: 'Thực đơn: Cơm sườn, dưa chuột, trái cây theo mùa.', barClass: 'bar-meal' },
+          { start: 11, duration: 0.5, title: 'Đề bài', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 11:00', desc: 'Công bộ 8 track thi đấu chính thức trên hệ thống. Đếm ngược 48h bắt đầu.', barClass: 'bar-critical' },
+          { start: 12, duration: 1, row: 0, title: 'Genius St.', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 12:00', desc: 'Genius Station mở cửa hỗ trợ kỹ thuật xoay ca liên tục 48 giờ.', barClass: 'bar-s4' },
+          { start: 12, duration: 1, row: 1, title: 'Ăn trưa', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 12:00-13:00', desc: 'Thực đơn: Cơm sườn, dưa chuột, trái cây theo mùa.', barClass: 'bar-meal' },
           { start: 16, duration: 1.5, title: 'Workshop', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 16:00-17:30', desc: 'Các workshop kỹ thuật nâng cao từ nhà tài trợ công nghệ.', barClass: 'bar-s4' },
           { start: 18, duration: 1.5, title: 'Ăn tối', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 18:00-19:30', desc: 'Thực đơn: Cơm chiên Dương Châu, trứng ốp la, salad dưa chuột - cà chua, trái cây theo mùa.', barClass: 'bar-meal' },
           { start: 19.5, duration: 1.5, title: 'DJ Show', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 19:30-21:00', desc: 'Giao lưu DJ xả stress giữa các faction.', barClass: 'bar-s4' },
@@ -304,11 +305,11 @@ export const ganttDays = [
         color: 'var(--s4)',
         bars: [
           { start: 0, duration: 4, title: 'Xuyên đêm', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 00:00-04:00', desc: 'Đêm code thứ hai chạy nước rút.', barClass: 'bar-s4' },
-          { start: 7.5, duration: 1, title: 'Ăn sáng', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 07:30-08:30', desc: 'Thực đơn: Xôi pate chả ruốc, dưa hành.', barClass: 'bar-meal' },
-          { start: 8, duration: 3, title: 'Code Freeze', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 08:00-11:00', desc: '11:00 Đóng cổng nộp bài, khoá toàn bộ GitHub và live link.', barClass: 'bar-critical' },
+          { start: 7.5, duration: 1, row: 1, title: 'Ăn sáng', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 07:30-08:30', desc: 'Thực đơn: Xôi pate chả ruốc, dưa hành.', barClass: 'bar-meal' },
+          { start: 8, duration: 3, row: 0, title: 'Code Freeze', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 08:00-11:00', desc: '11:00 Đóng cổng nộp bài, khoá toàn bộ GitHub và live link.', barClass: 'bar-critical' },
           { start: 12, duration: 1, title: 'Ăn trưa', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 12:00-13:00', desc: 'Thực đơn: Hamburger, trái cây theo mùa.', barClass: 'bar-meal' },
           { start: 13, duration: 5, title: 'Demo prep', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 13:00-18:00', desc: 'Chuẩn bị không gian demo tại bàn thi.', barClass: 'bar-s4' },
-          { start: 18, duration: 6, title: 'Pitch & Bế mạc', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 18:00-24:00', desc: 'Pitching chính thức trước Hội đồng Giám khảo, công bố kết quả và Bế mạc.', barClass: 'bar-s4' }
+          { start: 18, duration: 6, title: 'Pitch & Bế mạc', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 18:00-24:00', desc: 'Pitching chính thức trước Hội đồng Giám khảo, công bố kết quả và Bế mạc.', barClass: 'bar-critical' }
         ]
       },
       {

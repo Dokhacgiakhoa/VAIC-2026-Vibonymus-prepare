@@ -62,19 +62,22 @@ const Dashboard = () => {
                 <div className="gantt-phase-label" style={{ marginTop: dIdx > 0 ? '1.5294rem' : '0' }}>
                   {day.label}
                 </div>
-                {day.lanes.map((lane, lIdx) => (
-                  <div className="gantt-row" style={{ '--cols': day.cols }} key={lIdx}>
+                {day.lanes.map((lane, lIdx) => {
+                  const rows = Math.max(1, ...lane.bars.map((b) => (b.row ?? 0) + 1));
+                  return (
+                  <div className="gantt-row" style={{ '--cols': day.cols, '--rows': rows }} key={lIdx}>
                     <div className="gantt-row-label">
                       <span className="legend-dot" style={{ background: lane.color }}></span> {lane.roleLabel}
                     </div>
-                    <div className="gantt-track" style={{ '--cols': day.cols }}>
+                    <div className="gantt-track" style={{ '--cols': day.cols, '--rows': rows }}>
                       {lane.bars.map((bar, bIdx) => (
                         <div
                           className="bar-wrapper"
                           style={{
                             left: `${(bar.start / day.cols) * 100}%`,
                             width: `${(bar.duration / day.cols) * 100}%`,
-                            opacity: bar.opacity ?? 1
+                            opacity: bar.opacity ?? 1,
+                            '--row': bar.row ?? 0
                           }}
                           key={bIdx}
                         >
@@ -92,7 +95,8 @@ const Dashboard = () => {
                       ))}
                     </div>
                   </div>
-                ))}
+                  );
+                })}
                 <div className="axis-row">
                   <div></div>
                   <div className="axis-ticks" style={{ '--cols': day.cols }}>

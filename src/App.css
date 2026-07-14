@@ -238,16 +238,16 @@ h2 svg { width: 1.2941rem; height: 1.2941rem; color: var(--theme-color); flex-sh
 .gantt-scroll { overflow-x: auto; margin: 0 -0.5882rem; padding: 0 0.5882rem; }
 .gantt { min-width: 54.1176rem; }
 .gantt-phase-label { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--s4); margin: 1.4118rem 0 0.5882rem; border-bottom: 2px solid var(--grid); padding-bottom: 0.3529rem; }
-.gantt-row { display: grid; grid-template-columns: 9.4118rem 1fr; align-items: center; min-height: 2.2353rem; border-top: 1px solid var(--grid); }
+.gantt-row { display: grid; grid-template-columns: 9.4118rem 1fr; align-items: center; min-height: 2.4706rem; border-top: 1px solid var(--grid); }
 .gantt-row:first-of-type { border-top: none; }
-.gantt-row-label { font-size: 0.82rem; font-weight: 700; color: var(--text-secondary); padding-right: 0.7059rem; display: flex; align-items: center; gap: 0.4706rem; }
-.gantt-track { position: relative; height: 1.7647rem; background: repeating-linear-gradient(to right, var(--grid) 0, var(--grid) 0.0588rem, transparent 0.0588rem, transparent calc(100%/var(--cols,10))); border-radius: 0.3529rem; margin: 0.2353rem 0; }
-.bar { 
-  position: absolute; 
-  top: 0.2353rem; 
-  height: 1.2941rem; 
-  border-radius: 0.3529rem; 
-  font-size: 0.72rem; 
+.gantt-row-label { font-size: 0.86rem; font-weight: 700; color: var(--text-secondary); padding-right: 0.7059rem; display: flex; align-items: center; gap: 0.4706rem; }
+.gantt-track { position: relative; height: calc(var(--rows, 1) * 1.9412rem); background: repeating-linear-gradient(to right, var(--grid) 0, var(--grid) 0.0588rem, transparent 0.0588rem, transparent calc(100%/var(--cols,10))); border-radius: 0.3529rem; margin: 0.2353rem 0; }
+.bar {
+  position: absolute;
+  top: 0.2353rem;
+  height: 1.2941rem;
+  border-radius: 0.3529rem;
+  font-size: 0.78rem;
   font-weight: 600;
   color: #fff; 
   display: flex; 
@@ -437,8 +437,8 @@ ul.checklist li b { color: var(--text-primary); }
 /* Gantt Custom CSS Tooltip */
 .bar-wrapper {
   position: absolute;
-  top: 0.2353rem;
-  height: 1.2941rem;
+  top: calc(0.2353rem + var(--row, 0) * 1.9412rem);
+  height: 1.4706rem;
   transition: z-index 0.1s ease;
 }
 .bar-wrapper:hover {
