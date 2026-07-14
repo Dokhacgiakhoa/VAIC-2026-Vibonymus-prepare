@@ -36,7 +36,7 @@ export const roleCards = [
     items: [
       { label: 'Chủ trì (60%)', text: 'Xây dựng AI Agent/AI Core logic, thiết kế grounding (RAG) đảm bảo AI trả lời đúng ngữ cảnh — dựa trên kỹ năng AI/ML, API/Tích hợp hệ thống.' },
       { label: 'Chủ trì (30%)', text: 'Rà soát bảo mật, kiểm thử xâm nhập (Pentest) hệ thống trước mỗi lần nộp bài — dựa trên kỹ năng Bảo mật.' },
-      { label: 'Hỗ trợ (10%)', text: 'Phối hợp Lâm chia việc AI Core & Security để không ai bị quá tải.' },
+      { label: 'Hỗ trợ (10%)', text: 'Phối hợp Lâm chia việc AI Core & Security để không ai bị quá tải — cùng lớp, cùng trường với Lâm nên dễ đồng bộ tiến độ và trao đổi trực tiếp ngoài giờ code.' },
     ],
   },
   {
@@ -46,7 +46,7 @@ export const roleCards = [
     items: [
       { label: 'Chủ trì (60%)', text: 'Hỗ trợ xây dựng AI Core (Computer Vision/ML khi cần) và grounding dữ liệu — dựa trên kinh nghiệm thực tế PyTorch, OpenCV, YOLOv11 (dự án U-Mamba trình bày tại ICISN 2026).' },
       { label: 'Chủ trì (30%)', text: 'Pentest & kiểm thử bảo mật hệ thống — dựa trên nền tảng Network Security thực tế (DNS, Zero Trust, DoH/DoT/DoQ từ dự án Zero Trust DNS Server).' },
-      { label: 'Hỗ trợ (10%)', text: 'Backup Quân về Web Development (React/Vite) khi cần gấp rút trước checkpoint.' },
+      { label: 'Hỗ trợ (10%)', text: 'Backup Quân về Web Development (React/Vite) khi cần gấp rút trước checkpoint — cùng lớp, cùng trường với Quang nên dễ đồng bộ tiến độ và trao đổi trực tiếp ngoài giờ code.' },
     ],
   },
   {
