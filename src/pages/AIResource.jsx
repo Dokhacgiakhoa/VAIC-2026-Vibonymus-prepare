@@ -225,7 +225,7 @@ const AIResource = () => {
       {/* Bảng tổng hợp chi phí */}
       <div className="card">
         <h2><DollarSign /> Bảng tổng hợp chi phí bản quyền AI của nhóm</h2>
-        <p className="sub" style={{ margin: '0 0 0.9412rem' }}>Thống kê các khoản chi phí thực tế mà team đã chi trả để trang bị bản quyền AI hỗ trợ lập trình (luôn tối ưu hóa ưu tiên tài khoản dùng chung và gói miễn phí).</p>
+        <p className="sub" style={{ margin: '0 0 0.9412rem' }}>Thống kê các khoản chi phí thực tế mà team đã chi trả để trang bị bản quyền AI hỗ trợ lập trình — mỗi thành viên có 1 tài khoản riêng, kết hợp thêm gói miễn phí khi cần.</p>
         <div className="cross-table-scroll">
           <table className="cross-table">
             <thead>

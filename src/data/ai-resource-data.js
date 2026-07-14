@@ -1,32 +1,57 @@
 export const ownedTools = [
   {
-    stage: 'K.AI · PM & PITCHING',
+    stage: 'K.AI · TECH LEAD, BACKEND & DB',
     colorVar: '--s1',
-    names: 'Claude Pro, Gemini Advanced & Antigravity Pro',
+    names: 'Claude Pro',
     items: [
-      { label: 'Claude Pro ($20)', text: 'Brainstorm kiến trúc, soạn slide và viết kịch bản pitching thuyết phục.' },
-      { label: 'Gemini Advanced ($20)', text: 'Đọc tài liệu hackathon cực dài, phân tích điều lệ thi và API của BTC.' },
-      { label: 'Antigravity Pro ($0)', text: 'Trợ lý AI tích hợp sẵn trong IDE để viết code nhanh và debug trực tiếp.' },
+      { label: 'Claude Pro ($20)', text: 'Brainstorm kiến trúc kỹ thuật tổng thể, thiết kế Database Schema, viết logic API Backend và lên kế hoạch tích hợp AI (AI Plan).' },
     ],
     tagBg: 'rgba(42, 120, 214, 0.08)',
   },
   {
-    stage: 'K.AI · FRONTEND & UI/UX',
-    colorVar: '--s3',
-    names: 'Claude Max 5x (Gói Premium)',
-    items: [
-      { label: 'Claude Max 5x ($100)', text: 'Thiết kế giao diện (UI/UX), sinh mã React component chất lượng cao, viết CSS chuyển động và tối ưu hóa ngôn từ tiếp thị sản phẩm.' },
-    ],
-    tagBg: 'rgba(237, 161, 0, 0.08)',
-  },
-  {
-    stage: 'QUÂN · BACKEND & DB',
+    stage: 'QUÂN · FRONTEND & UI/UX',
     colorVar: '--s2',
-    names: 'Claude Max 5x (Dùng chung)',
+    names: 'Claude Max 5x',
     items: [
-      { label: 'Claude Max 5x ($0)', text: 'Chia sẻ tài khoản với K.AI để tối ưu hóa chi phí. Dùng để thiết kế Database Schema, viết API và xử lý logic kết nối DB Backend.' },
+      { label: 'Claude Max 5x ($100)', text: 'Dùng tính năng Claude Design để thiết kế giao diện (UI/UX), sinh mã React component chất lượng cao và viết CSS chuyển động.' },
     ],
     tagBg: 'rgba(27, 175, 122, 0.08)',
+  },
+  {
+    stage: 'MAI · QC & QUẢN LÝ HIỆU SUẤT',
+    colorVar: '--s5',
+    names: 'Gemini Pro',
+    items: [
+      { label: 'Gemini Pro ($20)', text: 'Tổng hợp báo cáo tiến độ, phân tích dữ liệu hiệu suất team và soát lỗi tài liệu dài nhờ ngữ cảnh lớn của Gemini.' },
+    ],
+    tagBg: 'rgba(12, 166, 120, 0.08)',
+  },
+  {
+    stage: 'QUANG · AI CORE & SECURITY',
+    colorVar: '--s6',
+    names: 'Claude Pro',
+    items: [
+      { label: 'Claude Pro ($20)', text: 'Viết/tinh chỉnh prompt cho AI Agent, thiết kế grounding (RAG), debug logic Agent và tra cứu lỗ hổng bảo mật khi pentest.' },
+    ],
+    tagBg: 'rgba(224, 49, 49, 0.08)',
+  },
+  {
+    stage: 'LÂM · AI CORE & SECURITY',
+    colorVar: '--s7',
+    names: 'Claude Pro',
+    items: [
+      { label: 'Claude Pro ($20)', text: 'Debug mô hình AI/Computer Vision, viết script kiểm thử bảo mật (pentest) và backup code Frontend khi cần gấp.' },
+    ],
+    tagBg: 'rgba(134, 142, 150, 0.08)',
+  },
+  {
+    stage: 'YẾN · BUSINESS & PITCHING',
+    colorVar: '--s8',
+    names: 'Gemini Pro',
+    items: [
+      { label: 'Gemini Pro ($20)', text: 'Nghiên cứu thị trường, tổng hợp tài liệu business case dài và phân tích đối thủ cạnh tranh phục vụ pitching.' },
+    ],
+    tagBg: 'rgba(214, 51, 108, 0.08)',
   },
 ];
 
@@ -37,26 +62,28 @@ export const freeFirstItems = [
 ];
 
 export const openSourceKits = [
-  { title: '🦙 Chạy Mô hình LLM Cục bộ (Local LLM via Ollama)', colorVar: '--s1', tool: 'Ollama kết hợp mô hình **Llama 3 (8B)** hoặc **Qwen 2 (7B)**.', usage: 'Chạy offline hoàn toàn trên máy của Quân để thực hiện các tác vụ phân loại ý định nhạy cảm, tóm tắt tài liệu y khoa bảo mật hoặc sinh mã SQL tự động mà không lo bị phụ thuộc vào mạng internet hay chi phí API key.' },
+  { title: '🦙 Chạy Mô hình LLM Cục bộ (Local LLM via Ollama)', colorVar: '--s1', tool: 'Ollama kết hợp mô hình **Llama 3 (8B)** hoặc **Qwen 2 (7B)**.', usage: 'Chạy offline hoàn toàn trên máy của K.AI để thực hiện các tác vụ phân loại ý định nhạy cảm, tóm tắt tài liệu y khoa bảo mật hoặc sinh mã SQL tự động mà không lo bị phụ thuộc vào mạng internet hay chi phí API key.' },
   { title: '👁️ Nhận diện & OCR chuyên dụng (YOLOv8 & EasyOCR)', colorVar: '--s2', tool: 'Ultralytics **YOLOv8 / YOLOv10** mã nguồn mở và thư viện **EasyOCR**.', usage: 'Huấn luyện cục bộ siêu nhanh trên tập dữ liệu ảnh lá cây sâu bệnh (track Nông nghiệp) hoặc nhận diện chướng ngại vật ngập lụt (track Thiên tai). Chạy OCR trích xuất CMND/CCCD trực tiếp bằng thư viện Python mã nguồn mở.' },
   { title: '📂 CSDL Vector & Embeddings Tự Host (ChromaDB / pgvector)', colorVar: '--s3', tool: 'CSDL **ChromaDB** (in-memory) hoặc extension **pgvector** tích hợp thẳng vào PostgreSQL.', usage: 'Dựng kho lưu trữ vector nhúng tri thức RAG cục bộ. Sử dụng mô hình nhúng mã nguồn mở **all-MiniLM-L6-v2** chạy offline qua Ollama để mã hóa dữ liệu với chi phí hoàn toàn bằng 0.' },
   { title: '⚙️ Agent & Workflow Orchestration (LangGraph / CrewAI)', colorVar: '--s4', tool: 'Framework Python mã nguồn mở **LangGraph** (từ LangChain) hoặc **CrewAI**.', usage: 'Lập trình các luồng suy luận của AI Agent rẽ nhánh phức tạp, thiết lập cơ chế kiểm soát chất lượng đầu ra (Output Guardrails) và tự sửa lỗi (Self-Correction) hoàn toàn miễn phí.' },
 ];
 
 export const costTableRows = [
-  { tool: 'Claude Pro', price: '$20', user: 'K.AI (PM & Pitching)', purpose: 'Lên cấu trúc dự án, viết slide thuyết trình, review mã nguồn.', freeOption: { text: 'Gói cá nhân bắt buộc', colorVar: null } },
-  { tool: 'Gemini Advanced', price: '$20', user: 'K.AI (PM & Pitching)', purpose: 'Phân tích luật thi đấu dài, hướng dẫn API, khai thác ngữ cảnh lớn.', freeOption: { text: 'Có thể thay thế bằng Google AI Studio (Free)', colorVar: '--s1' } },
-  { tool: 'Antigravity Pro', price: '$0 (Sẵn có)', user: 'K.AI (PM & Pitching)', purpose: 'Hỗ trợ code trực tiếp trong IDE, sửa lỗi cú pháp thời gian thực.', freeOption: { text: 'Hoàn toàn miễn phí', colorVar: '--good' } },
-  { tool: 'Claude Max 5x', price: '$100', user: 'K.AI (Frontend) & Quân (Backend)', purpose: 'Sinh code frontend React, dựng Database Schema, viết API logic.', freeOption: { text: 'Dùng chung 2 người (Tiết kiệm $100)', colorVar: '--s2' } },
+  { tool: 'Claude Pro', price: '$20', user: 'K.AI (Tech Lead & Backend/DB)', purpose: 'Kiến trúc kỹ thuật, Database Schema, API Backend, AI Plan.', freeOption: { text: 'Gói cá nhân bắt buộc', colorVar: null } },
+  { tool: 'Claude Max 5x', price: '$100', user: 'Quân (Frontend & UI/UX)', purpose: 'Dùng tính năng Claude Design sinh code frontend React, layout & hiệu ứng chuyển động.', freeOption: { text: 'Gói cá nhân bắt buộc để dùng Claude Design', colorVar: null } },
+  { tool: 'Gemini Pro', price: '$20', user: 'Mai (QC & Quản lý hiệu suất)', purpose: 'Tổng hợp báo cáo tiến độ, phân tích dữ liệu hiệu suất team.', freeOption: { text: 'Có thể thay thế bằng Google AI Studio (Free)', colorVar: '--s5' } },
+  { tool: 'Claude Pro', price: '$20', user: 'Quang (AI Core & Security)', purpose: 'Prompt AI Agent, grounding (RAG), debug logic Agent, pentest.', freeOption: { text: 'Gói cá nhân bắt buộc', colorVar: null } },
+  { tool: 'Claude Pro', price: '$20', user: 'Lâm (AI Core & Security)', purpose: 'Debug mô hình AI/CV, viết script kiểm thử bảo mật.', freeOption: { text: 'Gói cá nhân bắt buộc', colorVar: null } },
+  { tool: 'Gemini Pro', price: '$20', user: 'Yến (Business & Pitching)', purpose: 'Nghiên cứu thị trường, tổng hợp business case, phân tích đối thủ.', freeOption: { text: 'Có thể thay thế bằng Google AI Studio (Free)', colorVar: '--s8' } },
 ];
 
-export const costTableTotal = { label: 'TỔNG CHI PHÍ THỰC TẾ', amount: '$140 (~ 3.500.000đ)', team: 'Cả team Vibonymus', note: 'Đã tối ưu hóa chia sẻ tài khoản chéo.', freeGoal: 'Mục tiêu tối ưu hóa thêm 40% bằng Free API' };
+export const costTableTotal = { label: 'TỔNG CHI PHÍ THỰC TẾ', amount: '$200 (~ 5.000.000đ)', team: 'Cả team Vibonymus (6 người, mỗi người 1 tài khoản riêng)', note: 'Không dùng chung tài khoản — mỗi thành viên chủ động với AI tool của mình.', freeGoal: 'Mục tiêu tối ưu hóa thêm bằng Free API cho các tác vụ phụ' };
 
 export const trackAIDetails = {
   'y-te': {
     owned: [
-      { name: 'Claude Max 5x (Gói dùng chung)', desc: 'Quân dùng thiết kế Database Schema bệnh án mã hóa bảo mật, K.AI dùng sinh UI Dashboard nhập liệu lâm sàng.' },
-      { name: 'Claude Pro (K.AI)', desc: 'K.AI soạn slide, viết kịch bản pitch đối phó hội đồng giám khảo y khoa khó tính và giải thích tính an toàn.' }
+      { name: 'Claude Pro (K.AI)', desc: 'K.AI dùng thiết kế Database Schema bệnh án mã hóa bảo mật và kiến trúc Backend lưu trữ hồ sơ y tế.' },
+      { name: 'Claude Max 5x (Quân)', desc: 'Quân dùng sinh UI Dashboard nhập liệu lâm sàng và các biểu đồ theo dõi bệnh án trực quan.' }
     ],
     free: [
       { name: 'Google AI Studio (Gemini 1.5 Pro API)', desc: 'Nhận diện chữ viết tay toa thuốc, đối chiếu triệu chứng với phác đồ điều trị Bộ Y Tế miễn phí (15 RPM).' },
@@ -67,7 +94,7 @@ export const trackAIDetails = {
       { name: 'PostgreSQL + pgvector (Local Docker)', desc: 'Vector DB cục bộ lưu trữ sách giáo khoa y học phục vụ RAG y tế với chi phí bằng 0.' }
     ],
     paid: [
-      { name: 'Gamma App Pro ($15/tháng)', desc: 'Tự động tạo slide thuyết trình y khoa chuyên nghiệp, thẩm mỹ cao từ nội dung kịch bản của K.AI.' },
+      { name: 'Gamma App Pro ($15/tháng)', desc: 'Tự động tạo slide thuyết trình y khoa chuyên nghiệp, thẩm mỹ cao từ nội dung kịch bản pitch của Yến.' },
       { name: 'Midjourney v6 ($10/tháng)', desc: 'Sinh ảnh chất lượng nghệ thuật cao cấp phục vụ thiết kế giao diện ứng dụng y tế chuyên nghiệp.' },
       { name: 'Runway Gen-3 Alpha ($15/tháng)', desc: 'Sinh video mô tả cơ chế hoạt động sinh học của thuốc hoặc luồng chẩn đoán chất lượng điện ảnh.' }
     ],
@@ -78,8 +105,8 @@ export const trackAIDetails = {
   },
   'doi-moi': {
     owned: [
-      { name: 'Claude Max 5x (Gói dùng chung)', desc: 'K.AI dùng sinh nhanh Landing Page sản phẩm và các hiệu ứng chuyển động CSS mượt mà.' },
-      { name: 'Gemini Advanced (K.AI)', desc: 'K.AI dùng nghiên cứu, tóm tắt và phân tích đối thủ cạnh tranh quy mô lớn trên thị trường.' }
+      { name: 'Claude Max 5x (Quân)', desc: 'Quân dùng sinh nhanh Landing Page sản phẩm và các hiệu ứng chuyển động CSS mượt mà.' },
+      { name: 'Gemini Pro (Yến)', desc: 'Yến dùng nghiên cứu, tóm tắt và phân tích đối thủ cạnh tranh quy mô lớn trên thị trường cho business case.' }
     ],
     free: [
       { name: 'v0.dev (Free Tier)', desc: 'Vercel cấp hạn mức miễn phí hàng tháng để sinh mã nguồn thô cho các React components giao diện.' },
@@ -101,8 +128,8 @@ export const trackAIDetails = {
   },
   'nang-suat-sme': {
     owned: [
-      { name: 'Claude Max 5x (Gói dùng chung)', desc: 'Quân lập trình prompt rẽ nhánh LangGraph/CrewAI; K.AI thiết kế Admin Dashboard theo dõi Agent.' },
-      { name: 'Claude Pro (K.AI)', desc: 'K.AI viết kịch bản Live Demo luồng nhân sự ảo tự động gửi email/Slack nháp để pitching.' }
+      { name: 'Claude Pro (Quang/Lâm)', desc: 'Quang & Lâm lập trình prompt rẽ nhánh LangGraph/CrewAI cho AI Agent nhân sự ảo.' },
+      { name: 'Claude Max 5x (Quân)', desc: 'Quân thiết kế Admin Dashboard theo dõi Agent và trạng thái tự động hóa quy trình.' }
     ],
     free: [
       { name: 'Google AI Studio (Gemini 1.5 Flash API)', desc: 'API tóm tắt email khách hàng và sinh thư nháp trả lời tự động siêu tốc miễn phí.' },
@@ -114,7 +141,7 @@ export const trackAIDetails = {
     ],
     paid: [
       { name: 'Gamma App Pro ($15/tháng)', desc: 'Sinh slide thuyết trình tối ưu hóa vận hành SME cực kỳ chuyên nghiệp và trực quan.' },
-      { name: 'Cursor IDE Pro ($20/tháng)', desc: 'Nâng cấp khả năng lập trình tự động đa tệp tin (Multi-file) cho Quân và K.AI trong 48h.' },
+      { name: 'Cursor IDE Pro ($20/tháng)', desc: 'Nâng cấp khả năng lập trình tự động đa tệp tin (Multi-file) cho K.AI và Quân trong 48h.' },
       { name: 'HeyGen ($24/tháng)', desc: 'Sinh MC ảo thuyết minh video demo luồng tự động hóa doanh nghiệp cực kỳ sống động.' }
     ],
     githubRepos: [
@@ -124,8 +151,8 @@ export const trackAIDetails = {
   },
   'chinh-phu-so': {
     owned: [
-      { name: 'Gemini Advanced (K.AI)', desc: 'K.AI dùng tóm tắt, đối chiếu các văn bản pháp luật, nghị định dịch vụ công dày hàng trăm trang.' },
-      { name: 'Claude Max 5x (Gói dùng chung)', desc: 'Quân thiết kế CSDL quan hệ lưu lịch sử hồ sơ công dân; K.AI thiết kế giao diện chatbot CitizenCopilot.' }
+      { name: 'Gemini Pro (Mai)', desc: 'Mai dùng tóm tắt, đối chiếu các văn bản pháp luật, nghị định dịch vụ công dày hàng trăm trang khi QC nội dung.' },
+      { name: 'Claude Pro (K.AI) + Claude Max 5x (Quân)', desc: 'K.AI thiết kế CSDL quan hệ lưu lịch sử hồ sơ công dân; Quân thiết kế giao diện chatbot CitizenCopilot.' }
     ],
     free: [
       { name: 'EasyOCR / LayoutLM v3 (Mã nguồn mở)', desc: 'Thư viện trích xuất thông tin tự động từ ảnh chụp CCCD/hộ khẩu điền vào tờ khai mẫu hành chính công.' },
@@ -147,8 +174,8 @@ export const trackAIDetails = {
   },
   'nong-nghiep': {
     owned: [
-      { name: 'Claude Max 5x (Gói dùng chung)', desc: 'Quân viết API nhận diện ảnh nông nghiệp; K.AI thiết kế giao diện bản đồ độ ẩm nông trại.' },
-      { name: 'Gemini Advanced (K.AI)', desc: 'K.AI dịch thuật và nghiên cứu các tài liệu kỹ thuật canh tác thích ứng biến đổi khí hậu của nước ngoài.' }
+      { name: 'Claude Pro (K.AI/Quang/Lâm)', desc: 'K.AI viết API nhận diện ảnh nông nghiệp; Quang/Lâm huấn luyện & tích hợp mô hình Computer Vision phát hiện sâu bệnh.' },
+      { name: 'Claude Max 5x (Quân)', desc: 'Quân thiết kế giao diện bản đồ độ ẩm nông trại và trực quan hóa dữ liệu cảm biến.' }
     ],
     free: [
       { name: 'YOLOv8 / YOLOv10 (Local Open-Source)', desc: 'Huấn luyện và chạy cục bộ mô hình nhận diện bệnh hại lá cây, sâu bệnh hại cây trồng miễn phí.' },
@@ -170,8 +197,8 @@ export const trackAIDetails = {
   },
   'giao-duc': {
     owned: [
-      { name: 'Claude Max 5x (Gói dùng chung)', desc: 'Quân lập trình thuật toán phân tích vết lỗi sai định vị lỗ hổng kiến thức; K.AI làm giao diện trắc nghiệm.' },
-      { name: 'Claude Pro (K.AI)', desc: 'K.AI viết kịch bản pitch làm nổi bật tính nhân văn và cá nhân hóa của trợ lý AI Tutor.' }
+      { name: 'Claude Pro (Quang/Lâm)', desc: 'Quang & Lâm lập trình thuật toán phân tích vết lỗi sai, định vị lỗ hổng kiến thức của học sinh.' },
+      { name: 'Claude Max 5x (Quân)', desc: 'Quân làm giao diện trắc nghiệm và trải nghiệm luyện tập tương tác cho AI Tutor.' }
     ],
     free: [
       { name: 'Google AI Studio (Gemini 1.5 Pro API)', desc: 'API sinh câu hỏi ôn luyện cá nhân hóa tự động RAG theo độ khó thích ứng.' },
@@ -183,7 +210,7 @@ export const trackAIDetails = {
     ],
     paid: [
       { name: 'Gamma App Pro ($15/tháng)', desc: 'Sinh slide giáo trình và slide pitch deck EdTech với thiết kế hiện đại, nhiều màu sắc.' },
-      { name: 'Cursor IDE Pro ($20/tháng)', desc: 'Hỗ trợ K.AI code nhanh thư viện vẽ bản đồ đồ thị Concept Map tương tác.' },
+      { name: 'Cursor IDE Pro ($20/tháng)', desc: 'Hỗ trợ Quân code nhanh thư viện vẽ bản đồ đồ thị Concept Map tương tác.' },
       { name: 'HeyGen ($24/tháng)', desc: 'Sinh giáo viên ảo AI (AI Teacher avatar) giảng dạy trực tiếp trong video demo bài học.' }
     ],
     githubRepos: [
@@ -193,8 +220,8 @@ export const trackAIDetails = {
   },
   'thien-tai': {
     owned: [
-      { name: 'Claude Max 5x (Gói dùng chung)', desc: 'Quân lập trình thuật toán Dijkstra tìm đường tránh điểm ngập; K.AI sinh giao diện bản đồ Mapbox.' },
-      { name: 'Gemini Advanced (K.AI)', desc: 'K.AI nghiên cứu dữ liệu địa hình sạt lở sườn dốc và mô hình khí tượng thủy văn.' }
+      { name: 'Claude Pro (K.AI)', desc: 'K.AI lập trình thuật toán Dijkstra tìm đường tránh điểm ngập trên Backend.' },
+      { name: 'Claude Max 5x (Quân)', desc: 'Quân sinh giao diện bản đồ Mapbox trực quan hiển thị lộ trình cứu trợ.' }
     ],
     free: [
       { name: 'Google AI Studio (Gemini 1.5 Pro Vision API)', desc: 'Phân tích ảnh vệ tinh địa hình để tính toán chỉ số rủi ro sạt lở hoặc ngập lụt.' },
@@ -216,8 +243,8 @@ export const trackAIDetails = {
   },
   'tai-chinh': {
     owned: [
-      { name: 'Claude Max 5x (Gói dùng chung)', desc: 'Quân viết thuật toán phân tích chuỗi thời gian phát hiện giao dịch bất thường; K.AI vẽ biểu đồ dòng tiền.' },
-      { name: 'Claude Pro (K.AI)', desc: 'K.AI viết tài liệu thuyết minh cơ chế bảo mật tài chính và quản trị rủi ro dữ liệu.' }
+      { name: 'Claude Pro (Quang/Lâm)', desc: 'Quang & Lâm viết thuật toán phân tích chuỗi thời gian phát hiện giao dịch bất thường (AI Core).' },
+      { name: 'Claude Max 5x (Quân)', desc: 'Quân vẽ biểu đồ dòng tiền và giao diện cảnh báo chi tiêu trực quan.' }
     ],
     free: [
       { name: 'Isolation Forest / PyOD (Local)', desc: 'Thư viện học máy mã nguồn mở chạy cục bộ phát hiện hành vi gian lận giao dịch.' },
