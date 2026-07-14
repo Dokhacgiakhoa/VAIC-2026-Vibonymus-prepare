@@ -41,10 +41,11 @@ export const roleCards = [
   {
     name: 'Lâm',
     colorVar: '--s7',
-    title: 'QA, Kiểm thử & Hậu cần',
+    title: 'QA, Kiểm thử & Hậu cần (Backup AI/CV & Web)',
     items: [
       { label: 'Chủ trì (70%)', text: 'Kiểm thử toàn hệ thống (QA), rà soát lỗi trước mỗi lần demo/checkpoint, chuẩn bị hậu cần đội trong 48h.' },
       { label: 'Hỗ trợ (30%)', text: 'Ghi chép AI Collaboration Log cùng K.AI, hỗ trợ chạy thử kịch bản demo trước giờ pitching.' },
+      { label: 'Nền tảng kỹ thuật thực tế (CV)', text: 'Sinh viên năm 3 CNTT ứng dụng (Trường Quốc tế - ĐHQGHN), có kinh nghiệm Machine Learning/Deep Learning/Computer Vision (PyTorch, OpenCV, YOLOv11, medical image segmentation — dự án U-Mamba trình bày tại ICISN 2026), Web Development (React, Vite), IoT (Raspberry Pi) và Network Security cơ bản (DNS, Zero Trust). Có thể backup Mai/Quang khi cần debug mô hình AI hoặc hỗ trợ K.AI về Frontend.' },
     ],
   },
 ];
