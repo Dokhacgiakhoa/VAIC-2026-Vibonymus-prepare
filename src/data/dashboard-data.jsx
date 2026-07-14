@@ -94,9 +94,9 @@ export const ganttDays = [
           { start: 8, duration: 1.5, title: 'Check-in', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 08:00-09:30', desc: 'Check-in và kích hoạt không gian sự kiện. Nhận túi quà thông qua thẻ QR code.', barClass: 'bar-s4' },
           { start: 9.5, duration: 1, title: 'Khai mạc', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 09:30-10:30', desc: 'Lễ khai mạc chính thức của VAIC 2026 tại hội trường NIC Hòa Lạc.', barClass: 'bar-s4' },
           { start: 11, duration: 0.5, title: 'Đề bài', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 11:00', desc: 'Công bộ 8 track thi đấu chính thức trên hệ thống. Đếm ngược 48h bắt đầu.', barClass: 'bar-s4' },
-          { start: 12, duration: 1, title: 'Genius St.', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 12:00', desc: 'Genius Station mở cửa hỗ trợ kỹ thuật xoay ca liên tục 48 giờ.', barClass: 'bar-s4' },
+          { start: 12, duration: 1, title: 'Ăn trưa', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 12:00-13:00', desc: 'Thực đơn: Cơm sườn, dưa chuột, trái cây theo mùa.', barClass: 'bar-meal' },
           { start: 16, duration: 1.5, title: 'Workshop', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 16:00-17:30', desc: 'Các workshop kỹ thuật nâng cao từ nhà tài trợ công nghệ.', barClass: 'bar-s4' },
-          { start: 18, duration: 1.5, title: 'Ăn tối', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 18:00-19:30', desc: 'Ăn tối tự chọn tại khu ẩm thực NIC.', barClass: 'bar-meal' },
+          { start: 18, duration: 1.5, title: 'Ăn tối', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 18:00-19:30', desc: 'Thực đơn: Cơm chiên Dương Châu, trứng ốp la, salad dưa chuột - cà chua, trái cây theo mùa.', barClass: 'bar-meal' },
           { start: 19.5, duration: 1.5, title: 'DJ Show', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 19:30-21:00', desc: 'Giao lưu DJ xả stress giữa các faction.', barClass: 'bar-s4' },
           { start: 21, duration: 3, title: 'Xuyên đêm', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 21:00-24:00', desc: 'Đêm code đầu tiên + Night Owl Stream từ Ban tổ chức.', barClass: 'bar-s4' }
         ]
@@ -195,11 +195,11 @@ export const ganttDays = [
         color: 'var(--s4)',
         bars: [
           { start: 0, duration: 5, title: 'Xuyên đêm', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 00:00-05:00', desc: 'Đêm code đầu tiên tiếp tục.', barClass: 'bar-s4' },
-          { start: 5, duration: 3, title: 'Ăn sáng', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 05:00-08:00', desc: 'Bữa sáng tự chọn tại NIC.', barClass: 'bar-meal' },
+          { start: 7.5, duration: 1, title: 'Ăn sáng', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 07:30-08:30', desc: 'Thực đơn: Bánh mì thập cẩm thịt.', barClass: 'bar-meal' },
           { start: 10, duration: 2, title: 'Checkpoint 1', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 10:00-12:00', desc: 'Nộp tên dự án và mô tả ngắn (bắt buộc).', barClass: 'bar-critical' },
-          { start: 12, duration: 1.5, title: 'Ăn trưa', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 12:00-13:30', desc: 'Bữa trưa nạp năng lượng.', barClass: 'bar-meal' },
+          { start: 12, duration: 1.5, title: 'Ăn trưa', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 12:00-13:30', desc: 'Thực đơn: Cơm gà kho, dưa chua, trái cây theo mùa.', barClass: 'bar-meal' },
           { start: 15, duration: 2, title: 'Mentor W1', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 15:00-17:00', desc: 'Mentor Wave 1 rà soát tại bàn các đội thi.', barClass: 'bar-s4' },
-          { start: 18, duration: 1.5, title: 'Ăn tối', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 18:00-19:30', desc: 'Bữa tối tự chọn.', barClass: 'bar-meal' },
+          { start: 18, duration: 1.5, title: 'Ăn tối', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 18:00-19:30', desc: 'Thực đơn: Cơm bò xào hoặc bò hầm tiêu.', barClass: 'bar-meal' },
           { start: 21, duration: 2, title: 'Checkpoint 2', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 21:00-23:00', desc: 'Nộp link GitHub Repo và live link (bắt buộc).', barClass: 'bar-critical' },
           { start: 23, duration: 1, title: 'Chăm sóc YT', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 23:00-24:00', desc: 'Đội ngũ y tế túc trực chăm sóc sức khoẻ.', barClass: 'bar-s4' }
         ]
@@ -304,9 +304,9 @@ export const ganttDays = [
         color: 'var(--s4)',
         bars: [
           { start: 0, duration: 4, title: 'Xuyên đêm', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 00:00-04:00', desc: 'Đêm code thứ hai chạy nước rút.', barClass: 'bar-s4' },
-          { start: 4, duration: 4, title: 'Ăn sáng', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 04:00-08:00', desc: 'Bữa sáng tại hội trường.', barClass: 'bar-meal' },
+          { start: 7.5, duration: 1, title: 'Ăn sáng', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 07:30-08:30', desc: 'Thực đơn: Xôi pate chả ruốc, dưa hành.', barClass: 'bar-meal' },
           { start: 8, duration: 3, title: 'Code Freeze', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 08:00-11:00', desc: '11:00 Đóng cổng nộp bài, khoá toàn bộ GitHub và live link.', barClass: 'bar-critical' },
-          { start: 11, duration: 2, title: 'Ăn trưa', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 11:00-13:00', desc: 'Ăn trưa tự chọn.', barClass: 'bar-meal' },
+          { start: 12, duration: 1, title: 'Ăn trưa', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 12:00-13:00', desc: 'Thực đơn: Hamburger, trái cây theo mùa.', barClass: 'bar-meal' },
           { start: 13, duration: 5, title: 'Demo prep', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 13:00-18:00', desc: 'Chuẩn bị không gian demo tại bàn thi.', barClass: 'bar-s4' },
           { start: 18, duration: 6, title: 'Pitch & Bế mạc', category: 'BTC · Sự kiện', timeLabel: 'Khung giờ: 18:00-24:00', desc: 'Pitching chính thức trước Hội đồng Giám khảo, công bố kết quả và Bế mạc.', barClass: 'bar-s4' }
         ]
