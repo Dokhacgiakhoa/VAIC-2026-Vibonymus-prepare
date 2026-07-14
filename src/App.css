@@ -22,6 +22,7 @@ html {
   --s5: #0ca678; /* ngọc     - Mai (AI/ML & Data) */
   --s6: #e03131; /* đỏ san hô - Quang (AI Agent & API/Security) */
   --s7: #868e96; /* xám      - Lâm (QA & Hậu cần) */
+  --s8: #d6336c; /* hồng đậm - Yến (PM/Business & Pitching support) */
   --s1-grad: linear-gradient(135deg, #ff922b, #f76707);
   --s2-grad: linear-gradient(135deg, #4dabf7, #1971c2);
   --s3-grad: linear-gradient(135deg, #69db7c, #2f9e44);
@@ -29,6 +30,7 @@ html {
   --s5-grad: linear-gradient(135deg, #38d9a9, #0ca678);
   --s6-grad: linear-gradient(135deg, #ff8787, #e03131);
   --s7-grad: linear-gradient(135deg, #adb5bd, #868e96);
+  --s8-grad: linear-gradient(135deg, #f06595, #d6336c);
   --good: #20c997;
   --warning: #f59f00;
   --critical: #f03e3e;

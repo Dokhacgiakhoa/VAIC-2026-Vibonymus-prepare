@@ -1,4 +1,4 @@
-export const philosophyNote = 'Team gồm 5 thành viên (theo hồ sơ đăng ký chính thức trên hub.aiforvietnam.org), mỗi người chủ trì mảng thế mạnh dựa trên kỹ năng thật và dùng AI tăng tốc, các thành viên còn lại hỗ trợ chéo để đảm bảo không ai bị cô lập.';
+export const philosophyNote = 'Team gồm 6 thành viên (5 người theo hồ sơ đăng ký chính thức trên hub.aiforvietnam.org, bổ sung Yến — chuyên PM/Business), mỗi người chủ trì mảng thế mạnh dựa trên kỹ năng thật và dùng AI tăng tốc, các thành viên còn lại hỗ trợ chéo để đảm bảo không ai bị cô lập.';
 
 export const roleCards = [
   {
@@ -48,9 +48,19 @@ export const roleCards = [
       { label: 'Nền tảng kỹ thuật thực tế (CV)', text: 'Sinh viên năm 3 CNTT ứng dụng (Trường Quốc tế - ĐHQGHN), có kinh nghiệm Machine Learning/Deep Learning/Computer Vision (PyTorch, OpenCV, YOLOv11, medical image segmentation — dự án U-Mamba trình bày tại ICISN 2026), Web Development (React, Vite), IoT (Raspberry Pi) và Network Security cơ bản (DNS, Zero Trust). Có thể backup Mai/Quang khi cần debug mô hình AI hoặc hỗ trợ K.AI về Frontend.' },
     ],
   },
+  {
+    name: 'Yến',
+    colorVar: '--s8',
+    title: 'Business Case, Market Validation & Pitching Support',
+    items: [
+      { label: 'Chủ trì (60%)', text: 'Xây dựng business case & market validation, phân tích tính khả thi kinh tế và mô hình kinh doanh của giải pháp — dựa trên kinh nghiệm Consulting Intern tại MCG Management Consulting (dự án digital transformation cho PVOIL, Canavi).' },
+      { label: 'Chủ trì (25%)', text: 'Đồng hành cùng K.AI xây dựng luận điểm pitch, chuẩn bị phần trả lời phản biện hội đồng giám khảo — dựa trên kinh nghiệm CMO tại CHITOFLOW (Quán quân Business Venture Challenge 2026, Á quân I Impact 2026) và nhiều cuộc thi business case khác.' },
+      { label: 'Hỗ trợ (15%)', text: 'Phối hợp K.AI theo dõi tiến độ chung (PM), hỗ trợ Lâm rà soát checklist nộp bài & hậu cần.' },
+    ],
+  },
 ];
 
-export const crossTableHeaders = ['Mốc thời gian phối hợp', 'K.AI (PM & Frontend)', 'Quân (Backend & DB)', 'Mai (AI/ML & Data)', 'Quang (AI Agent & API)', 'Lâm (QA & Hậu cần)'];
+export const crossTableHeaders = ['Mốc thời gian phối hợp', 'K.AI (PM & Frontend)', 'Quân (Backend & DB)', 'Mai (AI/ML & Data)', 'Quang (AI Agent & API)', 'Lâm (QA & Hậu cần)', 'Yến (Business & Pitching)'];
 
 export const crossTableRows = [
   { milestone: 'Nhận đề & Brainstorm (D1, 11:00-14:00)', cells: [
@@ -59,6 +69,7 @@ export const crossTableRows = [
     'Đánh giá nguồn dữ liệu/mô hình AI khả dụng cho track',
     'Phác thảo kiến trúc AI Agent & các API AI cần tích hợp',
     'Chuẩn bị checklist hậu cần, ghi chú brainstorm',
+    'Đánh giá tính khả thi kinh doanh & thị trường của từng hướng giải pháp, góp ý chọn track',
   ] },
   { milestone: 'Dựng Prototype sơ bộ (D1, 14:00-19:00)', cells: [
     'Soạn thảo kịch bản demo, outline slide pitch và dựng thiết kế giao diện',
@@ -66,6 +77,7 @@ export const crossTableRows = [
     'Xây dựng pipeline dữ liệu & thử nghiệm mô hình AI đầu tiên',
     'Dựng khung AI Agent, cấu hình kết nối LLM provider',
     'Kiểm thử sơ bộ luồng, ghi nhận lỗi ban đầu',
+    'Xây dựng business case sơ bộ, phác thảo luận điểm giá trị (value proposition)',
   ] },
   { milestone: 'Tích hợp Frontend & AI (D2, 09:00-15:00)', cells: [
     'Code giao diện React, kết nối API hiển thị, review bài thuyết trình với mentor',
@@ -73,6 +85,7 @@ export const crossTableRows = [
     'Tinh chỉnh mô hình/RAG theo phản hồi mentor',
     'Tích hợp Agent vào Backend, rà soát bảo mật API',
     'QA vòng 1: kiểm thử end-to-end, báo lỗi',
+    'Chuẩn bị nội dung thuyết minh mô hình kinh doanh, review cùng mentor Wave 2 (UX & kinh doanh)',
   ] },
   { milestone: 'Chuẩn bị Demo & Slide (D2, 16:00-21:00)', cells: [
     'Hoàn thiện giao diện FE mượt mà, tập dượt thuyết trình, hoàn thiện slide',
@@ -80,6 +93,7 @@ export const crossTableRows = [
     'Chốt độ chính xác AI, chuẩn bị số liệu minh chứng',
     'Kiểm thử tải & độ ổn định Agent trước demo',
     'QA vòng 2, hỗ trợ chạy thử kịch bản demo',
+    'Cùng K.AI hoàn thiện kịch bản pitch, chuẩn bị trả lời phản biện giám khảo',
   ] },
   { milestone: 'Đóng gói & Submit (D3, 07:00-11:00)', cells: [
     'Kiểm duyệt slides, quay demo video (≤5 phút), rehearsal bài pitching lần cuối',
@@ -87,6 +101,7 @@ export const crossTableRows = [
     'Hoàn thiện tài liệu mô tả mô hình/pipeline AI',
     'Rà soát bảo mật lần cuối trước khi nộp bài',
     'Kiểm tra checklist nộp bài đầy đủ, hậu cần rehearsal',
+    'Rà soát nội dung thuyết minh dự án, hỗ trợ rehearsal pitching lần cuối',
   ] },
 ];
 
