@@ -3,12 +3,14 @@ import Dashboard from './Dashboard';
 import Workflow from './Workflow';
 import Roles from './Roles';
 import AIResource from './AIResource';
+import Preparation from './Preparation';
 
 const SUB_TABS = [
   { id: 'gantt', label: 'Gantt' },
   { id: 'workflow', label: 'Workflow' },
   { id: 'roles', label: 'Thành viên' },
   { id: 'ai', label: 'AI Resource' },
+  { id: 'prep', label: 'Chuẩn bị' },
 ];
 
 const TeamPage = () => {
@@ -32,6 +34,7 @@ const TeamPage = () => {
       {subTab === 'workflow' && <Workflow />}
       {subTab === 'roles' && <Roles />}
       {subTab === 'ai' && <AIResource />}
+      {subTab === 'prep' && <Preparation />}
     </div>
   );
 };
