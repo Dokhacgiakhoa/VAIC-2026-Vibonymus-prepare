@@ -12,7 +12,7 @@ const MARGIN_X = OUTER_MARGIN + PHASE_RAIL_W + PHASE_RAIL_GAP;
 const LANE_W = 176;
 const LANE_GAP = 18;
 
-const KAI_W = 300;
+const KAI_W = 340;
 const KAI_H = 128;
 const GAP_KAI_TO_ROLE = 74;
 const ROLE_H = 164;
@@ -118,9 +118,9 @@ function WorkflowFlowchart({ roles, timelineSteps, syncCheckpoints }) {
                 </g>
                 <foreignObject x={SYNC_CX - KAI_W / 2 + 10} y={row.kaiY} width={KAI_W - 20} height={KAI_H}>
                   <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-                    <div style={{ height: '1.5882rem', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '0.78rem', fontWeight: 800 }}>
-                      <span>{kaiRole.name}</span>
-                      <span style={{ fontSize: '0.66rem', background: 'rgba(255,255,255,0.2)', padding: '0.0588rem 0.3529rem', borderRadius: '0.2353rem' }}>TECH LEAD</span>
+                    <div style={{ height: '1.5882rem', color: '#fff', display: 'flex', alignItems: 'center', gap: '0.3529rem', fontSize: '0.78rem', fontWeight: 800 }}>
+                      <span style={{ flex: 1, minWidth: 0, overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>{kaiRole.name}</span>
+                      <span style={{ flexShrink: 0, fontSize: '0.66rem', background: 'rgba(255,255,255,0.2)', padding: '0.0588rem 0.3529rem', borderRadius: '0.2353rem' }}>TECH LEAD</span>
                     </div>
                     <div style={{ flex: 1, padding: '0.4118rem 0', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '0.2353rem' }}>
                       <div style={{ fontSize: '0.8rem', color: 'var(--text-primary)', fontWeight: 700, lineHeight: 1.3 }}>{row.phase.tasks.kai}</div>

@@ -55,8 +55,8 @@ button, input, select, textarea { font-family: inherit; }
 
 .viz-root {
   padding: 1.4118rem 1.1765rem 5.8824rem;
-  width: 80%;
-  max-width: 94.1176rem;
+  width: 90%;
+  max-width: 110rem;
   margin: 0 auto;
 }
 @media (max-width: 75em) {
