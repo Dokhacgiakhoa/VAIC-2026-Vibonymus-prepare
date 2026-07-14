@@ -304,7 +304,7 @@ h2 svg { width: 1.2941rem; height: 1.2941rem; color: var(--theme-color); flex-sh
 .badge-next { background: var(--good); color: #fff; }
 
 /* Roles Cards */
-.roles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(15.2941rem, 1fr)); gap: 0.9412rem; }
+.roles-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.9412rem; }
 .role-card { 
   border: 1px solid rgba(90, 73, 204, 0.1); 
   border-top: 1px solid rgba(255, 255, 255, 0.4);
@@ -693,7 +693,7 @@ ul.checklist li b { color: var(--text-primary); }
 /* AI Requirements Tool Cards */
 .tool-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15.2941rem, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.1765rem;
   margin-top: 0.9412rem;
 }
@@ -874,7 +874,9 @@ ul.checklist li b { color: var(--text-primary); }
 /* ============ Responsive breakpoints (tablet & mobile) ============ */
 /* Tablet: co grid nhiều cột lại còn 2 cột, giảm padding tổng thể. */
 @media (max-width: 56.25em) {
-  .grid-3 {
+  .grid-3,
+  .roles-grid,
+  .tool-grid {
     grid-template-columns: repeat(2, 1fr);
   }
   .grid-split {
