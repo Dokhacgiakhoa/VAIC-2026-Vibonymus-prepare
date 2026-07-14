@@ -118,8 +118,9 @@ const Dashboard = () => {
           <div className="legend-item"><span className="legend-dot" style={{ background: 'var(--s6)' }}></span> Quang · AI Core &amp; Security</div>
           <div className="legend-item"><span className="legend-dot" style={{ background: 'var(--s7)' }}></span> Lâm · AI Core &amp; Security</div>
           <div className="legend-item"><span className="legend-dot" style={{ background: 'var(--s8)' }}></span> Yến · Business &amp; Pitching</div>
+          <div className="legend-item"><span className="legend-dot" style={{ background: 'var(--warning)' }}></span> ⚡ Reset giới hạn AI (mỗi 5h)</div>
         </div>
-        <div className="note">Ô mờ (opacity thấp) là khung nghỉ ngơi luân phiên — điều chỉnh theo thể trạng thực tế, luôn đảm bảo ít nhất 1 người thức khi cần xử lý sự cố.</div>
+        <div className="note">Ô mờ (opacity thấp) là khung nghỉ ngơi luân phiên — điều chỉnh theo thể trạng thực tế, luôn đảm bảo ít nhất 1 người thức khi cần xử lý sự cố. Hàng "Reset AI" đánh dấu mốc giới hạn sử dụng Claude Pro/Max 5x/Gemini Pro làm mới theo chu kỳ rolling 5 giờ (anchor 11:00 ngày 17/07) — tranh thủ hỏi dồn câu hỏi phức tạp ngay sau mỗi mốc.</div>
       </div>
 
       {/* SCORING CRITERIA */}

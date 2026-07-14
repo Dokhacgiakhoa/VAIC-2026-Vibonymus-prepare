@@ -1,5 +1,38 @@
 import React from 'react';
 
+// Giới hạn sử dụng AI (Claude Pro/Max, Gemini Pro) làm mới theo chu kỳ rolling 5 giờ,
+// tính từ mốc 11:00 ngày 17/07 (giờ BTC công bố đề, bắt đầu đếm ngược 48h).
+// Giờ trong mảng là giờ tại chỗ của MỖI ngày (0-24), khớp với "start" của bar trong ngày đó.
+const AI_RESET_HOURS_BY_DAY = [
+  [16, 21],
+  [2, 7, 12, 17, 22],
+  [3, 8, 13, 18, 23],
+];
+
+function aiResetBars(dayIdx, ownerLabel, toolLabel) {
+  return AI_RESET_HOURS_BY_DAY[dayIdx].map((h) => ({
+    start: h,
+    duration: 0.4,
+    title: '⚡ Reset',
+    category: `${ownerLabel} · Giới hạn AI`,
+    timeLabel: `Khung giờ: ${String(h).padStart(2, '0')}:00`,
+    desc: `Cửa sổ sử dụng ${toolLabel} làm mới (rolling 5 giờ, tính từ 11:00 17/07). Tranh thủ hỏi dồn các câu phức tạp ngay sau mốc này.`,
+    barClass: 'bar-ai-reset',
+  }));
+}
+
+function sharedAiResetBars(dayIdx) {
+  return AI_RESET_HOURS_BY_DAY[dayIdx].map((h) => ({
+    start: h,
+    duration: 0.4,
+    title: '⚡ Reset',
+    category: 'Cả team · Giới hạn AI',
+    timeLabel: `Khung giờ: ${String(h).padStart(2, '0')}:00`,
+    desc: 'Mốc làm mới giới hạn sử dụng chung cho cả 6 tài khoản AI (Claude Pro/Max 5x, Gemini Pro) — anchor 11:00 17/07, lặp lại mỗi 5 giờ.',
+    barClass: 'bar-ai-reset',
+  }));
+}
+
 export const scoringCriteria = [
   {
     id: 1,
@@ -103,6 +136,12 @@ export const ganttDays = [
         ]
       },
       {
+        roleKey: 'ai-reset-all',
+        roleLabel: 'Cửa sổ reset AI chung',
+        color: 'var(--warning)',
+        bars: sharedAiResetBars(0)
+      },
+      {
         roleKey: 'kai',
         roleLabel: 'K.AI',
         color: 'var(--s1)',
@@ -114,6 +153,12 @@ export const ganttDays = [
           { start: 18, duration: 1.5, title: 'Ăn tối', category: 'K.AI · PM & Backend', timeLabel: 'Khung giờ: 18:00-19:30', desc: 'Ăn tối nạp năng lượng.', barClass: 'bar-meal' },
           { start: 19.5, duration: 4.5, title: 'API Endpoints', category: 'K.AI · PM & Backend', timeLabel: 'Khung giờ: 19:30-24:00', desc: 'Viết core controllers, dựng API mock data để test chéo.', barClass: 'bar-s1' }
         ]
+      },
+      {
+        roleKey: 'kai-reset',
+        roleLabel: 'K.AI · Reset AI',
+        color: 'var(--warning)',
+        bars: aiResetBars(0, 'K.AI', 'Claude Pro')
       },
       {
         roleKey: 'quan',
@@ -129,6 +174,12 @@ export const ganttDays = [
         ]
       },
       {
+        roleKey: 'quan-reset',
+        roleLabel: 'Quân · Reset AI',
+        color: 'var(--warning)',
+        bars: aiResetBars(0, 'Quân', 'Claude Max 5x')
+      },
+      {
         roleKey: 'mai',
         roleLabel: 'Mai',
         color: 'var(--s5)',
@@ -140,6 +191,12 @@ export const ganttDays = [
           { start: 18, duration: 1.5, title: 'Ăn tối', category: 'Mai · QC & Hiệu suất', timeLabel: 'Khung giờ: 18:00-19:30', desc: 'Ăn tối.', barClass: 'bar-meal' },
           { start: 19.5, duration: 4.5, title: 'Test Scripts', category: 'Mai · QC & Hiệu suất', timeLabel: 'Khung giờ: 19:30-24:00', desc: 'Viết các test script tự động để kiểm tra API JSON contract.', barClass: 'bar-s5' }
         ]
+      },
+      {
+        roleKey: 'mai-reset',
+        roleLabel: 'Mai · Reset AI',
+        color: 'var(--warning)',
+        bars: aiResetBars(0, 'Mai', 'Gemini Pro')
       },
       {
         roleKey: 'quang',
@@ -155,6 +212,12 @@ export const ganttDays = [
         ]
       },
       {
+        roleKey: 'quang-reset',
+        roleLabel: 'Quang · Reset AI',
+        color: 'var(--warning)',
+        bars: aiResetBars(0, 'Quang', 'Claude Pro')
+      },
+      {
         roleKey: 'lam',
         roleLabel: 'Lâm',
         color: 'var(--s7)',
@@ -168,6 +231,12 @@ export const ganttDays = [
         ]
       },
       {
+        roleKey: 'lam-reset',
+        roleLabel: 'Lâm · Reset AI',
+        color: 'var(--warning)',
+        bars: aiResetBars(0, 'Lâm', 'Claude Pro')
+      },
+      {
         roleKey: 'yen',
         roleLabel: 'Yến',
         color: 'var(--s8)',
@@ -179,6 +248,12 @@ export const ganttDays = [
           { start: 18, duration: 1.5, title: 'Ăn tối', category: 'Yến · Business & Pitching', timeLabel: 'Khung giờ: 18:00-19:30', desc: 'Ăn tối.', barClass: 'bar-meal' },
           { start: 19.5, duration: 4.5, title: 'Market Research', category: 'Yến · Business & Pitching', timeLabel: 'Khung giờ: 19:30-24:00', desc: 'Nghiên cứu thị trường và đối thủ để đưa số liệu vào slide.', barClass: 'bar-s8' }
         ]
+      },
+      {
+        roleKey: 'yen-reset',
+        roleLabel: 'Yến · Reset AI',
+        color: 'var(--warning)',
+        bars: aiResetBars(0, 'Yến', 'Gemini Pro')
       }
     ]
   },
@@ -206,6 +281,12 @@ export const ganttDays = [
         ]
       },
       {
+        roleKey: 'ai-reset-all',
+        roleLabel: 'Cửa sổ reset AI chung',
+        color: 'var(--warning)',
+        bars: sharedAiResetBars(1)
+      },
+      {
         roleKey: 'kai',
         roleLabel: 'K.AI',
         color: 'var(--s1)',
@@ -218,6 +299,12 @@ export const ganttDays = [
           { start: 18, duration: 1.5, title: 'Ăn tối', category: 'K.AI · PM & Backend', timeLabel: 'Khung giờ: 18:00-19:30', desc: 'Ăn tối.', barClass: 'bar-meal' },
           { start: 19.5, duration: 4.5, title: 'API Integration', category: 'K.AI · PM & Backend', timeLabel: 'Khung giờ: 19:30-24:00', desc: 'Tích hợp AI service endpoints, rà soát bảo mật SQL.', barClass: 'bar-s1' }
         ]
+      },
+      {
+        roleKey: 'kai-reset',
+        roleLabel: 'K.AI · Reset AI',
+        color: 'var(--warning)',
+        bars: aiResetBars(1, 'K.AI', 'Claude Pro')
       },
       {
         roleKey: 'quan',
@@ -234,6 +321,12 @@ export const ganttDays = [
         ]
       },
       {
+        roleKey: 'quan-reset',
+        roleLabel: 'Quân · Reset AI',
+        color: 'var(--warning)',
+        bars: aiResetBars(1, 'Quân', 'Claude Max 5x')
+      },
+      {
         roleKey: 'mai',
         roleLabel: 'Mai',
         color: 'var(--s5)',
@@ -246,6 +339,12 @@ export const ganttDays = [
           { start: 18, duration: 1.5, title: 'Ăn tối', category: 'Mai · QC & Hiệu suất', timeLabel: 'Khung giờ: 18:00-19:30', desc: 'Ăn tối.', barClass: 'bar-meal' },
           { start: 19.5, duration: 4.5, title: 'Trace logs', category: 'Mai · QC & Hiệu suất', timeLabel: 'Khung giờ: 19:30-24:00', desc: 'Soát log lỗi, tổng hợp hiệu năng API gửi K.AI tối ưu.', barClass: 'bar-s5' }
         ]
+      },
+      {
+        roleKey: 'mai-reset',
+        roleLabel: 'Mai · Reset AI',
+        color: 'var(--warning)',
+        bars: aiResetBars(1, 'Mai', 'Gemini Pro')
       },
       {
         roleKey: 'quang',
@@ -262,6 +361,12 @@ export const ganttDays = [
         ]
       },
       {
+        roleKey: 'quang-reset',
+        roleLabel: 'Quang · Reset AI',
+        color: 'var(--warning)',
+        bars: aiResetBars(1, 'Quang', 'Claude Pro')
+      },
+      {
         roleKey: 'lam',
         roleLabel: 'Lâm',
         color: 'var(--s7)',
@@ -276,6 +381,12 @@ export const ganttDays = [
         ]
       },
       {
+        roleKey: 'lam-reset',
+        roleLabel: 'Lâm · Reset AI',
+        color: 'var(--warning)',
+        bars: aiResetBars(1, 'Lâm', 'Claude Pro')
+      },
+      {
         roleKey: 'yen',
         roleLabel: 'Yến',
         color: 'var(--s8)',
@@ -288,6 +399,12 @@ export const ganttDays = [
           { start: 18, duration: 1.5, title: 'Ăn tối', category: 'Yến · Business & Pitching', timeLabel: 'Khung giờ: 18:00-19:30', desc: 'Ăn tối.', barClass: 'bar-meal' },
           { start: 19.5, duration: 4.5, title: 'Slide design sync', category: 'Yến · Business & Pitching', timeLabel: 'Khung giờ: 19:30-24:00', desc: 'Đồng bộ hóa giao diện slide với CSS palette của Quân.', barClass: 'bar-s8' }
         ]
+      },
+      {
+        roleKey: 'yen-reset',
+        roleLabel: 'Yến · Reset AI',
+        color: 'var(--warning)',
+        bars: aiResetBars(1, 'Yến', 'Gemini Pro')
       }
     ]
   },
@@ -313,6 +430,12 @@ export const ganttDays = [
         ]
       },
       {
+        roleKey: 'ai-reset-all',
+        roleLabel: 'Cửa sổ reset AI chung',
+        color: 'var(--warning)',
+        bars: sharedAiResetBars(2)
+      },
+      {
         roleKey: 'kai',
         roleLabel: 'K.AI',
         color: 'var(--s1)',
@@ -324,6 +447,12 @@ export const ganttDays = [
           { start: 13, duration: 5, title: 'Q&A Practice', category: 'K.AI · PM & Backend', timeLabel: 'Khung giờ: 13:00-18:00', desc: 'Tập trả lời phản biện cùng Yến, rà soát lại log AI.', barClass: 'bar-s1' },
           { start: 18, duration: 6, title: 'Pitch Support', category: 'K.AI · PM & Backend', timeLabel: 'Khung giờ: 18:00-24:00', desc: 'Hỗ trợ Yến trả lời các câu hỏi sâu về kỹ thuật của BGK.', barClass: 'bar-s1' }
         ]
+      },
+      {
+        roleKey: 'kai-reset',
+        roleLabel: 'K.AI · Reset AI',
+        color: 'var(--warning)',
+        bars: aiResetBars(2, 'K.AI', 'Claude Pro')
       },
       {
         roleKey: 'quan',
@@ -339,6 +468,12 @@ export const ganttDays = [
         ]
       },
       {
+        roleKey: 'quan-reset',
+        roleLabel: 'Quân · Reset AI',
+        color: 'var(--warning)',
+        bars: aiResetBars(2, 'Quân', 'Claude Max 5x')
+      },
+      {
         roleKey: 'mai',
         roleLabel: 'Mai',
         color: 'var(--s5)',
@@ -350,6 +485,12 @@ export const ganttDays = [
           { start: 13, duration: 5, title: 'Metric logs', category: 'Mai · QC & Hiệu suất', timeLabel: 'Khung giờ: 13:00-18:00', desc: 'Trích xuất logs thời gian phản hồi, tỉ lệ chính xác để chèn slide.', barClass: 'bar-s5' },
           { start: 18, duration: 6, title: 'Pitch support', category: 'Mai · QC & Hiệu suất', timeLabel: 'Khung giờ: 18:00-24:00', desc: 'Cung cấp số liệu kiểm thử thực tế nếu BGK hỏi sâu.', barClass: 'bar-s5' }
         ]
+      },
+      {
+        roleKey: 'mai-reset',
+        roleLabel: 'Mai · Reset AI',
+        color: 'var(--warning)',
+        bars: aiResetBars(2, 'Mai', 'Gemini Pro')
       },
       {
         roleKey: 'quang',
@@ -365,6 +506,12 @@ export const ganttDays = [
         ]
       },
       {
+        roleKey: 'quang-reset',
+        roleLabel: 'Quang · Reset AI',
+        color: 'var(--warning)',
+        bars: aiResetBars(2, 'Quang', 'Claude Pro')
+      },
+      {
         roleKey: 'lam',
         roleLabel: 'Lâm',
         color: 'var(--s7)',
@@ -378,6 +525,12 @@ export const ganttDays = [
         ]
       },
       {
+        roleKey: 'lam-reset',
+        roleLabel: 'Lâm · Reset AI',
+        color: 'var(--warning)',
+        bars: aiResetBars(2, 'Lâm', 'Claude Pro')
+      },
+      {
         roleKey: 'yen',
         roleLabel: 'Yến',
         color: 'var(--s8)',
@@ -389,6 +542,12 @@ export const ganttDays = [
           { start: 13, duration: 5, title: 'Rehearsal Q&A', category: 'Yến · Business & Pitching', timeLabel: 'Khung giờ: 13:00-18:00', desc: 'Tổng duyệt pitching, chạy thử Q&A cùng cả team.', barClass: 'bar-s8' },
           { start: 18, duration: 6, title: 'Pitching Day', category: 'Yến · Business & Pitching', timeLabel: 'Khung giờ: 18:00-24:00', desc: 'Pitching chính thức trước BGK và bế mạc.', barClass: 'bar-s8' }
         ]
+      },
+      {
+        roleKey: 'yen-reset',
+        roleLabel: 'Yến · Reset AI',
+        color: 'var(--warning)',
+        bars: aiResetBars(2, 'Yến', 'Gemini Pro')
       }
     ]
   }

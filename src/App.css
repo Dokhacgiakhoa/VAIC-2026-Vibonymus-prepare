@@ -283,6 +283,7 @@ h2 svg { width: 1.2941rem; height: 1.2941rem; color: var(--theme-color); flex-sh
 .bar-s8 { background: var(--s8-grad); }
 .bar-critical { background: linear-gradient(135deg, var(--critical), #ff6b6b); }
 .bar-meal { background: linear-gradient(135deg, #868e96, #adb5bd); color: #fff; }
+.bar-ai-reset { background: linear-gradient(135deg, var(--warning), #ffd43b); color: #1a1a19; font-weight: 800; }
 .bar-rest { background: linear-gradient(135deg, #868e96, #adb5bd); color: #fff; }
 .bar-wrapper.past .bar-rest {
   background: linear-gradient(135deg, #868e96, #adb5bd) !important;
