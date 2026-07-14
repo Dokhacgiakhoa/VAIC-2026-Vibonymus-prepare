@@ -93,7 +93,7 @@ const Tracks = () => {
         'Viết script Python/NodeJS tự động trích xuất thông tin đối thủ cạnh tranh từ các trang công nghệ.'
       ],
       swot: {
-        s: 'Ý tưởng mở, cho phép team tự do sáng tạo công nghệ và thiết kế UI/UX theo sở trường của Hiếu.',
+        s: 'Ý tưởng mở, cho phép team tự do sáng tạo công nghệ và thiết kế UI/UX theo sở trường của K.AI.',
         w: 'Khó chứng minh chiều sâu kỹ thuật cốt lõi (AI defensibility) thực sự đột phá trước hội đồng giám khảo.',
         o: 'Dễ gây ấn tượng mạnh về tính sáng tạo nghệ thuật hoặc mô hình kinh doanh độc đáo, thu hút nhà tài trợ.',
         t: 'Rất nhiều đội thi lựa chọn đề tài này dẫn đến rủi ro bị trùng lặp ý tưởng chung chung, thiếu thực tế.'
@@ -146,14 +146,14 @@ const Tracks = () => {
         'Viết SQL Generator Agent tự động chuyển hóa ngôn ngữ tự nhiên thành câu lệnh truy vấn CSDL kho hàng Postgres.'
       ],
       swot: {
-        s: 'Đồng bộ tuyệt đối với kỹ năng backend/Postgres DB của Quân và khả năng thiết kế UI/UX thực tế, trực quan của Hiếu.',
+        s: 'Đồng bộ tuyệt đối với kỹ năng backend/Postgres DB của Quân và khả năng thiết kế UI/UX thực tế, trực quan của K.AI.',
         w: 'Cần tích hợp rất nhiều nghiệp vụ kết nối API giả lập (CRM, Slack, email) trong khoảng thời gian ngắn.',
         o: 'Thị trường doanh nghiệp SME cực kỳ lớn, tính ứng dụng thực tế và khả năng thương mại hóa sản phẩm rất cao.',
         t: 'Độ cạnh tranh khốc liệt nhất giải đấu do tỷ lệ lớn các đội thi kỹ thuật lựa chọn đề tài thực tế này.'
       },
       tech: 'Multi-Agent Frameworks (LangGraph, CrewAI), RAG trên tài liệu doanh nghiệp, Automation Tooling (Make/Zapier).',
       challenge: 'Cần thiết kế UI/UX cực kỳ đơn giản để chủ doanh nghiệp không rành công nghệ có thể sử dụng dễ dàng.',
-      recommendation: 'Nằm trong Phương án 1 (Thế mạnh). Tận dụng tối đa năng lực làm backend/database của Quân và frontend UX của Hiếu.'
+      recommendation: 'Nằm trong Phương án 1 (Thế mạnh). Tận dụng tối đa năng lực làm backend/database của Quân và frontend UX của K.AI.'
     },
     {
       id: 'chinh-phu-so',
@@ -439,7 +439,7 @@ const Tracks = () => {
             <p style={{ margin: 0, fontSize: '0.84rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
               <b>Nhóm mục tiêu:</b> Năng Suất Doanh Nghiệp (SME) hoặc Giáo Dục.
               <br />
-              <b>Ưu điểm:</b> Tận dụng tối đa thế mạnh xử lý Backend/Database Postgres của Quân và khả năng thiết kế UI/UX giao diện mượt mà của Hiếu để dựng sản phẩm mẫu (MVP) hoàn chỉnh, trực quan nhất trong 48h.
+              <b>Ưu điểm:</b> Tận dụng tối đa thế mạnh xử lý Backend/Database Postgres của Quân và khả năng thiết kế UI/UX giao diện mượt mà của K.AI để dựng sản phẩm mẫu (MVP) hoàn chỉnh, trực quan nhất trong 48h.
               <br />
               <b>Thách thức:</b> Số lượng đối thủ cạnh tranh trực tiếp sẽ rất lớn (dự kiến chiếm &gt;80% số đội thi theo thống kê).
             </p>
@@ -696,7 +696,7 @@ const Tracks = () => {
                   <div className="meta-card" style={{ display: 'flex', flexDirection: 'column', gap: '8px', padding: '14px', background: 'var(--surface-page)' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', borderBottom: '1px solid var(--border)', paddingBottom: '6px' }}>
                       <Layout size={14} style={{ color: 'var(--s3)' }} />
-                      <span style={{ fontWeight: 800, fontSize: '0.82rem', color: 'var(--s3)' }}>Hiếu (Frontend)</span>
+                      <span style={{ fontWeight: 800, fontSize: '0.82rem', color: 'var(--s3)' }}>K.AI (Frontend)</span>
                     </div>
                     <div style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
                       <ul style={{ paddingLeft: '14px', margin: 0, display: 'flex', flexDirection: 'column', gap: '6px' }}>

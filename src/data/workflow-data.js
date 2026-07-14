@@ -3,11 +3,11 @@ import { GitBranch, MessageCircle, Users } from 'lucide-react';
 export const roles = [
   { key: 'kai', name: 'K.AI — PM / AI Engineer', aiTool: 'Claude Pro + 2x Gemini Pro', color: 'var(--s1)' },
   { key: 'quan', name: 'Quân — Backend / DB', aiTool: 'Claude Max 5x', color: 'var(--s2)' },
-  { key: 'hieu', name: 'Hiếu — Frontend / UX', aiTool: 'Claude Max 5x', color: 'var(--s3)' }
+  { key: 'hieu', name: 'K.AI — Frontend / UX', aiTool: 'Claude Max 5x', color: 'var(--s3)' }
 ];
 
 export const syncCheckpoints = [
-  'Cả 3 xác nhận API contract & wireframe trước khi tách nhánh code song song.',
+  'Cả team xác nhận API contract & wireframe trước khi tách nhánh code song song.',
   'Demo nội bộ giữa chặng — Backend & Frontend ghép thử, báo lỗi tức thời để chỉnh.',
   'Đánh giá chéo UI/UX và độ chính xác AI, phản hồi 2 chiều trước khi khoá tính năng.',
   'Kiểm thử toàn hệ thống, phản hồi bug ngay lập tức, chốt bản build cuối để pitching.'
@@ -31,34 +31,34 @@ export const timelineSteps = [
     tasks: [
       'K.AI: Phân tích kỹ lưỡng đề bài Hackathon, phác thảo User Personas và Core User Journey.',
       'Quân: Cấu hình repo GitHub của team, phân quyền bảo mật, thiết lập CI/CD framework cơ sở.',
-      'Hiếu: Thiết lập thư mục dự án React, cài đặt font chữ và cấu hình hệ thống style tokens.'
+      'K.AI: Thiết lập thư mục dự án React, cài đặt font chữ và cấu hình hệ thống style tokens.'
     ],
     checklist: [
-      'Chốt xong tài liệu đặc tả API Contract (Swagger/Markdown) giữa Quân & Hiếu.',
+      'Chốt xong tài liệu đặc tả API Contract (Swagger/Markdown) giữa Quân & K.AI.',
       'Khởi tạo thành công Database trống trên PostgreSQL Cloud, test kết nối port ok.',
       'K.AI duyệt Figma Wireframe / Sketch giao diện chính cho Dashboard.'
     ],
-    plan: '11:00 BTC công bố đề -> 11:30 K.AI hoàn tất PRD nháp -> 12:30 Quân & Hiếu chốt API Contract -> 14:00 Hoàn tất khung thiết kế.'
+    plan: '11:00 BTC công bố đề -> 11:30 K.AI hoàn tất PRD nháp -> 12:30 Quân & K.AI chốt API Contract -> 14:00 Hoàn tất khung thiết kế.'
   },
   {
     time: 'Giờ 5 - Giờ 24',
     phase: 'Tăng tốc Phát triển (Giai đoạn 1)',
     title: 'Xây dựng Core Logic & Giao diện cơ bản',
-    desc: 'Quân và Hiếu bắt tay vào code các phần cốt lõi của hệ thống dưới sự hỗ trợ của các trợ lý AI chuyên biệt.',
+    desc: 'Quân và K.AI bắt tay vào code các phần cốt lõi của hệ thống dưới sự hỗ trợ của các trợ lý AI chuyên biệt.',
     kai: 'Xây dựng core AI engine (tích hợp API, thiết lập prompt cho Agent, cấu hình Vector DB/RAG).',
     quan: 'Thiết lập server Backend, viết API endpoints kết nối DB, tạo dữ liệu mock để test chéo.',
     hieu: 'Code khung giao diện React, cấu trúc các component dùng chung và kết nối state.',
     tasks: [
       'K.AI: Viết service kết nối GPT/Gemini API, cấu hình Vector Database (Pinecone/Milvus).',
       'Quân: Hoàn thiện Authentication API, viết các CRUD endpoints cho các nghiệp vụ chính (Tracks, Competitors).',
-      'Hiếu: Code giao diện Dashboard chính, trang chi tiết Tracks và so sánh đối thủ.'
+      'K.AI: Code giao diện Dashboard chính, trang chi tiết Tracks và so sánh đối thủ.'
     ],
     checklist: [
       'Backend chạy thử local thành công và phản hồi API đúng cấu trúc JSON.',
       'Frontend hiển thị được dữ liệu mock từ local API không bị lỗi UI.',
       'AI Engine trả về phản hồi đầu tiên qua Swagger UI với độ trễ thấp.'
     ],
-    plan: 'Mỗi 4 tiếng commit code 1 lần -> 20:00 Demo chặng 1 (giữa giờ) -> K.AI kiểm tra AI service -> Quân & Hiếu ghép thử API lần 1.'
+    plan: 'Mỗi 4 tiếng commit code 1 lần -> 20:00 Demo chặng 1 (giữa giờ) -> K.AI kiểm tra AI service -> Quân & K.AI ghép thử API lần 1.'
   },
   {
     time: 'Giờ 25 - Giờ 36',
@@ -71,7 +71,7 @@ export const timelineSteps = [
     tasks: [
       'K.AI: Thiết lập bộ test prompt tự động, đánh giá chất lượng đầu ra của Agent, tinh chỉnh hệ số Temperature.',
       'Quân: Tích hợp Redis cache cho các API tải nặng, cấu hình HTTPS và bảo mật API đầu vào.',
-      'Hiếu: Thiết kế các biểu đồ tương tác, thêm các hiệu ứng chuyển trang động và micro-animations.'
+      'K.AI: Thiết kế các biểu đồ tương tác, thêm các hiệu ứng chuyển trang động và micro-animations.'
     ],
     checklist: [
       'Hoàn tất tích hợp AI vào API chính của hệ thống, không bị nghẽn mạng.',
@@ -87,11 +87,11 @@ export const timelineSteps = [
     desc: 'Đảm bảo sản phẩm chạy ổn định 100% và chuẩn bị kịch bản thuyết trình ấn tượng nhất.',
     kai: 'Quay video demo sản phẩm (2-3 phút), hoàn thiện slide thuyết trình và luyện tập pitching.',
     quan: 'Kiểm thử hộp đen (Black-box testing) toàn bộ hệ thống, chuẩn bị file backup database.',
-    hieu: 'Đánh bóng giao diện lần cuối, hỗ trợ K.AI thiết kế slide thuyết trình đồng bộ thương hiệu.',
+    hieu: 'Đánh bóng giao diện lần cuối, đồng bộ thiết kế slide thuyết trình với thương hiệu sản phẩm.',
     tasks: [
       'K.AI: Biên soạn kịch bản pitching 5 phút, chuẩn bị bộ câu hỏi Q&A phản biện của giám khảo.',
       'Quân: Deploy ứng dụng lên Vercel/Render, nén backup database, chạy kiểm tra tải giả lập.',
-      'Hiếu: Kiểm tra tất cả link gãy, tối ưu asset hình ảnh/video demo, kiểm tra font chữ.'
+      'K.AI: Kiểm tra tất cả link gãy, tối ưu asset hình ảnh/video demo, kiểm tra font chữ.'
     ],
     checklist: [
       'Deploy production thành công, link demo chạy ổn định không có lỗi vặt.',
@@ -107,7 +107,7 @@ export const aiCollaborationFlow = [
     role: 'K.AI (PM / AI Engineer)',
     aiTool: 'Claude Pro + 2x Gemini Pro',
     usage: 'Brainstorm kiến trúc hệ thống, phân tích tài liệu kỹ thuật phức tạp, thiết lập logic cho AI Agents và tinh chỉnh prompt (System Prompt Engineering).',
-    collaboration: 'Đầu ra là PRD chuẩn, file đặc tả API cho Quân và tài liệu hướng dẫn UX cho Hiếu.',
+    collaboration: 'Đầu ra là PRD chuẩn và file đặc tả API để thống nhất với Quân trước khi bắt tay code.',
     tasks: [
       'Dùng Gemini Pro tóm tắt đề bài và phát hiện các rủi ro kỹ thuật ẩn.',
       'Dùng Claude Pro sinh code khởi tạo System Prompt & định hướng cho RAG agent.',
@@ -124,7 +124,7 @@ export const aiCollaborationFlow = [
     role: 'Quân (Backend / DB)',
     aiTool: 'Claude Max 5x (Dùng chung)',
     usage: 'Thiết kế cấu trúc bảng cơ sở dữ liệu tối ưu, sinh các truy vấn SQL phức tạp, tạo dữ liệu mockup tự động phục vụ kiểm thử nhanh hệ thống.',
-    collaboration: 'Cung cấp API endpoints ổn định và mock data chuẩn xác cho Hiếu kết nối giao diện.',
+    collaboration: 'Cung cấp API endpoints ổn định và mock data chuẩn xác cho K.AI kết nối giao diện.',
     tasks: [
       'Dùng Claude Max sinh các migration scripts SQL cho database.',
       'Tạo API Controller & Service lớp cơ sở chỉ qua prompt cấu trúc dữ liệu.',
@@ -138,7 +138,7 @@ export const aiCollaborationFlow = [
     feedbackLoop: 'Nếu API chạy lỗi -> Quân chuyển stack trace lỗi cho AI để sinh bản vá (Bug-fixing Prompt), sau đó review lại sự tương thích logic trước khi commit.'
   },
   {
-    role: 'Hiếu (Frontend / UX)',
+    role: 'K.AI (Frontend / UX)',
     aiTool: 'Claude Max 5x',
     usage: 'Sinh nhanh mã nguồn CSS/React mượt mà, gợi ý các hiệu ứng vi-mô (micro-animations), hỗ trợ sửa lỗi tương tác giao diện thời gian thực.',
     collaboration: 'Biến các mock data của Quân thành những trang dashboard trực quan sinh động nhất.',
@@ -152,6 +152,6 @@ export const aiCollaborationFlow = [
       'Code React không bị re-render vô hạn do sử dụng useEffect sai cách.',
       'Layout linh hoạt (flex/grid) không bị tràn hoặc vỡ khung hình ở màn hình nhỏ.'
     ],
-    feedbackLoop: 'Nếu giao diện vỡ trên Mobile -> Hiếu chụp màn hình / copy HTML gửi cho AI phân tích nguyên nhân và lấy mã CSS thay thế nhanh chóng.'
+    feedbackLoop: 'Nếu giao diện vỡ trên Mobile -> K.AI chụp màn hình / copy HTML gửi cho AI phân tích nguyên nhân và lấy mã CSS thay thế nhanh chóng.'
   }
 ];

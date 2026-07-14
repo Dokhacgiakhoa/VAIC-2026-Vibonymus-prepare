@@ -104,7 +104,7 @@ const Awards = () => {
         <div>
           <h3 style={{ margin: '0 0 6px 0', fontSize: '0.98rem', fontWeight: 700, color: 'var(--good)' }}>Mục tiêu của team Vibonymus</h3>
           <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
-            Để cạnh tranh sòng phẳng với các đội thi top đầu, chúng ta bắt buộc phải tối ưu hóa cả hai yếu tố: **Kỹ thuật chiều sâu (AI Engineering)** do K.AI phụ trách và **Trải nghiệm AI-Native UX** do Hiếu thiết kế. Quân sẽ liên kết hai mảnh ghép này để tạo ra một sản phẩm khả thi vượt trội có ý nghĩa kinh tế cao.
+            Để cạnh tranh sòng phẳng với các đội thi top đầu, chúng ta bắt buộc phải tối ưu hóa cả hai yếu tố: **Kỹ thuật chiều sâu (AI Engineering)** và **Trải nghiệm AI-Native UX** đều do K.AI phụ trách. Quân sẽ liên kết hai mảnh ghép này để tạo ra một sản phẩm khả thi vượt trội có ý nghĩa kinh tế cao.
           </p>
         </div>
       </div>

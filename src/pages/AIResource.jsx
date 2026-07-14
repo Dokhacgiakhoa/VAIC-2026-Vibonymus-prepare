@@ -18,7 +18,7 @@ const AIResource = () => {
   const trackAIDetails = {
     'y-te': {
       owned: [
-        { name: 'Claude Max 5x (Gói dùng chung)', desc: 'Quân dùng thiết kế Database Schema bệnh án mã hóa bảo mật, Hiếu dùng sinh UI Dashboard nhập liệu lâm sàng.' },
+        { name: 'Claude Max 5x (Gói dùng chung)', desc: 'Quân dùng thiết kế Database Schema bệnh án mã hóa bảo mật, K.AI dùng sinh UI Dashboard nhập liệu lâm sàng.' },
         { name: 'Claude Pro (K.AI)', desc: 'K.AI soạn slide, viết kịch bản pitch đối phó hội đồng giám khảo y khoa khó tính và giải thích tính an toàn.' }
       ],
       free: [
@@ -41,7 +41,7 @@ const AIResource = () => {
     },
     'doi-moi': {
       owned: [
-        { name: 'Claude Max 5x (Gói dùng chung)', desc: 'Hiếu dùng sinh nhanh Landing Page sản phẩm và các hiệu ứng chuyển động CSS mượt mà.' },
+        { name: 'Claude Max 5x (Gói dùng chung)', desc: 'K.AI dùng sinh nhanh Landing Page sản phẩm và các hiệu ứng chuyển động CSS mượt mà.' },
         { name: 'Gemini Advanced (K.AI)', desc: 'K.AI dùng nghiên cứu, tóm tắt và phân tích đối thủ cạnh tranh quy mô lớn trên thị trường.' }
       ],
       free: [
@@ -64,7 +64,7 @@ const AIResource = () => {
     },
     'nang-suat-sme': {
       owned: [
-        { name: 'Claude Max 5x (Gói dùng chung)', desc: 'Quân lập trình prompt rẽ nhánh LangGraph/CrewAI; Hiếu thiết kế Admin Dashboard theo dõi Agent.' },
+        { name: 'Claude Max 5x (Gói dùng chung)', desc: 'Quân lập trình prompt rẽ nhánh LangGraph/CrewAI; K.AI thiết kế Admin Dashboard theo dõi Agent.' },
         { name: 'Claude Pro (K.AI)', desc: 'K.AI viết kịch bản Live Demo luồng nhân sự ảo tự động gửi email/Slack nháp để pitching.' }
       ],
       free: [
@@ -77,7 +77,7 @@ const AIResource = () => {
       ],
       paid: [
         { name: 'Gamma App Pro ($15/tháng)', desc: 'Sinh slide thuyết trình tối ưu hóa vận hành SME cực kỳ chuyên nghiệp và trực quan.' },
-        { name: 'Cursor IDE Pro ($20/tháng)', desc: 'Nâng cấp khả năng lập trình tự động đa tệp tin (Multi-file) cho Quân và Hiếu trong 48h.' },
+        { name: 'Cursor IDE Pro ($20/tháng)', desc: 'Nâng cấp khả năng lập trình tự động đa tệp tin (Multi-file) cho Quân và K.AI trong 48h.' },
         { name: 'HeyGen ($24/tháng)', desc: 'Sinh MC ảo thuyết minh video demo luồng tự động hóa doanh nghiệp cực kỳ sống động.' }
       ],
       githubRepos: [
@@ -88,7 +88,7 @@ const AIResource = () => {
     'chinh-phu-so': {
       owned: [
         { name: 'Gemini Advanced (K.AI)', desc: 'K.AI dùng tóm tắt, đối chiếu các văn bản pháp luật, nghị định dịch vụ công dày hàng trăm trang.' },
-        { name: 'Claude Max 5x (Gói dùng chung)', desc: 'Quân thiết kế CSDL quan hệ lưu lịch sử hồ sơ công dân; Hiếu thiết kế giao diện chatbot CitizenCopilot.' }
+        { name: 'Claude Max 5x (Gói dùng chung)', desc: 'Quân thiết kế CSDL quan hệ lưu lịch sử hồ sơ công dân; K.AI thiết kế giao diện chatbot CitizenCopilot.' }
       ],
       free: [
         { name: 'EasyOCR / LayoutLM v3 (Mã nguồn mở)', desc: 'Thư viện trích xuất thông tin tự động từ ảnh chụp CCCD/hộ khẩu điền vào tờ khai mẫu hành chính công.' },
@@ -110,7 +110,7 @@ const AIResource = () => {
     },
     'nong-nghiep': {
       owned: [
-        { name: 'Claude Max 5x (Gói dùng chung)', desc: 'Quân viết API nhận diện ảnh nông nghiệp; Hiếu thiết kế giao diện bản đồ độ ẩm nông trại.' },
+        { name: 'Claude Max 5x (Gói dùng chung)', desc: 'Quân viết API nhận diện ảnh nông nghiệp; K.AI thiết kế giao diện bản đồ độ ẩm nông trại.' },
         { name: 'Gemini Advanced (K.AI)', desc: 'K.AI dịch thuật và nghiên cứu các tài liệu kỹ thuật canh tác thích ứng biến đổi khí hậu của nước ngoài.' }
       ],
       free: [
@@ -133,7 +133,7 @@ const AIResource = () => {
     },
     'giao-duc': {
       owned: [
-        { name: 'Claude Max 5x (Gói dùng chung)', desc: 'Quân lập trình thuật toán phân tích vết lỗi sai định vị lỗ hổng kiến thức; Hiếu làm giao diện trắc nghiệm.' },
+        { name: 'Claude Max 5x (Gói dùng chung)', desc: 'Quân lập trình thuật toán phân tích vết lỗi sai định vị lỗ hổng kiến thức; K.AI làm giao diện trắc nghiệm.' },
         { name: 'Claude Pro (K.AI)', desc: 'K.AI viết kịch bản pitch làm nổi bật tính nhân văn và cá nhân hóa của trợ lý AI Tutor.' }
       ],
       free: [
@@ -146,7 +146,7 @@ const AIResource = () => {
       ],
       paid: [
         { name: 'Gamma App Pro ($15/tháng)', desc: 'Sinh slide giáo trình và slide pitch deck EdTech với thiết kế hiện đại, nhiều màu sắc.' },
-        { name: 'Cursor IDE Pro ($20/tháng)', desc: 'Hỗ trợ Hiếu code nhanh thư viện vẽ bản đồ đồ thị Concept Map tương tác.' },
+        { name: 'Cursor IDE Pro ($20/tháng)', desc: 'Hỗ trợ K.AI code nhanh thư viện vẽ bản đồ đồ thị Concept Map tương tác.' },
         { name: 'HeyGen ($24/tháng)', desc: 'Sinh giáo viên ảo AI (AI Teacher avatar) giảng dạy trực tiếp trong video demo bài học.' }
       ],
       githubRepos: [
@@ -156,7 +156,7 @@ const AIResource = () => {
     },
     'thien-tai': {
       owned: [
-        { name: 'Claude Max 5x (Gói dùng chung)', desc: 'Quân lập trình thuật toán Dijkstra tìm đường tránh điểm ngập; Hiếu sinh giao diện bản đồ Mapbox.' },
+        { name: 'Claude Max 5x (Gói dùng chung)', desc: 'Quân lập trình thuật toán Dijkstra tìm đường tránh điểm ngập; K.AI sinh giao diện bản đồ Mapbox.' },
         { name: 'Gemini Advanced (K.AI)', desc: 'K.AI nghiên cứu dữ liệu địa hình sạt lở sườn dốc và mô hình khí tượng thủy văn.' }
       ],
       free: [
@@ -179,7 +179,7 @@ const AIResource = () => {
     },
     'tai-chinh': {
       owned: [
-        { name: 'Claude Max 5x (Gói dùng chung)', desc: 'Quân viết thuật toán phân tích chuỗi thời gian phát hiện giao dịch bất thường; Hiếu vẽ biểu đồ dòng tiền.' },
+        { name: 'Claude Max 5x (Gói dùng chung)', desc: 'Quân viết thuật toán phân tích chuỗi thời gian phát hiện giao dịch bất thường; K.AI vẽ biểu đồ dòng tiền.' },
         { name: 'Claude Pro (K.AI)', desc: 'K.AI viết tài liệu thuyết minh cơ chế bảo mật tài chính và quản trị rủi ro dữ liệu.' }
       ],
       free: [
@@ -261,7 +261,7 @@ const AIResource = () => {
               <div className="tool-names">Claude Max 5x (Dùng chung)</div>
               <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: '1.6', marginTop: '10px' }}>
                 <ul style={{ paddingLeft: '18px', margin: 0 }}>
-                  <li><b>Claude Max 5x ($0)</b>: Chia sẻ tài khoản với Hiếu để tối ưu hóa chi phí. Dùng để thiết kế Database Schema, viết API và xử lý logic kết nối DB Backend.</li>
+                  <li><b>Claude Max 5x ($0)</b>: Chia sẻ tài khoản với K.AI để tối ưu hóa chi phí. Dùng để thiết kế Database Schema, viết API và xử lý logic kết nối DB Backend.</li>
                 </ul>
               </div>
             </div>
@@ -520,7 +520,7 @@ const AIResource = () => {
               <tr>
                 <td><b>Claude Max 5x</b></td>
                 <td>$100</td>
-                <td>Hiếu (Frontend) &amp; Quân (Backend)</td>
+                <td>K.AI (Frontend) &amp; Quân (Backend)</td>
                 <td>Sinh code frontend React, dựng Database Schema, viết API logic.</td>
                 <td><span style={{ color: 'var(--s2)', fontWeight: 700 }}>Dùng chung 2 người (Tiết kiệm $100)</span></td>
               </tr>

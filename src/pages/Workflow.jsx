@@ -8,7 +8,7 @@ const PHASE_RAIL_W = 76;
 const PHASE_RAIL_GAP = 24;
 const MARGIN_X = OUTER_MARGIN + PHASE_RAIL_W + PHASE_RAIL_GAP; // lanes start after the left phase rail
 const LANE_W = 260;
-const BE_FE_GAP = 150; // gap between Quân and Hiếu
+const BE_FE_GAP = 150; // gap between Quân and K.AI (FE)
 const QUAN_X = MARGIN_X;
 const HIEU_X = QUAN_X + LANE_W + BE_FE_GAP;
 const ROW_RIGHT_EDGE = HIEU_X + LANE_W;
@@ -126,7 +126,7 @@ function WorkflowFlowchart({ roles, timelineSteps, syncCheckpoints }) {
 
                 {/* K.AI -> Quân (Backend) direction arrow (orthogonal) */}
                 <path d={`M ${SYNC_CX - LANE_W / 4} ${row.kaiY + KAI_H} L ${SYNC_CX - LANE_W / 4} ${row.kaiY + KAI_H + GAP_KAI_TO_ROLE / 2} L ${QUAN_X + LANE_W / 2} ${row.kaiY + KAI_H + GAP_KAI_TO_ROLE / 2} L ${QUAN_X + LANE_W / 2} ${row.roleY}`} stroke="var(--s1)" strokeWidth="2.5" fill="none" markerEnd="url(#arrow-s1)" />
-                {/* K.AI -> Hiếu (Frontend) direction arrow (orthogonal) */}
+                {/* K.AI -> K.AI (FE) (Frontend) direction arrow (orthogonal) */}
                 <path d={`M ${SYNC_CX + LANE_W / 4} ${row.kaiY + KAI_H} L ${SYNC_CX + LANE_W / 4} ${row.kaiY + KAI_H + GAP_KAI_TO_ROLE / 2} L ${HIEU_X + LANE_W / 2} ${row.kaiY + KAI_H + GAP_KAI_TO_ROLE / 2} L ${HIEU_X + LANE_W / 2} ${row.roleY}`} stroke="var(--s1)" strokeWidth="2.5" fill="none" markerEnd="url(#arrow-s1)" />
 
                 {/* Quân (Backend / DB) Box */}
@@ -144,7 +144,7 @@ function WorkflowFlowchart({ roles, timelineSteps, syncCheckpoints }) {
                   </div>
                 </foreignObject>
 
-                {/* Peer-to-peer peer link (Quân ↔ Hiếu) */}
+                {/* Peer-to-peer peer link (Quân ↔ K.AI (FE)) */}
                 <path d={`M ${QUAN_X + LANE_W} ${row.roleY + ROLE_H / 2} L ${HIEU_X} ${row.roleY + ROLE_H / 2}`} stroke="var(--s4)" strokeWidth="2" strokeDasharray="3 3" fill="none" />
                 <foreignObject x={QUAN_X + LANE_W + 15} y={row.roleY + ROLE_H / 2 - 12} width={BE_FE_GAP - 30} height={24}>
                   <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.68rem', color: 'var(--s4)', fontWeight: 800, background: 'var(--surface-1)', border: '1px solid var(--border)', borderRadius: '4px' }}>
@@ -152,7 +152,7 @@ function WorkflowFlowchart({ roles, timelineSteps, syncCheckpoints }) {
                   </div>
                 </foreignObject>
 
-                {/* Hiếu (Frontend / UX) Box */}
+                {/* K.AI (FE) (Frontend / UX) Box */}
                 <g filter="url(#node-shadow)">
                   <rect x={HIEU_X} y={row.roleY} width={LANE_W} height={ROLE_H} rx="12" fill="var(--surface-1)" stroke="var(--s3)" strokeWidth="2" />
                   <rect x={HIEU_X} y={row.roleY} width={LANE_W} height="38" rx="12" fill="var(--s3)" style={{ clipPath: 'inset(0px 0px 10px 0px)' }} />
@@ -169,7 +169,7 @@ function WorkflowFlowchart({ roles, timelineSteps, syncCheckpoints }) {
 
                 {/* Trunk path Quân -> sync check */}
                 <path d={`M ${QUAN_X + LANE_W / 2} ${row.roleY + ROLE_H} L ${QUAN_X + LANE_W / 2} ${row.roleY + ROLE_H + ARROW1 / 2} L ${SYNC_CX} ${row.roleY + ROLE_H + ARROW1 / 2}`} stroke="var(--s2)" strokeWidth="2" fill="none" />
-                {/* Trunk path Hiếu -> sync check */}
+                {/* Trunk path K.AI (FE) -> sync check */}
                 <path d={`M ${HIEU_X + LANE_W / 2} ${row.roleY + ROLE_H} L ${HIEU_X + LANE_W / 2} ${row.roleY + ROLE_H + ARROW1 / 2} L ${SYNC_CX} ${row.roleY + ROLE_H + ARROW1 / 2}`} stroke="var(--s3)" strokeWidth="2" fill="none" />
                 {/* Combined trunk to sync check */}
                 <path
@@ -313,7 +313,7 @@ const Workflow = () => {
         <div className="card">
           <h2><Layers /> Flow Chart: Thành viên × AI × Giai đoạn</h2>
           <p className="sub" style={{ margin: '0 0 20px' }}>
-            Toàn bộ luồng vận hành 48h trong <b>một sơ đồ duy nhất</b>: <b>K.AI (PM)</b> đứng trên, phân tích đề bài và định hướng core cho cả 2 nhánh thực thi bên dưới; Quân &amp; Hiếu triển khai song song và vẫn phối hợp trực tiếp với nhau, trước khi cả 3 gặp lại ở mốc đồng bộ cuối mỗi giai đoạn — cùng một tầng kênh phối hợp chung chạy xuyên suốt bên dưới.
+            Toàn bộ luồng vận hành 48h trong <b>một sơ đồ duy nhất</b>: <b>K.AI (PM)</b> đứng trên, phân tích đề bài và định hướng core cho cả 2 nhánh thực thi bên dưới; Quân &amp; K.AI (FE) triển khai song song và vẫn phối hợp trực tiếp với nhau, trước khi gặp lại ở mốc đồng bộ cuối mỗi giai đoạn — cùng một tầng kênh phối hợp chung chạy xuyên suốt bên dưới.
           </p>
 
           <WorkflowFlowchart roles={roles} timelineSteps={timelineSteps} syncCheckpoints={syncCheckpoints} />
@@ -323,8 +323,8 @@ const Workflow = () => {
             <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><svg width="18" height="14"><rect x="1" y="1" width="16" height="12" rx="2" fill="none" stroke="var(--text-secondary)" strokeWidth="1.5" /></svg> Hình chữ nhật = công việc (process) của từng thành viên</span>
             <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><svg width="18" height="14"><polygon points="9,1 17,7 9,13 1,7" fill="none" stroke="var(--s4)" strokeWidth="1.5" /></svg> Hình thoi = mốc đồng bộ / quyết định (đạt hay phải làm lại)</span>
             <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><svg width="16" height="16"><circle cx="8" cy="8" r="7" fill="none" stroke="var(--s4)" strokeWidth="1.5" /></svg> Hình tròn = điểm bắt đầu / kết thúc luồng</span>
-            <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><svg width="22" height="10"><line x1="0" y1="5" x2="22" y2="5" stroke="var(--s1)" strokeWidth="2.5" /></svg> K.AI (PM) định hướng/giao việc core cho Quân &amp; Hiếu</span>
-            <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><svg width="22" height="10"><line x1="0" y1="5" x2="22" y2="5" stroke="var(--s4)" strokeWidth="2" strokeDasharray="3 3" /></svg> Quân ↔ Hiếu phối hợp trực tiếp (ngang hàng, không qua PM)</span>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><svg width="22" height="10"><line x1="0" y1="5" x2="22" y2="5" stroke="var(--s1)" strokeWidth="2.5" /></svg> K.AI (PM) định hướng/giao việc core cho Quân &amp; K.AI (FE)</span>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><svg width="22" height="10"><line x1="0" y1="5" x2="22" y2="5" stroke="var(--s4)" strokeWidth="2" strokeDasharray="3 3" /></svg> Quân ↔ K.AI (FE) phối hợp trực tiếp (ngang hàng, không qua PM)</span>
             <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><svg width="22" height="10"><line x1="0" y1="5" x2="22" y2="5" stroke="var(--s4)" strokeWidth="2.5" /></svg> Luồng chính (bàn giao xuôi giữa giai đoạn)</span>
             <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><svg width="22" height="10"><line x1="0" y1="5" x2="22" y2="5" stroke="var(--s4)" strokeWidth="2.5" strokeDasharray="4 3" /></svg> Vòng lặp phản hồi lỗi — quay lại K.AI (đầu bàn giao) để làm lại</span>
             <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><svg width="22" height="10"><line x1="0" y1="5" x2="22" y2="5" stroke="var(--text-muted)" strokeWidth="2.5" strokeDasharray="1 4" /></svg> Kết nối kênh phối hợp chung</span>
@@ -357,7 +357,7 @@ const Workflow = () => {
       {activeTab === 'timeflow' && (
         <div className="card">
           <h2><Clock /> Dòng thời gian &amp; Phân công công việc 48h</h2>
-          <p className="sub" style={{ margin: '0 0 24px' }}>Mỗi giai đoạn, <b>K.AI (PM) chủ trì</b> phân tích &amp; định hướng core, sau đó Quân và Hiếu triển khai song song — vẫn phối hợp trực tiếp với nhau — trước khi cả 3 chuyển sang giai đoạn kế tiếp:</p>
+          <p className="sub" style={{ margin: '0 0 24px' }}>Mỗi giai đoạn, <b>K.AI (PM) chủ trì</b> phân tích &amp; định hướng core, sau đó Quân và K.AI (FE) triển khai song song — vẫn phối hợp trực tiếp với nhau — trước khi cả team chuyển sang giai đoạn kế tiếp:</p>
 
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             {timelineSteps.map((step, index) => (
@@ -386,7 +386,7 @@ const Workflow = () => {
                     {step.desc}
                   </p>
 
-                  {/* K.AI (PM) chủ trì trên cùng, định hướng xuống Quân + Hiếu triển khai song song bên dưới */}
+                  {/* K.AI (PM) chủ trì trên cùng, định hướng xuống Quân + K.AI (FE) triển khai song song bên dưới */}
                   <div className="meta-card" style={{ borderTop: '4px solid var(--s1)', marginBottom: '2px' }}>
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px' }}>
                       <div className="meta-label" style={{ color: 'var(--s1)' }}>PM &amp; AI: K.AI</div>
@@ -420,7 +420,7 @@ const Workflow = () => {
                       <span>phối hợp<br />trực tiếp</span>
                     </div>
                     <div className="meta-card" style={{ flex: '1 1 200px', borderTop: '3px solid var(--s3)' }}>
-                      <div className="meta-label" style={{ color: 'var(--s3)' }}>Frontend / UX: Hiếu</div>
+                      <div className="meta-label" style={{ color: 'var(--s3)' }}>Frontend / UX: K.AI (FE)</div>
                       <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginTop: '6px', lineHeight: '1.4' }}>
                         {step.hieu}
                         <div style={{ marginTop: '8px', fontSize: '0.8rem', borderTop: '1px solid rgba(47, 158, 68, 0.15)', paddingTop: '6px' }}>
@@ -469,7 +469,7 @@ const Workflow = () => {
       {activeTab === 'aiflow' && (
         <div className="card">
           <h2><Cpu /> Sơ đồ luồng tương tác Multi-AI của Team</h2>
-          <p className="sub" style={{ margin: '0 0 20px' }}><b>K.AI (PM) chủ trì</b> phân tích &amp; định hướng core cho cả 2 nhánh; Quân và Hiếu mỗi người chủ trì 80% công việc của mình với AI, vẫn phối hợp trực tiếp với nhau và phản hồi ngược lại K.AI:</p>
+          <p className="sub" style={{ margin: '0 0 20px' }}><b>K.AI (PM) chủ trì</b> phân tích &amp; định hướng core cho cả 2 nhánh; Quân và K.AI (FE) mỗi người chủ trì 80% công việc của mình với AI, vẫn phối hợp trực tiếp với nhau và phản hồi ngược lại K.AI:</p>
 
           {/* Dải sơ đồ tổng quan */}
           <div className="overview-grid">
@@ -540,13 +540,13 @@ const Workflow = () => {
 
                   <div className="ai-point-card" style={{ borderLeftColor: index === 0 ? 'var(--s1)' : index === 1 ? 'var(--s2)' : 'var(--s3)' }}>
                     <div className="ai-point-title" style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                      <Layout size={14} style={{ color: index === 0 ? 'var(--s1)' : index === 1 ? 'var(--s2)' : 'var(--s3)' }} /> Phối hợp &amp; Bàn giao chéo (10% + 10%)
+                      <Layout size={14} style={{ color: index === 0 ? 'var(--s1)' : index === 1 ? 'var(--s2)' : 'var(--s3)' }} /> Phối hợp &amp; Bàn giao chéo (20%)
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '0.78rem', fontWeight: 700, color: 'var(--theme-color)', marginBottom: '4px' }}>
                       {[
-                        'K.AI → Quân & Hiếu (định hướng core cho cả 2)',
-                        'Quân ↔ Hiếu (phối hợp ngang hàng) · Quân → K.AI (báo cáo)',
-                        'Hiếu ↔ Quân (phối hợp ngang hàng) · Hiếu → K.AI (báo cáo)'
+                        'K.AI → Quân & K.AI (FE) (định hướng core cho cả 2)',
+                        'Quân ↔ K.AI (FE) (phối hợp ngang hàng) · Quân → K.AI (báo cáo)',
+                        'K.AI (FE) ↔ Quân (phối hợp ngang hàng) · K.AI (FE) → K.AI (báo cáo)'
                       ][index]}
                     </div>
                     <p className="ai-point-desc">{flow.collaboration}</p>
@@ -582,7 +582,7 @@ const Workflow = () => {
           }}>
             <CheckCircle2 style={{ color: 'var(--good)', flexShrink: 0 }} size={24} />
             <div style={{ fontSize: '0.85rem', lineHeight: '1.5', color: 'var(--text-secondary)' }}>
-              <b>💡 Nguyên tắc Phân vai chéo 80-10-10</b>: Mỗi thành viên chủ trì đảm nhận <b>80%</b> khối lượng công việc chính của mình với sự trợ giúp đắc lực của AI (ví dụ: Quân code Backend). Hai thành viên còn lại sẽ hỗ trợ chéo mỗi người <b>10%</b> (góp ý logic, test lỗi, đóng góp ý kiến tối ưu trải nghiệm) để đảm bảo tính đồng bộ và không bị nghẽn mạch (bottleneck).
+              <b>💡 Nguyên tắc Phân vai chéo 80-20</b>: Mỗi mảng việc có 1 người chủ trì đảm nhận <b>80%</b> khối lượng với sự trợ giúp đắc lực của AI (ví dụ: Quân code Backend, K.AI vừa làm PM/Pitching vừa Frontend/UX nhờ đa nhiệm cùng AI). Người còn lại hỗ trợ chéo <b>20%</b> (góp ý logic, test lỗi, đóng góp ý kiến tối ưu trải nghiệm) để đảm bảo tính đồng bộ và không bị nghẽn mạch (bottleneck).
             </div>
           </div>
         </div>

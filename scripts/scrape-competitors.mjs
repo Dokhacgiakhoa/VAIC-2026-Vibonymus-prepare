@@ -70,7 +70,7 @@ async function main() {
   });
   process.stdout.write('\n');
 
-  const uniqueHandles = [...new Set(rawTeams.flatMap((t) => (t.members || []).map((m) => m.handle)))];
+  const uniqueHandles = [...new Set(rawTeams.flatMap((t) => (t.members || []).map((m) => m.handle)).filter(Boolean))];
   console.log(`Cần cào hồ sơ của ${uniqueHandles.length} thành viên duy nhất...`);
 
   const profilesByHandle = new Map();

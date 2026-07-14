@@ -17,12 +17,18 @@ html {
   --theme-grad:     linear-gradient(135deg, #5a49cc, #8a7cf0); /* tím gradient */
   --s1: #f76707; /* vàng cam - K.AI */
   --s2: #1971c2; /* lam      - Quân */
-  --s3: #2f9e44; /* lục      - Hiếu */
+  --s3: #2f9e44; /* lục      - K.AI (Frontend) */
   --s4: #4a3aa7; /* violet   - cả team */
+  --s5: #0ca678; /* ngọc     - Mai (AI/ML & Data) */
+  --s6: #e03131; /* đỏ san hô - Quang (AI Agent & API/Security) */
+  --s7: #868e96; /* xám      - Lâm (QA & Hậu cần) */
   --s1-grad: linear-gradient(135deg, #ff922b, #f76707);
   --s2-grad: linear-gradient(135deg, #4dabf7, #1971c2);
   --s3-grad: linear-gradient(135deg, #69db7c, #2f9e44);
   --s4-grad: linear-gradient(135deg, #4a3aa7, #7e6fe8);
+  --s5-grad: linear-gradient(135deg, #38d9a9, #0ca678);
+  --s6-grad: linear-gradient(135deg, #ff8787, #e03131);
+  --s7-grad: linear-gradient(135deg, #adb5bd, #868e96);
   --good: #20c997;
   --warning: #f59f00;
   --critical: #f03e3e;
@@ -269,6 +275,9 @@ h2 svg { width: 22px; height: 22px; color: var(--theme-color); flex-shrink: 0; }
 .bar-s2 { background: var(--s2-grad); }
 .bar-s3 { background: var(--s3-grad); }
 .bar-s4 { background: var(--s4-grad); }
+.bar-s5 { background: var(--s5-grad); }
+.bar-s6 { background: var(--s6-grad); }
+.bar-s7 { background: var(--s7-grad); }
 .bar-critical { background: linear-gradient(135deg, var(--critical), #ff6b6b); }
 .bar-meal { background: linear-gradient(135deg, #868e96, #adb5bd); color: #fff; }
 .bar-rest { background: linear-gradient(135deg, #868e96, #adb5bd); color: #fff; }

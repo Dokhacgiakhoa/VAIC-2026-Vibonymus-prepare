@@ -46,7 +46,7 @@ const scoringCriteria = [
     color: 'var(--s3)',
     detail: (
       <>
-        <p style={{ margin: '0 0 8px' }}>Giao diện tinh xảo (Hiếu phụ trách), lấy người dùng làm trung tâm, loại bỏ bước nhập liệu dư thừa nhờ AI.</p>
+        <p style={{ margin: '0 0 8px' }}>Giao diện tinh xảo (K.AI phụ trách), lấy người dùng làm trung tâm, loại bỏ bước nhập liệu dư thừa nhờ AI.</p>
         <p style={{ margin: '0 0 8px' }}><b>Nguồn: Workshop 1 — AI-native Design (20/06).</b> Team chuẩn hóa prompt thiết kế theo khung <b>CRAFT</b>: <b>C</b>ontext, <b>R</b>ole, <b>A</b>udience, <b>F</b>ormat, <b>T</b>ask — và <b>công thức 6 bước</b>: Act as a [ROLE] → Context → Audience → Task → Constraints → Output.</p>
         <p style={{ margin: 0 }}><i>Ví dụ CRAFT (Material_WS1):</i> Context — "Thay vì 'Create a dashboard' → Thử 'Create a dashboard for a small business owner managing TikTok ads...'"; Format — "Thay vì 'Give me ideas' → Thử 'Generate 5 concepts, mỗi concept gồm: User problem, Proposed solution, Key feature, Potential risk.'"</p>
       </>
@@ -113,7 +113,7 @@ const Dashboard = () => {
             </span>
             Vibonymus @ VAIC 2026
           </h1>
-          <p className="sub" style={{ margin: '8px 0 16px' }}>Kế hoạch chuẩn bị &amp; thi đấu — K.AI · Quân · Hiếu &nbsp;|&nbsp; Hackathon 48h, 17–19/07/2026, NIC Hòa Lạc</p>
+          <p className="sub" style={{ margin: '8px 0 16px' }}>Kế hoạch chuẩn bị &amp; thi đấu — K.AI · Quân · Mai · Quang · Lâm &nbsp;|&nbsp; Hackathon 48h, 17–19/07/2026, NIC Hòa Lạc</p>
           <div className="links">
             <a href="https://www.vietnamaichallenge.com/" target="_blank" rel="noopener noreferrer">Website <ExternalLink size={13} /></a>
             <a href="https://www.facebook.com/vietnamaiinnovationchallenge" target="_blank" rel="noopener noreferrer">Fanpage <ExternalLink size={13} /></a>
@@ -180,7 +180,7 @@ const Dashboard = () => {
             </div>
 
             <div className="gantt-row" style={{ '--cols': 9 }}>
-              <div className="gantt-row-label"><span className="legend-dot" style={{ background: 'var(--s1)' }}></span> K.AI</div>
+              <div className="gantt-row-label"><span className="legend-dot" style={{ background: 'var(--s1)' }}></span> K.AI (PM)</div>
               <div className="gantt-track" style={{ '--cols': 9 }}>
                 <div className="bar-wrapper" style={{ left: '0%', width: '33.3%' }}>
                   <div className="bar bar-s1">Research &amp; Setup</div>
@@ -320,14 +320,14 @@ const Dashboard = () => {
             </div>
 
             <div className="gantt-row" style={{ '--cols': 9 }}>
-              <div className="gantt-row-label"><span className="legend-dot" style={{ background: 'var(--s3)' }}></span> Hiếu</div>
+              <div className="gantt-row-label"><span className="legend-dot" style={{ background: 'var(--s3)' }}></span> K.AI (FE)</div>
               <div className="gantt-track" style={{ '--cols': 9 }}>
                 <div className="bar-wrapper" style={{ left: '0%', width: '44.4%' }}>
                   <div className="bar bar-s3">Template slide</div>
                   <div className="gantt-tooltip-css">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                       <span className="legend-dot" style={{ background: 'var(--s3)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
-                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Hiếu · Frontend &amp; MKT</span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>K.AI · Frontend &amp; MKT</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Tham khảo pitch deck &amp; Chuẩn bị template</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 08-11/07</div>
@@ -340,7 +340,7 @@ const Dashboard = () => {
                   <div className="gantt-tooltip-css">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                       <span className="legend-dot" style={{ background: 'var(--s3)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
-                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Hiếu · Frontend &amp; MKT</span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>K.AI · Frontend &amp; MKT</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Tham dự Workshop Pitching</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 12/07</div>
@@ -353,7 +353,7 @@ const Dashboard = () => {
                   <div className="gantt-tooltip-css">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                       <span className="legend-dot" style={{ background: 'var(--s3)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
-                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Hiếu · Frontend &amp; MKT</span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>K.AI · Frontend &amp; MKT</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Checklist hậu cần cá nhân &amp; team</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 13-14/07</div>
@@ -366,7 +366,7 @@ const Dashboard = () => {
                   <div className="gantt-tooltip-css">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                       <span className="legend-dot" style={{ background: 'var(--s3)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
-                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Hiếu · Frontend &amp; MKT</span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>K.AI · Frontend &amp; MKT</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Quét &amp; đánh giá đối thủ (design/demo)</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 15/07</div>
@@ -379,7 +379,7 @@ const Dashboard = () => {
                   <div className="gantt-tooltip-css">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                       <span className="legend-dot" style={{ background: 'var(--s3)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
-                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Hiếu · Frontend &amp; MKT</span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>K.AI · Frontend &amp; MKT</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Chốt &amp; Xác nhận track chính thức</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: Tối 16/07</div>
@@ -388,6 +388,94 @@ const Dashboard = () => {
                 </div>
               </div>
             </div>
+            <div className="gantt-row" style={{ '--cols': 9 }}>
+              <div className="gantt-row-label"><span className="legend-dot" style={{ background: 'var(--s5)' }}></span> Mai</div>
+              <div className="gantt-track" style={{ '--cols': 9 }}>
+                <div className="bar-wrapper" style={{ left: '0%', width: '33.3%' }}>
+                  <div className="bar bar-s5">Research dữ liệu AI</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s5)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Mai · AI/ML & Data</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Research nguồn dữ liệu &amp; mô hình AI</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 08-10/07</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Khảo sát nguồn dữ liệu mở, mô hình AI/ML khả dụng cho từng track ứng viên.</div>
+                  </div>
+                </div>
+
+                <div className="bar-wrapper" style={{ left: '33.3%', width: '44.5%' }}>
+                  <div className="bar bar-s5">Thử nghiệm mô hình mẫu</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s5)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Mai · AI/ML & Data</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Partner Session &amp; Thử nghiệm mô hình</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 11-14/07</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Tham dự partner session kỹ thuật, thử nghiệm nhanh các mô hình/API AI của nhà tài trợ.</div>
+                  </div>
+                </div>
+
+                <div className="bar-wrapper" style={{ left: '77.8%', width: '22.2%' }}>
+                  <div className="bar bar-s5">Rà soát &amp; Chốt track</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s5)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Mai · AI/ML & Data</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Rà soát đối thủ (AI) &amp; Chốt track</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 15-16/07</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Đánh giá độ khó kỹ thuật AI của đối thủ tiềm năng, thống nhất chốt track cùng cả team.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="gantt-row" style={{ '--cols': 9 }}>
+              <div className="gantt-row-label"><span className="legend-dot" style={{ background: 'var(--s6)' }}></span> Quang</div>
+              <div className="gantt-track" style={{ '--cols': 9 }}>
+                <div className="bar-wrapper" style={{ left: '0%', width: '33.3%' }}>
+                  <div className="bar bar-s6">Research AI Agent</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s6)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Quang · AI Agent & API</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Research framework AI Agent</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 08-10/07</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Tìm hiểu LangGraph/CrewAI và các framework AI Agent phù hợp với các track ứng viên.</div>
+                  </div>
+                </div>
+
+                <div className="bar-wrapper" style={{ left: '33.3%', width: '44.5%' }}>
+                  <div className="bar bar-s6">Test API nhà tài trợ</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s6)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Quang · AI Agent & API</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Partner Session &amp; Test API AI</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 11-14/07</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Tham dự partner session, kiểm thử API AI của nhà tài trợ, đánh giá rate limit và yêu cầu bảo mật.</div>
+                  </div>
+                </div>
+
+                <div className="bar-wrapper" style={{ left: '77.8%', width: '22.2%' }}>
+                  <div className="bar bar-s6">Rà soát &amp; Chốt track</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s6)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Quang · AI Agent & API</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Rà soát bảo mật đối thủ &amp; Chốt track</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 15-16/07</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Đánh giá rủi ro bảo mật/kỹ thuật của đối thủ tiềm năng, thống nhất chốt track cùng cả team.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="axis-row">
               <div></div>
               <div className="axis-ticks" style={{ '--cols': 9 }}>
@@ -508,7 +596,7 @@ const Dashboard = () => {
             </div>
 
             <div className="gantt-row" style={{ '--cols': 16 }}>
-              <div className="gantt-row-label"><span className="legend-dot" style={{ background: 'var(--s1)' }}></span> K.AI</div>
+              <div className="gantt-row-label"><span className="legend-dot" style={{ background: 'var(--s1)' }}></span> K.AI (PM)</div>
               <div className="gantt-track" style={{ '--cols': 16 }}>
                 <div className="bar-wrapper" style={{ left: '18.75%', width: '18.75%' }}>
                   <div className="bar bar-s1">Phân tích đề &amp; Stack</div>
@@ -622,14 +710,14 @@ const Dashboard = () => {
             </div>
 
             <div className="gantt-row" style={{ '--cols': 16 }}>
-              <div className="gantt-row-label"><span className="legend-dot" style={{ background: 'var(--s3)' }}></span> Hiếu</div>
+              <div className="gantt-row-label"><span className="legend-dot" style={{ background: 'var(--s3)' }}></span> K.AI (FE)</div>
               <div className="gantt-track" style={{ '--cols': 16 }}>
                 <div className="bar-wrapper" style={{ left: '18.75%', width: '18.75%' }}>
                   <div className="bar bar-s3">Wireframe nhanh</div>
                   <div className="gantt-tooltip-css">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                       <span className="legend-dot" style={{ background: 'var(--s3)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
-                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Hiếu · Frontend &amp; MKT</span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>K.AI · Frontend &amp; MKT</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Sketch wireframe nhanh</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 11:00-14:00</div>
@@ -642,7 +730,7 @@ const Dashboard = () => {
                   <div className="gantt-tooltip-css">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                       <span className="legend-dot" style={{ background: 'var(--s3)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
-                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Hiếu · Frontend &amp; MKT</span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>K.AI · Frontend &amp; MKT</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Dựng UI Prototype</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 14:00-18:00</div>
@@ -655,7 +743,7 @@ const Dashboard = () => {
                   <div className="gantt-tooltip-css">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                       <span className="legend-dot" style={{ background: 'var(--s3)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
-                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Hiếu · Frontend &amp; MKT</span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>K.AI · Frontend &amp; MKT</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Ăn tối tự chọn</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 18:00-19:30</div>
@@ -668,7 +756,7 @@ const Dashboard = () => {
                   <div className="gantt-tooltip-css">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                       <span className="legend-dot" style={{ background: 'var(--s3)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
-                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Hiếu · Frontend &amp; MKT</span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>K.AI · Frontend &amp; MKT</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Giao lưu — lấy cảm hứng pitch</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 19:30-21:00</div>
@@ -681,15 +769,129 @@ const Dashboard = () => {
                   <div className="gantt-tooltip-css">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                       <span className="legend-dot" style={{ background: 'var(--s3)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
-                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Hiếu · Frontend &amp; MKT</span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>K.AI · Frontend &amp; MKT</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Tiếp tục hoàn thiện UI</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 21:00-24:00</div>
-                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Làm mịn các nút, phối màu chủ đạo, xuất các đoạn mã CSS Module cho K.AI.</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Làm mịn các nút, phối màu chủ đạo, chuẩn hoá các đoạn mã CSS Module để tích hợp vào code chính.</div>
                   </div>
                 </div>
               </div>
             </div>
+            <div className="gantt-row" style={{ '--cols': 16 }}>
+              <div className="gantt-row-label"><span className="legend-dot" style={{ background: 'var(--s5)' }}></span> Mai</div>
+              <div className="gantt-track" style={{ '--cols': 16 }}>
+                <div className="bar-wrapper" style={{ left: '18.75%', width: '18.75%' }}>
+                  <div className="bar bar-s5">Thu thập dữ liệu mẫu</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s5)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Mai · AI/ML & Data</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Thu thập &amp; chuẩn bị dữ liệu mẫu</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 11:00-14:00</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Tìm và chuẩn bị dataset mẫu phù hợp với đề bài track vừa công bố.</div>
+                  </div>
+                </div>
+
+                <div className="bar-wrapper" style={{ left: '37.5%', width: '25%' }}>
+                  <div className="bar bar-s5">Xây pipeline dữ liệu</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s5)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Mai · AI/ML & Data</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Xây dựng pipeline dữ liệu &amp; Vector DB</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 14:00-18:00</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Viết pipeline tiền xử lý dữ liệu, thiết lập Vector Database ban đầu cho RAG.</div>
+                  </div>
+                </div>
+
+                <div className="bar-wrapper" style={{ left: '62.5%', width: '9.38%' }}>
+                  <div className="bar bar-meal">Ăn uống</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s5)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Mai · AI/ML & Data</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Ăn tối tự chọn</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 18:00-19:30</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Ăn tối tự chọn, nạp năng lượng tại khu ẩm thực NIC.</div>
+                  </div>
+                </div>
+
+                <div className="bar-wrapper" style={{ left: '81.25%', width: '18.75%' }}>
+                  <div className="bar bar-s5">Thử mô hình đầu tiên</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s5)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Mai · AI/ML & Data</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Thử nghiệm mô hình AI đầu tiên</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 21:00-24:00</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Chạy thử mô hình/API AI đầu tiên trên dữ liệu mẫu đã chuẩn bị.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="gantt-row" style={{ '--cols': 16 }}>
+              <div className="gantt-row-label"><span className="legend-dot" style={{ background: 'var(--s6)' }}></span> Quang</div>
+              <div className="gantt-track" style={{ '--cols': 16 }}>
+                <div className="bar-wrapper" style={{ left: '18.75%', width: '18.75%' }}>
+                  <div className="bar bar-s6">Thiết kế AI Agent</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s6)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Quang · AI Agent & API</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Thiết kế kiến trúc AI Agent</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 11:00-14:00</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Phác thảo luồng AI Agent xử lý logic nghiệp vụ cốt lõi (Core Business Flow).</div>
+                  </div>
+                </div>
+
+                <div className="bar-wrapper" style={{ left: '37.5%', width: '25%' }}>
+                  <div className="bar bar-s6">Cấu hình LLM provider</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s6)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Quang · AI Agent & API</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Kết nối API AI &amp; cấu hình prompt khung</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 14:00-18:00</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Kết nối API AI (Claude/Gemini), thiết lập system prompt khung cho Agent.</div>
+                  </div>
+                </div>
+
+                <div className="bar-wrapper" style={{ left: '62.5%', width: '9.38%' }}>
+                  <div className="bar bar-meal">Ăn uống</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s6)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Quang · AI Agent & API</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Ăn tối tự chọn</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 18:00-19:30</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Ăn tối tự chọn, nạp năng lượng tại khu ẩm thực NIC.</div>
+                  </div>
+                </div>
+
+                <div className="bar-wrapper" style={{ left: '81.25%', width: '18.75%' }}>
+                  <div className="bar bar-s6">Rà soát bảo mật key</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s6)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Quang · AI Agent & API</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Rà soát bảo mật API key</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 21:00-24:00</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Kiểm tra không lộ API key/secrets trong code, cấu hình biến môi trường an toàn.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="axis-row">
               <div></div>
               <div className="axis-ticks" style={{ '--cols': 16 }}>
@@ -811,7 +1013,7 @@ const Dashboard = () => {
             </div>
 
             <div className="gantt-row" style={{ '--cols': 24 }}>
-              <div className="gantt-row-label"><span className="legend-dot" style={{ background: 'var(--s1)' }}></span> K.AI</div>
+              <div className="gantt-row-label"><span className="legend-dot" style={{ background: 'var(--s1)' }}></span> K.AI (PM)</div>
               <div className="gantt-track" style={{ '--cols': 24 }}>
                 <div className="bar-wrapper" style={{ left: '0%', width: '16.67%' }}>
                   <div className="bar bar-s1">Code core</div>
@@ -1068,14 +1270,14 @@ const Dashboard = () => {
             </div>
 
             <div className="gantt-row" style={{ '--cols': 24 }}>
-              <div className="gantt-row-label"><span className="legend-dot" style={{ background: 'var(--s3)' }}></span> Hiếu</div>
+              <div className="gantt-row-label"><span className="legend-dot" style={{ background: 'var(--s3)' }}></span> K.AI (FE)</div>
               <div className="gantt-track" style={{ '--cols': 24 }}>
                 <div className="bar-wrapper" style={{ left: '0%', width: '16.67%' }}>
                   <div className="bar bar-s3">Tiếp tục UI</div>
                   <div className="gantt-tooltip-css">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                       <span className="legend-dot" style={{ background: 'var(--s3)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
-                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Hiếu · Frontend &amp; MKT</span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>K.AI · Frontend &amp; MKT</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Tiếp tục UI (ca đầu)</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 00:00-04:00</div>
@@ -1088,7 +1290,7 @@ const Dashboard = () => {
                   <div className="gantt-tooltip-css">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                       <span className="legend-dot" style={{ background: 'var(--s3)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
-                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Hiếu · Frontend &amp; MKT</span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>K.AI · Frontend &amp; MKT</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Nghỉ ngơi (bù đêm trước)</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 04:00-07:00</div>
@@ -1101,7 +1303,7 @@ const Dashboard = () => {
                   <div className="gantt-tooltip-css">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                       <span className="legend-dot" style={{ background: 'var(--s3)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
-                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Hiếu · Frontend &amp; MKT</span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>K.AI · Frontend &amp; MKT</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Ăn sáng</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 07:00-09:00</div>
@@ -1114,7 +1316,7 @@ const Dashboard = () => {
                   <div className="gantt-tooltip-css">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                       <span className="legend-dot" style={{ background: 'var(--s3)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
-                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Hiếu · Frontend &amp; MKT</span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>K.AI · Frontend &amp; MKT</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Checkpoint 1</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 10:00-12:00</div>
@@ -1127,11 +1329,11 @@ const Dashboard = () => {
                   <div className="gantt-tooltip-css">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                       <span className="legend-dot" style={{ background: 'var(--s3)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
-                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Hiếu · Frontend &amp; MKT</span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>K.AI · Frontend &amp; MKT</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Hoàn thiện UI/UX &amp; Demo flow</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 12:00-16:00</div>
-                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Tinh chỉnh CSS Frontend trên mã nguồn thật của K.AI, chốt luồng tương tác demo.</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Tinh chỉnh CSS Frontend trên mã nguồn backend thật của Quân, chốt luồng tương tác demo.</div>
                   </div>
                 </div>
 
@@ -1140,7 +1342,7 @@ const Dashboard = () => {
                   <div className="gantt-tooltip-css">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                       <span className="legend-dot" style={{ background: 'var(--s3)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
-                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Hiếu · Frontend &amp; MKT</span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>K.AI · Frontend &amp; MKT</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Mentor Wave 2 — Trình bày UX</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 16:00-17:30</div>
@@ -1153,7 +1355,7 @@ const Dashboard = () => {
                   <div className="gantt-tooltip-css">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                       <span className="legend-dot" style={{ background: 'var(--s3)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
-                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Hiếu · Frontend &amp; MKT</span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>K.AI · Frontend &amp; MKT</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Ăn tối và hoạt động faction</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 18:00-19:30</div>
@@ -1166,7 +1368,7 @@ const Dashboard = () => {
                   <div className="gantt-tooltip-css">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                       <span className="legend-dot" style={{ background: 'var(--s3)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
-                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Hiếu · Frontend &amp; MKT</span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>K.AI · Frontend &amp; MKT</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Outline slide &amp; Kịch bản pitch</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 21:00-23:00</div>
@@ -1179,7 +1381,7 @@ const Dashboard = () => {
                   <div className="gantt-tooltip-css">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                       <span className="legend-dot" style={{ background: 'var(--s3)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
-                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Hiếu · Frontend &amp; MKT</span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>K.AI · Frontend &amp; MKT</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Hoàn thiện slide</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 23:00-24:00</div>
@@ -1188,6 +1390,120 @@ const Dashboard = () => {
                 </div>
               </div>
             </div>
+            <div className="gantt-row" style={{ '--cols': 24 }}>
+              <div className="gantt-row-label"><span className="legend-dot" style={{ background: 'var(--s5)' }}></span> Mai</div>
+              <div className="gantt-track" style={{ '--cols': 24 }}>
+                <div className="bar-wrapper" style={{ left: '0%', width: '29.17%' }}>
+                  <div className="bar bar-s5">Tinh chỉnh mô hình</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s5)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Mai · AI/ML & Data</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Tinh chỉnh prompt/RAG xuyên đêm</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 00:00-07:00</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Tinh chỉnh prompt và RAG, nghỉ ngơi luân phiên qua đêm.</div>
+                  </div>
+                </div>
+
+                <div className="bar-wrapper" style={{ left: '29.17%', width: '20.83%' }}>
+                  <div className="bar bar-s5">Mentor 1 &amp; Checkpoint 1</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s5)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Mai · AI/ML & Data</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Trình bày phần AI với Mentor &amp; Checkpoint 1</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 07:00-12:00</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Trình bày phần AI với Mentor Wave 1, hỗ trợ chốt Checkpoint 1.</div>
+                  </div>
+                </div>
+
+                <div className="bar-wrapper" style={{ left: '50%', width: '25%' }}>
+                  <div className="bar bar-s5">Đánh giá độ chính xác AI</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s5)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Mai · AI/ML & Data</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Đo lường độ chính xác mô hình</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 12:00-18:00</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Đo lường độ chính xác AI, chuẩn bị số liệu minh chứng cho AI Collaboration Log.</div>
+                  </div>
+                </div>
+
+                <div className="bar-wrapper" style={{ left: '75%', width: '25%' }}>
+                  <div className="bar bar-s5">Tài liệu AI &amp; Checkpoint 2</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s5)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Mai · AI/ML & Data</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Hoàn thiện tài liệu AI &amp; Checkpoint 2</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 18:00-24:00</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Viết tài liệu mô tả mô hình/pipeline AI, hỗ trợ nộp Checkpoint 2.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="gantt-row" style={{ '--cols': 24 }}>
+              <div className="gantt-row-label"><span className="legend-dot" style={{ background: 'var(--s6)' }}></span> Quang</div>
+              <div className="gantt-track" style={{ '--cols': 24 }}>
+                <div className="bar-wrapper" style={{ left: '0%', width: '29.17%' }}>
+                  <div className="bar bar-s6">Ghép Agent vào Backend</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s6)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Quang · AI Agent & API</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Tích hợp AI Agent vào Backend xuyên đêm</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 00:00-07:00</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Ghép nối AI Agent với API Backend của Quân, nghỉ ngơi luân phiên qua đêm.</div>
+                  </div>
+                </div>
+
+                <div className="bar-wrapper" style={{ left: '29.17%', width: '20.83%' }}>
+                  <div className="bar bar-s6">Mentor 1 &amp; Checkpoint 1</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s6)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Quang · AI Agent & API</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Trình bày kiến trúc AI Agent &amp; Checkpoint 1</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 07:00-12:00</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Trình bày kiến trúc AI Agent với Mentor Wave 1, hỗ trợ chốt Checkpoint 1.</div>
+                  </div>
+                </div>
+
+                <div className="bar-wrapper" style={{ left: '50%', width: '25%' }}>
+                  <div className="bar bar-s6">Kiểm thử tải &amp; bảo mật</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s6)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Quang · AI Agent & API</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Test độ ổn định Agent &amp; bảo mật API</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 12:00-18:00</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Test độ ổn định Agent dưới tải, rà soát lỗ hổng bảo mật API.</div>
+                  </div>
+                </div>
+
+                <div className="bar-wrapper" style={{ left: '75%', width: '25%' }}>
+                  <div className="bar bar-s6">Rà soát cuối &amp; Checkpoint 2</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s6)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Quang · AI Agent & API</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Rà soát bảo mật lần cuối &amp; Checkpoint 2</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 18:00-24:00</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Rà soát bảo mật lần cuối trước checkpoint, hỗ trợ nộp Checkpoint 2.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="axis-row">
               <div></div>
               <div className="axis-ticks" style={{ '--cols': 24 }}>
@@ -1298,7 +1614,7 @@ const Dashboard = () => {
             </div>
 
             <div className="gantt-row" style={{ '--cols': 18 }}>
-              <div className="gantt-row-label"><span className="legend-dot" style={{ background: 'var(--s1)' }}></span> K.AI</div>
+              <div className="gantt-row-label"><span className="legend-dot" style={{ background: 'var(--s1)' }}></span> K.AI (PM)</div>
               <div className="gantt-track" style={{ '--cols': 18 }}>
                 <div className="bar-wrapper" style={{ left: '0%', width: '38.89%' }}>
                   <div className="bar bar-s1">Fix bug &amp; Deploy</div>
@@ -1353,15 +1669,15 @@ const Dashboard = () => {
                 </div>
 
                 <div className="bar-wrapper" style={{ left: '77.78%', width: '16.67%' }}>
-                  <div className="bar bar-s1">Hỗ trợ Q&amp;A</div>
+                  <div className="bar bar-s1">Ôn câu hỏi phản biện</div>
                   <div className="gantt-tooltip-css">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                       <span className="legend-dot" style={{ background: 'var(--s1)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
                       <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>K.AI · PM &amp; Pitching</span>
                     </div>
-                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Hỗ trợ Q&amp;A kỹ thuật</div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Ôn tập câu hỏi phản biện</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 14:00-17:00</div>
-                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Sẵn sàng giải trình các câu hỏi kiến trúc hệ thống và sử dụng AI của BGK khi Hiếu thuyết trình (15:30-17:00).</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Chuẩn bị sẵn câu trả lời cho các câu hỏi kiến trúc hệ thống và sử dụng AI mà BGK có thể hỏi, trước khi lên sân khấu chính (15:30-17:00).</div>
                   </div>
                 </div>
               </div>
@@ -1429,23 +1745,23 @@ const Dashboard = () => {
                       <span className="legend-dot" style={{ background: 'var(--s2)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
                       <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Quân · Backend &amp; DB</span>
                     </div>
-                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Hỗ trợ Q&amp;A sản phẩm</div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Hỗ trợ Q&amp;A kỹ thuật &amp; sản phẩm</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 14:00-17:00</div>
-                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Hỗ trợ Hiếu trả lời các câu hỏi về định hướng kinh doanh, tính khả thi giải pháp trước BGK khi thuyết trình (15:30-17:00).</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Sẵn sàng giải trình các câu hỏi kiến trúc hệ thống, định hướng kinh doanh và tính khả thi giải pháp trước BGK khi K.AI thuyết trình (15:30-17:00).</div>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="gantt-row" style={{ '--cols': 18 }}>
-              <div className="gantt-row-label"><span className="legend-dot" style={{ background: 'var(--s3)' }}></span> Hiếu</div>
+              <div className="gantt-row-label"><span className="legend-dot" style={{ background: 'var(--s3)' }}></span> K.AI (FE)</div>
               <div className="gantt-track" style={{ '--cols': 18 }}>
                 <div className="bar-wrapper" style={{ left: '0%', width: '38.89%' }}>
                   <div className="bar bar-s3">Slide &amp; Pitching</div>
                   <div className="gantt-tooltip-css">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                       <span className="legend-dot" style={{ background: 'var(--s3)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
-                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Hiếu · Frontend &amp; MKT</span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>K.AI · Frontend &amp; MKT</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Hoàn thiện slide &amp; Kịch bản pitch</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 00:00-07:00</div>
@@ -1458,7 +1774,7 @@ const Dashboard = () => {
                   <div className="gantt-tooltip-css">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                       <span className="legend-dot" style={{ background: 'var(--s3)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
-                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Hiếu · Frontend &amp; MKT</span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>K.AI · Frontend &amp; MKT</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Quay &amp; Dựng video demo (≤5 phút)</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 07:00-09:00</div>
@@ -1471,7 +1787,7 @@ const Dashboard = () => {
                   <div className="gantt-tooltip-css">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                       <span className="legend-dot" style={{ background: 'var(--s3)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
-                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Hiếu · Frontend &amp; MKT</span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>K.AI · Frontend &amp; MKT</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Upload video &amp; Nộp slides</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 09:00-11:00</div>
@@ -1484,7 +1800,7 @@ const Dashboard = () => {
                   <div className="gantt-tooltip-css">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                       <span className="legend-dot" style={{ background: 'var(--s3)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
-                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Hiếu · Frontend &amp; MKT</span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>K.AI · Frontend &amp; MKT</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Nghỉ ngơi / Chờ kết quả</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 11:00-14:00</div>
@@ -1497,7 +1813,7 @@ const Dashboard = () => {
                   <div className="gantt-tooltip-css">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                       <span className="legend-dot" style={{ background: 'var(--s3)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
-                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Hiếu · Frontend &amp; MKT</span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>K.AI · Frontend &amp; MKT</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Tập dượt pitching lần cuối</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 14:00-15:00</div>
@@ -1510,7 +1826,7 @@ const Dashboard = () => {
                   <div className="gantt-tooltip-css">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                       <span className="legend-dot" style={{ background: 'var(--s3)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
-                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Hiếu · Frontend &amp; MKT</span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>K.AI · Frontend &amp; MKT</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Theo dõi công bố Top 10</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 15:00</div>
@@ -1523,7 +1839,7 @@ const Dashboard = () => {
                   <div className="gantt-tooltip-css">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                       <span className="legend-dot" style={{ background: 'var(--s3)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
-                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Hiếu · Frontend &amp; MKT</span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>K.AI · Frontend &amp; MKT</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Thuyết trình trên sân khấu chính</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 15:30-17:00</div>
@@ -1532,6 +1848,120 @@ const Dashboard = () => {
                 </div>
               </div>
             </div>
+            <div className="gantt-row" style={{ '--cols': 18 }}>
+              <div className="gantt-row-label"><span className="legend-dot" style={{ background: 'var(--s5)' }}></span> Mai</div>
+              <div className="gantt-track" style={{ '--cols': 18 }}>
+                <div className="bar-wrapper" style={{ left: '0%', width: '38.89%' }}>
+                  <div className="bar bar-s5">Tài liệu mô hình AI</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s5)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Mai · AI/ML & Data</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Hoàn thiện tài liệu mô hình AI</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 00:00-07:00</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Viết tài liệu mô tả pipeline/mô hình AI cho hồ sơ nộp bài.</div>
+                  </div>
+                </div>
+
+                <div className="bar-wrapper" style={{ left: '38.89%', width: '22.22%' }}>
+                  <div className="bar bar-s5">Kiểm tra số liệu AI log</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s5)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Mai · AI/ML & Data</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Kiểm tra số liệu minh chứng AI</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 07:00-11:00</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Rà soát số liệu AI Collaboration Log trước khi nộp bài.</div>
+                  </div>
+                </div>
+
+                <div className="bar-wrapper past" style={{ left: '61.11%', width: '16.67%' }}>
+                  <div className="bar bar-s5">Chờ kết quả</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s5)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Mai · AI/ML & Data</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Nghỉ ngơi, chờ kết quả</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 11:00-14:00</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Nghỉ ngơi lấy sức, theo dõi bảng điểm xếp hạng.</div>
+                  </div>
+                </div>
+
+                <div className="bar-wrapper" style={{ left: '77.78%', width: '22.22%' }}>
+                  <div className="bar bar-s5">Hỗ trợ Q&amp;A AI</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s5)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Mai · AI/ML & Data</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Hỗ trợ Q&amp;A kỹ thuật AI/dữ liệu</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 14:00-17:00</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Sẵn sàng giải trình các câu hỏi về mô hình/dữ liệu AI trước BGK khi K.AI thuyết trình (15:30-17:00).</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="gantt-row" style={{ '--cols': 18 }}>
+              <div className="gantt-row-label"><span className="legend-dot" style={{ background: 'var(--s6)' }}></span> Quang</div>
+              <div className="gantt-track" style={{ '--cols': 18 }}>
+                <div className="bar-wrapper" style={{ left: '0%', width: '38.89%' }}>
+                  <div className="bar bar-s6">Rà soát bảo mật cuối</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s6)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Quang · AI Agent & API</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Rà soát bảo mật lần cuối</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 00:00-07:00</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Kiểm tra toàn bộ API key/secrets, đảm bảo không lộ trước khi public repo.</div>
+                  </div>
+                </div>
+
+                <div className="bar-wrapper" style={{ left: '38.89%', width: '22.22%' }}>
+                  <div className="bar bar-s6">Test ổn định trước nộp</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s6)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Quang · AI Agent & API</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Test ổn định Agent lần cuối</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 07:00-11:00</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Chạy test tải lần cuối, xác nhận AI Agent chạy ổn định trước khi nộp bài.</div>
+                  </div>
+                </div>
+
+                <div className="bar-wrapper past" style={{ left: '61.11%', width: '16.67%' }}>
+                  <div className="bar bar-s6">Chờ kết quả</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s6)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Quang · AI Agent & API</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Nghỉ ngơi, chờ kết quả</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 11:00-14:00</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Nghỉ ngơi lấy sức, theo dõi bảng điểm xếp hạng.</div>
+                  </div>
+                </div>
+
+                <div className="bar-wrapper" style={{ left: '77.78%', width: '22.22%' }}>
+                  <div className="bar bar-s6">Hỗ trợ Q&amp;A Agent</div>
+                  <div className="gantt-tooltip-css">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                      <span className="legend-dot" style={{ background: 'var(--s6)', width: '8px', height: '8px', borderRadius: '50%' }}></span>
+                      <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>Quang · AI Agent & API</span>
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '4px', color: 'var(--text-primary)' }}>Hỗ trợ Q&amp;A kỹ thuật Agent/bảo mật</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '6px', fontSize: '0.75rem' }}>Khung giờ: 14:00-17:00</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Sẵn sàng giải trình các câu hỏi về AI Agent/bảo mật trước BGK khi K.AI thuyết trình (15:30-17:00).</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="axis-row">
               <div></div>
               <div className="axis-ticks" style={{ '--cols': 18 }}>
@@ -1549,9 +1979,11 @@ const Dashboard = () => {
           <div className="legend-item"><span className="legend-dot" style={{ background: 'var(--s4)' }}></span> Agenda · Sự kiện chính</div>
           <div className="legend-item"><span className="legend-dot" style={{ background: 'var(--s1)' }}></span> K.AI · PM &amp; Pitching</div>
           <div className="legend-item"><span className="legend-dot" style={{ background: 'var(--s2)' }}></span> Quân · Backend &amp; Database</div>
-          <div className="legend-item"><span className="legend-dot" style={{ background: 'var(--s3)' }}></span> Hiếu · Frontend &amp; Marketing</div>
+          <div className="legend-item"><span className="legend-dot" style={{ background: 'var(--s3)' }}></span> K.AI · Frontend &amp; Marketing</div>
+          <div className="legend-item"><span className="legend-dot" style={{ background: 'var(--s5)' }}></span> Mai · AI/ML &amp; Data</div>
+          <div className="legend-item"><span className="legend-dot" style={{ background: 'var(--s6)' }}></span> Quang · AI Agent &amp; API/Security</div>
         </div>
-        <div className="note">Ô mờ (opacity thấp) trên hàng K.AI/Quân/Hiếu là khung nghỉ ngơi luân phiên — điều chỉnh theo thể trạng thực tế, luôn đảm bảo ít nhất 2 người thức khi cần xử lý sự cố.</div>
+        <div className="note">Ô mờ (opacity thấp) là khung nghỉ ngơi luân phiên — điều chỉnh theo thể trạng thực tế, luôn đảm bảo ít nhất 1 người thức khi cần xử lý sự cố. (Lâm — QA &amp; Hậu cần — hỗ trợ xuyên suốt cả 5 giai đoạn, xem chi tiết ở trang Phân công vai trò.)</div>
       </div>
 
 
