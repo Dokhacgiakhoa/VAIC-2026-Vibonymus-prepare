@@ -10,10 +10,10 @@ export const roles = [
 ];
 
 export const syncCheckpoints = [
-  'Cả team xác nhận API contract, wireframe & business case trước khi tách nhánh làm việc song song.',
-  'Demo nội bộ giữa chặng — Backend, Frontend & AI Core ghép thử, Mai báo lỗi tức thời để chỉnh.',
-  'Đánh giá chéo UI/UX, độ chính xác AI và tính khả thi kinh doanh, phản hồi 2 chiều trước khi khoá tính năng.',
-  'Kiểm thử toàn hệ thống, pentest lần cuối, chốt bản build và kịch bản pitch cuối cùng.'
+  'Sync nội bộ: xác nhận API contract, wireframe & business case trước khi tách nhánh làm việc.',
+  'Checkpoint 1 (BTC, 10:00–12:00 18/07): nộp tên dự án & mô tả ngắn — bắt buộc, không gia hạn.',
+  'Checkpoint 2 (BTC, 21:00–23:00 18/07): nộp GitHub Repo (public) & Live URL — bắt buộc.',
+  'Code Freeze (BTC, 11:00 19/07): đóng cổng nộp bài, khoá GitHub & live link — không sửa được nữa.'
 ];
 
 export const sharedChannels = [
@@ -24,7 +24,7 @@ export const sharedChannels = [
 
 export const timelineSteps = [
   {
-    time: 'Giờ 1 - Giờ 4',
+    time: 'Giờ 1–4',
     phase: 'Khởi động & Thiết kế Kiến trúc',
     title: 'Định hình sản phẩm & Database Schema',
     desc: 'Ngay sau khi BTC công bố đề bài chi tiết (11:00 ngày 17/07), team nhanh chóng hội ý chốt phương án và thiết kế nền tảng.',
@@ -44,8 +44,8 @@ export const timelineSteps = [
     plan: '11:00 BTC công bố đề -> 11:30 K.AI hoàn tất phân tích đề nháp -> 12:30 K.AI & Quân chốt API Contract -> 14:00 Hoàn tất khung thiết kế.'
   },
   {
-    time: 'Giờ 5 - Giờ 24',
-    phase: 'Tăng tốc Phát triển (Giai đoạn 1)',
+    time: 'Giờ 5–24',
+    phase: 'Tăng tốc Phát triển → Checkpoint 1',
     title: 'Xây dựng Core Logic & Giao diện cơ bản',
     desc: 'Cả team bắt tay vào phần việc lõi của mình dưới sự hỗ trợ của các trợ lý AI chuyên biệt.',
     tasks: {
@@ -59,13 +59,14 @@ export const timelineSteps = [
     checklist: [
       'Backend chạy thử local thành công và phản hồi API đúng cấu trúc JSON.',
       'Frontend hiển thị được dữ liệu mock từ local API không bị lỗi UI.',
-      'AI Agent trả về phản hồi đầu tiên qua Swagger UI với độ trễ thấp.'
+      'AI Agent trả về phản hồi đầu tiên qua Swagger UI với độ trễ thấp.',
+      'Sẵn sàng tên dự án & mô tả ngắn để nộp Checkpoint 1 trước 12:00 ngày 18/07.'
     ],
-    plan: 'Mỗi 4 tiếng commit code 1 lần -> 20:00 Demo chặng 1 (giữa giờ) -> Quang/Lâm kiểm tra AI service -> K.AI & Quân ghép thử API lần 1.'
+    plan: 'Mỗi 4 tiếng commit code 1 lần -> 20:00 Demo chặng 1 (giữa giờ) -> Quang/Lâm kiểm tra AI service -> K.AI & Quân ghép thử API lần 1 -> 10:00-12:00 ngày 18/07 nộp Checkpoint 1 (tên dự án + mô tả ngắn).'
   },
   {
-    time: 'Giờ 25 - Giờ 36',
-    phase: 'Hoàn thiện & Tối ưu (Giai đoạn 2)',
+    time: 'Giờ 25–36',
+    phase: 'Hoàn thiện & Tối ưu → Checkpoint 2',
     title: 'Tích hợp sâu AI & Đánh bóng UI/UX',
     desc: 'Giai đoạn then chốt để tạo ra tính đột phá (AI-Native) và giao diện bắt mắt nhất.',
     tasks: {
@@ -79,15 +80,16 @@ export const timelineSteps = [
     checklist: [
       'Hoàn tất tích hợp AI vào API chính của hệ thống, không bị nghẽn mạng.',
       'Độ trễ phản hồi API giảm xuống dưới 500ms (sau khi cache và tối ưu).',
-      'Giao diện responsive 100% trên các thiết bị phổ thông (Mobile, Tablet, Desktop).'
+      'Giao diện responsive 100% trên các thiết bị phổ thông (Mobile, Tablet, Desktop).',
+      'GitHub Repo (public) & Live URL sẵn sàng để nộp Checkpoint 2 trước 23:00 ngày 18/07.'
     ],
-    plan: '10:00 sáng ngày 18/07 ghép nối toàn diện -> 12:00 chốt kiểm thử UI/UX -> 14:00 Quang/Lâm chạy thử Prompt Tuning chặng cuối.'
+    plan: '12:00 sau Checkpoint 1, ghép nối toàn diện -> 15:00-17:00 Mentor Wave 1 rà soát -> 20:00 Quang/Lâm chạy thử Prompt Tuning chặng cuối -> 21:00-23:00 nộp Checkpoint 2 (GitHub repo public + live URL).'
   },
   {
-    time: 'Giờ 37 - Giờ 48',
-    phase: 'Kiểm thử & Chuẩn bị Pitching',
+    time: 'Giờ 37–48',
+    phase: 'Kiểm thử & Đóng gói → Code Freeze',
     title: 'Đóng gói sản phẩm & Tối ưu hóa Thuyết trình',
-    desc: 'Đảm bảo sản phẩm chạy ổn định 100% và chuẩn bị kịch bản thuyết trình ấn tượng nhất.',
+    desc: 'Đảm bảo sản phẩm chạy ổn định 100% và nộp bài hoàn chỉnh trước khi BTC đóng cổng (Code Freeze) lúc 11:00 ngày 19/07.',
     tasks: {
       kai: 'Deploy ứng dụng lên Vercel/Render, nén backup database, chạy kiểm tra tải giả lập.',
       quan: 'Đánh bóng giao diện lần cuối, đồng bộ thiết kế slide thuyết trình với thương hiệu sản phẩm.',
@@ -99,9 +101,10 @@ export const timelineSteps = [
     checklist: [
       'Deploy production thành công, link demo chạy ổn định không có lỗi vặt.',
       'Video demo sản phẩm 2 phút chất lượng Full HD hoàn tất có lời thoại.',
-      'Slide pitching (PDF/Google Slides) sẵn sàng và được đồng bộ thiết kế thương hiệu.'
+      'Slide pitching (PDF/Google Slides) sẵn sàng và được đồng bộ thiết kế thương hiệu.',
+      'Đã nộp bài đầy đủ trước 11:00 ngày 19/07 (Code Freeze) — GitHub, live URL, mô tả dự án.'
     ],
-    plan: '18:00 Đóng băng mã nguồn (Code Freeze) -> 19:00 Chạy thử pitching demo lần 1 -> 20:30 Tổng duyệt lần cuối toàn team.'
+    plan: '23:00 (sau Checkpoint 2) tiếp tục xuyên đêm hoàn thiện -> 07:30 ăn sáng -> 08:00-11:00 rà soát lần cuối -> 11:00 ngày 19/07 Code Freeze: BTC đóng cổng nộp bài, khoá GitHub & live link -> 13:00-18:00 Demo prep -> 18:00 Pitch & Bế mạc.'
   }
 ];
 
