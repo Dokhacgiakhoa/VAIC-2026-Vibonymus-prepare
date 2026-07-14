@@ -70,8 +70,15 @@ async function main() {
   });
   process.stdout.write('\n');
 
-  const uniqueHandles = [...new Set(rawTeams.flatMap((t) => (t.members || []).map((m) => m.handle)).filter(Boolean))];
-  console.log(`Cần cào hồ sơ của ${uniqueHandles.length} thành viên duy nhất...`);
+  // Lọc các đội hợp lệ (có từ 2 đến 6 thành viên)
+  const validRawTeams = rawTeams.filter((t) => {
+    const count = (t.members || []).length;
+    return count >= 2 && count <= 6;
+  });
+  console.log(`Đã lọc: ${validRawTeams.length}/${rawTeams.length} đội hợp lệ (có từ 2 đến 6 thành viên).`);
+
+  const uniqueHandles = [...new Set(validRawTeams.flatMap((t) => (t.members || []).map((m) => m.handle)).filter(Boolean))];
+  console.log(`Cần cào hồ sơ của ${uniqueHandles.length} thành viên duy nhất thuộc các đội hợp lệ...`);
 
   const profilesByHandle = new Map();
   let fetchedCount = 0;
@@ -106,7 +113,7 @@ async function main() {
   }
   process.stdout.write('\n');
 
-  const teams = rawTeams.map((rawTeam) => transformTeam(rawTeam, profilesByHandle, labelMaps));
+  const teams = validRawTeams.map((rawTeam) => transformTeam(rawTeam, profilesByHandle, labelMaps));
 
   const newSnapshot = {
     scrapedAt: new Date().toISOString(),

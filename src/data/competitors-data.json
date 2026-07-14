@@ -1,7 +1,7 @@
 {
-  "scrapedAt": "2026-07-14T04:51:33.919Z",
+  "scrapedAt": "2026-07-14T14:57:25.426Z",
   "scrapedBy": "dokhacgiakhoa666-gmail-com",
-  "totalTeams": 264,
+  "totalTeams": 234,
   "teams": [
     {
       "slug": "duskdash",
@@ -106,6 +106,132 @@
           ],
           "links": {
             "github": "https://github.com/huycodega",
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        }
+      ]
+    },
+    {
+      "slug": "proptitnemchuaran",
+      "name": "<ProPTIT/>  Nem Chua Rán",
+      "interests": [
+        "Đổi mới Sáng tạo",
+        "Năng suất Doanh nghiệp Vừa & Nhỏ"
+      ],
+      "skillsNeeded": [
+        "AI/ML"
+      ],
+      "memberCount": 5,
+      "leaderHandle": "dangvu",
+      "members": [
+        {
+          "handle": "vanthimailinh",
+          "name": "Văn Thị Mai Linh",
+          "isLeader": false,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [
+            "Công nghệ"
+          ],
+          "skills": [
+            "AI/ML",
+            "Vibe Coding",
+            "Python",
+            "UI/UX"
+          ],
+          "links": {
+            "github": "https://github.com/MaiLinhLinh",
+            "linkedin": "https://linkedin.com/in/linh-văn-thị-mai-b23a6a3ab",
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "theluc",
+          "name": "Thế Lực",
+          "isLeader": false,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "tranhailong",
+          "name": "Trần Hải Long",
+          "isLeader": false,
+          "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
+            "Kỹ thuật / Developer"
+          ],
+          "industries": [
+            "Công nghệ"
+          ],
+          "skills": [
+            "AI/ML",
+            "API / Tích hợp hệ thống",
+            "Web Development"
+          ],
+          "links": {
+            "github": "https://github.com/halobiron",
+            "linkedin": "https://linkedin.com/in/long-tr%E1%BA%A7n-h%E1%BA%A3i-aa91b3355",
+            "website": "https://hailong-portfolio.vercel.app/"
+          },
+          "description": null
+        },
+        {
+          "handle": "dangvu",
+          "name": "Đăng Vũ",
+          "isLeader": true,
+          "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
+            "Kỹ thuật / Developer"
+          ],
+          "industries": [
+            "Sản xuất",
+            "Công nghệ"
+          ],
+          "skills": [
+            "AI/ML",
+            "API / Tích hợp hệ thống",
+            "Khoa học dữ liệu",
+            "Vibe Coding",
+            "UI/UX"
+          ],
+          "links": {
+            "github": "https://github.com/DarkJyn",
+            "linkedin": "https://linkedin.com/in/hai-dang-do-vu-9bb23a356/",
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "buithikimmai",
+          "name": "Bùi Thị Kim Mai",
+          "isLeader": false,
+          "occupations": [
+            "Kinh doanh / Chiến lược",
+            "Quản lý Dự án / Chương trình"
+          ],
+          "industries": [
+            "Nhân sự",
+            "Logistics"
+          ],
+          "skills": [
+            "Nghiên cứu",
+            "Chiến lược / Tài chính"
+          ],
+          "links": {
+            "github": null,
             "linkedin": null,
             "website": null
           },
@@ -246,132 +372,6 @@
           ],
           "industries": [],
           "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
-      "slug": "proptitnemchuaran",
-      "name": "<ProPTIT/>  Nem Chua Rán",
-      "interests": [
-        "Đổi mới Sáng tạo",
-        "Năng suất Doanh nghiệp Vừa & Nhỏ"
-      ],
-      "skillsNeeded": [
-        "AI/ML"
-      ],
-      "memberCount": 5,
-      "leaderHandle": "dangvu",
-      "members": [
-        {
-          "handle": "vanthimailinh",
-          "name": "Văn Thị Mai Linh",
-          "isLeader": false,
-          "occupations": [
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [
-            "Công nghệ"
-          ],
-          "skills": [
-            "AI/ML",
-            "Vibe Coding",
-            "Python",
-            "UI/UX"
-          ],
-          "links": {
-            "github": "https://github.com/MaiLinhLinh",
-            "linkedin": "https://linkedin.com/in/linh-văn-thị-mai-b23a6a3ab",
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "theluc",
-          "name": "Thế Lực",
-          "isLeader": false,
-          "occupations": [
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "tranhailong",
-          "name": "Trần Hải Long",
-          "isLeader": false,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
-            "Kỹ thuật / Developer"
-          ],
-          "industries": [
-            "Công nghệ"
-          ],
-          "skills": [
-            "AI/ML",
-            "API / Tích hợp hệ thống",
-            "Web Development"
-          ],
-          "links": {
-            "github": "https://github.com/halobiron",
-            "linkedin": "https://linkedin.com/in/long-tr%E1%BA%A7n-h%E1%BA%A3i-aa91b3355",
-            "website": "https://hailong-portfolio.vercel.app/"
-          },
-          "description": null
-        },
-        {
-          "handle": "dangvu",
-          "name": "Đăng Vũ",
-          "isLeader": true,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
-            "Kỹ thuật / Developer"
-          ],
-          "industries": [
-            "Sản xuất",
-            "Công nghệ"
-          ],
-          "skills": [
-            "AI/ML",
-            "API / Tích hợp hệ thống",
-            "Khoa học dữ liệu",
-            "Vibe Coding",
-            "UI/UX"
-          ],
-          "links": {
-            "github": "https://github.com/DarkJyn",
-            "linkedin": "https://linkedin.com/in/hai-dang-do-vu-9bb23a356/",
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "buithikimmai",
-          "name": "Bùi Thị Kim Mai",
-          "isLeader": false,
-          "occupations": [
-            "Kinh doanh / Chiến lược",
-            "Quản lý Dự án / Chương trình"
-          ],
-          "industries": [
-            "Nhân sự",
-            "Logistics"
-          ],
-          "skills": [
-            "Nghiên cứu",
-            "Chiến lược / Tài chính"
-          ],
           "links": {
             "github": null,
             "linkedin": null,
@@ -875,10 +875,17 @@
           "name": "Nguyễn Kế Lương",
           "isLeader": true,
           "occupations": [
+            "Nghiên cứu / Học thuật",
             "Học sinh & Sinh viên"
           ],
-          "industries": [],
-          "skills": [],
+          "industries": [
+            "Chính phủ",
+            "Công nghệ"
+          ],
+          "skills": [
+            "AI/ML",
+            "Nghiên cứu"
+          ],
           "links": {
             "github": "https://github.com/NguyenKeLuong",
             "linkedin": null,
@@ -2353,9 +2360,10 @@
             "Logistics"
           ],
           "skills": [
-            "AI/ML",
             "Khoa học dữ liệu",
-            "Vibe Coding"
+            "Vibe Coding",
+            "Quản lý Sản phẩm",
+            "Chiến lược / Tài chính"
           ],
           "links": {
             "github": null,
@@ -3314,305 +3322,6 @@
       ]
     },
     {
-      "slug": "nopainnogain",
-      "name": "nopainnogain",
-      "interests": [
-        "Nông nghiệp",
-        "Ngân hàng & Tài chính",
-        "Đổi mới Sáng tạo"
-      ],
-      "skillsNeeded": [
-        "UI/UX"
-      ],
-      "memberCount": 5,
-      "leaderHandle": "nguyenkhanhtoan",
-      "members": [
-        {
-          "handle": "vuthihuongthu",
-          "name": "Vũ Thị Hương Thư",
-          "isLeader": false,
-          "occupations": [
-            "Kinh doanh / Chiến lược",
-            "Marketing / Tăng trưởng"
-          ],
-          "industries": [
-            "Nhân sự"
-          ],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "nguyenkhanhtoan",
-          "name": "Nguyễn Khánh Toàn",
-          "isLeader": true,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
-            "Kỹ thuật / Developer"
-          ],
-          "industries": [
-            "Công nghệ"
-          ],
-          "skills": [
-            "Backend",
-            "Điện toán đám mây",
-            "DevOps",
-            "Python",
-            "Bảo mật"
-          ],
-          "links": {
-            "github": "https://github.com/ToanNguyen13025",
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "thanhhuudat",
-          "name": "Thành Hựu Đạt",
-          "isLeader": false,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "duongngohoangvu",
-          "name": "Duong Ngo Hoang Vu",
-          "isLeader": false,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
-            "Kỹ thuật / Developer"
-          ],
-          "industries": [
-            "Công nghệ tài chính",
-            "Công nghệ"
-          ],
-          "skills": [
-            "AI/ML",
-            "DevOps",
-            "Vibe Coding",
-            "Nghiên cứu",
-            "Bảo mật"
-          ],
-          "links": {
-            "github": "https://github.com/HoangZuzi-14",
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "tahailuan",
-          "name": "Tạ Hải Luân",
-          "isLeader": false,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
-      "slug": "nullpointer",
-      "name": "Null Pointer",
-      "interests": [
-        "Giáo dục & Đào tạo",
-        "Ngân hàng & Tài chính",
-        "Y tế & Sức khỏe"
-      ],
-      "skillsNeeded": [
-        "AI/ML",
-        "Backend",
-        "Vibe Coding",
-        "Python",
-        "Bảo mật"
-      ],
-      "memberCount": 6,
-      "leaderHandle": "nguyenvanquy",
-      "members": [
-        {
-          "handle": "nguyenvanquy",
-          "name": "Nguyễn Văn Qúy",
-          "isLeader": true,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
-            "Kỹ thuật / Developer"
-          ],
-          "industries": [
-            "Công nghệ"
-          ],
-          "skills": [
-            "API / Tích hợp hệ thống",
-            "Backend",
-            "Frontend",
-            "Vibe Coding",
-            "Web Development"
-          ],
-          "links": {
-            "github": "https://github.com/QuyQuy123",
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "nguyenquoctien",
-          "name": "Nguyễn Quốc Tiến",
-          "isLeader": false,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "lehuukhoa",
-          "name": "Lê Hữu Khoa",
-          "isLeader": false,
-          "occupations": [
-            "Nghiên cứu / Học thuật",
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [
-            "Y tế",
-            "Công nghệ"
-          ],
-          "skills": [
-            "AI/ML",
-            "API / Tích hợp hệ thống",
-            "Web Development"
-          ],
-          "links": {
-            "github": "https://github.com/Aohkne",
-            "linkedin": "https://linkedin.com/in/huukhoa",
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "phanvotrongtien",
-          "name": "Phan Võ Trọng Tiển",
-          "isLeader": false,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
-          ],
-          "industries": [],
-          "skills": [
-            "AI/ML",
-            "Khoa học dữ liệu",
-            "Vibe Coding",
-            "Quản lý Sản phẩm"
-          ],
-          "links": {
-            "github": "https://github.com/winthebest",
-            "linkedin": "https://www.linkedin.com/in/stevenphn2003/",
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "dammanhdung",
-          "name": "Đàm Mạnh Dũng",
-          "isLeader": false,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "hoanglongvu",
-          "name": "Hoàng Long Vũ",
-          "isLeader": false,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [],
-          "skills": [
-            "AI/ML",
-            "Frontend",
-            "Phát triển di động",
-            "Vibe Coding",
-            "Chiến lược / Tài chính"
-          ],
-          "links": {
-            "github": "github.com/dragonboy1206",
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
-      "slug": "gotitteam",
-      "name": "ROCKET TEAM",
-      "interests": [
-        "Năng suất Doanh nghiệp Vừa & Nhỏ"
-      ],
-      "skillsNeeded": [
-        "JavaScript"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "nguyentientruong",
-      "members": [
-        {
-          "handle": "nguyentientruong",
-          "name": "Nguyễn Tiến Trường",
-          "isLeader": true,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
-            "Kỹ thuật / Developer"
-          ],
-          "industries": [
-            "Thương mại điện tử"
-          ],
-          "skills": [
-            "API / Tích hợp hệ thống",
-            "Backend"
-          ],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
       "slug": "nguoiconxunghe",
       "name": "Người con xứ Nghệ",
       "interests": [
@@ -3720,6 +3429,124 @@
           "industries": [
             "Công nghệ"
           ],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        }
+      ]
+    },
+    {
+      "slug": "nopainnogain",
+      "name": "nopainnogain",
+      "interests": [
+        "Nông nghiệp",
+        "Ngân hàng & Tài chính",
+        "Đổi mới Sáng tạo"
+      ],
+      "skillsNeeded": [
+        "UI/UX"
+      ],
+      "memberCount": 5,
+      "leaderHandle": "nguyenkhanhtoan",
+      "members": [
+        {
+          "handle": "vuthihuongthu",
+          "name": "Vũ Thị Hương Thư",
+          "isLeader": false,
+          "occupations": [
+            "Kinh doanh / Chiến lược",
+            "Marketing / Tăng trưởng"
+          ],
+          "industries": [
+            "Nhân sự"
+          ],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "nguyenkhanhtoan",
+          "name": "Nguyễn Khánh Toàn",
+          "isLeader": true,
+          "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
+            "Kỹ thuật / Developer"
+          ],
+          "industries": [
+            "Công nghệ"
+          ],
+          "skills": [
+            "Backend",
+            "Điện toán đám mây",
+            "DevOps",
+            "Python",
+            "Bảo mật"
+          ],
+          "links": {
+            "github": "https://github.com/ToanNguyen13025",
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "thanhhuudat",
+          "name": "Thành Hựu Đạt",
+          "isLeader": false,
+          "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "duongngohoangvu",
+          "name": "Duong Ngo Hoang Vu",
+          "isLeader": false,
+          "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
+            "Kỹ thuật / Developer"
+          ],
+          "industries": [
+            "Công nghệ tài chính",
+            "Công nghệ"
+          ],
+          "skills": [
+            "AI/ML",
+            "DevOps",
+            "Vibe Coding",
+            "Nghiên cứu",
+            "Bảo mật"
+          ],
+          "links": {
+            "github": "https://github.com/HoangZuzi-14",
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "tahailuan",
+          "name": "Tạ Hải Luân",
+          "isLeader": false,
+          "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
+          ],
+          "industries": [],
           "skills": [],
           "links": {
             "github": null,
@@ -4465,90 +4292,51 @@
       ]
     },
     {
-      "slug": "lumolab",
-      "name": "LumoLab",
+      "slug": "nullpointer",
+      "name": "Null Pointer",
       "interests": [
         "Giáo dục & Đào tạo",
-        "Phòng chống Thiên tai",
-        "Đổi mới Sáng tạo"
+        "Ngân hàng & Tài chính",
+        "Y tế & Sức khỏe"
       ],
       "skillsNeeded": [
         "AI/ML",
-        "API / Tích hợp hệ thống",
         "Backend",
-        "DevOps",
-        "Nghiên cứu"
+        "Vibe Coding",
+        "Python",
+        "Bảo mật"
       ],
-      "memberCount": 4,
-      "leaderHandle": "hung",
+      "memberCount": 6,
+      "leaderHandle": "nguyenvanquy",
       "members": [
         {
-          "handle": "hung",
-          "name": "Hưng",
+          "handle": "nguyenvanquy",
+          "name": "Nguyễn Văn Qúy",
           "isLeader": true,
           "occupations": [
-            "Kỹ thuật / Developer",
-            "Sáng lập / Khởi nghiệp"
-          ],
-          "industries": [
-            "Giáo dục",
-            "Công nghệ tài chính"
-          ],
-          "skills": [
-            "AI/ML",
-            "API / Tích hợp hệ thống",
-            "Frontend",
-            "Vibe Coding",
-            "Web Development"
-          ],
-          "links": {
-            "github": "https://github.com/HungBil",
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "nguyenminhhung",
-          "name": "Nguyễn Minh Hùng",
-          "isLeader": false,
-          "occupations": [
             "Trí tuệ nhân tạo / Dữ liệu / Học máy",
-            "Học sinh & Sinh viên"
+            "Kỹ thuật / Developer"
           ],
           "industries": [
             "Công nghệ"
           ],
           "skills": [
-            "AI/ML",
-            "Nghiên cứu"
+            "API / Tích hợp hệ thống",
+            "Backend",
+            "Frontend",
+            "Vibe Coding",
+            "Web Development"
           ],
           "links": {
-            "github": "https://github.com/hHUnGGGGG",
+            "github": "https://github.com/QuyQuy123",
             "linkedin": null,
             "website": null
           },
           "description": null
         },
         {
-          "handle": "huynhvannghia",
-          "name": "Huỳnh Văn Nghĩa",
-          "isLeader": false,
-          "occupations": [
-            "Kỹ thuật / Developer"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "khuatvanvuong",
-          "name": "Khuất Văn Vương",
+          "handle": "nguyenquoctien",
+          "name": "Nguyễn Quốc Tiến",
           "isLeader": false,
           "occupations": [
             "Trí tuệ nhân tạo / Dữ liệu / Học máy"
@@ -4561,220 +4349,87 @@
             "website": null
           },
           "description": null
-        }
-      ]
-    },
-    {
-      "slug": "tramcammaxxing",
-      "name": "tramcam-maxxing",
-      "interests": [
-        "Ngân hàng & Tài chính",
-        "Đổi mới Sáng tạo",
-        "Chính phủ Thông minh"
-      ],
-      "skillsNeeded": [
-        "AI/ML",
-        "Nghiên cứu",
-        "Chiến lược / Tài chính"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "nguyenleminhhoang",
-      "members": [
+        },
         {
-          "handle": "nguyenleminhhoang",
-          "name": "Nguyễn Lê Minh Hoàng",
-          "isLeader": true,
+          "handle": "lehuukhoa",
+          "name": "Lê Hữu Khoa",
+          "isLeader": false,
           "occupations": [
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": "https://www.linkedin.com/in/nguyen-le-minh-hoang-a66b4b2a1/",
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
-      "slug": "afsagentforgottosleep",
-      "name": "AFS - Agent Forgot to Sleep",
-      "interests": [
-        "Đổi mới Sáng tạo",
-        "Chính phủ Thông minh",
-        "Năng suất Doanh nghiệp Vừa & Nhỏ"
-      ],
-      "skillsNeeded": [
-        "Quản lý Sản phẩm",
-        "Chiến lược / Tài chính"
-      ],
-      "memberCount": 4,
-      "leaderHandle": "lenhuy",
-      "members": [
-        {
-          "handle": "lenhuy",
-          "name": "Lê Như Ý",
-          "isLeader": true,
-          "occupations": [
-            "Kỹ thuật / Developer",
+            "Nghiên cứu / Học thuật",
             "Học sinh & Sinh viên"
           ],
           "industries": [
-            "Giáo dục",
-            "Công nghệ"
-          ],
-          "skills": [
-            "API / Tích hợp hệ thống",
-            "Backend",
-            "Frontend",
-            "JavaScript",
-            "Vibe Coding"
-          ],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "tongdanh",
-          "name": "Tống Danh",
-          "isLeader": false,
-          "occupations": [],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "nguyennam",
-          "name": "Nguyễn Nam",
-          "isLeader": false,
-          "occupations": [
-            "Kỹ thuật / Developer"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "lekhang",
-          "name": "Lê Khang",
-          "isLeader": false,
-          "occupations": [
-            "Kỹ thuật / Developer"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
-      "slug": "agentee",
-      "name": "Agentee",
-      "interests": [
-        "Năng suất Doanh nghiệp Vừa & Nhỏ"
-      ],
-      "skillsNeeded": [
-        "AI/ML",
-        "API / Tích hợp hệ thống",
-        "Web Development"
-      ],
-      "memberCount": 4,
-      "leaderHandle": "thangle",
-      "members": [
-        {
-          "handle": "thangle",
-          "name": "Thang Le",
-          "isLeader": true,
-          "occupations": [
-            "Quản lý Sản phẩm"
-          ],
-          "industries": [
+            "Y tế",
             "Công nghệ"
           ],
           "skills": [
             "AI/ML",
-            "Quản lý Sản phẩm",
+            "API / Tích hợp hệ thống",
             "Web Development"
           ],
           "links": {
-            "github": "https://github.com/ledevthang",
-            "linkedin": "http://linkedin.com/in/ledevthang",
+            "github": "https://github.com/Aohkne",
+            "linkedin": "https://linkedin.com/in/huukhoa",
             "website": null
           },
           "description": null
         },
         {
-          "handle": "hieudoanduc",
-          "name": "Hieu Doan Duc",
+          "handle": "phanvotrongtien",
+          "name": "Phan Võ Trọng Tiển",
           "isLeader": false,
           "occupations": [
-            "Kỹ thuật / Developer"
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
           ],
           "industries": [],
           "skills": [
-            "Web Development"
+            "AI/ML",
+            "Khoa học dữ liệu",
+            "Vibe Coding",
+            "Quản lý Sản phẩm"
           ],
           "links": {
-            "github": null,
-            "linkedin": null,
+            "github": "https://github.com/winthebest",
+            "linkedin": "https://www.linkedin.com/in/stevenphn2003/",
             "website": null
           },
           "description": null
         },
         {
-          "handle": "nguyenngoclong",
-          "name": "Nguyễn Ngọc Long",
+          "handle": "dammanhdung",
+          "name": "Đàm Mạnh Dũng",
           "isLeader": false,
           "occupations": [
-            "Kỹ thuật / Developer"
-          ],
-          "industries": [],
-          "skills": [
-            "Backend",
-            "Frontend",
-            "JavaScript",
-            "Phát triển di động",
-            "Vibe Coding"
-          ],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "hocvuvan",
-          "name": "Học Vũ Văn",
-          "isLeader": false,
-          "occupations": [
-            "Kỹ thuật / Developer"
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
           ],
           "industries": [],
           "skills": [],
           "links": {
             "github": null,
-            "linkedin": "https://www.linkedin.com/in/hocvv1199/",
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "hoanglongvu",
+          "name": "Hoàng Long Vũ",
+          "isLeader": false,
+          "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [],
+          "skills": [
+            "AI/ML",
+            "Frontend",
+            "Phát triển di động",
+            "Vibe Coding",
+            "Chiến lược / Tài chính"
+          ],
+          "links": {
+            "github": "github.com/dragonboy1206",
+            "linkedin": null,
             "website": null
           },
           "description": null
@@ -4923,6 +4578,298 @@
       ]
     },
     {
+      "slug": "lumolab",
+      "name": "LumoLab",
+      "interests": [
+        "Giáo dục & Đào tạo",
+        "Phòng chống Thiên tai",
+        "Đổi mới Sáng tạo"
+      ],
+      "skillsNeeded": [
+        "AI/ML",
+        "API / Tích hợp hệ thống",
+        "Backend",
+        "DevOps",
+        "Nghiên cứu"
+      ],
+      "memberCount": 4,
+      "leaderHandle": "hung",
+      "members": [
+        {
+          "handle": "hung",
+          "name": "Hưng",
+          "isLeader": true,
+          "occupations": [
+            "Kỹ thuật / Developer",
+            "Sáng lập / Khởi nghiệp"
+          ],
+          "industries": [
+            "Giáo dục",
+            "Công nghệ tài chính"
+          ],
+          "skills": [
+            "AI/ML",
+            "API / Tích hợp hệ thống",
+            "Frontend",
+            "Vibe Coding",
+            "Web Development"
+          ],
+          "links": {
+            "github": "https://github.com/HungBil",
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "nguyenminhhung",
+          "name": "Nguyễn Minh Hùng",
+          "isLeader": false,
+          "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [
+            "Công nghệ"
+          ],
+          "skills": [
+            "AI/ML",
+            "Nghiên cứu"
+          ],
+          "links": {
+            "github": "https://github.com/hHUnGGGGG",
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "huynhvannghia",
+          "name": "Huỳnh Văn Nghĩa",
+          "isLeader": false,
+          "occupations": [
+            "Kỹ thuật / Developer"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "khuatvanvuong",
+          "name": "Khuất Văn Vương",
+          "isLeader": false,
+          "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        }
+      ]
+    },
+    {
+      "slug": "afsagentforgottosleep",
+      "name": "AFS - Agent Forgot to Sleep",
+      "interests": [
+        "Đổi mới Sáng tạo",
+        "Chính phủ Thông minh",
+        "Năng suất Doanh nghiệp Vừa & Nhỏ"
+      ],
+      "skillsNeeded": [
+        "Quản lý Sản phẩm",
+        "Chiến lược / Tài chính"
+      ],
+      "memberCount": 5,
+      "leaderHandle": "lenhuy",
+      "members": [
+        {
+          "handle": "lenhuy",
+          "name": "Lê Như Ý",
+          "isLeader": true,
+          "occupations": [
+            "Kỹ thuật / Developer",
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [
+            "Công nghệ"
+          ],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "tongdanh",
+          "name": "Tống Danh",
+          "isLeader": false,
+          "occupations": [],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "nguyennam",
+          "name": "Nguyễn Nam",
+          "isLeader": false,
+          "occupations": [
+            "Kỹ thuật / Developer"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "lekhang",
+          "name": "Lê Khang",
+          "isLeader": false,
+          "occupations": [
+            "Kỹ thuật / Developer"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "giap",
+          "name": "Giáp",
+          "isLeader": false,
+          "occupations": [
+            "Kỹ thuật / Developer"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        }
+      ]
+    },
+    {
+      "slug": "agentee",
+      "name": "Agentee",
+      "interests": [
+        "Năng suất Doanh nghiệp Vừa & Nhỏ"
+      ],
+      "skillsNeeded": [
+        "AI/ML",
+        "API / Tích hợp hệ thống",
+        "Web Development"
+      ],
+      "memberCount": 4,
+      "leaderHandle": "thangle",
+      "members": [
+        {
+          "handle": "thangle",
+          "name": "Thang Le",
+          "isLeader": true,
+          "occupations": [
+            "Quản lý Sản phẩm"
+          ],
+          "industries": [
+            "Công nghệ"
+          ],
+          "skills": [
+            "AI/ML",
+            "Quản lý Sản phẩm",
+            "Web Development"
+          ],
+          "links": {
+            "github": "https://github.com/ledevthang",
+            "linkedin": "http://linkedin.com/in/ledevthang",
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "hieudoanduc",
+          "name": "Hieu Doan Duc",
+          "isLeader": false,
+          "occupations": [
+            "Kỹ thuật / Developer"
+          ],
+          "industries": [],
+          "skills": [
+            "Web Development"
+          ],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "nguyenngoclong",
+          "name": "Nguyễn Ngọc Long",
+          "isLeader": false,
+          "occupations": [
+            "Kỹ thuật / Developer"
+          ],
+          "industries": [],
+          "skills": [
+            "Backend",
+            "Frontend",
+            "JavaScript",
+            "Phát triển di động",
+            "Vibe Coding"
+          ],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "hocvuvan",
+          "name": "Học Vũ Văn",
+          "isLeader": false,
+          "occupations": [
+            "Kỹ thuật / Developer"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": "https://www.linkedin.com/in/hocvv1199/",
+            "website": null
+          },
+          "description": null
+        }
+      ]
+    },
+    {
       "slug": "bunbo",
       "name": "Bún Bò",
       "interests": [
@@ -5061,6 +5008,105 @@
       ]
     },
     {
+      "slug": "shineindarkalways",
+      "name": "Shine In Dark Always",
+      "interests": [
+        "Y tế & Sức khỏe"
+      ],
+      "skillsNeeded": [
+        "Backend",
+        "JavaScript",
+        "Vibe Coding",
+        "UI/UX",
+        "Web Development"
+      ],
+      "memberCount": 4,
+      "leaderHandle": "nguyentungthai",
+      "members": [
+        {
+          "handle": "nguyentungthai",
+          "name": "Nguyễn Tùng Thái",
+          "isLeader": true,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [
+            "Y tế",
+            "Công nghệ"
+          ],
+          "skills": [
+            "Vibe Coding",
+            "UI/UX",
+            "Web Development"
+          ],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "khuatbatinh",
+          "name": "Khuất Bá Tình",
+          "isLeader": false,
+          "occupations": [
+            "Kỹ thuật / Developer",
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [
+            "Giáo dục",
+            "Công nghệ"
+          ],
+          "skills": [
+            "API / Tích hợp hệ thống",
+            "Backend",
+            "Frontend",
+            "Vibe Coding",
+            "Web Development"
+          ],
+          "links": {
+            "github": "https://github.com/tinhBa180906",
+            "linkedin": null,
+            "website": "https://portfoliokhuatbatinh.netlify.app/"
+          },
+          "description": null
+        },
+        {
+          "handle": "hatruong",
+          "name": "Ha Truong",
+          "isLeader": false,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "vuhongquang",
+          "name": "Vũ Hồng Quang",
+          "isLeader": false,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        }
+      ]
+    },
+    {
       "slug": "vibeverse",
       "name": "VibeVerse",
       "interests": [
@@ -5185,6 +5231,141 @@
           "skills": [
             "Frontend"
           ],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        }
+      ]
+    },
+    {
+      "slug": "aiwarriors",
+      "name": "Vibonymus",
+      "interests": [
+        "Ngân hàng & Tài chính",
+        "Đổi mới Sáng tạo",
+        "Chính phủ Thông minh"
+      ],
+      "skillsNeeded": [
+        "Phát triển di động",
+        "Vibe Coding",
+        "Quản lý Sản phẩm",
+        "Mạng xã hội",
+        "Chiến lược / Tài chính"
+      ],
+      "memberCount": 5,
+      "leaderHandle": "dokhacgiakhoa",
+      "members": [
+        {
+          "handle": "quannguyen",
+          "name": "Quân Nguyễn",
+          "isLeader": false,
+          "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [
+            "Công nghệ tài chính",
+            "Y tế"
+          ],
+          "skills": [
+            "AI/ML",
+            "Chiến lược / Tài chính",
+            "UI/UX",
+            "Web Development"
+          ],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "dokhacgiakhoa",
+          "name": "Đỗ Khắc Gia Khoa",
+          "isLeader": true,
+          "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
+            "Sáng lập / Khởi nghiệp"
+          ],
+          "industries": [
+            "Giáo dục",
+            "Công nghệ tài chính"
+          ],
+          "skills": [
+            "DevOps",
+            "Vibe Coding",
+            "Python",
+            "UI/UX",
+            "Web Development"
+          ],
+          "links": {
+            "github": "https://github.com/Dokhacgiakhoa",
+            "linkedin": "https://www.linkedin.com/in/dokhacgiakhoa/",
+            "website": "https://dokhacgiakhoa.kailabs.io.vn/"
+          },
+          "description": null
+        },
+        {
+          "handle": "dinhthimai",
+          "name": "Đinh Thị Mai",
+          "isLeader": false,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [
+            "Thương mại điện tử",
+            "Công nghệ tài chính"
+          ],
+          "skills": [
+            "AI/ML",
+            "Khoa học dữ liệu",
+            "Python",
+            "Nghiên cứu",
+            "Chiến lược / Tài chính"
+          ],
+          "links": {
+            "github": null,
+            "linkedin": "https://www.linkedin.com/in/dinhthimai511/",
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "hoangminhquang",
+          "name": "Hoàng Minh Quang",
+          "isLeader": false,
+          "occupations": [
+            "Nghiên cứu / Học thuật"
+          ],
+          "industries": [
+            "Công nghệ"
+          ],
+          "skills": [
+            "AI/ML",
+            "API / Tích hợp hệ thống",
+            "Khoa học dữ liệu",
+            "Bảo mật"
+          ],
+          "links": {
+            "github": "github.com/quanghoang205",
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "chuquanglam",
+          "name": "Chu Quang Lâm",
+          "isLeader": false,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [],
+          "skills": [],
           "links": {
             "github": null,
             "linkedin": null,
@@ -6055,51 +6236,6 @@
       ]
     },
     {
-      "slug": "alphaai",
-      "name": "AlphaAI",
-      "interests": [
-        "Giáo dục & Đào tạo",
-        "Ngân hàng & Tài chính"
-      ],
-      "skillsNeeded": [
-        "AI/ML",
-        "API / Tích hợp hệ thống",
-        "Khoa học dữ liệu",
-        "Frontend",
-        "Vibe Coding"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "nguyenvantruong",
-      "members": [
-        {
-          "handle": "nguyenvantruong",
-          "name": "Nguyễn Văn Trường",
-          "isLeader": true,
-          "occupations": [
-            "Kỹ thuật / Developer",
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [
-            "Thương mại điện tử",
-            "Giáo dục"
-          ],
-          "skills": [
-            "Backend",
-            "Phát triển di động",
-            "Vibe Coding",
-            "UI/UX",
-            "Web Development"
-          ],
-          "links": {
-            "github": "https://github.com/vantruong21",
-            "linkedin": null,
-            "website": "https://master-iota-gules.vercel.app"
-          },
-          "description": null
-        }
-      ]
-    },
-    {
       "slug": "alphaedu",
       "name": "AlphaEdu",
       "interests": [
@@ -6616,13 +6752,23 @@
           "name": "Trần Đình Minh Vương",
           "isLeader": false,
           "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
             "Nghiên cứu / Học thuật"
           ],
-          "industries": [],
-          "skills": [],
+          "industries": [
+            "Công nghệ tài chính",
+            "Công nghệ"
+          ],
+          "skills": [
+            "AI/ML",
+            "Backend",
+            "Điện toán đám mây",
+            "Khoa học dữ liệu",
+            "DevOps"
+          ],
           "links": {
-            "github": null,
-            "linkedin": null,
+            "github": "github.com/loversky02",
+            "linkedin": "linkedin.com/in/vuong-tran-dinh-minh-649ba4205",
             "website": null
           },
           "description": null
@@ -6766,7 +6912,7 @@
         "Phát triển di động",
         "Chiến lược / Tài chính"
       ],
-      "memberCount": 6,
+      "memberCount": 5,
       "leaderHandle": "nguyenvanduong",
       "members": [
         {
@@ -6791,32 +6937,6 @@
           "links": {
             "github": "https://github.com/Wanglongbong",
             "linkedin": "https://www.linkedin.com/in/anh-qu%C3%A2n-v%C5%A9-868723371/",
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "ngominhthienbao",
-          "name": "Ngô Minh Thiên Bảo",
-          "isLeader": false,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [
-            "Giáo dục",
-            "Sản xuất"
-          ],
-          "skills": [
-            "AI/ML",
-            "API / Tích hợp hệ thống",
-            "Khoa học dữ liệu",
-            "JavaScript",
-            "Vibe Coding"
-          ],
-          "links": {
-            "github": "https://github.com/reukem",
-            "linkedin": "https://www.linkedin.com/in/i-ll-leave-this-blank-for-now-b95a9341a/",
             "website": null
           },
           "description": null
@@ -7055,50 +7175,6 @@
           ],
           "industries": [],
           "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
-      "slug": "top1rag",
-      "name": "GodTier",
-      "interests": [
-        "Giáo dục & Đào tạo",
-        "Ngân hàng & Tài chính",
-        "Đổi mới Sáng tạo"
-      ],
-      "skillsNeeded": [
-        "Khoa học dữ liệu",
-        "DevOps",
-        "Frontend",
-        "Nghiên cứu",
-        "Bảo mật"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "haluu",
-      "members": [
-        {
-          "handle": "haluu",
-          "name": "Ha Luu",
-          "isLeader": true,
-          "occupations": [
-            "Marketing / Tăng trưởng",
-            "Quản lý Sản phẩm"
-          ],
-          "industries": [
-            "Giáo dục"
-          ],
-          "skills": [
-            "Quản lý Sản phẩm",
-            "Mạng xã hội",
-            "Chiến lược / Tài chính",
-            "UI/UX"
-          ],
           "links": {
             "github": null,
             "linkedin": null,
@@ -7453,7 +7529,7 @@
         },
         {
           "handle": "lokvuthanh",
-          "name": "Lok Vu Thanh",
+          "name": "Vũ Thành Lộc",
           "isLeader": false,
           "occupations": [
             "Kỹ thuật / Developer",
@@ -7569,7 +7645,11 @@
             "Học sinh & Sinh viên"
           ],
           "industries": [],
-          "skills": [],
+          "skills": [
+            "AI/ML",
+            "Khoa học dữ liệu",
+            "Vibe Coding"
+          ],
           "links": {
             "github": null,
             "linkedin": null,
@@ -7666,105 +7746,6 @@
         {
           "handle": "nguyentuandung",
           "name": "Nguyễn Tuấn Dũng",
-          "isLeader": false,
-          "occupations": [
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
-      "slug": "shineindarkalways",
-      "name": "Shine In Dark Always",
-      "interests": [
-        "Y tế & Sức khỏe"
-      ],
-      "skillsNeeded": [
-        "Backend",
-        "JavaScript",
-        "Vibe Coding",
-        "UI/UX",
-        "Web Development"
-      ],
-      "memberCount": 4,
-      "leaderHandle": "nguyentungthai",
-      "members": [
-        {
-          "handle": "nguyentungthai",
-          "name": "Nguyễn Tùng Thái",
-          "isLeader": true,
-          "occupations": [
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [
-            "Y tế",
-            "Công nghệ"
-          ],
-          "skills": [
-            "Vibe Coding",
-            "UI/UX",
-            "Web Development"
-          ],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "khuatbatinh",
-          "name": "Khuất Bá Tình",
-          "isLeader": false,
-          "occupations": [
-            "Kỹ thuật / Developer",
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [
-            "Giáo dục",
-            "Công nghệ"
-          ],
-          "skills": [
-            "API / Tích hợp hệ thống",
-            "Backend",
-            "Frontend",
-            "Vibe Coding",
-            "Web Development"
-          ],
-          "links": {
-            "github": "https://github.com/tinhBa180906",
-            "linkedin": null,
-            "website": "https://portfoliokhuatbatinh.netlify.app/"
-          },
-          "description": null
-        },
-        {
-          "handle": "hatruong",
-          "name": "Ha Truong",
-          "isLeader": false,
-          "occupations": [
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "vuhongquang",
-          "name": "Vũ Hồng Quang",
           "isLeader": false,
           "occupations": [
             "Học sinh & Sinh viên"
@@ -8037,141 +8018,6 @@
       ]
     },
     {
-      "slug": "aiwarriors",
-      "name": "Vibonymus",
-      "interests": [
-        "Ngân hàng & Tài chính",
-        "Đổi mới Sáng tạo",
-        "Chính phủ Thông minh"
-      ],
-      "skillsNeeded": [
-        "AI/ML",
-        "Backend",
-        "Điện toán đám mây",
-        "Khoa học dữ liệu",
-        "Bảo mật"
-      ],
-      "memberCount": 5,
-      "leaderHandle": "dokhacgiakhoa",
-      "members": [
-        {
-          "handle": "quannguyen",
-          "name": "Quân Nguyễn",
-          "isLeader": false,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [
-            "Công nghệ tài chính",
-            "Y tế"
-          ],
-          "skills": [
-            "AI/ML",
-            "Chiến lược / Tài chính",
-            "UI/UX",
-            "Web Development"
-          ],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "dokhacgiakhoa",
-          "name": "Đỗ Khắc Gia Khoa",
-          "isLeader": true,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
-            "Sáng lập / Khởi nghiệp"
-          ],
-          "industries": [
-            "Giáo dục",
-            "Công nghệ tài chính"
-          ],
-          "skills": [
-            "DevOps",
-            "Vibe Coding",
-            "Python",
-            "UI/UX",
-            "Web Development"
-          ],
-          "links": {
-            "github": "https://github.com/Dokhacgiakhoa",
-            "linkedin": "https://www.linkedin.com/in/dokhacgiakhoa/",
-            "website": "https://dokhacgiakhoa.github.io/"
-          },
-          "description": null
-        },
-        {
-          "handle": "dinhthimai",
-          "name": "Đinh Thị Mai",
-          "isLeader": false,
-          "occupations": [
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [
-            "Thương mại điện tử",
-            "Công nghệ tài chính"
-          ],
-          "skills": [
-            "AI/ML",
-            "Khoa học dữ liệu",
-            "Python",
-            "Nghiên cứu",
-            "Chiến lược / Tài chính"
-          ],
-          "links": {
-            "github": null,
-            "linkedin": "https://www.linkedin.com/in/dinhthimai511/",
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "hoangminhquang",
-          "name": "Hoàng Minh Quang",
-          "isLeader": false,
-          "occupations": [
-            "Nghiên cứu / Học thuật"
-          ],
-          "industries": [
-            "Công nghệ"
-          ],
-          "skills": [
-            "AI/ML",
-            "API / Tích hợp hệ thống",
-            "Khoa học dữ liệu",
-            "Bảo mật"
-          ],
-          "links": {
-            "github": "github.com/quanghoang205",
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "chuquanglam",
-          "name": "Chu Quang Lâm",
-          "isLeader": false,
-          "occupations": [
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
       "slug": "wetransform",
       "name": "WeTransform",
       "interests": [
@@ -8184,7 +8030,7 @@
         "Khoa học dữ liệu",
         "DevOps"
       ],
-      "memberCount": 6,
+      "memberCount": 5,
       "leaderHandle": "huynhhuutai",
       "members": [
         {
@@ -8288,32 +8134,6 @@
           "links": {
             "github": "https://github.com/khanhtty19",
             "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "phamhongson",
-          "name": "Phạm Hồng Sơn",
-          "isLeader": false,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
-            "Nghiên cứu / Học thuật"
-          ],
-          "industries": [
-            "Công nghệ tài chính",
-            "Y tế"
-          ],
-          "skills": [
-            "AI/ML",
-            "API / Tích hợp hệ thống",
-            "Backend",
-            "Khoa học dữ liệu",
-            "Frontend"
-          ],
-          "links": {
-            "github": "https://github.com/son110904/",
-            "linkedin": "https://www.linkedin.com/in/sonhongpham1109/",
             "website": null
           },
           "description": null
@@ -8522,40 +8342,6 @@
             "Vibe Coding",
             "Python"
           ],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
-      "slug": "ak47blyad",
-      "name": "ak47_blyad",
-      "interests": [
-        "Ngân hàng & Tài chính",
-        "Y tế & Sức khỏe",
-        "Phòng chống Thiên tai"
-      ],
-      "skillsNeeded": [
-        "AI/ML",
-        "Điện toán đám mây",
-        "Chiến lược / Tài chính"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "dotheanh",
-      "members": [
-        {
-          "handle": "dotheanh",
-          "name": "Do The Anh",
-          "isLeader": true,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
-          ],
-          "industries": [],
-          "skills": [],
           "links": {
             "github": null,
             "linkedin": null,
@@ -8799,50 +8585,6 @@
             "github": "github.com/Tuananh458",
             "linkedin": "linkedin.com/in/tuananhhk458",
             "website": "https://hoangkimtuananh.com/"
-          },
-          "description": null
-        }
-      ]
-    },
-    {
-      "slug": "aurabeacon",
-      "name": "Aura Beacon",
-      "interests": [
-        "Nông nghiệp",
-        "Phòng chống Thiên tai",
-        "Đổi mới Sáng tạo"
-      ],
-      "skillsNeeded": [
-        "API / Tích hợp hệ thống",
-        "Backend",
-        "Khoa học dữ liệu",
-        "Phát triển di động",
-        "Web Development"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "manhhung",
-      "members": [
-        {
-          "handle": "manhhung",
-          "name": "Mạnh Hùng",
-          "isLeader": true,
-          "occupations": [
-            "Vận hành",
-            "Quản lý Sản phẩm"
-          ],
-          "industries": [
-            "Chính phủ",
-            "Công nghệ"
-          ],
-          "skills": [
-            "Quản lý Sản phẩm",
-            "Nghiên cứu",
-            "Chiến lược / Tài chính"
-          ],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": "https://barontruong.my.canva.site/"
           },
           "description": null
         }
@@ -9412,34 +9154,6 @@
       ]
     },
     {
-      "slug": "dangkientuongteam",
-      "name": "Dang Kien Tuong Team",
-      "interests": [
-        "Nông nghiệp"
-      ],
-      "skillsNeeded": [
-        "AI/ML"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "dangtuong",
-      "members": [
-        {
-          "handle": "dangtuong",
-          "name": "Dang Tuong",
-          "isLeader": true,
-          "occupations": [],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
       "slug": "doubletp",
       "name": "DoubleTP",
       "interests": [
@@ -9533,27 +9247,25 @@
       ]
     },
     {
-      "slug": "future",
-      "name": "Future",
+      "slug": "dtuvnus",
+      "name": "DTU VN-US",
       "interests": [
+        "Giáo dục & Đào tạo",
         "Ngân hàng & Tài chính",
-        "Y tế & Sức khỏe",
-        "Năng suất Doanh nghiệp Vừa & Nhỏ"
+        "Đổi mới Sáng tạo"
       ],
       "skillsNeeded": [
         "AI/ML",
-        "Backend",
         "Khoa học dữ liệu"
       ],
-      "memberCount": 1,
-      "leaderHandle": "vokhactuyen",
+      "memberCount": 5,
+      "leaderHandle": "ngohuutai",
       "members": [
         {
-          "handle": "vokhactuyen",
-          "name": "Võ Khắc Tuyên",
-          "isLeader": true,
+          "handle": "zebee",
+          "name": "Zebee",
+          "isLeader": false,
           "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
             "Học sinh & Sinh viên"
           ],
           "industries": [
@@ -9561,37 +9273,21 @@
           ],
           "skills": [
             "AI/ML",
-            "API / Tích hợp hệ thống",
             "Backend",
-            "Khoa học dữ liệu",
+            "Frontend",
+            "Phát triển di động",
             "Python"
           ],
           "links": {
-            "github": null,
-            "linkedin": "linkedin.com/khactuyen",
+            "github": "https://github.com/Tuanzeebee",
+            "linkedin": null,
             "website": null
           },
           "description": null
-        }
-      ]
-    },
-    {
-      "slug": "gcb",
-      "name": "Gcb",
-      "interests": [
-        "Đổi mới Sáng tạo",
-        "Chính phủ Thông minh",
-        "Năng suất Doanh nghiệp Vừa & Nhỏ"
-      ],
-      "skillsNeeded": [
-        "AI/ML"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "duongtungbach",
-      "members": [
+        },
         {
-          "handle": "duongtungbach",
-          "name": "Dương Tùng Bách",
+          "handle": "ngohuutai",
+          "name": "Ngô Hữu Tài",
           "isLeader": true,
           "occupations": [
             "Học sinh & Sinh viên"
@@ -9604,120 +9300,65 @@
             "website": null
           },
           "description": null
-        }
-      ]
-    },
-    {
-      "slug": "genstaff",
-      "name": "GenStaff",
-      "interests": [
-        "Ngân hàng & Tài chính",
-        "Đổi mới Sáng tạo",
-        "Năng suất Doanh nghiệp Vừa & Nhỏ"
-      ],
-      "skillsNeeded": [
-        "Backend",
-        "Phát triển di động",
-        "Bảo mật",
-        "Chiến lược / Tài chính",
-        "Web Development"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "nguyenthieutoan",
-      "members": [
+        },
         {
-          "handle": "nguyenthieutoan",
-          "name": "Nguyễn Thiệu Toàn",
-          "isLeader": true,
+          "handle": "vovanphuong",
+          "name": "Võ Văn Phương",
+          "isLeader": false,
           "occupations": [
-            "Sáng lập / Khởi nghiệp"
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [
+            "Giáo dục",
+            "Công nghệ"
+          ],
+          "skills": [
+            "API / Tích hợp hệ thống",
+            "Backend",
+            "Frontend",
+            "UI/UX"
+          ],
+          "links": {
+            "github": "https://github.com/vanp1",
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "hotrongvy",
+          "name": "Hồ Trọng Vỹ",
+          "isLeader": false,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [],
+          "skills": [
+            "API / Tích hợp hệ thống",
+            "Backend"
+          ],
+          "links": {
+            "github": "https://github.com/hotrongvi1101",
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "vohoangmaikhanh",
+          "name": "Võ Hoàng Mai Khanh",
+          "isLeader": false,
+          "occupations": [
+            "Thiết kế",
+            "Kỹ thuật / Developer"
           ],
           "industries": [
             "Công nghệ"
           ],
           "skills": [
-            "AI/ML",
-            "API / Tích hợp hệ thống",
-            "Backend",
             "Frontend",
-            "Vibe Coding"
+            "Web Development"
           ],
-          "links": {
-            "github": "github.com/nguyenthieutoan",
-            "linkedin": "linkedin.com/in/nguyenthieutoan",
-            "website": "https://nguyenthieutoan.com"
-          },
-          "description": null
-        }
-      ]
-    },
-    {
-      "slug": "hackervietnam",
-      "name": "Hacker Việt Nam",
-      "interests": [
-        "Nông nghiệp",
-        "Đổi mới Sáng tạo",
-        "Năng suất Doanh nghiệp Vừa & Nhỏ"
-      ],
-      "skillsNeeded": [
-        "API / Tích hợp hệ thống",
-        "Điện toán đám mây",
-        "JavaScript",
-        "Phát triển di động",
-        "UI/UX"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "nguyenphuocthinh",
-      "members": [
-        {
-          "handle": "nguyenphuocthinh",
-          "name": "Nguyễn Phước Thịnh",
-          "isLeader": true,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
-            "Nghiên cứu / Học thuật"
-          ],
-          "industries": [
-            "Nông nghiệp",
-            "Truyền thông & Giải trí"
-          ],
-          "skills": [
-            "Vibe Coding",
-            "Python",
-            "Nghiên cứu",
-            "Chiến lược / Tài chính"
-          ],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
-      "slug": "hackerearth",
-      "name": "HackerEarth",
-      "interests": [
-        "Y tế & Sức khỏe"
-      ],
-      "skillsNeeded": [
-        "AI/ML",
-        "API / Tích hợp hệ thống"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "nguyenngocdiep",
-      "members": [
-        {
-          "handle": "nguyenngocdiep",
-          "name": "Nguyen Ngoc Diep",
-          "isLeader": true,
-          "occupations": [
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [],
-          "skills": [],
           "links": {
             "github": null,
             "linkedin": null,
@@ -9900,47 +9541,6 @@
       ]
     },
     {
-      "slug": "helloworlddomination",
-      "name": "HelloWorld!",
-      "interests": [
-        "Giáo dục & Đào tạo",
-        "Ngân hàng & Tài chính",
-        "Năng suất Doanh nghiệp Vừa & Nhỏ"
-      ],
-      "skillsNeeded": [
-        "AI/ML",
-        "API / Tích hợp hệ thống",
-        "Backend",
-        "Frontend",
-        "Vibe Coding"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "trantuananh",
-      "members": [
-        {
-          "handle": "trantuananh",
-          "name": "Trần Tuấn Anh",
-          "isLeader": true,
-          "occupations": [
-            "Kỹ thuật / Developer"
-          ],
-          "industries": [],
-          "skills": [
-            "Backend",
-            "DevOps",
-            "Frontend",
-            "Vibe Coding"
-          ],
-          "links": {
-            "github": "https://github.com/trantuananhdev",
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
       "slug": "himitek",
       "name": "HimiTek",
       "interests": [
@@ -10051,44 +9651,102 @@
       ]
     },
     {
-      "slug": "infinityac",
-      "name": "Infinity AC",
+      "slug": "iagod",
+      "name": "IAGOD",
       "interests": [
-        "Đổi mới Sáng tạo",
-        "Chính phủ Thông minh",
-        "Năng suất Doanh nghiệp Vừa & Nhỏ"
+        "Giáo dục & Đào tạo",
+        "Ngân hàng & Tài chính",
+        "Đổi mới Sáng tạo"
       ],
       "skillsNeeded": [
-        "AI/ML",
-        "API / Tích hợp hệ thống",
         "Khoa học dữ liệu",
-        "Vibe Coding",
-        "Python"
+        "Quản lý Sản phẩm",
+        "Mạng xã hội",
+        "Chiến lược / Tài chính",
+        "UI/UX"
       ],
-      "memberCount": 1,
-      "leaderHandle": "huystartup",
+      "memberCount": 4,
+      "leaderHandle": "khongmanhtuan",
       "members": [
         {
-          "handle": "huystartup",
-          "name": "Huy Startup",
+          "handle": "khongmanhtuan",
+          "name": "Khổng Mạnh Tuấn",
           "isLeader": true,
+          "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
+          ],
+          "industries": [
+            "Công nghệ"
+          ],
+          "skills": [
+            "AI/ML",
+            "DevOps",
+            "JavaScript",
+            "Web Development"
+          ],
+          "links": {
+            "github": "https://github.com/tuanjhg",
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "nguyenvannhat",
+          "name": "Nguyen Van Nhat",
+          "isLeader": false,
           "occupations": [
             "Trí tuệ nhân tạo / Dữ liệu / Học máy",
             "Kỹ thuật / Developer"
           ],
           "industries": [
-            "Công nghệ tài chính",
             "Công nghệ"
           ],
           "skills": [
             "AI/ML",
-            "API / Tích hợp hệ thống",
-            "Khoa học dữ liệu",
-            "Vibe Coding",
-            "Python"
+            "Backend",
+            "Python",
+            "Nghiên cứu"
           ],
           "links": {
-            "github": "https://github.com/huymanh2007tk-glitch",
+            "github": null,
+            "linkedin": "https://www.linkedin.com/in/nvnhat04/",
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "dothaison",
+          "name": "Đỗ Thái Sơn",
+          "isLeader": false,
+          "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": "https://github.com/tsun165",
+            "linkedin": "https://www.linkedin.com/in/sơn-đỗ-376b00300?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "alex",
+          "name": "Alex",
+          "isLeader": false,
+          "occupations": [
+            "Kinh doanh / Chiến lược",
+            "Thiết kế"
+          ],
+          "industries": [],
+          "skills": [
+            "Bảo mật",
+            "Chiến lược / Tài chính",
+            "UI/UX"
+          ],
+          "links": {
+            "github": "https://github.com/geohot",
             "linkedin": null,
             "website": null
           },
@@ -10444,134 +10102,6 @@
           "skills": [],
           "links": {
             "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
-      "slug": "lucifer",
-      "name": "Lucifer",
-      "interests": [
-        "Giáo dục & Đào tạo",
-        "Đổi mới Sáng tạo",
-        "Năng suất Doanh nghiệp Vừa & Nhỏ"
-      ],
-      "skillsNeeded": [
-        "AI/ML",
-        "Vibe Coding",
-        "Quản lý Sản phẩm",
-        "Mạng xã hội",
-        "Chiến lược / Tài chính"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "lequangminh",
-      "members": [
-        {
-          "handle": "lequangminh",
-          "name": "Lê Quang Minh",
-          "isLeader": true,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
-            "Quản lý Dự án / Chương trình"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
-      "slug": "lumiere",
-      "name": "Lumiere",
-      "interests": [
-        "Nông nghiệp",
-        "Ngân hàng & Tài chính",
-        "Đổi mới Sáng tạo"
-      ],
-      "skillsNeeded": [
-        "AI/ML",
-        "API / Tích hợp hệ thống",
-        "Backend",
-        "Frontend",
-        "Quản lý Sản phẩm"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "nguyentrungdung",
-      "members": [
-        {
-          "handle": "nguyentrungdung",
-          "name": "Nguyen Trung Dung",
-          "isLeader": true,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [
-            "Nông nghiệp",
-            "Công nghệ"
-          ],
-          "skills": [
-            "AI/ML",
-            "Quản lý Sản phẩm",
-            "Python",
-            "Nghiên cứu",
-            "Chiến lược / Tài chính"
-          ],
-          "links": {
-            "github": "https://github.com/nguyentrungdung-dev",
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
-      "slug": "makabig",
-      "name": "Makabig",
-      "interests": [
-        "Y tế & Sức khỏe",
-        "Đổi mới Sáng tạo",
-        "Năng suất Doanh nghiệp Vừa & Nhỏ"
-      ],
-      "skillsNeeded": [
-        "API / Tích hợp hệ thống",
-        "Khoa học dữ liệu",
-        "Vibe Coding",
-        "Quản lý Sản phẩm",
-        "Nghiên cứu"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "votienduong",
-      "members": [
-        {
-          "handle": "votienduong",
-          "name": "Võ Tiến Dương",
-          "isLeader": true,
-          "occupations": [
-            "Sáng lập / Khởi nghiệp",
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [
-            "Logistics",
-            "Truyền thông & Giải trí"
-          ],
-          "skills": [
-            "API / Tích hợp hệ thống",
-            "Vibe Coding",
-            "Nghiên cứu",
-            "Chiến lược / Tài chính"
-          ],
-          "links": {
-            "github": "https://github.com/Votienduong2208",
             "linkedin": null,
             "website": null
           },
@@ -11608,52 +11138,6 @@
       ]
     },
     {
-      "slug": "ainow",
-      "name": "AI-NOW",
-      "interests": [
-        "Nông nghiệp",
-        "Giáo dục & Đào tạo",
-        "Ngân hàng & Tài chính"
-      ],
-      "skillsNeeded": [
-        "AI/ML",
-        "API / Tích hợp hệ thống",
-        "Backend",
-        "Điện toán đám mây",
-        "Frontend"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "lehoanglonglong",
-      "members": [
-        {
-          "handle": "lehoanglonglong",
-          "name": "Le Hoang Long Long",
-          "isLeader": true,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
-            "Nghiên cứu / Học thuật"
-          ],
-          "industries": [
-            "Công nghệ tài chính",
-            "Sản xuất"
-          ],
-          "skills": [
-            "AI/ML",
-            "Khoa học dữ liệu",
-            "Vibe Coding",
-            "Python",
-            "Nghiên cứu"
-          ],
-          "links": {
-            "github": "https://github.com/hoanglong1712/",
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
       "slug": "alphasanrio",
       "name": "Alpha Sanrio",
       "interests": [
@@ -12162,128 +11646,6 @@
       ]
     },
     {
-      "slug": "dtuvnus",
-      "name": "DTU VN-US",
-      "interests": [
-        "Giáo dục & Đào tạo",
-        "Ngân hàng & Tài chính",
-        "Đổi mới Sáng tạo"
-      ],
-      "skillsNeeded": [
-        "AI/ML",
-        "Khoa học dữ liệu"
-      ],
-      "memberCount": 5,
-      "leaderHandle": "ngohuutai",
-      "members": [
-        {
-          "handle": "zebee",
-          "name": "Zebee",
-          "isLeader": false,
-          "occupations": [
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [
-            "Công nghệ"
-          ],
-          "skills": [
-            "AI/ML",
-            "Backend",
-            "Frontend",
-            "Phát triển di động",
-            "Python"
-          ],
-          "links": {
-            "github": "https://github.com/Tuanzeebee",
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "ngohuutai",
-          "name": "Ngô Hữu Tài",
-          "isLeader": true,
-          "occupations": [
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "vovanphuong",
-          "name": "Võ Văn Phương",
-          "isLeader": false,
-          "occupations": [
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [
-            "Giáo dục",
-            "Công nghệ"
-          ],
-          "skills": [
-            "API / Tích hợp hệ thống",
-            "Backend",
-            "Frontend",
-            "UI/UX"
-          ],
-          "links": {
-            "github": "https://github.com/vanp1",
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "hotrongvy",
-          "name": "Hồ Trọng Vỹ",
-          "isLeader": false,
-          "occupations": [
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [],
-          "skills": [
-            "API / Tích hợp hệ thống",
-            "Backend"
-          ],
-          "links": {
-            "github": "https://github.com/hotrongvi1101",
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "vohoangmaikhanh",
-          "name": "Võ Hoàng Mai Khanh",
-          "isLeader": false,
-          "occupations": [
-            "Thiết kế",
-            "Kỹ thuật / Developer"
-          ],
-          "industries": [
-            "Công nghệ"
-          ],
-          "skills": [
-            "Frontend",
-            "Web Development"
-          ],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
       "slug": "enterengineer",
       "name": "EnterEngineering",
       "interests": [
@@ -12481,38 +11843,6 @@
       ]
     },
     {
-      "slug": "glowflow",
-      "name": "GlowFlow",
-      "interests": [
-        "Đổi mới Sáng tạo"
-      ],
-      "skillsNeeded": [
-        "AI/ML",
-        "API / Tích hợp hệ thống",
-        "Web Development"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "linhphuongngo",
-      "members": [
-        {
-          "handle": "linhphuongngo",
-          "name": "Linh Phuong Ngo",
-          "isLeader": true,
-          "occupations": [
-            "Kinh doanh / Chiến lược"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
       "slug": "hauiinfinityo",
       "name": "HaUI.Infinity-O",
       "interests": [
@@ -12609,89 +11939,6 @@
           "links": {
             "github": null,
             "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
-      "slug": "iagod",
-      "name": "IAGOD",
-      "interests": [
-        "Giáo dục & Đào tạo",
-        "Ngân hàng & Tài chính",
-        "Đổi mới Sáng tạo"
-      ],
-      "skillsNeeded": [
-        "Khoa học dữ liệu",
-        "Quản lý Sản phẩm",
-        "Mạng xã hội",
-        "Chiến lược / Tài chính",
-        "UI/UX"
-      ],
-      "memberCount": 3,
-      "leaderHandle": "khongmanhtuan",
-      "members": [
-        {
-          "handle": "khongmanhtuan",
-          "name": "Khổng Mạnh Tuấn",
-          "isLeader": true,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
-          ],
-          "industries": [
-            "Công nghệ"
-          ],
-          "skills": [
-            "AI/ML",
-            "DevOps",
-            "JavaScript",
-            "Web Development"
-          ],
-          "links": {
-            "github": "https://github.com/tuanjhg",
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "nguyenvannhat",
-          "name": "Nguyen Van Nhat",
-          "isLeader": false,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
-            "Kỹ thuật / Developer"
-          ],
-          "industries": [
-            "Công nghệ"
-          ],
-          "skills": [
-            "AI/ML",
-            "Backend",
-            "Python",
-            "Nghiên cứu"
-          ],
-          "links": {
-            "github": null,
-            "linkedin": "https://www.linkedin.com/in/nvnhat04/",
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "dothaison",
-          "name": "Đỗ Thái Sơn",
-          "isLeader": false,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": "https://github.com/tsun165",
-            "linkedin": "https://www.linkedin.com/in/sơn-đỗ-376b00300?utm_source=share_via&utm_content=profile&utm_medium=member_android",
             "website": null
           },
           "description": null
@@ -13271,69 +12518,6 @@
       ]
     },
     {
-      "slug": "nhungkekhukhogamovietcode",
-      "name": "Những kẻ khù khờ gà mờ viết code",
-      "interests": [
-        "Y tế & Sức khỏe",
-        "Đổi mới Sáng tạo"
-      ],
-      "skillsNeeded": [
-        "AI/ML",
-        "DevOps",
-        "Python"
-      ],
-      "memberCount": 2,
-      "leaderHandle": "tranthuannghia",
-      "members": [
-        {
-          "handle": "tranthuannghia",
-          "name": "Trần Thuận Nghĩa",
-          "isLeader": true,
-          "occupations": [
-            "Kỹ thuật / Developer"
-          ],
-          "industries": [
-            "Chính phủ",
-            "Y tế"
-          ],
-          "skills": [
-            "AI/ML",
-            "API / Tích hợp hệ thống",
-            "Backend",
-            "Frontend",
-            "Vibe Coding"
-          ],
-          "links": {
-            "github": "https://github.com/sdcorejs",
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "hoangthingocanh",
-          "name": "Hoàng Thị Ngọc Ánh",
-          "isLeader": false,
-          "occupations": [
-            "Quản lý Sản phẩm"
-          ],
-          "industries": [
-            "Công nghệ"
-          ],
-          "skills": [
-            "Quản lý Sản phẩm",
-            "UI/UX"
-          ],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
       "slug": "megalondon",
       "name": "OCanbubu",
       "interests": [
@@ -13754,42 +12938,6 @@
       ]
     },
     {
-      "slug": "sotatek",
-      "name": "Sotatek",
-      "interests": [
-        "Ngân hàng & Tài chính",
-        "Y tế & Sức khỏe",
-        "Phòng chống Thiên tai"
-      ],
-      "skillsNeeded": [
-        "AI/ML",
-        "API / Tích hợp hệ thống",
-        "Backend",
-        "DevOps",
-        "Bảo mật"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "phong",
-      "members": [
-        {
-          "handle": "phong",
-          "name": "Phong",
-          "isLeader": true,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
       "slug": "srenoog",
       "name": "Srenoog",
       "interests": [
@@ -13919,7 +13067,7 @@
         "Bảo mật",
         "Chiến lược / Tài chính"
       ],
-      "memberCount": 4,
+      "memberCount": 5,
       "leaderHandle": "doanminhquang",
       "members": [
         {
@@ -13992,6 +13140,31 @@
             "github": null,
             "linkedin": null,
             "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "nguyenminhchau2",
+          "name": "Nguyễn Minh Châu",
+          "isLeader": false,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [
+            "Thương mại điện tử",
+            "Công nghệ tài chính"
+          ],
+          "skills": [
+            "AI/ML",
+            "Khoa học dữ liệu",
+            "Python",
+            "Nghiên cứu",
+            "Chiến lược / Tài chính"
+          ],
+          "links": {
+            "github": null,
+            "linkedin": "https://www.linkedin.com/in/minh-ch%C3%A2u-nguy%E1%BB%85n-89a5ab233/",
+            "website": "https://www.facebook.com/nguyen.chauminh.5268"
           },
           "description": null
         }
@@ -14454,49 +13627,6 @@
           "links": {
             "github": null,
             "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
-      "slug": "tw0b1t",
-      "name": "Tw0B1t",
-      "interests": [
-        "Giáo dục & Đào tạo",
-        "Y tế & Sức khỏe",
-        "Năng suất Doanh nghiệp Vừa & Nhỏ"
-      ],
-      "skillsNeeded": [
-        "AI/ML",
-        "API / Tích hợp hệ thống",
-        "Vibe Coding",
-        "Nghiên cứu",
-        "Web Development"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "nguyenngochuyhoang",
-      "members": [
-        {
-          "handle": "nguyenngochuyhoang",
-          "name": "Nguyen Ngoc Huy Hoang",
-          "isLeader": true,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
-            "Kỹ thuật / Developer"
-          ],
-          "industries": [
-            "Công nghệ"
-          ],
-          "skills": [
-            "AI/ML",
-            "API / Tích hợp hệ thống",
-            "Web Development"
-          ],
-          "links": {
-            "github": "https://github.com/nnhhoang",
-            "linkedin": "https://www.linkedin.com/in/hoangnnh67/",
             "website": null
           },
           "description": null
@@ -15340,9 +14470,35 @@
         "Vibe Coding",
         "Mạng xã hội"
       ],
-      "memberCount": 2,
+      "memberCount": 4,
       "leaderHandle": "mailethi",
       "members": [
+        {
+          "handle": "tranquochuy",
+          "name": "Trần Quốc Huy",
+          "isLeader": false,
+          "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [
+            "Giáo dục",
+            "Công nghệ"
+          ],
+          "skills": [
+            "Khoa học dữ liệu",
+            "Frontend",
+            "Vibe Coding",
+            "Quản lý Sản phẩm",
+            "Web Development"
+          ],
+          "links": {
+            "github": "https://github.com/Hunny-17",
+            "linkedin": "https://www.linkedin.com/in/huy-tran-4b5a6a3b4/",
+            "website": null
+          },
+          "description": null
+        },
         {
           "handle": "truonghoangha",
           "name": "Truong Hoang Ha",
@@ -15381,6 +14537,22 @@
             "github": "https://github.com/hueanmy",
             "linkedin": "https://www.linkedin.com/in/mailethi?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
             "website": "https://hueanmy.github.io/"
+          },
+          "description": null
+        },
+        {
+          "handle": "hoangnhanduc",
+          "name": "Hoàng Nhân Đức",
+          "isLeader": false,
+          "occupations": [
+            "Kỹ thuật / Developer"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
           },
           "description": null
         }
@@ -16041,52 +15213,6 @@
       ]
     },
     {
-      "slug": "innovar",
-      "name": "Innovar",
-      "interests": [
-        "Đổi mới Sáng tạo",
-        "Chính phủ Thông minh",
-        "Năng suất Doanh nghiệp Vừa & Nhỏ"
-      ],
-      "skillsNeeded": [
-        "AI/ML",
-        "Khoa học dữ liệu",
-        "DevOps",
-        "Vibe Coding",
-        "Chiến lược / Tài chính"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "tungnguyenquang",
-      "members": [
-        {
-          "handle": "tungnguyenquang",
-          "name": "Tùng Nguyễn Quang",
-          "isLeader": true,
-          "occupations": [
-            "Thiết kế",
-            "Quản lý Dự án / Chương trình"
-          ],
-          "industries": [
-            "Giáo dục",
-            "Công nghệ"
-          ],
-          "skills": [
-            "AI/ML",
-            "API / Tích hợp hệ thống",
-            "DevOps",
-            "Vibe Coding",
-            "Quản lý Sản phẩm"
-          ],
-          "links": {
-            "github": "https://github.com/shiina613",
-            "linkedin": "https://www.linkedin.com/in/shiina-tung/",
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
       "slug": "lumoslab",
       "name": "LumosLab",
       "interests": [
@@ -16403,6 +15529,102 @@
       ]
     },
     {
+      "slug": "nlpq",
+      "name": "NLP-Q",
+      "interests": [
+        "Y tế & Sức khỏe"
+      ],
+      "skillsNeeded": [
+        "Quản lý Sản phẩm",
+        "Bảo mật",
+        "Chiến lược / Tài chính"
+      ],
+      "memberCount": 5,
+      "leaderHandle": "nguyenduclong",
+      "members": [
+        {
+          "handle": "nguyenduclong",
+          "name": "Nguyễn Đức Long",
+          "isLeader": true,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "duonghaiphong",
+          "name": "Dương Hải Phong",
+          "isLeader": false,
+          "occupations": [
+            "Thiết kế"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "duongngocquang",
+          "name": "Dương Ngọc Quang",
+          "isLeader": false,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "b22dckh081trankhanhnhat",
+          "name": "B22dckh081 - Trần Khánh Nhật",
+          "isLeader": false,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "maiquochung",
+          "name": "Mai Quốc Hưng",
+          "isLeader": false,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        }
+      ]
+    },
+    {
       "slug": "overload",
       "name": "Overload",
       "interests": [
@@ -16656,7 +15878,7 @@
         "Mạng xã hội",
         "Chiến lược / Tài chính"
       ],
-      "memberCount": 5,
+      "memberCount": 6,
       "leaderHandle": "hauluong",
       "members": [
         {
@@ -16696,6 +15918,32 @@
           "links": {
             "github": "https://github.com/dtnganh",
             "linkedin": "https://www.linkedin.com/in/tung-anh-dang-46158a368/",
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "tungnguyenquang",
+          "name": "Tùng Nguyễn Quang",
+          "isLeader": false,
+          "occupations": [
+            "Thiết kế",
+            "Quản lý Dự án / Chương trình"
+          ],
+          "industries": [
+            "Giáo dục",
+            "Công nghệ"
+          ],
+          "skills": [
+            "AI/ML",
+            "API / Tích hợp hệ thống",
+            "DevOps",
+            "Vibe Coding",
+            "Quản lý Sản phẩm"
+          ],
+          "links": {
+            "github": "https://github.com/shiina613",
+            "linkedin": "https://www.linkedin.com/in/shiina-tung/",
             "website": null
           },
           "description": null
@@ -17346,6 +16594,88 @@
       ]
     },
     {
+      "slug": "levemythosxhigh",
+      "name": "<Leve/> Mythos-xHigh",
+      "interests": [
+        "Ngân hàng & Tài chính",
+        "Y tế & Sức khỏe",
+        "Chính phủ Thông minh"
+      ],
+      "skillsNeeded": [
+        "DevOps",
+        "Frontend",
+        "Bảo mật",
+        "Chiến lược / Tài chính",
+        "UI/UX"
+      ],
+      "memberCount": 3,
+      "leaderHandle": "tranducluong",
+      "members": [
+        {
+          "handle": "tranducluong",
+          "name": "Trần Đức Lương",
+          "isLeader": true,
+          "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
+          ],
+          "industries": [],
+          "skills": [
+            "AI/ML",
+            "API / Tích hợp hệ thống",
+            "Backend",
+            "Nghiên cứu"
+          ],
+          "links": {
+            "github": null,
+            "linkedin": "https://www.linkedin.com/in/dluong1210/",
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "nguyenvietan",
+          "name": "Nguyễn Việt An",
+          "isLeader": false,
+          "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
+          ],
+          "industries": [
+            "Thương mại điện tử",
+            "Công nghệ"
+          ],
+          "skills": [
+            "AI/ML",
+            "API / Tích hợp hệ thống",
+            "Backend",
+            "Điện toán đám mây",
+            "Khoa học dữ liệu"
+          ],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "lehoangvu",
+          "name": "Lê Hoàng Vũ",
+          "isLeader": false,
+          "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        }
+      ]
+    },
+    {
       "slug": "hination",
       "name": "<NITC x DATCOM> Hination",
       "interests": [
@@ -17715,43 +17045,6 @@
       ]
     },
     {
-      "slug": "ans",
-      "name": "ANS",
-      "interests": [
-        "Giáo dục & Đào tạo",
-        "Y tế & Sức khỏe",
-        "Đổi mới Sáng tạo"
-      ],
-      "skillsNeeded": [
-        "AI/ML",
-        "API / Tích hợp hệ thống",
-        "Khoa học dữ liệu",
-        "Vibe Coding",
-        "Nghiên cứu"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "nguyenbaoanh",
-      "members": [
-        {
-          "handle": "nguyenbaoanh",
-          "name": "Nguyễn Bảo Anh",
-          "isLeader": true,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
-            "Kỹ thuật / Developer"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
       "slug": "athena",
       "name": "Athena",
       "interests": [
@@ -17865,7 +17158,7 @@
         "Quản lý Sản phẩm",
         "Chiến lược / Tài chính"
       ],
-      "memberCount": 1,
+      "memberCount": 2,
       "leaderHandle": "thienvu",
       "members": [
         {
@@ -17891,6 +17184,30 @@
             "github": "https://github.com/omlttg",
             "linkedin": null,
             "website": "https://thienvudev.baguru.org/"
+          },
+          "description": null
+        },
+        {
+          "handle": "diephainam",
+          "name": "Diep Hai Nam",
+          "isLeader": false,
+          "occupations": [
+            "Nghiên cứu / Học thuật",
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [
+            "Truyền thông & Giải trí",
+            "Công nghệ"
+          ],
+          "skills": [
+            "Frontend",
+            "Python",
+            "Web Development"
+          ],
+          "links": {
+            "github": "https://github.com/Hainam1919",
+            "linkedin": null,
+            "website": null
           },
           "description": null
         }
@@ -18072,7 +17389,7 @@
           "links": {
             "github": null,
             "linkedin": "https://www.linkedin.com/in/t%E1%BA%A1-linh-2b8285190/",
-            "website": null
+            "website": "https://devxin.net/"
           },
           "description": null
         },
@@ -18198,40 +17515,6 @@
           "handle": "nguyenthihien",
           "name": "Nguyễn Thị Hiền",
           "isLeader": false,
-          "occupations": [
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
-      "slug": "medpulseai",
-      "name": "MedPulse AI",
-      "interests": [
-        "Y tế & Sức khỏe"
-      ],
-      "skillsNeeded": [
-        "API / Tích hợp hệ thống",
-        "Vibe Coding",
-        "Chiến lược / Tài chính",
-        "UI/UX",
-        "Web Development"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "tietthanhcong",
-      "members": [
-        {
-          "handle": "tietthanhcong",
-          "name": "Tiết Thành Công",
-          "isLeader": true,
           "occupations": [
             "Học sinh & Sinh viên"
           ],
@@ -18619,102 +17902,6 @@
       ]
     },
     {
-      "slug": "nlpq",
-      "name": "NLP-Q",
-      "interests": [
-        "Y tế & Sức khỏe"
-      ],
-      "skillsNeeded": [
-        "Quản lý Sản phẩm",
-        "Bảo mật",
-        "Chiến lược / Tài chính"
-      ],
-      "memberCount": 5,
-      "leaderHandle": "nguyenduclong",
-      "members": [
-        {
-          "handle": "nguyenduclong",
-          "name": "Nguyễn Đức Long",
-          "isLeader": true,
-          "occupations": [
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "duonghaiphong",
-          "name": "Dương Hải Phong",
-          "isLeader": false,
-          "occupations": [
-            "Thiết kế"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "duongngocquang",
-          "name": "Dương Ngọc Quang",
-          "isLeader": false,
-          "occupations": [
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "b22dckh081trankhanhnhat",
-          "name": "B22dckh081 - Trần Khánh Nhật",
-          "isLeader": false,
-          "occupations": [
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "maiquochung",
-          "name": "Mai Quốc Hưng",
-          "isLeader": false,
-          "occupations": [
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
       "slug": "phario",
       "name": "Phario",
       "interests": [
@@ -18763,38 +17950,6 @@
             "github": "github.com/dxv2k",
             "linkedin": null,
             "website": "https://www.phario.app/"
-          },
-          "description": null
-        }
-      ]
-    },
-    {
-      "slug": "polycoder",
-      "name": "Poly Coder",
-      "interests": [
-        "Đổi mới Sáng tạo",
-        "Năng suất Doanh nghiệp Vừa & Nhỏ"
-      ],
-      "skillsNeeded": [
-        "AI/ML",
-        "Khoa học dữ liệu"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "phanducbinh",
-      "members": [
-        {
-          "handle": "phanducbinh",
-          "name": "Phan Đức Bình",
-          "isLeader": true,
-          "occupations": [
-            "Kỹ thuật / Developer"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
           },
           "description": null
         }
@@ -18971,51 +18126,6 @@
           "links": {
             "github": null,
             "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
-      "slug": "reukem",
-      "name": "reukem",
-      "interests": [
-        "Đổi mới Sáng tạo",
-        "Chính phủ Thông minh"
-      ],
-      "skillsNeeded": [
-        "AI/ML",
-        "API / Tích hợp hệ thống",
-        "Điện toán đám mây",
-        "Khoa học dữ liệu",
-        "Web Development"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "ngominhthienbao2",
-      "members": [
-        {
-          "handle": "ngominhthienbao2",
-          "name": "Ngô Minh Thiên Bảo",
-          "isLeader": true,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [
-            "Giáo dục",
-            "Công nghệ"
-          ],
-          "skills": [
-            "AI/ML",
-            "API / Tích hợp hệ thống",
-            "Khoa học dữ liệu",
-            "Vibe Coding",
-            "Python"
-          ],
-          "links": {
-            "github": "https://github.com/reukem",
-            "linkedin": "https://www.linkedin.com/in/i-ll-leave-this-blank-for-now-b95a9341a/",
             "website": null
           },
           "description": null
@@ -19415,7 +18525,7 @@
         "Mạng xã hội",
         "Chiến lược / Tài chính"
       ],
-      "memberCount": 4,
+      "memberCount": 5,
       "leaderHandle": "phamtuananh",
       "members": [
         {
@@ -19456,6 +18566,31 @@
           ],
           "links": {
             "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "tranthuannghia",
+          "name": "Trần Thuận Nghĩa",
+          "isLeader": false,
+          "occupations": [
+            "Kỹ thuật / Developer"
+          ],
+          "industries": [
+            "Chính phủ",
+            "Y tế"
+          ],
+          "skills": [
+            "AI/ML",
+            "API / Tích hợp hệ thống",
+            "Backend",
+            "Frontend",
+            "Vibe Coding"
+          ],
+          "links": {
+            "github": "https://github.com/sdcorejs",
             "linkedin": null,
             "website": null
           },
@@ -19603,14 +18738,21 @@
           "name": "Hồ Ngọc Tân",
           "isLeader": false,
           "occupations": [
-            "Vận hành"
+            "Marketing / Tăng trưởng",
+            "Nghiên cứu / Học thuật"
           ],
-          "industries": [],
-          "skills": [],
+          "industries": [
+            "Truyền thông & Giải trí",
+            "Công nghệ"
+          ],
+          "skills": [
+            "Nghiên cứu",
+            "Mạng xã hội"
+          ],
           "links": {
             "github": null,
-            "linkedin": null,
-            "website": null
+            "linkedin": "https://www.linkedin.com/in/h%E1%BB%93-ng%E1%BB%8Dc-t%C3%A2n/",
+            "website": "https://hongoctanmyprofile.my.canva.site/"
           },
           "description": null
         }
@@ -19966,88 +19108,6 @@
       ]
     },
     {
-      "slug": "levemythosxhigh",
-      "name": "<Leve/> Mythos-xHigh",
-      "interests": [
-        "Ngân hàng & Tài chính",
-        "Y tế & Sức khỏe",
-        "Chính phủ Thông minh"
-      ],
-      "skillsNeeded": [
-        "DevOps",
-        "Frontend",
-        "Bảo mật",
-        "Chiến lược / Tài chính",
-        "UI/UX"
-      ],
-      "memberCount": 3,
-      "leaderHandle": "tranducluong",
-      "members": [
-        {
-          "handle": "tranducluong",
-          "name": "Trần Đức Lương",
-          "isLeader": true,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
-          ],
-          "industries": [],
-          "skills": [
-            "AI/ML",
-            "API / Tích hợp hệ thống",
-            "Backend",
-            "Nghiên cứu"
-          ],
-          "links": {
-            "github": null,
-            "linkedin": "https://www.linkedin.com/in/dluong1210/",
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "nguyenvietan",
-          "name": "Nguyễn Việt An",
-          "isLeader": false,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
-          ],
-          "industries": [
-            "Thương mại điện tử",
-            "Công nghệ"
-          ],
-          "skills": [
-            "AI/ML",
-            "API / Tích hợp hệ thống",
-            "Backend",
-            "Điện toán đám mây",
-            "Khoa học dữ liệu"
-          ],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "lehoangvu",
-          "name": "Lê Hoàng Vũ",
-          "isLeader": false,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
       "slug": "aolalala",
       "name": "Aolalala",
       "interests": [
@@ -20062,7 +19122,7 @@
         "UI/UX",
         "Web Development"
       ],
-      "memberCount": 4,
+      "memberCount": 6,
       "leaderHandle": "phamthithutrang",
       "members": [
         {
@@ -20149,6 +19209,56 @@
           "links": {
             "github": null,
             "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "tuanha",
+          "name": "Tuấn Hà",
+          "isLeader": false,
+          "occupations": [
+            "Kỹ thuật / Developer"
+          ],
+          "industries": [
+            "Thương mại điện tử",
+            "Chính phủ"
+          ],
+          "skills": [
+            "Backend",
+            "Vibe Coding",
+            "UI/UX",
+            "Web Development"
+          ],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "phananhminhduc",
+          "name": "Phan Anh Minh Đức",
+          "isLeader": false,
+          "occupations": [
+            "Quản lý Dự án / Chương trình",
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [
+            "Sản xuất",
+            "Công nghệ"
+          ],
+          "skills": [
+            "AI/ML",
+            "Vibe Coding",
+            "Python",
+            "UI/UX",
+            "Web Development"
+          ],
+          "links": {
+            "github": "https://github.com/mindu2kk?tab=repositories",
+            "linkedin": "https://www.linkedin.com/in/phan-minh-duc/",
             "website": null
           },
           "description": null
@@ -20279,51 +19389,6 @@
             "github": null,
             "linkedin": "https://www.linkedin.com/in/gia-ho%C3%A0ng-3b8018262/",
             "website": "https://docs.google.com/document/d/1-rgcjgrRgdz9PsN1VzlXJcsRfMf1PUkNtxAjEtCmTQ4/edit?usp=sharing"
-          },
-          "description": null
-        }
-      ]
-    },
-    {
-      "slug": "magicteam",
-      "name": "Magic team",
-      "interests": [
-        "Ngân hàng & Tài chính",
-        "Y tế & Sức khỏe",
-        "Đổi mới Sáng tạo"
-      ],
-      "skillsNeeded": [
-        "AI/ML",
-        "API / Tích hợp hệ thống",
-        "Vibe Coding",
-        "Quản lý Sản phẩm",
-        "Nghiên cứu"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "levanmanh",
-      "members": [
-        {
-          "handle": "levanmanh",
-          "name": "Lê Văn Mạnh",
-          "isLeader": true,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
-            "Nghiên cứu / Học thuật"
-          ],
-          "industries": [
-            "Công nghệ"
-          ],
-          "skills": [
-            "AI/ML",
-            "API / Tích hợp hệ thống",
-            "Backend",
-            "Vibe Coding",
-            "Nghiên cứu"
-          ],
-          "links": {
-            "github": "https://github.com/levanmanh268",
-            "linkedin": null,
-            "website": null
           },
           "description": null
         }
@@ -20504,7 +19569,7 @@
         "Chiến lược / Tài chính",
         "UI/UX"
       ],
-      "memberCount": 1,
+      "memberCount": 2,
       "leaderHandle": "manhlengoduc",
       "members": [
         {
@@ -20529,6 +19594,22 @@
             "github": "https://github.com/lndmanh",
             "linkedin": "https://www.linkedin.com/in/nnmyt/",
             "website": "https://nnsvn.me"
+          },
+          "description": null
+        },
+        {
+          "handle": "nguyenhuuhongphuc",
+          "name": "Nguyễn Hữu Hồng Phúc",
+          "isLeader": false,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
           },
           "description": null
         }
@@ -20604,10 +19685,16 @@
           "name": "Nguyễn Nam Hải",
           "isLeader": false,
           "occupations": [
-            "Kỹ thuật / Developer"
+            "Kỹ thuật / Developer",
+            "Học sinh & Sinh viên"
           ],
-          "industries": [],
-          "skills": [],
+          "industries": [
+            "Công nghệ"
+          ],
+          "skills": [
+            "Vibe Coding",
+            "UI/UX"
+          ],
           "links": {
             "github": null,
             "linkedin": null,
@@ -21391,7 +20478,7 @@
         "Nghiên cứu",
         "Bảo mật"
       ],
-      "memberCount": 2,
+      "memberCount": 4,
       "leaderHandle": "phamtiendat",
       "members": [
         {
@@ -21435,6 +20522,38 @@
             "Bảo mật",
             "Chiến lược / Tài chính"
           ],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "nguyenhoanghiep",
+          "name": "Nguyen Hoang Hiep",
+          "isLeader": false,
+          "occupations": [
+            "Kinh doanh / Chiến lược"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "nguyenhuydong",
+          "name": "Nguyễn Huy Đông",
+          "isLeader": false,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [],
+          "skills": [],
           "links": {
             "github": null,
             "linkedin": null,
@@ -21497,38 +20616,6 @@
       ]
     },
     {
-      "slug": "phuongphoebe",
-      "name": "Phuong Phoebe",
-      "interests": [
-        "Phòng chống Thiên tai",
-        "Năng suất Doanh nghiệp Vừa & Nhỏ"
-      ],
-      "skillsNeeded": [
-        "AI/ML",
-        "Python"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "phuongphoebe",
-      "members": [
-        {
-          "handle": "phuongphoebe",
-          "name": "Phuong - Phoebe",
-          "isLeader": true,
-          "occupations": [
-            "Quản lý Dự án / Chương trình"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
       "slug": "stevejobsvietnam",
       "name": "Steve Jobs Vietnam",
       "interests": [
@@ -21537,11 +20624,11 @@
       "skillsNeeded": [
         "Vibe Coding"
       ],
-      "memberCount": 2,
-      "leaderHandle": "nguyenviettrung",
+      "memberCount": 3,
+      "leaderHandle": "nguyenviettrung2",
       "members": [
         {
-          "handle": "nguyenviettrung",
+          "handle": "nguyenviettrung2",
           "name": "Nguyễn Việt Trung",
           "isLeader": true,
           "occupations": [
@@ -21557,21 +20644,37 @@
           "description": null
         },
         {
-          "handle": "nguyentuanthanh",
+          "handle": "nguyentuanthanh2",
           "name": "Nguyễn Tuấn Thành",
           "isLeader": false,
           "occupations": [
             "Học sinh & Sinh viên"
           ],
           "industries": [
+            "Chính phủ",
             "Công nghệ"
           ],
           "skills": [
+            "API / Tích hợp hệ thống",
             "Backend",
-            "Vibe Coding",
-            "Quản lý Sản phẩm",
             "Nghiên cứu"
           ],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "dinhquangtung",
+          "name": "Đinh Quang Tùng",
+          "isLeader": false,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [],
+          "skills": [],
           "links": {
             "github": null,
             "linkedin": null,
@@ -21998,8 +21101,17 @@
           "occupations": [
             "Trí tuệ nhân tạo / Dữ liệu / Học máy"
           ],
-          "industries": [],
-          "skills": [],
+          "industries": [
+            "Công nghệ tài chính",
+            "Công nghệ"
+          ],
+          "skills": [
+            "AI/ML",
+            "API / Tích hợp hệ thống",
+            "Backend",
+            "JavaScript",
+            "Chiến lược / Tài chính"
+          ],
           "links": {
             "github": "https://github.com/Vrioustai",
             "linkedin": null,
@@ -22212,35 +21324,6 @@
           "occupations": [
             "Quản lý Sản phẩm"
           ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
-      "slug": "aiinnovationresearch",
-      "name": "AI Innovation Research",
-      "interests": [
-        "Ngân hàng & Tài chính"
-      ],
-      "skillsNeeded": [
-        "DevOps",
-        "Frontend"
-      ],
-      "memberCount": 1,
-      "leaderHandle": null,
-      "members": [
-        {
-          "handle": null,
-          "name": "Nguyen Minh Tri",
-          "isLeader": true,
-          "occupations": [],
           "industries": [],
           "skills": [],
           "links": {
@@ -22758,27 +21841,40 @@
       ]
     },
     {
-      "slug": "hacknova",
-      "name": "HackNova",
+      "slug": "ai2p",
+      "name": "AI_2P",
       "interests": [
         "Đổi mới Sáng tạo"
       ],
       "skillsNeeded": [
         "AI/ML",
-        "API / Tích hợp hệ thống",
-        "Backend",
-        "Frontend",
-        "Vibe Coding"
+        "API / Tích hợp hệ thống"
       ],
-      "memberCount": 1,
-      "leaderHandle": "hoangvinhgiang",
+      "memberCount": 2,
+      "leaderHandle": "letuanvu",
       "members": [
         {
-          "handle": "hoangvinhgiang",
-          "name": "Hoàng Vĩnh Giang",
+          "handle": "letuanvu",
+          "name": "Lê Tuấn Vũ",
           "isLeader": true,
           "occupations": [
             "Kỹ thuật / Developer"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "vietdosy",
+          "name": "Viet Do Sy",
+          "isLeader": false,
+          "occupations": [
+            "Học sinh & Sinh viên"
           ],
           "industries": [],
           "skills": [],
@@ -22934,122 +22030,6 @@
       ]
     },
     {
-      "slug": "hanoiagents",
-      "name": "Hanoi Agents",
-      "interests": [
-        "Giáo dục & Đào tạo"
-      ],
-      "skillsNeeded": [
-        "Khoa học dữ liệu"
-      ],
-      "memberCount": 5,
-      "leaderHandle": "nguyentatdac",
-      "members": [
-        {
-          "handle": "phanviet",
-          "name": "Phan Việt",
-          "isLeader": false,
-          "occupations": [
-            "Marketing / Tăng trưởng"
-          ],
-          "industries": [
-            "Giáo dục"
-          ],
-          "skills": [
-            "Mạng xã hội"
-          ],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "phanminhthong",
-          "name": "Phan Minh Thông",
-          "isLeader": false,
-          "occupations": [
-            "Marketing / Tăng trưởng"
-          ],
-          "industries": [
-            "Giáo dục",
-            "Truyền thông & Giải trí"
-          ],
-          "skills": [
-            "Vibe Coding",
-            "Mạng xã hội"
-          ],
-          "links": {
-            "github": null,
-            "linkedin": "https://www.linkedin.com/in/th%C3%B4ng-phan-816a7483/",
-            "website": "https://thongphan.com"
-          },
-          "description": null
-        },
-        {
-          "handle": "nguyenphuonganh",
-          "name": "Nguyễn Phương Anh",
-          "isLeader": false,
-          "occupations": [
-            "Sáng lập / Khởi nghiệp"
-          ],
-          "industries": [
-            "Giáo dục",
-            "Nhân sự"
-          ],
-          "skills": [
-            "Vibe Coding",
-            "Quản lý Sản phẩm",
-            "Nghiên cứu",
-            "Chiến lược / Tài chính"
-          ],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": "https://phanh13.com/"
-          },
-          "description": null
-        },
-        {
-          "handle": "dangtuyethong",
-          "name": "Đặng Tuyết Hồng",
-          "isLeader": false,
-          "occupations": [
-            "Nghiên cứu / Học thuật"
-          ],
-          "industries": [
-            "Giáo dục"
-          ],
-          "skills": [
-            "Vibe Coding"
-          ],
-          "links": {
-            "github": "https://github.com/hongdang023/",
-            "linkedin": null,
-            "website": "https://danghong.me/"
-          },
-          "description": null
-        },
-        {
-          "handle": "nguyentatdac",
-          "name": "Nguyen Tat Dac",
-          "isLeader": true,
-          "occupations": [
-            "Sáng lập / Khởi nghiệp"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
       "slug": "seavietnam",
       "name": "SEA VIET NAM",
       "interests": [
@@ -23060,12 +22040,12 @@
         "Vibe Coding"
       ],
       "memberCount": 2,
-      "leaderHandle": "nguyenvanhoang2",
+      "leaderHandle": "damxuangiap",
       "members": [
         {
           "handle": "nguyenvanhoang2",
           "name": "Nguyễn Văn Hoàng",
-          "isLeader": true,
+          "isLeader": false,
           "occupations": [
             "Trí tuệ nhân tạo / Dữ liệu / Học máy"
           ],
@@ -23081,7 +22061,7 @@
         {
           "handle": "damxuangiap",
           "name": "Đàm Xuân Giáp",
-          "isLeader": false,
+          "isLeader": true,
           "occupations": [
             "Trí tuệ nhân tạo / Dữ liệu / Học máy"
           ],
@@ -23148,52 +22128,6 @@
       ]
     },
     {
-      "slug": "106",
-      "name": "106",
-      "interests": [
-        "Ngân hàng & Tài chính",
-        "Đổi mới Sáng tạo",
-        "Chính phủ Thông minh"
-      ],
-      "skillsNeeded": [
-        "Backend",
-        "Frontend",
-        "Nghiên cứu",
-        "Chiến lược / Tài chính",
-        "UI/UX"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "nguyenquangminh",
-      "members": [
-        {
-          "handle": "nguyenquangminh",
-          "name": "Nguyen Quang Minh",
-          "isLeader": true,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [
-            "Công nghệ tài chính",
-            "Công nghệ"
-          ],
-          "skills": [
-            "AI/ML",
-            "API / Tích hợp hệ thống",
-            "Khoa học dữ liệu",
-            "Vibe Coding",
-            "Python"
-          ],
-          "links": {
-            "github": "https://github.com/nqminh-ai",
-            "linkedin": "https://www.linkedin.com/in/quang-minh-nguyen-091718210/",
-            "website": "https://nqminh-ai.github.io/nqminh_portfolio/"
-          },
-          "description": null
-        }
-      ]
-    },
-    {
       "slug": "aielearning",
       "name": "AI - Elearning",
       "interests": [
@@ -23207,34 +22141,9 @@
         "Mạng xã hội",
         "UI/UX"
       ],
-      "memberCount": 3,
+      "memberCount": 2,
       "leaderHandle": "giangngocxuanquynh",
       "members": [
-        {
-          "handle": "thieuquangminh",
-          "name": "Thieu Quang Minh",
-          "isLeader": false,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [
-            "Công nghệ"
-          ],
-          "skills": [
-            "AI/ML",
-            "DevOps",
-            "Vibe Coding",
-            "Python",
-            "Nghiên cứu"
-          ],
-          "links": {
-            "github": "https://github.com/Dozyboy",
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
         {
           "handle": "giangngocxuanquynh",
           "name": "Giang Ngọc Xuân Quỳnh",
@@ -23277,40 +22186,52 @@
       ]
     },
     {
-      "slug": "ai2p",
-      "name": "AI_2P",
+      "slug": "mba",
+      "name": "Eye Of The Storm",
       "interests": [
-        "Đổi mới Sáng tạo"
+        "Đổi mới Sáng tạo",
+        "Năng suất Doanh nghiệp Vừa & Nhỏ"
       ],
       "skillsNeeded": [
         "AI/ML",
-        "API / Tích hợp hệ thống"
+        "Backend",
+        "Khoa học dữ liệu",
+        "Nghiên cứu",
+        "UI/UX"
       ],
       "memberCount": 2,
-      "leaderHandle": "letuanvu",
+      "leaderHandle": "luongthenam",
       "members": [
         {
-          "handle": "letuanvu",
-          "name": "Lê Tuấn Vũ",
+          "handle": "luongthenam",
+          "name": "Luong The Nam",
           "isLeader": true,
           "occupations": [
-            "Kỹ thuật / Developer"
+            "Quản lý Dự án / Chương trình"
           ],
-          "industries": [],
-          "skills": [],
+          "industries": [
+            "Thương mại điện tử",
+            "Truyền thông & Giải trí"
+          ],
+          "skills": [
+            "API / Tích hợp hệ thống",
+            "Điện toán đám mây",
+            "DevOps",
+            "Bảo mật"
+          ],
           "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
+            "github": "https://github.com/nkyo",
+            "linkedin": "https://www.linkedin.com/in/nknkne/",
+            "website": "https://nk.cab"
           },
           "description": null
         },
         {
-          "handle": "vietdosy",
-          "name": "Viet Do Sy",
+          "handle": "trananhtu",
+          "name": "Trần Anh Tú",
           "isLeader": false,
           "occupations": [
-            "Học sinh & Sinh viên"
+            "Thiết kế"
           ],
           "industries": [],
           "skills": [],
@@ -23453,6 +22374,122 @@
       ]
     },
     {
+      "slug": "hanoiagents",
+      "name": "Hanoi Agents",
+      "interests": [
+        "Giáo dục & Đào tạo"
+      ],
+      "skillsNeeded": [
+        "Khoa học dữ liệu"
+      ],
+      "memberCount": 5,
+      "leaderHandle": "nguyentatdac",
+      "members": [
+        {
+          "handle": "phanviet",
+          "name": "Phan Việt",
+          "isLeader": false,
+          "occupations": [
+            "Marketing / Tăng trưởng"
+          ],
+          "industries": [
+            "Giáo dục"
+          ],
+          "skills": [
+            "Mạng xã hội"
+          ],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "phanminhthong",
+          "name": "Phan Minh Thông",
+          "isLeader": false,
+          "occupations": [
+            "Marketing / Tăng trưởng"
+          ],
+          "industries": [
+            "Giáo dục",
+            "Truyền thông & Giải trí"
+          ],
+          "skills": [
+            "Vibe Coding",
+            "Mạng xã hội"
+          ],
+          "links": {
+            "github": null,
+            "linkedin": "https://www.linkedin.com/in/th%C3%B4ng-phan-816a7483/",
+            "website": "https://thongphan.com"
+          },
+          "description": null
+        },
+        {
+          "handle": "nguyenphuonganh",
+          "name": "Nguyễn Phương Anh",
+          "isLeader": false,
+          "occupations": [
+            "Sáng lập / Khởi nghiệp"
+          ],
+          "industries": [
+            "Giáo dục",
+            "Nhân sự"
+          ],
+          "skills": [
+            "Vibe Coding",
+            "Quản lý Sản phẩm",
+            "Nghiên cứu",
+            "Chiến lược / Tài chính"
+          ],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": "https://phanh13.com/"
+          },
+          "description": null
+        },
+        {
+          "handle": "dangtuyethong",
+          "name": "Đặng Tuyết Hồng",
+          "isLeader": false,
+          "occupations": [
+            "Nghiên cứu / Học thuật"
+          ],
+          "industries": [
+            "Giáo dục"
+          ],
+          "skills": [
+            "Vibe Coding"
+          ],
+          "links": {
+            "github": "https://github.com/hongdang023/",
+            "linkedin": null,
+            "website": "https://danghong.me/"
+          },
+          "description": null
+        },
+        {
+          "handle": "nguyentatdac",
+          "name": "Nguyen Tat Dac",
+          "isLeader": true,
+          "occupations": [
+            "Sáng lập / Khởi nghiệp"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        }
+      ]
+    },
+    {
       "slug": "hoihongdau",
       "name": "Hội Hỏng Đầu",
       "interests": [
@@ -23556,64 +22593,6 @@
             "JavaScript",
             "Web Development"
           ],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
-      "slug": "mba",
-      "name": "MBAI",
-      "interests": [
-        "Đổi mới Sáng tạo",
-        "Năng suất Doanh nghiệp Vừa & Nhỏ"
-      ],
-      "skillsNeeded": [
-        "AI/ML",
-        "API / Tích hợp hệ thống",
-        "Backend",
-        "UI/UX"
-      ],
-      "memberCount": 2,
-      "leaderHandle": "luongthenam",
-      "members": [
-        {
-          "handle": "luongthenam",
-          "name": "Luong The Nam",
-          "isLeader": true,
-          "occupations": [
-            "Quản lý Dự án / Chương trình"
-          ],
-          "industries": [
-            "Thương mại điện tử",
-            "Truyền thông & Giải trí"
-          ],
-          "skills": [
-            "API / Tích hợp hệ thống",
-            "Điện toán đám mây",
-            "DevOps",
-            "Bảo mật"
-          ],
-          "links": {
-            "github": "https://github.com/nkyo",
-            "linkedin": "https://www.linkedin.com/in/nknkne/",
-            "website": "https://nk.cab"
-          },
-          "description": null
-        },
-        {
-          "handle": "trananhtu",
-          "name": "Trần Anh Tú",
-          "isLeader": false,
-          "occupations": [
-            "Thiết kế"
-          ],
-          "industries": [],
-          "skills": [],
           "links": {
             "github": null,
             "linkedin": null,
@@ -23731,7 +22710,7 @@
         "Khoa học dữ liệu",
         "Vibe Coding"
       ],
-      "memberCount": 1,
+      "memberCount": 3,
       "leaderHandle": "nguyenhoanhdat",
       "members": [
         {
@@ -23749,79 +22728,203 @@
             "website": null
           },
           "description": null
+        },
+        {
+          "handle": "dohoangduy",
+          "name": "Đỗ Hoàng Duy",
+          "isLeader": false,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "nguyennamkhanh",
+          "name": "Nguyễn Nam Khánh",
+          "isLeader": false,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [
+            "Thương mại điện tử",
+            "Công nghệ"
+          ],
+          "skills": [
+            "AI/ML",
+            "API / Tích hợp hệ thống",
+            "Khoa học dữ liệu",
+            "Vibe Coding",
+            "Python"
+          ],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
         }
       ]
     },
     {
-      "slug": "newbiesthapcamdaochoi",
-      "name": "Newbies Thập Cẩm Dạo Chơi",
+      "slug": "106",
+      "name": "106",
       "interests": [
-        "Giáo dục & Đào tạo",
         "Ngân hàng & Tài chính",
+        "Đổi mới Sáng tạo",
         "Chính phủ Thông minh"
       ],
       "skillsNeeded": [
+        "Backend",
         "Frontend",
-        "Quản lý Sản phẩm",
         "Nghiên cứu",
         "Chiến lược / Tài chính",
         "UI/UX"
       ],
-      "memberCount": 3,
-      "leaderHandle": "vuminhdung",
+      "memberCount": 2,
+      "leaderHandle": "nguyenquangminh",
       "members": [
         {
-          "handle": "nguyenphuonglinh",
-          "name": "Nguyễn Phương Linh",
-          "isLeader": false,
+          "handle": "nguyenquangminh",
+          "name": "Nguyen Quang Minh",
+          "isLeader": true,
           "occupations": [
             "Trí tuệ nhân tạo / Dữ liệu / Học máy",
-            "Thiết kế"
+            "Học sinh & Sinh viên"
           ],
           "industries": [
             "Công nghệ tài chính",
             "Công nghệ"
           ],
           "skills": [
-            "Khoa học dữ liệu",
-            "Python",
-            "UI/UX"
-          ],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": "https://web.facebook.com/nguyen.phuong.linh.548851/"
-          },
-          "description": null
-        },
-        {
-          "handle": "vuminhdung",
-          "name": "Vũ Minh Dũng",
-          "isLeader": true,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
-          ],
-          "industries": [],
-          "skills": [
             "AI/ML",
             "API / Tích hợp hệ thống",
-            "Backend",
+            "Khoa học dữ liệu",
             "Vibe Coding",
             "Python"
           ],
           "links": {
-            "github": "https://github.com/VuSnow",
-            "linkedin": "https://www.linkedin.com/in/d%C5%A9ng-v%C5%A9-minh-39290027a/",
+            "github": "https://github.com/nqminh-ai",
+            "linkedin": "https://www.linkedin.com/in/quang-minh-nguyen-091718210/",
+            "website": "https://nqminh-ai.github.io/nqminh_portfolio/"
+          },
+          "description": null
+        },
+        {
+          "handle": "ngominhtri",
+          "name": "Ngô Minh Trí",
+          "isLeader": false,
+          "occupations": [
+            "Nghiên cứu / Học thuật",
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [
+            "Chính phủ",
+            "Công nghệ"
+          ],
+          "skills": [
+            "Nghiên cứu"
+          ],
+          "links": {
+            "github": "https://github.com/DKMgaming/WidgetARFM",
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        }
+      ]
+    },
+    {
+      "slug": "nguhoi",
+      "name": "5 Little Pigs",
+      "interests": [
+        "Giáo dục & Đào tạo"
+      ],
+      "skillsNeeded": [
+        "Quản lý Sản phẩm",
+        "Nghiên cứu"
+      ],
+      "memberCount": 5,
+      "leaderHandle": "nguyenducthanh",
+      "members": [
+        {
+          "handle": "nguyenducthanh",
+          "name": "Nguyễn Đức Thành",
+          "isLeader": true,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [
+            "Công nghệ"
+          ],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
             "website": null
           },
           "description": null
         },
         {
-          "handle": "thanhtran",
-          "name": "Thanh Tran",
+          "handle": "luongtrangiangphu",
+          "name": "Lương Trần Giang Phú",
           "isLeader": false,
           "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "nguyenphuctam",
+          "name": "Nguyễn Phúc Tâm",
+          "isLeader": false,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "nguyentramy",
+          "name": "Nguyễn Trà My",
+          "isLeader": false,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "tranngocphuc",
+          "name": "Trần Ngọc Phúc",
+          "isLeader": false,
+          "occupations": [
+            "Học sinh & Sinh viên"
           ],
           "industries": [],
           "skills": [],
@@ -23835,25 +22938,230 @@
       ]
     },
     {
-      "slug": "thenextalex",
-      "name": "TheNextAlex",
+      "slug": "ailatoi",
+      "name": "AIlaToi",
       "interests": [
-        "Nông nghiệp",
-        "Phòng chống Thiên tai",
-        "Chính phủ Thông minh"
+        "Đổi mới Sáng tạo"
       ],
       "skillsNeeded": [
-        "AI/ML"
+        "AI/ML",
+        "Khoa học dữ liệu",
+        "Vibe Coding",
+        "UI/UX"
       ],
-      "memberCount": 1,
-      "leaderHandle": "khanh",
+      "memberCount": 5,
+      "leaderHandle": "nguyenmainhatanh",
       "members": [
         {
-          "handle": "khanh",
-          "name": "Khanh",
+          "handle": "pengu",
+          "name": "Pengu",
+          "isLeader": false,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "nguyenmainhatanh",
+          "name": "Nguyễn Mai Nhật Anh",
           "isLeader": true,
           "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "trandongbinh",
+          "name": "Trần Đông Bình",
+          "isLeader": false,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "dophambaohoang",
+          "name": "Đỗ Phạm Bảo Hoàng",
+          "isLeader": false,
+          "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "dangtienmanh",
+          "name": "Đặng Tiến Mạnh",
+          "isLeader": false,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": "github.com/fallingguy",
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        }
+      ]
+    },
+    {
+      "slug": "db2a",
+      "name": "DB2A",
+      "interests": [
+        "Ngân hàng & Tài chính"
+      ],
+      "skillsNeeded": [
+        "AI/ML",
+        "API / Tích hợp hệ thống",
+        "Backend",
+        "Điện toán đám mây",
+        "Quản lý Sản phẩm"
+      ],
+      "memberCount": 3,
+      "leaderHandle": "lequocbinh",
+      "members": [
+        {
+          "handle": "anhtran",
+          "name": "Anh Tran",
+          "isLeader": false,
+          "occupations": [
+            "Thiết kế",
             "Kỹ thuật / Developer"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": "https://www.linkedin.com/in/tran-tuan-anh-6b406a3b1/",
+            "website": "https://portfolio-bryan-2708.framer.website/"
+          },
+          "description": null
+        },
+        {
+          "handle": "lequocbinh",
+          "name": "Lê Quốc Bình",
+          "isLeader": true,
+          "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "dodat",
+          "name": "Do Dat",
+          "isLeader": false,
+          "occupations": [
+            "Marketing / Tăng trưởng"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        }
+      ]
+    },
+    {
+      "slug": "innovators",
+      "name": "Innovators",
+      "interests": [
+        "Giáo dục & Đào tạo",
+        "Đổi mới Sáng tạo",
+        "Năng suất Doanh nghiệp Vừa & Nhỏ"
+      ],
+      "skillsNeeded": [
+        "AI/ML",
+        "Bảo mật",
+        "UI/UX"
+      ],
+      "memberCount": 3,
+      "leaderHandle": "luuthienvietcuong",
+      "members": [
+        {
+          "handle": "dinhnhatthanh",
+          "name": "Dinh Nhat Thanh",
+          "isLeader": false,
+          "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
+          ],
+          "industries": [
+            "Công nghệ"
+          ],
+          "skills": [
+            "AI/ML",
+            "API / Tích hợp hệ thống",
+            "Backend",
+            "Nghiên cứu"
+          ],
+          "links": {
+            "github": "https://github.com/MathematicGuy?tab=repositories",
+            "linkedin": "https://www.linkedin.com/in/d-nhatthanh248/",
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "luuthienvietcuong",
+          "name": "Lưu Thiện Việt Cường",
+          "isLeader": true,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "nguyenphuonghoaingoc",
+          "name": "Nguyễn Phương Hoài Ngọc",
+          "isLeader": false,
+          "occupations": [
+            "Nghiên cứu / Học thuật"
           ],
           "industries": [],
           "skills": [],
@@ -23976,7 +23284,7 @@
         "Vibe Coding",
         "UI/UX"
       ],
-      "memberCount": 3,
+      "memberCount": 6,
       "leaderHandle": "dohoangminh2",
       "members": [
         {
@@ -23985,6 +23293,22 @@
           "isLeader": true,
           "occupations": [
             "Trí tuệ nhân tạo / Dữ liệu / Học máy"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "nguyenthimaitrang",
+          "name": "Nguyễn Thị Mai Trang",
+          "isLeader": false,
+          "occupations": [
+            "Học sinh & Sinh viên"
           ],
           "industries": [],
           "skills": [],
@@ -24036,370 +23360,49 @@
             "website": null
           },
           "description": null
-        }
-      ]
-    },
-    {
-      "slug": "nguhoi",
-      "name": "5 Little Pigs",
-      "interests": [
-        "Giáo dục & Đào tạo"
-      ],
-      "skillsNeeded": [
-        "Quản lý Sản phẩm",
-        "Nghiên cứu"
-      ],
-      "memberCount": 3,
-      "leaderHandle": "nguyenducthanh",
-      "members": [
-        {
-          "handle": "nguyenducthanh",
-          "name": "Nguyễn Đức Thành",
-          "isLeader": true,
-          "occupations": [
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [
-            "Công nghệ"
-          ],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
         },
         {
-          "handle": "luongtrangiangphu",
-          "name": "Lương Trần Giang Phú",
+          "handle": "dungnguyen",
+          "name": "Dũng Nguyễn",
           "isLeader": false,
           "occupations": [
             "Học sinh & Sinh viên"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "nguyenphuctam",
-          "name": "Nguyễn Phúc Tâm",
-          "isLeader": false,
-          "occupations": [
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
-      "slug": "ailatoi",
-      "name": "AIlaToi",
-      "interests": [
-        "Đổi mới Sáng tạo"
-      ],
-      "skillsNeeded": [
-        "AI/ML",
-        "Khoa học dữ liệu",
-        "Vibe Coding",
-        "UI/UX"
-      ],
-      "memberCount": 5,
-      "leaderHandle": "nguyenmainhatanh",
-      "members": [
-        {
-          "handle": "pengu",
-          "name": "Pengu",
-          "isLeader": false,
-          "occupations": [
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "nguyenmainhatanh",
-          "name": "Nguyễn Mai Nhật Anh",
-          "isLeader": true,
-          "occupations": [
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "trandongbinh",
-          "name": "Trần Đông Bình",
-          "isLeader": false,
-          "occupations": [
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "dophambaohoang",
-          "name": "Đỗ Phạm Bảo Hoàng",
-          "isLeader": false,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "dangtienmanh",
-          "name": "Đặng Tiến Mạnh",
-          "isLeader": false,
-          "occupations": [
-            "Học sinh & Sinh viên"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": "github.com/fallingguy",
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
-      "slug": "innovators",
-      "name": "Innovators",
-      "interests": [
-        "Giáo dục & Đào tạo",
-        "Đổi mới Sáng tạo",
-        "Năng suất Doanh nghiệp Vừa & Nhỏ"
-      ],
-      "skillsNeeded": [
-        "AI/ML",
-        "Bảo mật",
-        "UI/UX"
-      ],
-      "memberCount": 3,
-      "leaderHandle": "luuthienvietcuong",
-      "members": [
-        {
-          "handle": "dinhnhatthanh",
-          "name": "Dinh Nhat Thanh",
-          "isLeader": false,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
           ],
           "industries": [
             "Công nghệ"
           ],
           "skills": [
-            "AI/ML",
             "API / Tích hợp hệ thống",
             "Backend",
-            "Nghiên cứu"
+            "Khoa học dữ liệu",
+            "Vibe Coding",
+            "Web Development"
           ],
           "links": {
-            "github": "https://github.com/MathematicGuy?tab=repositories",
-            "linkedin": "https://www.linkedin.com/in/d-nhatthanh248/",
+            "github": "https://github.com/onlylocally",
+            "linkedin": null,
             "website": null
           },
           "description": null
         },
         {
-          "handle": "luuthienvietcuong",
-          "name": "Lưu Thiện Việt Cường",
-          "isLeader": true,
+          "handle": "nguyenthibaochi",
+          "name": "Nguyễn Thị Bảo Chi",
+          "isLeader": false,
           "occupations": [
             "Học sinh & Sinh viên"
           ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "nguyenphuonghoaingoc",
-          "name": "Nguyễn Phương Hoài Ngọc",
-          "isLeader": false,
-          "occupations": [
-            "Nghiên cứu / Học thuật"
+          "industries": [
+            "Thương mại điện tử",
+            "Công nghệ tài chính"
           ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
-      "slug": "csc3",
-      "name": "CSC 3",
-      "interests": [
-        "Giáo dục & Đào tạo",
-        "Ngân hàng & Tài chính",
-        "Đổi mới Sáng tạo"
-      ],
-      "skillsNeeded": [
-        "API / Tích hợp hệ thống",
-        "Vibe Coding",
-        "Web Development"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "lekhanhlinh",
-      "members": [
-        {
-          "handle": "lekhanhlinh",
-          "name": "Lê Khánh Linh",
-          "isLeader": true,
-          "occupations": [
-            "Học sinh & Sinh viên"
+          "skills": [
+            "Khoa học dữ liệu",
+            "Vibe Coding",
+            "Quản lý Sản phẩm",
+            "Nghiên cứu",
+            "Chiến lược / Tài chính"
           ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
-      "slug": "db2a",
-      "name": "DB2A",
-      "interests": [
-        "Ngân hàng & Tài chính"
-      ],
-      "skillsNeeded": [
-        "AI/ML",
-        "API / Tích hợp hệ thống",
-        "Backend",
-        "Điện toán đám mây",
-        "Quản lý Sản phẩm"
-      ],
-      "memberCount": 3,
-      "leaderHandle": "lequocbinh",
-      "members": [
-        {
-          "handle": "anhtran",
-          "name": "Anh Tran",
-          "isLeader": false,
-          "occupations": [
-            "Thiết kế",
-            "Kỹ thuật / Developer"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": "https://www.linkedin.com/in/tran-tuan-anh-6b406a3b1/",
-            "website": "https://portfolio-bryan-2708.framer.website/"
-          },
-          "description": null
-        },
-        {
-          "handle": "lequocbinh",
-          "name": "Lê Quốc Bình",
-          "isLeader": true,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        },
-        {
-          "handle": "dodat",
-          "name": "Do Dat",
-          "isLeader": false,
-          "occupations": [
-            "Marketing / Tăng trưởng"
-          ],
-          "industries": [],
-          "skills": [],
-          "links": {
-            "github": null,
-            "linkedin": null,
-            "website": null
-          },
-          "description": null
-        }
-      ]
-    },
-    {
-      "slug": "oneone",
-      "name": "OneOne",
-      "interests": [
-        "Đổi mới Sáng tạo"
-      ],
-      "skillsNeeded": [
-        "API / Tích hợp hệ thống",
-        "Backend",
-        "Điện toán đám mây",
-        "Frontend",
-        "UI/UX"
-      ],
-      "memberCount": 1,
-      "leaderHandle": "hoangle",
-      "members": [
-        {
-          "handle": "hoangle",
-          "name": "Hoang Le",
-          "isLeader": true,
-          "occupations": [
-            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
-          ],
-          "industries": [],
-          "skills": [],
           "links": {
             "github": null,
             "linkedin": null,
@@ -24499,8 +23502,15 @@
           "occupations": [
             "Trí tuệ nhân tạo / Dữ liệu / Học máy"
           ],
-          "industries": [],
-          "skills": [],
+          "industries": [
+            "Công nghệ"
+          ],
+          "skills": [
+            "AI/ML",
+            "API / Tích hợp hệ thống",
+            "Vibe Coding",
+            "Nghiên cứu"
+          ],
           "links": {
             "github": null,
             "linkedin": null,
@@ -24525,7 +23535,7 @@
         "Chiến lược / Tài chính",
         "UI/UX"
       ],
-      "memberCount": 2,
+      "memberCount": 3,
       "leaderHandle": "phamngocthach",
       "members": [
         {
@@ -24537,6 +23547,28 @@
           ],
           "industries": [],
           "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "nguyentuankien",
+          "name": "Nguyen Tuan Kien",
+          "isLeader": false,
+          "occupations": [
+            "Kỹ thuật / Developer"
+          ],
+          "industries": [],
+          "skills": [
+            "DevOps",
+            "Vibe Coding",
+            "Quản lý Sản phẩm",
+            "UI/UX",
+            "Web Development"
+          ],
           "links": {
             "github": null,
             "linkedin": null,
@@ -24564,22 +23596,48 @@
     },
     {
       "slug": "gamer",
-      "name": "Gamer",
+      "name": "MindMesh",
       "interests": [
         "Giáo dục & Đào tạo",
         "Đổi mới Sáng tạo",
-        "Chính phủ Thông minh"
+        "Năng suất Doanh nghiệp Vừa & Nhỏ"
       ],
       "skillsNeeded": [
         "AI/ML",
-        "Khoa học dữ liệu",
         "Frontend",
+        "Vibe Coding",
         "UI/UX",
         "Web Development"
       ],
-      "memberCount": 1,
+      "memberCount": 2,
       "leaderHandle": "dinhthitramy",
       "members": [
+        {
+          "handle": "ledangngodan",
+          "name": "Lê Đăng Ngô Đan",
+          "isLeader": false,
+          "occupations": [
+            "Kỹ thuật / Developer",
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [
+            "Giáo dục",
+            "Sản xuất"
+          ],
+          "skills": [
+            "API / Tích hợp hệ thống",
+            "Backend",
+            "DevOps",
+            "Python",
+            "Web Development"
+          ],
+          "links": {
+            "github": "https://github.com/im-yuuki",
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
         {
           "handle": "dinhthitramy",
           "name": "Đinh Thị Trà My",
@@ -24923,6 +23981,437 @@
           "name": "Hoa PROD fan 4",
           "isLeader": false,
           "occupations": [],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        }
+      ]
+    },
+    {
+      "slug": "hapolabs",
+      "name": "Haposoft",
+      "interests": [
+        "Đổi mới Sáng tạo",
+        "Năng suất Doanh nghiệp Vừa & Nhỏ"
+      ],
+      "skillsNeeded": [
+        "API / Tích hợp hệ thống",
+        "Backend",
+        "Điện toán đám mây",
+        "Frontend",
+        "Vibe Coding"
+      ],
+      "memberCount": 3,
+      "leaderHandle": "luutrungnghia",
+      "members": [
+        {
+          "handle": "lehongminh",
+          "name": "Lê Hồng Minh",
+          "isLeader": false,
+          "occupations": [
+            "Kỹ thuật / Developer"
+          ],
+          "industries": [
+            "Sản xuất",
+            "Công nghệ"
+          ],
+          "skills": [
+            "API / Tích hợp hệ thống",
+            "Backend",
+            "Frontend",
+            "Vibe Coding",
+            "Web Development"
+          ],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "nguyenanhtoan",
+          "name": "Nguyễn Anh Toàn",
+          "isLeader": false,
+          "occupations": [
+            "Kỹ thuật / Developer"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "luutrungnghia",
+          "name": "Luu Trung Nghia",
+          "isLeader": true,
+          "occupations": [
+            "Kỹ thuật / Developer"
+          ],
+          "industries": [
+            "Công nghệ"
+          ],
+          "skills": [
+            "AI/ML",
+            "API / Tích hợp hệ thống",
+            "Backend",
+            "Điện toán đám mây",
+            "Khoa học dữ liệu"
+          ],
+          "links": {
+            "github": "https://github.com/hapo-nghialuu",
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        }
+      ]
+    },
+    {
+      "slug": "npai",
+      "name": "NPAI",
+      "interests": [
+        "Nông nghiệp",
+        "Phòng chống Thiên tai"
+      ],
+      "skillsNeeded": [
+        "AI/ML",
+        "Backend",
+        "Khoa học dữ liệu",
+        "Frontend"
+      ],
+      "memberCount": 2,
+      "leaderHandle": "nhatminhtranngoc",
+      "members": [
+        {
+          "handle": "nhatminhtranngoc",
+          "name": "Nhat Minh Tran Ngoc",
+          "isLeader": true,
+          "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
+            "Sáng lập / Khởi nghiệp"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "tranngocanh2",
+          "name": "Trần Ngọc Anh",
+          "isLeader": false,
+          "occupations": [
+            "Kỹ thuật / Developer"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        }
+      ]
+    },
+    {
+      "slug": "vnu",
+      "name": "VNU",
+      "interests": [
+        "Giáo dục & Đào tạo",
+        "Y tế & Sức khỏe",
+        "Đổi mới Sáng tạo"
+      ],
+      "skillsNeeded": [
+        "AI/ML",
+        "Khoa học dữ liệu",
+        "Nghiên cứu"
+      ],
+      "memberCount": 3,
+      "leaderHandle": "manthibichphuong",
+      "members": [
+        {
+          "handle": "manthibichphuong",
+          "name": "Mẫn Thị Bích Phương",
+          "isLeader": true,
+          "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "datnguyentrong",
+          "name": "Dat Nguyen Trong",
+          "isLeader": false,
+          "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
+            "Kỹ thuật / Developer"
+          ],
+          "industries": [],
+          "skills": [],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "tranhungduc",
+          "name": "Tran Hung Duc",
+          "isLeader": false,
+          "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy"
+          ],
+          "industries": [],
+          "skills": [
+            "AI/ML"
+          ],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        }
+      ]
+    },
+    {
+      "slug": "cmc404notfound",
+      "name": "CMC 404 Not Found",
+      "interests": [
+        "Ngân hàng & Tài chính",
+        "Phòng chống Thiên tai",
+        "Năng suất Doanh nghiệp Vừa & Nhỏ"
+      ],
+      "skillsNeeded": [
+        "API / Tích hợp hệ thống",
+        "Bảo mật",
+        "Chiến lược / Tài chính"
+      ],
+      "memberCount": 5,
+      "leaderHandle": "nguyentandung",
+      "members": [
+        {
+          "handle": "lehaiduong",
+          "name": "Lê Hải Dương",
+          "isLeader": false,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [
+            "Công nghệ"
+          ],
+          "skills": [
+            "Frontend",
+            "Vibe Coding",
+            "Mạng xã hội",
+            "UI/UX",
+            "Web Development"
+          ],
+          "links": {
+            "github": "github.com/leduwn",
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "nguyentandung",
+          "name": "Nguyễn Tấn Dũng",
+          "isLeader": true,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [
+            "Công nghệ tài chính",
+            "Công nghệ"
+          ],
+          "skills": [
+            "API / Tích hợp hệ thống",
+            "Vibe Coding",
+            "Python",
+            "Chiến lược / Tài chính",
+            "Web Development"
+          ],
+          "links": {
+            "github": "https://github.com/antondung",
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "nguyenmanhcuong",
+          "name": "Nguyễn Mạnh Cường",
+          "isLeader": false,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [
+            "Công nghệ"
+          ],
+          "skills": [
+            "Backend",
+            "Frontend",
+            "Vibe Coding",
+            "Bảo mật",
+            "Web Development"
+          ],
+          "links": {
+            "github": "https://github.com/NMC2007",
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "lenguyenquanganh",
+          "name": "Lê Nguyễn Quang Anh",
+          "isLeader": false,
+          "occupations": [
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [
+            "Bất động sản",
+            "Công nghệ"
+          ],
+          "skills": [
+            "API / Tích hợp hệ thống",
+            "JavaScript",
+            "Vibe Coding",
+            "UI/UX",
+            "Web Development"
+          ],
+          "links": {
+            "github": "https://github.com/quangg-anh",
+            "linkedin": "https://www.linkedin.com/in/quangg-anhh?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+            "website": "https://profile.wangganh.id.vn/admin"
+          },
+          "description": null
+        },
+        {
+          "handle": "nguyennhutungduong",
+          "name": "Nguyễn Như Tùng Dương",
+          "isLeader": false,
+          "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
+            "Học sinh & Sinh viên"
+          ],
+          "industries": [
+            "Truyền thông & Giải trí",
+            "Công nghệ"
+          ],
+          "skills": [
+            "API / Tích hợp hệ thống",
+            "Backend",
+            "DevOps",
+            "Vibe Coding",
+            "Web Development"
+          ],
+          "links": {
+            "github": "https://github.com/Tungdota53",
+            "linkedin": null,
+            "website": "https://cmcnetwork.io.vn"
+          },
+          "description": null
+        }
+      ]
+    },
+    {
+      "slug": "pizzahackathon",
+      "name": "Pizza Hackathon",
+      "interests": [
+        "Giáo dục & Đào tạo",
+        "Chính phủ Thông minh",
+        "Năng suất Doanh nghiệp Vừa & Nhỏ"
+      ],
+      "skillsNeeded": [
+        "AI/ML",
+        "API / Tích hợp hệ thống",
+        "Khoa học dữ liệu",
+        "Vibe Coding",
+        "Web Development"
+      ],
+      "memberCount": 3,
+      "leaderHandle": "nguyennamhai2",
+      "members": [
+        {
+          "handle": "nguyennamhai2",
+          "name": "Nguyễn Nam Hải",
+          "isLeader": true,
+          "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
+            "Kỹ thuật / Developer"
+          ],
+          "industries": [
+            "Công nghệ"
+          ],
+          "skills": [
+            "AI/ML",
+            "API / Tích hợp hệ thống",
+            "Vibe Coding",
+            "Quản lý Sản phẩm",
+            "Web Development"
+          ],
+          "links": {
+            "github": null,
+            "linkedin": null,
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "hoangquocanh",
+          "name": "Hoàng Quốc Anh",
+          "isLeader": false,
+          "occupations": [
+            "Trí tuệ nhân tạo / Dữ liệu / Học máy",
+            "Kỹ thuật / Developer"
+          ],
+          "industries": [
+            "Công nghệ"
+          ],
+          "skills": [
+            "AI/ML",
+            "Phát triển di động",
+            "Vibe Coding",
+            "Python"
+          ],
+          "links": {
+            "github": "https://github.com/QuocAnhtapcode",
+            "linkedin": "https://www.linkedin.com/in/hoàng-quốc-anh-0193382ab?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+            "website": null
+          },
+          "description": null
+        },
+        {
+          "handle": "ngodanghan",
+          "name": "Ngô Đăng Hán",
+          "isLeader": false,
+          "occupations": [
+            "Kỹ thuật / Developer"
+          ],
           "industries": [],
           "skills": [],
           "links": {

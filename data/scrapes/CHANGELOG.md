@@ -1,5 +1,11 @@
 # Lịch sử cào dữ liệu đối thủ
 
+## 2026-07-14T14:57:25.426Z — so với lần cào 2026-07-14T04:51:33.919Z
+- 🆕 5 đội mới: Haposoft, NPAI, VNU, CMC 404 Not Found, Pizza Hackathon
+- ❌ 35 đội đã rút: ROCKET TEAM, tramcam-maxxing, AlphaAI, GodTier, ak47_blyad, Aura Beacon, Dang Kien Tuong Team, Future, Gcb, GenStaff, Hacker Việt Nam, HackerEarth, HelloWorld!, Infinity AC, Lucifer, Lumiere, Makabig, AI-NOW, GlowFlow, Những kẻ khù khờ gà mờ viết code, Sotatek, Tw0B1t, Innovar, ANS, MedPulse AI, Poly Coder, reukem, Magic team, Phuong Phoebe, AI Innovation Research, HackNova, Newbies Thập Cẩm Dạo Chơi, TheNextAlex, CSC 3, OneOne
+- 👥 23 đội thay đổi thông tin/thành viên
+- ✏️ 11 thành viên cập nhật hồ sơ
+
 ## 2026-07-14T04:51:33.919Z — so với lần cào 2026-07-11T02:19:02.191Z
 - 🆕 47 đội mới: AI For Live, DaVinci, Haui_1602, Junior Primera Labs, Steve Jobs Vietnam, Thịt xào mắm ruốc, Cyra Labs, HUAND, Next Level, AI Innovation Research, AI_Innovation_Lab, Charcalavon, Con Mắt AI, EFGH, global.dev, HackNova, Hủ Tíu, Hanoi Agents, SEA VIET NAM, SMEE, 106, AI - Elearning, AI_2P, Hackstreet Boys, HackUNIX, Hội Hỏng Đầu, Lính làm thuê, MBAI, NxAllStar, TamvaGiaHuy, Newbies Thập Cẩm Dạo Chơi, TheNextAlex, Nat Figure, Red Lace, 5 Little Pigs, AIlaToi, Innovators, CSC 3, DB2A, OneOne, SmartDisposal, Vô địch, Gamer, Những người bạn trở về từ khởi nghiệp, hackathon, Innov8, ZTO Labs
 - ❌ 1 đội đã rút: ZTO Team
