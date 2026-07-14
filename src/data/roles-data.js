@@ -1,73 +1,93 @@
-export const philosophyNote = 'Team gồm 6 thành viên (5 người theo hồ sơ đăng ký chính thức trên hub.aiforvietnam.org, bổ sung Yến — chuyên Business/Kinh doanh), mỗi người chủ trì mảng thế mạnh dựa trên kỹ năng thật và dùng AI tăng tốc, các thành viên còn lại hỗ trợ chéo để đảm bảo không ai bị cô lập.';
+export const philosophyNote = 'Team gồm 6 thành viên (5 người theo hồ sơ đăng ký chính thức trên hub.aiforvietnam.org, bổ sung Yến — chuyên Business/Kinh doanh). Vai trò đã chốt cứng dựa trên năng lực thật của từng người, mỗi người có riêng 1 tài khoản AI trả phí để tăng tốc công việc, và luôn hỗ trợ chéo nhau để không ai bị cô lập.';
 
 export const roleCards = [
   {
     name: 'K.AI',
     colorVar: '--s1',
-    title: 'Đội trưởng, Tech Lead, Backend & Database, AI Plan',
-    items: [
-      { label: 'Chủ trì (40%)', text: 'Điều phối chung toàn team (đội trưởng), định hướng kiến trúc kỹ thuật tổng thể (Tech Lead), lên kế hoạch tích hợp AI (AI Plan).' },
-      { label: 'Chủ trì (40%)', text: 'Thiết kế cấu trúc cơ sở dữ liệu (Database Schema), lập trình logic API Backend — dựa trên kỹ năng DevOps, Vibe Coding, Python sẵn có.' },
-      { label: 'Hỗ trợ (20%)', text: 'Phối hợp Quân cung cấp API cho Frontend, phối hợp Quang/Lâm về endpoint AI Core & grounding.' },
+    title: 'Đội trưởng · Tech Lead · Backend & Database · AI Plan',
+    aiTool: 'Claude Pro',
+    summary: 'Đứng đầu team, chịu trách nhiệm cuối cùng về kiến trúc kỹ thuật và tiến độ chung.',
+    responsibilities: [
+      'Dẫn dắt team (đội trưởng), quyết định hướng kiến trúc kỹ thuật tổng thể và lên kế hoạch tích hợp AI cho sản phẩm (AI Plan).',
+      'Thiết kế cơ sở dữ liệu (Database Schema) và lập trình logic API Backend chính — dựa trên kỹ năng DevOps, Vibe Coding, Python sẵn có.',
+      'Dùng Claude Pro để brainstorm kiến trúc, review code và soạn tài liệu kỹ thuật.',
+      'Làm việc sát với Quân để cung cấp API cho Frontend, và với Quang/Lâm để mở endpoint cho AI Core.',
     ],
   },
   {
     name: 'Quân',
     colorVar: '--s2',
     title: 'Frontend & UI/UX Design',
-    items: [
-      { label: 'Chủ trì (80%)', text: 'Thiết kế giao diện (UI/UX), chuyển đổi thiết kế sang code React (Frontend), đảm bảo trải nghiệm người dùng mượt mà — dựa trên kỹ năng UI/UX & Web Development sẵn có.' },
-      { label: 'Hỗ trợ (20%)', text: 'Phối hợp K.AI kết nối API Backend vào giao diện, góp ý UX cho các luồng tương tác AI Agent.' },
+    aiTool: 'Claude Max 5x',
+    summary: 'Phụ trách toàn bộ giao diện, biến ý tưởng sản phẩm thành trải nghiệm người dùng thật.',
+    responsibilities: [
+      'Thiết kế giao diện (UI/UX) và chuyển đổi thiết kế thành code React — dựa trên kỹ năng UI/UX & Web Development sẵn có.',
+      'Dùng Claude Max 5x (tính năng Claude Design) để sinh nhanh component, layout và hiệu ứng chuyển động chất lượng cao.',
+      'Đảm bảo giao diện responsive, mượt mà trên cả desktop lẫn mobile trước mỗi lần demo.',
+      'Làm việc trực tiếp với K.AI để lấy dữ liệu từ Backend, không cần qua trung gian.',
     ],
   },
   {
     name: 'Mai',
     colorVar: '--s5',
-    title: 'QC & Quản lý hiệu suất (PM)',
-    items: [
-      { label: 'Chủ trì (80%)', text: 'Kiểm soát chất lượng (QC) toàn bộ sản phẩm & quy trình, theo dõi tiến độ và quản lý hiệu suất làm việc của team — dựa trên nền tảng Chiến lược/Tài chính, phù hợp tư duy đo lường & tối ưu hiệu suất.' },
-      { label: 'Hỗ trợ (20%)', text: 'Phối hợp K.AI báo cáo tiến độ chung, hỗ trợ Yến chuẩn bị số liệu minh chứng hiệu quả cho phần thuyết trình kinh doanh.' },
+    title: 'QC & Quản lý hiệu suất',
+    aiTool: 'Gemini Pro',
+    summary: 'Giữ nhịp cho cả team: kiểm soát chất lượng sản phẩm và theo dõi hiệu suất từng người.',
+    responsibilities: [
+      'Kiểm soát chất lượng (QC) toàn bộ sản phẩm & quy trình trước mỗi checkpoint.',
+      'Theo dõi tiến độ, đo lường và tối ưu hiệu suất làm việc của team — dựa trên nền tảng Chiến lược/Tài chính sẵn có.',
+      'Dùng Gemini Pro để tổng hợp báo cáo tiến độ, phân tích dữ liệu hiệu suất và soát lỗi tài liệu dài.',
+      'Phối hợp K.AI báo cáo tình hình chung, hỗ trợ Yến chuẩn bị số liệu minh chứng cho phần thuyết trình kinh doanh.',
     ],
   },
   {
     name: 'Quang',
     colorVar: '--s6',
     title: 'AI Core, Grounding & Security/Pentest',
-    items: [
-      { label: 'Chủ trì (60%)', text: 'Xây dựng AI Agent/AI Core logic, thiết kế grounding (RAG) đảm bảo AI trả lời đúng ngữ cảnh — dựa trên kỹ năng AI/ML, API/Tích hợp hệ thống.' },
-      { label: 'Chủ trì (30%)', text: 'Rà soát bảo mật, kiểm thử xâm nhập (Pentest) hệ thống trước mỗi lần nộp bài — dựa trên kỹ năng Bảo mật.' },
-      { label: 'Hỗ trợ (10%)', text: 'Phối hợp Lâm chia việc AI Core & Security để không ai bị quá tải — cùng lớp, cùng trường với Lâm nên dễ đồng bộ tiến độ và trao đổi trực tiếp ngoài giờ code.' },
+    aiTool: 'Claude Pro',
+    summary: 'Cùng Lâm xây dựng phần lõi AI của sản phẩm và đảm bảo hệ thống an toàn.',
+    responsibilities: [
+      'Xây dựng AI Agent, logic lõi (AI Core) và cơ chế grounding (RAG) để AI trả lời đúng ngữ cảnh — dựa trên kỹ năng AI/ML, API/Tích hợp hệ thống.',
+      'Rà soát bảo mật và kiểm thử xâm nhập (Pentest) hệ thống trước mỗi lần nộp bài — dựa trên kỹ năng Bảo mật.',
+      'Dùng Claude Pro để viết/tinh chỉnh prompt, debug logic Agent và tra cứu lỗ hổng bảo mật.',
+      'Cùng lớp, cùng trường với Lâm nên dễ đồng bộ tiến độ, trao đổi trực tiếp ngoài giờ code.',
     ],
   },
   {
     name: 'Lâm',
     colorVar: '--s7',
     title: 'AI Core, Grounding & Security/Pentest (cùng Quang)',
-    items: [
-      { label: 'Chủ trì (60%)', text: 'Hỗ trợ xây dựng AI Core (Computer Vision/ML khi cần) và grounding dữ liệu — dựa trên kinh nghiệm thực tế PyTorch, OpenCV, YOLOv11 (dự án U-Mamba trình bày tại ICISN 2026).' },
-      { label: 'Chủ trì (30%)', text: 'Pentest & kiểm thử bảo mật hệ thống — dựa trên nền tảng Network Security thực tế (DNS, Zero Trust, DoH/DoT/DoQ từ dự án Zero Trust DNS Server).' },
-      { label: 'Hỗ trợ (10%)', text: 'Backup Quân về Web Development (React/Vite) khi cần gấp rút trước checkpoint — cùng lớp, cùng trường với Quang nên dễ đồng bộ tiến độ và trao đổi trực tiếp ngoài giờ code.' },
+    aiTool: 'Claude Pro',
+    summary: 'Hỗ trợ Quang ở mảng AI Core/bảo mật, đồng thời backup Web Dev khi cần.',
+    responsibilities: [
+      'Hỗ trợ xây dựng AI Core (đặc biệt phần Computer Vision/ML) và grounding dữ liệu — dựa trên kinh nghiệm thực tế PyTorch, OpenCV, YOLOv11 (dự án U-Mamba trình bày tại ICISN 2026).',
+      'Pentest và kiểm thử bảo mật hệ thống — dựa trên nền tảng Network Security thực tế (DNS, Zero Trust, DoH/DoT/DoQ từ dự án Zero Trust DNS Server).',
+      'Dùng Claude Pro để debug mô hình AI và viết script kiểm thử bảo mật.',
+      'Backup Quân về Web Development (React/Vite) khi cần gấp trước checkpoint; cùng lớp, cùng trường với Quang nên phối hợp nhanh.',
     ],
   },
   {
     name: 'Yến',
     colorVar: '--s8',
     title: 'Business, Pilot & Kinh doanh',
-    items: [
-      { label: 'Chủ trì (60%)', text: 'Xây dựng business case & market validation, phân tích tính khả thi kinh tế và mô hình kinh doanh của giải pháp — dựa trên kinh nghiệm Consulting Intern tại MCG Management Consulting (dự án digital transformation cho PVOIL, Canavi).' },
-      { label: 'Chủ trì (25%)', text: 'Đồng hành cùng K.AI xây dựng luận điểm pitch, chuẩn bị phần trả lời phản biện hội đồng giám khảo — dựa trên kinh nghiệm CMO tại CHITOFLOW (Quán quân Business Venture Challenge 2026, Á quân I Impact 2026) và nhiều cuộc thi business case khác.' },
-      { label: 'Hỗ trợ (15%)', text: 'Phối hợp Mai theo dõi tiến độ chung (PM), pilot thử nghiệm sản phẩm với góc nhìn người dùng/khách hàng thật.' },
+    aiTool: 'Gemini Pro',
+    summary: 'Đưa góc nhìn thị trường và khách hàng thật vào sản phẩm, đồng hành pitching cùng K.AI.',
+    responsibilities: [
+      'Xây dựng business case, market validation và đánh giá tính khả thi kinh doanh của giải pháp — dựa trên kinh nghiệm Consulting Intern tại MCG Management Consulting (dự án digital transformation cho PVOIL, Canavi).',
+      'Cùng K.AI xây dựng luận điểm pitch, chuẩn bị trả lời phản biện từ hội đồng giám khảo — dựa trên kinh nghiệm CMO tại CHITOFLOW (Quán quân Business Venture Challenge 2026, Á quân I Impact 2026).',
+      'Dùng Gemini Pro để nghiên cứu thị trường, tổng hợp tài liệu dài và phân tích đối thủ cạnh tranh.',
+      'Phối hợp Mai theo dõi tiến độ chung, pilot thử sản phẩm với góc nhìn người dùng/khách hàng thật.',
     ],
   },
 ];
 
-export const crossTableHeaders = ['Mốc thời gian phối hợp', 'K.AI (Tech Lead & Backend/DB)', 'Quân (Frontend & UI/UX)', 'Mai (QC & PM)', 'Quang (AI Core & Security)', 'Lâm (AI Core & Security)', 'Yến (Business & Pitching)'];
+export const crossTableHeaders = ['Mốc thời gian phối hợp', 'K.AI (Tech Lead & Backend/DB)', 'Quân (Frontend & UI/UX)', 'Mai (QC & Hiệu suất)', 'Quang (AI Core & Security)', 'Lâm (AI Core & Security)', 'Yến (Business & Pitching)'];
 
 export const crossTableRows = [
   { milestone: 'Nhận đề & Brainstorm (D1, 11:00-14:00)', cells: [
-    'Chủ trì định hướng chọn track, phác thảo kiến trúc kỹ thuật tổng thể (AI Plan, Backend/DB)',
+    'Định hướng chọn track, phác thảo kiến trúc kỹ thuật tổng thể (AI Plan, Backend/DB)',
     'Phác thảo wireframe UI, góp ý trải nghiệm người dùng cho từng hướng giải pháp',
-    'Lên kế hoạch tiến độ (PM), xác định tiêu chí QC cho sản phẩm',
+    'Lên kế hoạch tiến độ, xác định tiêu chí QC cho sản phẩm',
     'Đánh giá tính khả thi AI Agent & yêu cầu grounding cho từng track',
     'Đánh giá rủi ro bảo mật ban đầu, khảo sát mô hình AI/CV khả dụng',
     'Đánh giá tính khả thi kinh doanh & thị trường của từng hướng giải pháp, góp ý chọn track',
