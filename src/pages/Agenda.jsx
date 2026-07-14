@@ -49,7 +49,7 @@ const Agenda = () => {
     <div className="page-content">
       <div className="card">
         <h2><Calendar /> Lịch trình sự kiện chi tiết (Agenda)</h2>
-        <p className="sub" style={{ margin: '0 0 20px' }}>Đối chiếu múi giờ và mốc thời gian quan trọng của Ban tổ chức để căn chỉnh tiến độ code.</p>
+        <p className="sub" style={{ margin: '0 0 1.1765rem' }}>Đối chiếu múi giờ và mốc thời gian quan trọng của Ban tổ chức để căn chỉnh tiến độ code.</p>
         
         {/* Day selection tabs */}
         <div className="day-tabs">
@@ -72,13 +72,13 @@ const Agenda = () => {
               <div className="agenda-time">{event.time}</div>
               <div 
                 className="agenda-desc" 
-                style={event.critical ? { color: 'var(--critical)', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '8px' } : {}}
+                style={event.critical ? { color: 'var(--critical)', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '0.4706rem' } : {}}
                 dangerouslySetInnerHTML={{ __html: event.desc }}
               />
             </div>
           ))}
         </div>
-        <div className="note" style={{ marginTop: '20px' }}>* Giờ dự kiến và có thể được Ban tổ chức điều chỉnh thêm qua các kênh chat chính thức.</div>
+        <div className="note" style={{ marginTop: '1.1765rem' }}>* Giờ dự kiến và có thể được Ban tổ chức điều chỉnh thêm qua các kênh chat chính thức.</div>
       </div>
     </div>
   );

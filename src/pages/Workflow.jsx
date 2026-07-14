@@ -85,7 +85,7 @@ function WorkflowFlowchart({ roles, timelineSteps, syncCheckpoints }) {
           {/* Start node — circle (terminator) */}
           <circle cx={SYNC_CX} cy={startY + START_H / 2} r={START_H / 2} fill="var(--s4)" stroke="var(--s4)" strokeWidth="2" style={{ filter: 'drop-shadow(0 4px 10px rgba(74,58,167,0.25))' }} />
           <foreignObject x={SYNC_CX - START_H / 2 + 8} y={startY + 8} width={START_H - 16} height={START_H - 16}>
-            <div style={{ height: '100%', color: '#fff', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '2px', fontWeight: 800, fontSize: '0.7rem', lineHeight: 1.25, textAlign: 'center' }}>
+            <div style={{ height: '100%', color: '#fff', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '0.1176rem', fontWeight: 800, fontSize: '0.7rem', lineHeight: 1.25, textAlign: 'center' }}>
               <Flag size={18} />
               <span>BẮT ĐẦU</span>
               <span style={{ fontWeight: 600, fontSize: '0.62rem' }}>11:00 · 17/07</span>
@@ -113,11 +113,11 @@ function WorkflowFlowchart({ roles, timelineSteps, syncCheckpoints }) {
                 </g>
                 <foreignObject x={SYNC_CX - LANE_W / 2 + 10} y={row.kaiY} width={LANE_W - 20} height={KAI_H}>
                   <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-                    <div style={{ height: '28px', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '0.8rem', fontWeight: 800 }}>
+                    <div style={{ height: '1.6471rem', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '0.8rem', fontWeight: 800 }}>
                       <span>{kaiRole.name}</span>
-                      <span style={{ fontSize: '0.68rem', background: 'rgba(255,255,255,0.2)', padding: '1px 6px', borderRadius: '4px' }}>CHỦ TRÌ</span>
+                      <span style={{ fontSize: '0.68rem', background: 'rgba(255,255,255,0.2)', padding: '0.0588rem 0.3529rem', borderRadius: '0.2353rem' }}>CHỦ TRÌ</span>
                     </div>
-                    <div style={{ flex: 1, padding: '8px 0', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '4px' }}>
+                    <div style={{ flex: 1, padding: '0.4706rem 0', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '0.2353rem' }}>
                       <div style={{ fontSize: '0.84rem', color: 'var(--text-primary)', fontWeight: 700, lineHeight: 1.35 }}>{row.phase.kai}</div>
                       <div style={{ fontSize: '0.74rem', color: 'var(--s4)', fontWeight: 700 }}>🤖 {kaiRole.aiTool}</div>
                     </div>
@@ -136,8 +136,8 @@ function WorkflowFlowchart({ roles, timelineSteps, syncCheckpoints }) {
                 </g>
                 <foreignObject x={QUAN_X + 10} y={row.roleY} width={LANE_W - 20} height={ROLE_H}>
                   <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-                    <div style={{ height: '28px', color: '#fff', display: 'flex', alignItems: 'center', fontSize: '0.8rem', fontWeight: 800 }}>{quanRole.name}</div>
-                    <div style={{ flex: 1, padding: '8px 0', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '4px' }}>
+                    <div style={{ height: '1.6471rem', color: '#fff', display: 'flex', alignItems: 'center', fontSize: '0.8rem', fontWeight: 800 }}>{quanRole.name}</div>
+                    <div style={{ flex: 1, padding: '0.4706rem 0', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '0.2353rem' }}>
                       <div style={{ fontSize: '0.82rem', color: 'var(--text-primary)', fontWeight: 600, lineHeight: 1.35 }}>{row.phase.quan}</div>
                       <div style={{ fontSize: '0.74rem', color: 'var(--s4)', fontWeight: 700 }}>🤖 {quanRole.aiTool}</div>
                     </div>
@@ -147,7 +147,7 @@ function WorkflowFlowchart({ roles, timelineSteps, syncCheckpoints }) {
                 {/* Peer-to-peer peer link (Quân ↔ K.AI (FE)) */}
                 <path d={`M ${QUAN_X + LANE_W} ${row.roleY + ROLE_H / 2} L ${HIEU_X} ${row.roleY + ROLE_H / 2}`} stroke="var(--s4)" strokeWidth="2" strokeDasharray="3 3" fill="none" />
                 <foreignObject x={QUAN_X + LANE_W + 15} y={row.roleY + ROLE_H / 2 - 12} width={BE_FE_GAP - 30} height={24}>
-                  <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.68rem', color: 'var(--s4)', fontWeight: 800, background: 'var(--surface-1)', border: '1px solid var(--border)', borderRadius: '4px' }}>
+                  <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.68rem', color: 'var(--s4)', fontWeight: 800, background: 'var(--surface-1)', border: '1px solid var(--border)', borderRadius: '0.2353rem' }}>
                     phối hợp trực tiếp
                   </div>
                 </foreignObject>
@@ -159,8 +159,8 @@ function WorkflowFlowchart({ roles, timelineSteps, syncCheckpoints }) {
                 </g>
                 <foreignObject x={HIEU_X + 10} y={row.roleY} width={LANE_W - 20} height={ROLE_H}>
                   <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-                    <div style={{ height: '28px', color: '#fff', display: 'flex', alignItems: 'center', fontSize: '0.8rem', fontWeight: 800 }}>{hieuRole.name}</div>
-                    <div style={{ flex: 1, padding: '8px 0', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '4px' }}>
+                    <div style={{ height: '1.6471rem', color: '#fff', display: 'flex', alignItems: 'center', fontSize: '0.8rem', fontWeight: 800 }}>{hieuRole.name}</div>
+                    <div style={{ flex: 1, padding: '0.4706rem 0', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '0.2353rem' }}>
                       <div style={{ fontSize: '0.82rem', color: 'var(--text-primary)', fontWeight: 600, lineHeight: 1.35 }}>{row.phase.hieu}</div>
                       <div style={{ fontSize: '0.74rem', color: 'var(--s4)', fontWeight: 700 }}>🤖 {hieuRole.aiTool}</div>
                     </div>
@@ -184,7 +184,7 @@ function WorkflowFlowchart({ roles, timelineSteps, syncCheckpoints }) {
                 />
                 <foreignObject x={DIAMOND_LEFT_X + 24} y={row.syncY + 24} width={DIAMOND_W - 48} height={SYNC_H - 48}>
                   <div style={{ height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', fontSize: '0.8rem', color: 'var(--text-primary)', fontWeight: 800, lineHeight: 1.3 }}>
-                    <div style={{ fontSize: '0.68rem', color: 'var(--s4)', textTransform: 'uppercase', marginBottom: '3px', fontWeight: 800 }}>MỐC ĐỒNG BỘ</div>
+                    <div style={{ fontSize: '0.68rem', color: 'var(--s4)', textTransform: 'uppercase', marginBottom: '0.1765rem', fontWeight: 800 }}>MỐC ĐỒNG BỘ</div>
                     {row.checkpoint}
                   </div>
                 </foreignObject>
@@ -192,7 +192,7 @@ function WorkflowFlowchart({ roles, timelineSteps, syncCheckpoints }) {
                 {/* Loop-back to K.AI */}
                 <path d={`M ${DIAMOND_RIGHT_X} ${midY} L ${LOOP_X} ${midY} L ${LOOP_X} ${row.kaiY + KAI_H / 2} L ${SYNC_CX + LANE_W / 2} ${row.kaiY + KAI_H / 2}`} stroke="var(--s4)" strokeWidth="2" strokeDasharray="4 3" fill="none" markerEnd="url(#arrow-s4)" />
                 <foreignObject x={SYNC_CX + LANE_W / 2 + 15} y={row.kaiY + KAI_H / 2 - 20} width="220" height="20">
-                  <div style={{ fontSize: '0.68rem', color: 'var(--s4)', fontWeight: 800, whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', gap: '3px' }}>
+                  <div style={{ fontSize: '0.68rem', color: 'var(--s4)', fontWeight: 800, whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', gap: '0.1765rem' }}>
                     <RotateCcw size={10} /> phản hồi lỗi → K.AI làm lại từ đầu
                   </div>
                 </foreignObject>
@@ -203,7 +203,7 @@ function WorkflowFlowchart({ roles, timelineSteps, syncCheckpoints }) {
                   const Icon = HUB_ICONS[i % HUB_ICONS.length];
                   return (
                     <foreignObject x={HUB_X - HUB_W / 2 + 15} y={midY - 11} width="22" height="22">
-                      <Icon size={14} style={{ color: '#fff', background: 'var(--s4)', borderRadius: '50%', padding: '3px', boxSizing: 'border-box' }} />
+                      <Icon size={14} style={{ color: '#fff', background: 'var(--s4)', borderRadius: '50%', padding: '0.1765rem', boxSizing: 'border-box' }} />
                     </foreignObject>
                   );
                 })()}
@@ -222,7 +222,7 @@ function WorkflowFlowchart({ roles, timelineSteps, syncCheckpoints }) {
           {/* End node — circle (terminator) */}
           <circle cx={SYNC_CX} cy={endY + END_H / 2} r={END_H / 2} fill="var(--s4)" stroke="var(--s4)" strokeWidth="2" style={{ filter: 'drop-shadow(0 4px 10px rgba(74,58,167,0.25))' }} />
           <foreignObject x={SYNC_CX - END_H / 2 + 8} y={endY + 8} width={END_H - 16} height={END_H - 16}>
-            <div style={{ height: '100%', color: '#fff', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '2px', fontWeight: 800, fontSize: '0.76rem', lineHeight: 1.25, textAlign: 'center' }}>
+            <div style={{ height: '100%', color: '#fff', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '0.1176rem', fontWeight: 800, fontSize: '0.76rem', lineHeight: 1.25, textAlign: 'center' }}>
               <Mic size={18} />
               <span>KẾT THÚC</span>
               <span style={{ fontWeight: 600, fontSize: '0.68rem' }}>Pitching Day</span>
@@ -241,21 +241,21 @@ const Workflow = () => {
     <div className="page-content">
       {/* Tiêu đề & Triết lý vận hành */}
       <div className="card" style={{ position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', top: '-40px', right: '-40px', opacity: 0.05, pointerEvents: 'none' }}>
+        <div style={{ position: 'absolute', top: '-2.3529rem', right: '-2.3529rem', opacity: 0.05, pointerEvents: 'none' }}>
           <GitBranch size={200} />
         </div>
         <h2><GitBranch /> Luồng vận hành &amp; Phối hợp chéo của Vibonymus</h2>
-        <p className="sub" style={{ margin: '0 0 16px', maxWidth: '80%' }}>
+        <p className="sub" style={{ margin: '0 0 0.9412rem', maxWidth: '80%' }}>
           Quy trình làm việc tối ưu hóa hiệu năng kết hợp giữa <b>Năng lực con người</b> và <b>Sức mạnh AI hỗ trợ</b> trong suốt 48 giờ thi đấu Hackathon VAIC 2026.
         </p>
 
         {/* Tab switcher */}
-        <div style={{ display: 'flex', gap: '10px', marginTop: '20px', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', gap: '0.5882rem', marginTop: '1.1765rem', flexWrap: 'wrap' }}>
           <button
             onClick={() => setActiveTab('unified')}
             style={{
-              padding: '10px 18px',
-              borderRadius: '8px',
+              padding: '0.5882rem 1.0588rem',
+              borderRadius: '0.4706rem',
               border: activeTab === 'unified' ? '1px solid var(--theme-color)' : '1px solid var(--border)',
               background: activeTab === 'unified' ? 'rgba(90, 73, 204, 0.05)' : 'var(--surface-1)',
               color: activeTab === 'unified' ? 'var(--theme-color)' : 'var(--text-secondary)',
@@ -263,7 +263,7 @@ const Workflow = () => {
               cursor: 'pointer',
               display: 'flex',
               alignItems: 'center',
-              gap: '8px',
+              gap: '0.4706rem',
               transition: 'all 0.2s ease'
             }}
           >
@@ -272,8 +272,8 @@ const Workflow = () => {
           <button
             onClick={() => setActiveTab('timeflow')}
             style={{
-              padding: '10px 18px',
-              borderRadius: '8px',
+              padding: '0.5882rem 1.0588rem',
+              borderRadius: '0.4706rem',
               border: activeTab === 'timeflow' ? '1px solid var(--theme-color)' : '1px solid var(--border)',
               background: activeTab === 'timeflow' ? 'rgba(90, 73, 204, 0.05)' : 'var(--surface-1)',
               color: activeTab === 'timeflow' ? 'var(--theme-color)' : 'var(--text-secondary)',
@@ -281,7 +281,7 @@ const Workflow = () => {
               cursor: 'pointer',
               display: 'flex',
               alignItems: 'center',
-              gap: '8px',
+              gap: '0.4706rem',
               transition: 'all 0.2s ease'
             }}
           >
@@ -290,8 +290,8 @@ const Workflow = () => {
           <button
             onClick={() => setActiveTab('aiflow')}
             style={{
-              padding: '10px 18px',
-              borderRadius: '8px',
+              padding: '0.5882rem 1.0588rem',
+              borderRadius: '0.4706rem',
               border: activeTab === 'aiflow' ? '1px solid var(--theme-color)' : '1px solid var(--border)',
               background: activeTab === 'aiflow' ? 'rgba(90, 73, 204, 0.05)' : 'var(--surface-1)',
               color: activeTab === 'aiflow' ? 'var(--theme-color)' : 'var(--text-secondary)',
@@ -299,7 +299,7 @@ const Workflow = () => {
               cursor: 'pointer',
               display: 'flex',
               alignItems: 'center',
-              gap: '8px',
+              gap: '0.4706rem',
               transition: 'all 0.2s ease'
             }}
           >
@@ -312,27 +312,27 @@ const Workflow = () => {
       {activeTab === 'unified' && (
         <div className="card">
           <h2><Layers /> Flow Chart: Thành viên × AI × Giai đoạn</h2>
-          <p className="sub" style={{ margin: '0 0 20px' }}>
+          <p className="sub" style={{ margin: '0 0 1.1765rem' }}>
             Toàn bộ luồng vận hành 48h trong <b>một sơ đồ duy nhất</b>: <b>K.AI (PM)</b> đứng trên, phân tích đề bài và định hướng core cho cả 2 nhánh thực thi bên dưới; Quân &amp; K.AI (FE) triển khai song song và vẫn phối hợp trực tiếp với nhau, trước khi gặp lại ở mốc đồng bộ cuối mỗi giai đoạn — cùng một tầng kênh phối hợp chung chạy xuyên suốt bên dưới.
           </p>
 
           <WorkflowFlowchart roles={roles} timelineSteps={timelineSteps} syncCheckpoints={syncCheckpoints} />
 
           {/* Legend */}
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '18px', marginTop: '4px', padding: '12px 16px', borderRadius: '10px', background: 'var(--surface-page)', border: '1px solid var(--border)', fontSize: '0.76rem', color: 'var(--text-secondary)' }}>
-            <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><svg width="18" height="14"><rect x="1" y="1" width="16" height="12" rx="2" fill="none" stroke="var(--text-secondary)" strokeWidth="1.5" /></svg> Hình chữ nhật = công việc (process) của từng thành viên</span>
-            <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><svg width="18" height="14"><polygon points="9,1 17,7 9,13 1,7" fill="none" stroke="var(--s4)" strokeWidth="1.5" /></svg> Hình thoi = mốc đồng bộ / quyết định (đạt hay phải làm lại)</span>
-            <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><svg width="16" height="16"><circle cx="8" cy="8" r="7" fill="none" stroke="var(--s4)" strokeWidth="1.5" /></svg> Hình tròn = điểm bắt đầu / kết thúc luồng</span>
-            <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><svg width="22" height="10"><line x1="0" y1="5" x2="22" y2="5" stroke="var(--s1)" strokeWidth="2.5" /></svg> K.AI (PM) định hướng/giao việc core cho Quân &amp; K.AI (FE)</span>
-            <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><svg width="22" height="10"><line x1="0" y1="5" x2="22" y2="5" stroke="var(--s4)" strokeWidth="2" strokeDasharray="3 3" /></svg> Quân ↔ K.AI (FE) phối hợp trực tiếp (ngang hàng, không qua PM)</span>
-            <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><svg width="22" height="10"><line x1="0" y1="5" x2="22" y2="5" stroke="var(--s4)" strokeWidth="2.5" /></svg> Luồng chính (bàn giao xuôi giữa giai đoạn)</span>
-            <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><svg width="22" height="10"><line x1="0" y1="5" x2="22" y2="5" stroke="var(--s4)" strokeWidth="2.5" strokeDasharray="4 3" /></svg> Vòng lặp phản hồi lỗi — quay lại K.AI (đầu bàn giao) để làm lại</span>
-            <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><svg width="22" height="10"><line x1="0" y1="5" x2="22" y2="5" stroke="var(--text-muted)" strokeWidth="2.5" strokeDasharray="1 4" /></svg> Kết nối kênh phối hợp chung</span>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.0588rem', marginTop: '0.2353rem', padding: '0.7059rem 0.9412rem', borderRadius: '0.5882rem', background: 'var(--surface-page)', border: '1px solid var(--border)', fontSize: '0.76rem', color: 'var(--text-secondary)' }}>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '0.3529rem' }}><svg width="18" height="14"><rect x="1" y="1" width="16" height="12" rx="2" fill="none" stroke="var(--text-secondary)" strokeWidth="1.5" /></svg> Hình chữ nhật = công việc (process) của từng thành viên</span>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '0.3529rem' }}><svg width="18" height="14"><polygon points="9,1 17,7 9,13 1,7" fill="none" stroke="var(--s4)" strokeWidth="1.5" /></svg> Hình thoi = mốc đồng bộ / quyết định (đạt hay phải làm lại)</span>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '0.3529rem' }}><svg width="16" height="16"><circle cx="8" cy="8" r="7" fill="none" stroke="var(--s4)" strokeWidth="1.5" /></svg> Hình tròn = điểm bắt đầu / kết thúc luồng</span>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '0.3529rem' }}><svg width="22" height="10"><line x1="0" y1="5" x2="22" y2="5" stroke="var(--s1)" strokeWidth="2.5" /></svg> K.AI (PM) định hướng/giao việc core cho Quân &amp; K.AI (FE)</span>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '0.3529rem' }}><svg width="22" height="10"><line x1="0" y1="5" x2="22" y2="5" stroke="var(--s4)" strokeWidth="2" strokeDasharray="3 3" /></svg> Quân ↔ K.AI (FE) phối hợp trực tiếp (ngang hàng, không qua PM)</span>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '0.3529rem' }}><svg width="22" height="10"><line x1="0" y1="5" x2="22" y2="5" stroke="var(--s4)" strokeWidth="2.5" /></svg> Luồng chính (bàn giao xuôi giữa giai đoạn)</span>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '0.3529rem' }}><svg width="22" height="10"><line x1="0" y1="5" x2="22" y2="5" stroke="var(--s4)" strokeWidth="2.5" strokeDasharray="4 3" /></svg> Vòng lặp phản hồi lỗi — quay lại K.AI (đầu bàn giao) để làm lại</span>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '0.3529rem' }}><svg width="22" height="10"><line x1="0" y1="5" x2="22" y2="5" stroke="var(--text-muted)" strokeWidth="2.5" strokeDasharray="1 4" /></svg> Kết nối kênh phối hợp chung</span>
           </div>
 
           {/* Shared coordination channels detail */}
-          <div style={{ marginTop: '22px', paddingTop: '20px', borderTop: '1px solid var(--border)' }}>
-            <div style={{ fontSize: '0.85rem', fontWeight: 800, color: 'var(--text-primary)', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <div style={{ marginTop: '1.2941rem', paddingTop: '1.1765rem', borderTop: '1px solid var(--border)' }}>
+            <div style={{ fontSize: '0.85rem', fontWeight: 800, color: 'var(--text-primary)', marginBottom: '0.7059rem', display: 'flex', alignItems: 'center', gap: '0.4706rem' }}>
               <Users size={16} style={{ color: 'var(--s4)' }} /> Chi tiết kênh phối hợp chung — chạy xuyên suốt cả 4 giai đoạn
             </div>
             <div className="grid-3">
@@ -340,7 +340,7 @@ const Workflow = () => {
                 const Icon = ch.icon;
                 return (
                   <div key={i} className="meta-card" style={{ borderTop: '3px solid var(--s4)' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.4706rem', marginBottom: '0.3529rem' }}>
                       <Icon size={16} style={{ color: 'var(--s4)' }} />
                       <span style={{ fontWeight: 800, fontSize: '0.85rem', color: 'var(--text-primary)' }}>{ch.label}</span>
                     </div>
@@ -357,15 +357,15 @@ const Workflow = () => {
       {activeTab === 'timeflow' && (
         <div className="card">
           <h2><Clock /> Dòng thời gian &amp; Phân công công việc 48h</h2>
-          <p className="sub" style={{ margin: '0 0 24px' }}>Mỗi giai đoạn, <b>K.AI (PM) chủ trì</b> phân tích &amp; định hướng core, sau đó Quân và K.AI (FE) triển khai song song — vẫn phối hợp trực tiếp với nhau — trước khi cả team chuyển sang giai đoạn kế tiếp:</p>
+          <p className="sub" style={{ margin: '0 0 1.4118rem' }}>Mỗi giai đoạn, <b>K.AI (PM) chủ trì</b> phân tích &amp; định hướng core, sau đó Quân và K.AI (FE) triển khai song song — vẫn phối hợp trực tiếp với nhau — trước khi cả team chuyển sang giai đoạn kế tiếp:</p>
 
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             {timelineSteps.map((step, index) => (
               <React.Fragment key={index}>
-                <div style={{ border: '1px solid var(--border)', borderRadius: '14px', padding: '20px', background: 'var(--surface-1)' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '10px' }}>
+                <div style={{ border: '1px solid var(--border)', borderRadius: '0.8235rem', padding: '1.1765rem', background: 'var(--surface-1)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.7059rem', marginBottom: '0.5882rem' }}>
                     <div style={{
-                      width: '36px', height: '36px', borderRadius: '50%', flexShrink: 0,
+                      width: '2.1176rem', height: '2.1176rem', borderRadius: '50%', flexShrink: 0,
                       background: 'var(--theme-grad)', color: '#fff',
                       display: 'flex', alignItems: 'center', justifyContent: 'center',
                       fontWeight: 900, fontSize: '0.95rem', boxShadow: 'var(--shadow-sm)'
@@ -373,28 +373,28 @@ const Workflow = () => {
                       {index + 1}
                     </div>
                     <div>
-                      <span style={{ fontSize: '0.75rem', fontWeight: 800, background: 'rgba(90, 73, 204, 0.1)', color: 'var(--theme-color)', padding: '2px 8px', borderRadius: '4px', textTransform: 'uppercase' }}>
+                      <span style={{ fontSize: '0.75rem', fontWeight: 800, background: 'rgba(90, 73, 204, 0.1)', color: 'var(--theme-color)', padding: '0.1176rem 0.4706rem', borderRadius: '0.2353rem', textTransform: 'uppercase' }}>
                         {step.time}
                       </span>
-                      <h3 style={{ margin: '6px 0 0 0', fontSize: '1.05rem', fontWeight: 800, color: 'var(--text-primary)' }}>
+                      <h3 style={{ margin: '0.3529rem 0 0 0', fontSize: '1.05rem', fontWeight: 800, color: 'var(--text-primary)' }}>
                         {step.phase}: {step.title}
                       </h3>
                     </div>
                   </div>
 
-                  <p style={{ margin: '0 0 16px', fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
+                  <p style={{ margin: '0 0 0.9412rem', fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
                     {step.desc}
                   </p>
 
                   {/* K.AI (PM) chủ trì trên cùng, định hướng xuống Quân + K.AI (FE) triển khai song song bên dưới */}
-                  <div className="meta-card" style={{ borderTop: '4px solid var(--s1)', marginBottom: '2px' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px' }}>
+                  <div className="meta-card" style={{ borderTop: '4px solid var(--s1)', marginBottom: '0.1176rem' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '0.4706rem' }}>
                       <div className="meta-label" style={{ color: 'var(--s1)' }}>PM &amp; AI: K.AI</div>
-                      <span style={{ fontSize: '0.72rem', fontWeight: 800, color: '#fff', background: 'var(--s1)', padding: '2px 8px', borderRadius: '10px', whiteSpace: 'nowrap' }}>CHỦ TRÌ</span>
+                      <span style={{ fontSize: '0.72rem', fontWeight: 800, color: '#fff', background: 'var(--s1)', padding: '0.1176rem 0.4706rem', borderRadius: '0.5882rem', whiteSpace: 'nowrap' }}>CHỦ TRÌ</span>
                     </div>
-                    <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginTop: '6px', lineHeight: '1.4' }}>
+                    <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginTop: '0.3529rem', lineHeight: '1.4' }}>
                       {step.kai}
-                      <div style={{ marginTop: '8px', fontSize: '0.8rem', borderTop: '1px solid rgba(247, 103, 7, 0.15)', paddingTop: '6px' }}>
+                      <div style={{ marginTop: '0.4706rem', fontSize: '0.8rem', borderTop: '1px solid rgba(247, 103, 7, 0.15)', paddingTop: '0.3529rem' }}>
                         <b>Task chi tiết:</b> {step.tasks[0]}
                       </div>
                     </div>
@@ -405,25 +405,25 @@ const Workflow = () => {
                     <ArrowRight size={16} style={{ transform: 'rotate(90deg)' }} />
                   </div>
 
-                  <div style={{ display: 'flex', alignItems: 'stretch', gap: '10px', flexWrap: 'wrap' }}>
-                    <div className="meta-card" style={{ flex: '1 1 200px', borderTop: '3px solid var(--s2)' }}>
+                  <div style={{ display: 'flex', alignItems: 'stretch', gap: '0.5882rem', flexWrap: 'wrap' }}>
+                    <div className="meta-card" style={{ flex: '1 1 11.7647rem', borderTop: '3px solid var(--s2)' }}>
                       <div className="meta-label" style={{ color: 'var(--s2)' }}>Backend / DB: Quân</div>
-                      <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginTop: '6px', lineHeight: '1.4' }}>
+                      <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginTop: '0.3529rem', lineHeight: '1.4' }}>
                         {step.quan}
-                        <div style={{ marginTop: '8px', fontSize: '0.8rem', borderTop: '1px solid rgba(25, 113, 194, 0.15)', paddingTop: '6px' }}>
+                        <div style={{ marginTop: '0.4706rem', fontSize: '0.8rem', borderTop: '1px solid rgba(25, 113, 194, 0.15)', paddingTop: '0.3529rem' }}>
                           <b>Task chi tiết:</b> {step.tasks[1]}
                         </div>
                       </div>
                     </div>
-                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', flexShrink: 0, fontSize: '0.68rem', fontWeight: 700, textAlign: 'center', gap: '2px', minWidth: '54px' }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', flexShrink: 0, fontSize: '0.68rem', fontWeight: 700, textAlign: 'center', gap: '0.1176rem', minWidth: '3.1765rem' }}>
                       <span>↔</span>
                       <span>phối hợp<br />trực tiếp</span>
                     </div>
-                    <div className="meta-card" style={{ flex: '1 1 200px', borderTop: '3px solid var(--s3)' }}>
+                    <div className="meta-card" style={{ flex: '1 1 11.7647rem', borderTop: '3px solid var(--s3)' }}>
                       <div className="meta-label" style={{ color: 'var(--s3)' }}>Frontend / UX: K.AI (FE)</div>
-                      <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginTop: '6px', lineHeight: '1.4' }}>
+                      <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginTop: '0.3529rem', lineHeight: '1.4' }}>
                         {step.hieu}
-                        <div style={{ marginTop: '8px', fontSize: '0.8rem', borderTop: '1px solid rgba(47, 158, 68, 0.15)', paddingTop: '6px' }}>
+                        <div style={{ marginTop: '0.4706rem', fontSize: '0.8rem', borderTop: '1px solid rgba(47, 158, 68, 0.15)', paddingTop: '0.3529rem' }}>
                           <b>Task chi tiết:</b> {step.tasks[2]}
                         </div>
                       </div>
@@ -431,17 +431,17 @@ const Workflow = () => {
                   </div>
 
                   {/* Checklist and Coordination Plan Section */}
-                  <div style={{ marginTop: '16px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '12px' }}>
-                    <div style={{ padding: '12px 14px', background: 'var(--surface-page)', borderRadius: '10px', border: '1px solid var(--border)' }}>
-                      <div style={{ fontWeight: 800, fontSize: '0.84rem', color: 'var(--theme-color)', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                  <div style={{ marginTop: '0.9412rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(16.4706rem, 1fr))', gap: '0.7059rem' }}>
+                    <div style={{ padding: '0.7059rem 0.8235rem', background: 'var(--surface-page)', borderRadius: '0.5882rem', border: '1px solid var(--border)' }}>
+                      <div style={{ fontWeight: 800, fontSize: '0.84rem', color: 'var(--theme-color)', marginBottom: '0.4706rem', display: 'flex', alignItems: 'center', gap: '0.3529rem' }}>
                         <CheckCircle2 size={13} style={{ color: 'var(--theme-color)' }} /> Checklist Hoàn thành &amp; Bàn giao
                       </div>
-                      <ul style={{ margin: 0, paddingLeft: '16px', fontSize: '0.8rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
+                      <ul style={{ margin: 0, paddingLeft: '0.9412rem', fontSize: '0.8rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
                         {step.checklist.map((item, key) => <li key={key}>{item}</li>)}
                       </ul>
                     </div>
-                    <div style={{ padding: '12px 14px', background: 'var(--surface-page)', borderRadius: '10px', border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                      <div style={{ fontWeight: 800, fontSize: '0.84rem', color: 'var(--theme-color)', marginBottom: '6px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                    <div style={{ padding: '0.7059rem 0.8235rem', background: 'var(--surface-page)', borderRadius: '0.5882rem', border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                      <div style={{ fontWeight: 800, fontSize: '0.84rem', color: 'var(--theme-color)', marginBottom: '0.3529rem', display: 'flex', alignItems: 'center', gap: '0.3529rem' }}>
                         <Clock size={13} style={{ color: 'var(--theme-color)' }} /> Kế hoạch &amp; Điểm chạm Phối hợp
                       </div>
                       <p style={{ margin: 0, fontSize: '0.8rem', color: 'var(--text-secondary)', lineHeight: 1.45 }}>
@@ -453,10 +453,10 @@ const Workflow = () => {
 
                 {/* Mũi tên nối sang giai đoạn kế tiếp */}
                 {index !== timelineSteps.length - 1 && (
-                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '4px 0' }}>
-                    <div style={{ width: '2px', height: '14px', background: 'var(--theme-color)' }}></div>
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '0.2353rem 0' }}>
+                    <div style={{ width: '0.1176rem', height: '0.8235rem', background: 'var(--theme-color)' }}></div>
                     <ArrowRight size={20} style={{ color: 'var(--theme-color)', transform: 'rotate(90deg)' }} />
-                    <div style={{ width: '2px', height: '14px', background: 'var(--theme-color)' }}></div>
+                    <div style={{ width: '0.1176rem', height: '0.8235rem', background: 'var(--theme-color)' }}></div>
                   </div>
                 )}
               </React.Fragment>
@@ -469,17 +469,17 @@ const Workflow = () => {
       {activeTab === 'aiflow' && (
         <div className="card">
           <h2><Cpu /> Sơ đồ luồng tương tác Multi-AI của Team</h2>
-          <p className="sub" style={{ margin: '0 0 20px' }}><b>K.AI (PM) chủ trì</b> phân tích &amp; định hướng core cho cả 2 nhánh; Quân và K.AI (FE) mỗi người chủ trì 80% công việc của mình với AI, vẫn phối hợp trực tiếp với nhau và phản hồi ngược lại K.AI:</p>
+          <p className="sub" style={{ margin: '0 0 1.1765rem' }}><b>K.AI (PM) chủ trì</b> phân tích &amp; định hướng core cho cả 2 nhánh; Quân và K.AI (FE) mỗi người chủ trì 80% công việc của mình với AI, vẫn phối hợp trực tiếp với nhau và phản hồi ngược lại K.AI:</p>
 
           {/* Dải sơ đồ tổng quan */}
           <div className="overview-grid">
             <div className="overview-kai" style={{
-              padding: '14px', borderRadius: '12px',
+              padding: '0.8235rem', borderRadius: '0.7059rem',
               border: '1px solid var(--border)', borderTop: '4px solid var(--s1)', background: 'var(--surface-page)', textAlign: 'center'
             }}>
-              <Users size={18} style={{ color: 'var(--s1)', marginBottom: '6px' }} />
+              <Users size={18} style={{ color: 'var(--s1)', marginBottom: '0.3529rem' }} />
               <div style={{ fontWeight: 800, fontSize: '0.9rem', color: 'var(--text-primary)' }}>{aiCollaborationFlow[0].role}</div>
-              <div style={{ fontSize: '0.76rem', color: 'var(--s4)', fontWeight: 700, marginTop: '4px' }}>🤖 {aiCollaborationFlow[0].aiTool}</div>
+              <div style={{ fontSize: '0.76rem', color: 'var(--s4)', fontWeight: 700, marginTop: '0.2353rem' }}>🤖 {aiCollaborationFlow[0].aiTool}</div>
             </div>
 
             <div className="overview-arrow">
@@ -493,12 +493,12 @@ const Workflow = () => {
             {aiCollaborationFlow.slice(1).map((flow, index) => (
               <React.Fragment key={flow.role}>
                 <div className="overview-member" style={{
-                  padding: '14px', borderRadius: '12px',
+                  padding: '0.8235rem', borderRadius: '0.7059rem',
                   border: '1px solid var(--border)', borderTop: `4px solid ${index === 0 ? 'var(--s2)' : 'var(--s3)'}`, background: 'var(--surface-page)', textAlign: 'center'
                 }}>
-                  <Users size={18} style={{ color: index === 0 ? 'var(--s2)' : 'var(--s3)', marginBottom: '6px' }} />
+                  <Users size={18} style={{ color: index === 0 ? 'var(--s2)' : 'var(--s3)', marginBottom: '0.3529rem' }} />
                   <div style={{ fontWeight: 800, fontSize: '0.9rem', color: 'var(--text-primary)' }}>{flow.role}</div>
-                  <div style={{ fontSize: '0.76rem', color: 'var(--s4)', fontWeight: 700, marginTop: '4px' }}>🤖 {flow.aiTool}</div>
+                  <div style={{ fontSize: '0.76rem', color: 'var(--s4)', fontWeight: 700, marginTop: '0.2353rem' }}>🤖 {flow.aiTool}</div>
                 </div>
                 {index === 0 && (
                   <div className="overview-collab">
@@ -509,12 +509,12 @@ const Workflow = () => {
             ))}
           </div>
 
-          <div className="flex-column" style={{ gap: '20px' }}>
+          <div className="flex-column" style={{ gap: '1.1765rem' }}>
             {aiCollaborationFlow.map((flow, index) => (
-              <div key={index} className="grid-split" style={{ borderBottom: index !== aiCollaborationFlow.length - 1 ? '1px solid var(--border)' : 'none', paddingBottom: '20px' }}>
+              <div key={index} className="grid-split" style={{ borderBottom: index !== aiCollaborationFlow.length - 1 ? '1px solid var(--border)' : 'none', paddingBottom: '1.1765rem' }}>
                 {/* Cột trái: Vai trò và AI Tool */}
                 <div className="meta-card" style={{ borderLeft: '4px solid var(--s1)', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.4706rem', marginBottom: '0.3529rem' }}>
                     <Users size={16} style={{ color: 'var(--s1)' }} />
                     <span style={{ fontWeight: 800, fontSize: '0.95rem', color: 'var(--text-primary)' }}>{flow.role}</span>
                   </div>
@@ -524,25 +524,25 @@ const Workflow = () => {
                 </div>
 
                 {/* Cột phải: Chi tiết cách tương tác & sản phẩm đầu ra */}
-                <div className="flex-column" style={{ gap: '10px' }}>
+                <div className="flex-column" style={{ gap: '0.5882rem' }}>
                   <div className="ai-point-card" style={{ borderLeftColor: index === 0 ? 'var(--s1)' : index === 1 ? 'var(--s2)' : 'var(--s3)' }}>
-                    <div className="ai-point-title" style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                    <div className="ai-point-title" style={{ display: 'flex', alignItems: 'center', gap: '0.3529rem' }}>
                       <Terminal size={14} style={{ color: index === 0 ? 'var(--s1)' : index === 1 ? 'var(--s2)' : 'var(--s3)' }} /> Cách thức AI hỗ trợ (80% khối lượng việc)
                     </div>
                     <p className="ai-point-desc">{flow.usage}</p>
-                    <div style={{ marginTop: '8px', borderTop: '1px solid var(--border)', paddingTop: '6px' }}>
+                    <div style={{ marginTop: '0.4706rem', borderTop: '1px solid var(--border)', paddingTop: '0.3529rem' }}>
                       <span style={{ fontSize: '0.8rem', fontWeight: 800, color: 'var(--text-primary)' }}>🛠️ Task cụ thể cùng AI:</span>
-                      <ul style={{ margin: '4px 0 0 0', paddingLeft: '16px', fontSize: '0.78rem', color: 'var(--text-secondary)', lineHeight: 1.45 }}>
+                      <ul style={{ margin: '0.2353rem 0 0 0', paddingLeft: '0.9412rem', fontSize: '0.78rem', color: 'var(--text-secondary)', lineHeight: 1.45 }}>
                         {flow.tasks.map((task, key) => <li key={key}>{task}</li>)}
                       </ul>
                     </div>
                   </div>
 
                   <div className="ai-point-card" style={{ borderLeftColor: index === 0 ? 'var(--s1)' : index === 1 ? 'var(--s2)' : 'var(--s3)' }}>
-                    <div className="ai-point-title" style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                    <div className="ai-point-title" style={{ display: 'flex', alignItems: 'center', gap: '0.3529rem' }}>
                       <Layout size={14} style={{ color: index === 0 ? 'var(--s1)' : index === 1 ? 'var(--s2)' : 'var(--s3)' }} /> Phối hợp &amp; Bàn giao chéo (20%)
                     </div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '0.78rem', fontWeight: 700, color: 'var(--theme-color)', marginBottom: '4px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.2353rem', fontSize: '0.78rem', fontWeight: 700, color: 'var(--theme-color)', marginBottom: '0.2353rem' }}>
                       {[
                         'K.AI → Quân & K.AI (FE) (định hướng core cho cả 2)',
                         'Quân ↔ K.AI (FE) (phối hợp ngang hàng) · Quân → K.AI (báo cáo)',
@@ -553,13 +553,13 @@ const Workflow = () => {
                   </div>
 
                   <div className="ai-point-card" style={{ borderLeftColor: 'var(--s4)' }}>
-                    <div className="ai-point-title" style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                    <div className="ai-point-title" style={{ display: 'flex', alignItems: 'center', gap: '0.3529rem' }}>
                       <RotateCcw size={14} style={{ color: 'var(--s4)' }} /> Vòng lặp phản hồi &amp; Sửa lỗi (Feedback Loop)
                     </div>
                     <p className="ai-point-desc"><b>Quy trình:</b> {flow.feedbackLoop}</p>
-                    <div style={{ marginTop: '8px', borderTop: '1px solid var(--border)', paddingTop: '6px' }}>
+                    <div style={{ marginTop: '0.4706rem', borderTop: '1px solid var(--border)', paddingTop: '0.3529rem' }}>
                       <span style={{ fontSize: '0.8rem', fontWeight: 800, color: 'var(--text-primary)' }}>📋 Checklist phối hợp an toàn:</span>
-                      <ul style={{ margin: '4px 0 0 0', paddingLeft: '16px', fontSize: '0.78rem', color: 'var(--text-secondary)', lineHeight: 1.45 }}>
+                      <ul style={{ margin: '0.2353rem 0 0 0', paddingLeft: '0.9412rem', fontSize: '0.78rem', color: 'var(--text-secondary)', lineHeight: 1.45 }}>
                         {flow.checklist.map((item, key) => <li key={key}>{item}</li>)}
                       </ul>
                     </div>
@@ -571,13 +571,13 @@ const Workflow = () => {
 
           {/* Triết lý cộng tác AI */}
           <div className="oath-box" style={{
-            marginTop: '20px',
-            padding: '16px',
-            borderRadius: '12px',
+            marginTop: '1.1765rem',
+            padding: '0.9412rem',
+            borderRadius: '0.7059rem',
             background: 'rgba(32, 201, 151, 0.04)',
             border: '1px solid rgba(32, 201, 151, 0.15)',
             display: 'flex',
-            gap: '12px',
+            gap: '0.7059rem',
             alignItems: 'center'
           }}>
             <CheckCircle2 style={{ color: 'var(--good)', flexShrink: 0 }} size={24} />

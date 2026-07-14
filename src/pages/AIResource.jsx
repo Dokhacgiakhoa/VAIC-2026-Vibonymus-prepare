@@ -208,21 +208,21 @@ const AIResource = () => {
     <div className="page-content">
       {/* Tiêu đề trang */}
       <div className="card" style={{ position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', top: '-45px', right: '-45px', opacity: 0.05, pointerEvents: 'none' }}>
+        <div style={{ position: 'absolute', top: '-2.6471rem', right: '-2.6471rem', opacity: 0.05, pointerEvents: 'none' }}>
           <Cpu size={200} />
         </div>
         <h2><Cpu /> AI Resource &amp; Stack Công Nghệ — VAIC 2026</h2>
-        <p className="sub" style={{ margin: '0 0 16px', maxWidth: '80%' }}>
+        <p className="sub" style={{ margin: '0 0 0.9412rem', maxWidth: '80%' }}>
           Thống kê chi tiết các mô hình AI, API tài nguyên, hạ tầng cơ sở dữ liệu, các thư viện mã nguồn mở và chi phí đầu tư bản quyền phục vụ riêng cho team Vibonymus tại cuộc thi Hackathon 48h.
         </p>
       </div>
 
       {/* PHẦN 1: CÁC CÔNG CỤ AI ĐANG CÓ CỦA TEAM */}
       <div className="card">
-        <h2 style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <h2 style={{ display: 'flex', alignItems: 'center', gap: '0.4706rem' }}>
           <Sparkles style={{ color: 'var(--s1)' }} /> 1. Công cụ AI hiện có của Team (Current AI Assets)
         </h2>
-        <p className="sub" style={{ margin: '0 0 20px' }}>
+        <p className="sub" style={{ margin: '0 0 1.1765rem' }}>
           Danh sách các tài khoản AI bản quyền đã được team đăng ký thanh toán thành công, sẵn sàng khai thác lập trình:
         </p>
 
@@ -231,8 +231,8 @@ const AIResource = () => {
             <div>
               <div className="tool-stage" style={{ color: 'var(--s1)' }}>K.AI · PM &amp; PITCHING</div>
               <div className="tool-names">Claude Pro, Gemini Advanced &amp; Antigravity Pro</div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: '1.6', marginTop: '10px' }}>
-                <ul style={{ paddingLeft: '18px', margin: 0 }}>
+              <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: '1.6', marginTop: '0.5882rem' }}>
+                <ul style={{ paddingLeft: '1.0588rem', margin: 0 }}>
                   <li><b>Claude Pro ($20)</b>: Brainstorm kiến trúc, soạn slide và viết kịch bản pitching thuyết phục.</li>
                   <li><b>Gemini Advanced ($20)</b>: Đọc tài liệu hackathon cực dài, phân tích điều lệ thi và API của BTC.</li>
                   <li><b>Antigravity Pro ($0)</b>: Trợ lý AI tích hợp sẵn trong IDE để viết code nhanh và debug trực tiếp.</li>
@@ -246,8 +246,8 @@ const AIResource = () => {
             <div>
               <div className="tool-stage" style={{ color: 'var(--s3)' }}>HIẾU · FRONTEND &amp; MKT</div>
               <div className="tool-names">Claude Max 5x (Gói Premium)</div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: '1.6', marginTop: '10px' }}>
-                <ul style={{ paddingLeft: '18px', margin: 0 }}>
+              <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: '1.6', marginTop: '0.5882rem' }}>
+                <ul style={{ paddingLeft: '1.0588rem', margin: 0 }}>
                   <li><b>Claude Max 5x ($100)</b>: Thiết kế giao diện (UI/UX), sinh mã React component chất lượng cao, viết CSS chuyển động và tối ưu hóa ngôn từ tiếp thị sản phẩm.</li>
                 </ul>
               </div>
@@ -259,8 +259,8 @@ const AIResource = () => {
             <div>
               <div className="tool-stage" style={{ color: 'var(--s2)' }}>QUÂN · BACKEND &amp; DB</div>
               <div className="tool-names">Claude Max 5x (Dùng chung)</div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: '1.6', marginTop: '10px' }}>
-                <ul style={{ paddingLeft: '18px', margin: 0 }}>
+              <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: '1.6', marginTop: '0.5882rem' }}>
+                <ul style={{ paddingLeft: '1.0588rem', margin: 0 }}>
                   <li><b>Claude Max 5x ($0)</b>: Chia sẻ tài khoản với K.AI để tối ưu hóa chi phí. Dùng để thiết kế Database Schema, viết API và xử lý logic kết nối DB Backend.</li>
                 </ul>
               </div>
@@ -272,29 +272,29 @@ const AIResource = () => {
 
       {/* CHIẾN LƯỢC TỐI ƯU HÓA: ƯU TIÊN AI MIỄN PHÍ */}
       <div className="card" style={{ background: 'rgba(32, 201, 151, 0.03)', borderColor: 'rgba(32, 201, 151, 0.2)' }}>
-        <h2 style={{ color: 'var(--s2)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <h2 style={{ color: 'var(--s2)', display: 'flex', alignItems: 'center', gap: '0.4706rem' }}>
           <CheckCircle2 style={{ color: 'var(--s2)' }} /> Chiến lược tối ưu chi phí: Ưu tiên AI Miễn Phí hàng đầu
         </h2>
-        <p className="sub" style={{ margin: '0 0 16px' }}>
+        <p className="sub" style={{ margin: '0 0 0.9412rem' }}>
           Vibonymus triệt để áp dụng triết lý <b>"Free-First"</b>, tận dụng tối đa các cổng API miễn phí và công cụ AI hỗ trợ lập trình không mất tiền trước khi quyết định chi trả cho các gói trả phí:
         </p>
-        <div className="grid-3" style={{ gap: '14px' }}>
-          <div style={{ padding: '14px', borderRadius: '10px', background: 'var(--surface-page)', border: '1px solid var(--border)' }}>
-            <div style={{ fontWeight: 800, fontSize: '0.85rem', color: 'var(--s1)', marginBottom: '6px' }}>Google AI Studio (Gemini Free API)</div>
+        <div className="grid-3" style={{ gap: '0.8235rem' }}>
+          <div style={{ padding: '0.8235rem', borderRadius: '0.5882rem', background: 'var(--surface-page)', border: '1px solid var(--border)' }}>
+            <div style={{ fontWeight: 800, fontSize: '0.85rem', color: 'var(--s1)', marginBottom: '0.3529rem' }}>Google AI Studio (Gemini Free API)</div>
             <p style={{ margin: 0, fontSize: '0.8rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
               Cung cấp khóa API <b>Gemini 1.5 Flash/Pro hoàn toàn miễn phí</b> với hạn mức cực kỳ hào phóng (15 RPM). Thừa đủ dùng cho toàn bộ các tác vụ gọi API xử lý nghiệp vụ lõi (RAG, OCR) trong 48h thi đấu.
             </p>
           </div>
           
-          <div style={{ padding: '14px', borderRadius: '10px', background: 'var(--surface-page)', border: '1px solid var(--border)' }}>
-            <div style={{ fontWeight: 800, fontSize: '0.85rem', color: 'var(--s2)', marginBottom: '6px' }}>Edge TTS &amp; Omni Voice (Free &amp; Unlimited)</div>
+          <div style={{ padding: '0.8235rem', borderRadius: '0.5882rem', background: 'var(--surface-page)', border: '1px solid var(--border)' }}>
+            <div style={{ fontWeight: 800, fontSize: '0.85rem', color: 'var(--s2)', marginBottom: '0.3529rem' }}>Edge TTS &amp; Omni Voice (Free &amp; Unlimited)</div>
             <p style={{ margin: 0, fontSize: '0.8rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
               Sử dụng thư viện <b>Edge TTS</b> của Python để sinh giọng đọc tự nhiên (tiếng Việt/tiếng Anh) hoàn toàn miễn phí, không giới hạn ký tự, hoặc tận dụng Omni Voice (Google/OpenAI TTS Free Credits) thay vì mua ElevenLabs.
             </p>
           </div>
 
-          <div style={{ padding: '14px', borderRadius: '10px', background: 'var(--surface-page)', border: '1px solid var(--border)' }}>
-            <div style={{ fontWeight: 800, fontSize: '0.85rem', color: 'var(--s3)', marginBottom: '6px' }}>v0.dev by Vercel &amp; Lexica (Free Tier)</div>
+          <div style={{ padding: '0.8235rem', borderRadius: '0.5882rem', background: 'var(--surface-page)', border: '1px solid var(--border)' }}>
+            <div style={{ fontWeight: 800, fontSize: '0.85rem', color: 'var(--s3)', marginBottom: '0.3529rem' }}>v0.dev by Vercel &amp; Lexica (Free Tier)</div>
             <p style={{ margin: 0, fontSize: '0.8rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
               Khai thác các gói miễn phí của v0.dev để sinh code giao diện React, và Lexica.art / Bing Image Creator để sinh ảnh đồ họa banner chất lượng cao cho landing page với chi phí bằng 0.
             </p>
@@ -304,16 +304,16 @@ const AIResource = () => {
 
       {/* KHO MÃ NGUỒN MỞ TỰ HOST */}
       <div className="card">
-        <h2 style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+        <h2 style={{ display: 'flex', alignItems: 'center', gap: '0.5882rem' }}>
           <FolderGit2 style={{ color: 'var(--s1)' }} /> Kho giải pháp Mã nguồn mở tự host (Zero-Cost &amp; High Defensibility)
         </h2>
-        <p className="sub" style={{ margin: '0 0 20px' }}>
+        <p className="sub" style={{ margin: '0 0 1.1765rem' }}>
           Tận dụng sức mạnh của cộng đồng mã nguồn mở chạy trực tiếp cục bộ (Local) hoặc tự host. Điều này giúp nâng điểm <i>Engineering Depth</i> và <i>AI Safety</i> cực kỳ thuyết phục trước Ban giám khảo:
         </p>
 
         <div className="grid-2">
-          <div style={{ border: '1px solid var(--border)', borderRadius: '12px', padding: '16px', background: 'var(--surface-page)' }}>
-            <h3 style={{ margin: '0 0 8px', color: 'var(--s1)', fontSize: '0.92rem', fontWeight: 800 }}>🦙 Chạy Mô hình LLM Cục bộ (Local LLM via Ollama)</h3>
+          <div style={{ border: '1px solid var(--border)', borderRadius: '0.7059rem', padding: '0.9412rem', background: 'var(--surface-page)' }}>
+            <h3 style={{ margin: '0 0 0.4706rem', color: 'var(--s1)', fontSize: '0.92rem', fontWeight: 800 }}>🦙 Chạy Mô hình LLM Cục bộ (Local LLM via Ollama)</h3>
             <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
               <b>Công cụ:</b> Ollama kết hợp mô hình <b>Llama 3 (8B)</b> hoặc <b>Qwen 2 (7B)</b>.
               <br />
@@ -321,8 +321,8 @@ const AIResource = () => {
             </p>
           </div>
 
-          <div style={{ border: '1px solid var(--border)', borderRadius: '12px', padding: '16px', background: 'var(--surface-page)' }}>
-            <h3 style={{ margin: '0 0 8px', color: 'var(--s2)', fontSize: '0.92rem', fontWeight: 800 }}>👁️ Nhận diện &amp; OCR chuyên dụng (YOLOv8 &amp; EasyOCR)</h3>
+          <div style={{ border: '1px solid var(--border)', borderRadius: '0.7059rem', padding: '0.9412rem', background: 'var(--surface-page)' }}>
+            <h3 style={{ margin: '0 0 0.4706rem', color: 'var(--s2)', fontSize: '0.92rem', fontWeight: 800 }}>👁️ Nhận diện &amp; OCR chuyên dụng (YOLOv8 &amp; EasyOCR)</h3>
             <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
               <b>Công cụ:</b> Ultralytics <b>YOLOv8 / YOLOv10</b> mã nguồn mở và thư viện <b>EasyOCR</b>.
               <br />
@@ -330,8 +330,8 @@ const AIResource = () => {
             </p>
           </div>
 
-          <div style={{ border: '1px solid var(--border)', borderRadius: '12px', padding: '16px', background: 'var(--surface-page)' }}>
-            <h3 style={{ margin: '0 0 8px', color: 'var(--s3)', fontSize: '0.92rem', fontWeight: 800 }}>📂 CSDL Vector &amp; Embeddings Tự Host (ChromaDB / pgvector)</h3>
+          <div style={{ border: '1px solid var(--border)', borderRadius: '0.7059rem', padding: '0.9412rem', background: 'var(--surface-page)' }}>
+            <h3 style={{ margin: '0 0 0.4706rem', color: 'var(--s3)', fontSize: '0.92rem', fontWeight: 800 }}>📂 CSDL Vector &amp; Embeddings Tự Host (ChromaDB / pgvector)</h3>
             <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
               <b>Công cụ:</b> CSDL <b>ChromaDB</b> (in-memory) hoặc extension <b>pgvector</b> tích hợp thẳng vào PostgreSQL.
               <br />
@@ -339,8 +339,8 @@ const AIResource = () => {
             </p>
           </div>
 
-          <div style={{ border: '1px solid var(--border)', borderRadius: '12px', padding: '16px', background: 'var(--surface-page)' }}>
-            <h3 style={{ margin: '0 0 8px', color: 'var(--s4)', fontSize: '0.92rem', fontWeight: 800 }}>⚙️ Agent &amp; Workflow Orchestration (LangGraph / CrewAI)</h3>
+          <div style={{ border: '1px solid var(--border)', borderRadius: '0.7059rem', padding: '0.9412rem', background: 'var(--surface-page)' }}>
+            <h3 style={{ margin: '0 0 0.4706rem', color: 'var(--s4)', fontSize: '0.92rem', fontWeight: 800 }}>⚙️ Agent &amp; Workflow Orchestration (LangGraph / CrewAI)</h3>
             <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
               <b>Công cụ:</b> Framework Python mã nguồn mở <b>LangGraph</b> (từ LangChain) hoặc <b>CrewAI</b>.
               <br />
@@ -352,10 +352,10 @@ const AIResource = () => {
 
       {/* PHẦN 2: ĐỀ XUẤT AI ĐỘNG THEO TỪNG ĐỀ TÀI */}
       <div className="card">
-        <h2 style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+        <h2 style={{ display: 'flex', alignItems: 'center', gap: '0.5882rem' }}>
           <Compass /> 2. Đề xuất Phân bổ AI theo từng Đề tài (AI Recommendations by Track)
         </h2>
-        <p className="sub" style={{ margin: '0 0 20px' }}>
+        <p className="sub" style={{ margin: '0 0 1.1765rem' }}>
           Chọn một đề tài để xem các đề xuất mô hình AI, công cụ bổ sung được lọc tự động theo các nhóm tài nguyên:
         </p>
 
@@ -363,10 +363,10 @@ const AIResource = () => {
         <div style={{ 
           display: 'flex', 
           flexWrap: 'wrap', 
-          gap: '8px', 
-          marginBottom: '24px',
+          gap: '0.4706rem', 
+          marginBottom: '1.4118rem',
           borderBottom: '1px solid var(--border)',
-          paddingBottom: '16px'
+          paddingBottom: '0.9412rem'
         }}>
           {Object.keys(trackNames).map((key) => {
             const isSelected = selectedTrack === key;
@@ -375,8 +375,8 @@ const AIResource = () => {
                 key={key}
                 onClick={() => setSelectedTrack(key)}
                 style={{
-                  padding: '8px 14px',
-                  borderRadius: '20px',
+                  padding: '0.4706rem 0.8235rem',
+                  borderRadius: '1.1765rem',
                   border: isSelected ? '1px solid var(--theme-color)' : '1px solid var(--border)',
                   background: isSelected ? 'rgba(90, 73, 204, 0.08)' : 'var(--surface-1)',
                   color: isSelected ? 'var(--theme-color)' : 'var(--text-secondary)',
@@ -393,17 +393,17 @@ const AIResource = () => {
         </div>
 
         {/* Dữ liệu AI phân bổ theo các nhóm */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.1765rem' }}>
           
           {/* Nhóm 1: AI hiện có */}
-          <div style={{ padding: '20px', borderRadius: '12px', border: '1px solid var(--border)', background: 'var(--surface-page)' }}>
-            <h3 style={{ margin: '0 0 12px 0', display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.95rem', fontWeight: 800, color: 'var(--s1)' }}>
+          <div style={{ padding: '1.1765rem', borderRadius: '0.7059rem', border: '1px solid var(--border)', background: 'var(--surface-page)' }}>
+            <h3 style={{ margin: '0 0 0.7059rem 0', display: 'flex', alignItems: 'center', gap: '0.4706rem', fontSize: '0.95rem', fontWeight: 800, color: 'var(--s1)' }}>
               <Sparkles size={18} /> Nhóm 1: AI hiện có (Đang sở hữu sử dụng cho track này)
             </h3>
-            <div className="grid-2" style={{ gap: '14px' }}>
+            <div className="grid-2" style={{ gap: '0.8235rem' }}>
               {currentAIDetails.owned.map((item, index) => (
-                <div key={index} style={{ padding: '14px', borderRadius: '10px', border: '1px solid rgba(42, 120, 214, 0.12)', background: 'rgba(42, 120, 214, 0.02)' }}>
-                  <h4 style={{ margin: '0 0 6px 0', fontSize: '0.85rem', fontWeight: 800, color: 'var(--text-primary)' }}>{item.name}</h4>
+                <div key={index} style={{ padding: '0.8235rem', borderRadius: '0.5882rem', border: '1px solid rgba(42, 120, 214, 0.12)', background: 'rgba(42, 120, 214, 0.02)' }}>
+                  <h4 style={{ margin: '0 0 0.3529rem 0', fontSize: '0.85rem', fontWeight: 800, color: 'var(--text-primary)' }}>{item.name}</h4>
                   <p style={{ margin: 0, fontSize: '0.8rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>{item.desc}</p>
                 </div>
               ))}
@@ -411,14 +411,14 @@ const AIResource = () => {
           </div>
 
           {/* Nhóm 2: AI Miễn phí */}
-          <div style={{ padding: '20px', borderRadius: '12px', border: '1px solid var(--border)', background: 'var(--surface-page)' }}>
-            <h3 style={{ margin: '0 0 12px 0', display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.95rem', fontWeight: 800, color: 'var(--s2)' }}>
+          <div style={{ padding: '1.1765rem', borderRadius: '0.7059rem', border: '1px solid var(--border)', background: 'var(--surface-page)' }}>
+            <h3 style={{ margin: '0 0 0.7059rem 0', display: 'flex', alignItems: 'center', gap: '0.4706rem', fontSize: '0.95rem', fontWeight: 800, color: 'var(--s2)' }}>
               <CheckCircle2 size={18} style={{ color: 'var(--s2)' }} /> Nhóm 2: AI miễn phí (Free Tier / Open Source / Slide / Đồ họa / Video / Voice)
             </h3>
-            <div className="grid-2" style={{ gap: '14px' }}>
+            <div className="grid-2" style={{ gap: '0.8235rem' }}>
               {currentAIDetails.free.map((item, index) => (
-                <div key={index} style={{ padding: '14px', borderRadius: '10px', border: '1px solid rgba(32, 201, 151, 0.12)', background: 'rgba(32, 201, 151, 0.02)' }}>
-                  <h4 style={{ margin: '0 0 6px 0', fontSize: '0.85rem', fontWeight: 800, color: 'var(--text-primary)' }}>{item.name}</h4>
+                <div key={index} style={{ padding: '0.8235rem', borderRadius: '0.5882rem', border: '1px solid rgba(32, 201, 151, 0.12)', background: 'rgba(32, 201, 151, 0.02)' }}>
+                  <h4 style={{ margin: '0 0 0.3529rem 0', fontSize: '0.85rem', fontWeight: 800, color: 'var(--text-primary)' }}>{item.name}</h4>
                   <p style={{ margin: 0, fontSize: '0.8rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>{item.desc}</p>
                 </div>
               ))}
@@ -426,28 +426,28 @@ const AIResource = () => {
           </div>
 
           {/* Nhóm 3: Thư viện & Mã nguồn mở khuyên dùng (GitHub Repos) */}
-          <div style={{ padding: '20px', borderRadius: '12px', border: '1px solid var(--border)', background: 'var(--surface-page)' }}>
-            <h3 style={{ margin: '0 0 12px 0', display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.95rem', fontWeight: 800, color: 'var(--text-primary)' }}>
+          <div style={{ padding: '1.1765rem', borderRadius: '0.7059rem', border: '1px solid var(--border)', background: 'var(--surface-page)' }}>
+            <h3 style={{ margin: '0 0 0.7059rem 0', display: 'flex', alignItems: 'center', gap: '0.4706rem', fontSize: '0.95rem', fontWeight: 800, color: 'var(--text-primary)' }}>
               <FolderGit2 size={18} style={{ color: 'var(--s1)' }} /> Nhóm 3: Thư viện &amp; Mã nguồn mở khuyên dùng (GitHub Open-Source)
             </h3>
-            <div className="grid-2" style={{ gap: '14px' }}>
+            <div className="grid-2" style={{ gap: '0.8235rem' }}>
               {currentAIDetails.githubRepos.map((item, index) => (
-                <div key={index} style={{ padding: '14px', borderRadius: '10px', border: '1px solid rgba(90, 73, 204, 0.15)', background: 'rgba(90, 73, 204, 0.02)' }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '8px', marginBottom: '8px' }}>
+                <div key={index} style={{ padding: '0.8235rem', borderRadius: '0.5882rem', border: '1px solid rgba(90, 73, 204, 0.15)', background: 'rgba(90, 73, 204, 0.02)' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '0.4706rem', marginBottom: '0.4706rem' }}>
                     <h4 style={{ margin: 0, fontSize: '0.88rem', fontWeight: 800 }}>
                       <a 
                         href={item.url} 
                         target="_blank" 
                         rel="noopener noreferrer" 
-                        style={{ color: 'var(--theme-color)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '6px' }}
+                        style={{ color: 'var(--theme-color)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.3529rem' }}
                       >
                         {item.name} <ExternalLink size={14} />
                       </a>
                     </h4>
                     <span style={{ 
                       fontSize: '0.72rem', 
-                      padding: '2px 8px', 
-                      borderRadius: '12px', 
+                      padding: '0.1176rem 0.4706rem', 
+                      borderRadius: '0.7059rem', 
                       background: 'rgba(90, 73, 204, 0.08)', 
                       color: 'var(--theme-color)',
                       fontWeight: 700,
@@ -463,14 +463,14 @@ const AIResource = () => {
           </div>
 
           {/* Nhóm 4: AI Trả phí bổ sung */}
-          <div style={{ padding: '20px', borderRadius: '12px', border: '1px solid var(--border)', background: 'var(--surface-page)' }}>
-            <h3 style={{ margin: '0 0 12px 0', display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.95rem', fontWeight: 800, color: 'var(--s3)' }}>
+          <div style={{ padding: '1.1765rem', borderRadius: '0.7059rem', border: '1px solid var(--border)', background: 'var(--surface-page)' }}>
+            <h3 style={{ margin: '0 0 0.7059rem 0', display: 'flex', alignItems: 'center', gap: '0.4706rem', fontSize: '0.95rem', fontWeight: 800, color: 'var(--s3)' }}>
               <PlusCircle size={18} style={{ color: 'var(--s3)' }} /> Nhóm 4: AI trả phí bổ sung (Paid Add-ons đề xuất thuê thêm)
             </h3>
-            <div className="grid-2" style={{ gap: '14px' }}>
+            <div className="grid-2" style={{ gap: '0.8235rem' }}>
               {currentAIDetails.paid.map((item, index) => (
-                <div key={index} style={{ padding: '14px', borderRadius: '10px', border: '1px solid rgba(237, 161, 0, 0.12)', background: 'rgba(237, 161, 0, 0.02)' }}>
-                  <h4 style={{ margin: '0 0 6px 0', fontSize: '0.85rem', fontWeight: 800, color: 'var(--text-primary)' }}>{item.name}</h4>
+                <div key={index} style={{ padding: '0.8235rem', borderRadius: '0.5882rem', border: '1px solid rgba(237, 161, 0, 0.12)', background: 'rgba(237, 161, 0, 0.02)' }}>
+                  <h4 style={{ margin: '0 0 0.3529rem 0', fontSize: '0.85rem', fontWeight: 800, color: 'var(--text-primary)' }}>{item.name}</h4>
                   <p style={{ margin: 0, fontSize: '0.8rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>{item.desc}</p>
                 </div>
               ))}
@@ -483,7 +483,7 @@ const AIResource = () => {
       {/* Bảng tổng hợp chi phí */}
       <div className="card">
         <h2><DollarSign /> Bảng tổng hợp chi phí bản quyền AI của nhóm</h2>
-        <p className="sub" style={{ margin: '0 0 16px' }}>Thống kê các khoản chi phí thực tế mà team đã chi trả để trang bị bản quyền AI hỗ trợ lập trình (luôn tối ưu hóa ưu tiên tài khoản dùng chung và gói miễn phí).</p>
+        <p className="sub" style={{ margin: '0 0 0.9412rem' }}>Thống kê các khoản chi phí thực tế mà team đã chi trả để trang bị bản quyền AI hỗ trợ lập trình (luôn tối ưu hóa ưu tiên tài khoản dùng chung và gói miễn phí).</p>
         <div className="cross-table-scroll">
           <table className="cross-table">
             <thead>
@@ -537,10 +537,10 @@ const AIResource = () => {
       </div>
 
       {/* Rulebook warning */}
-      <div className="card" style={{ display: 'flex', gap: '16px', alignItems: 'flex-start', background: 'rgba(245, 159, 0, 0.06)', borderColor: 'rgba(245, 159, 0, 0.2)' }}>
-        <ShieldAlert style={{ color: 'var(--warning)', flexShrink: 0, marginTop: '2px' }} size={24} />
+      <div className="card" style={{ display: 'flex', gap: '0.9412rem', alignItems: 'flex-start', background: 'rgba(245, 159, 0, 0.06)', borderColor: 'rgba(245, 159, 0, 0.2)' }}>
+        <ShieldAlert style={{ color: 'var(--warning)', flexShrink: 0, marginTop: '0.1176rem' }} size={24} />
         <div>
-          <h3 style={{ margin: '0 0 6px 0', fontSize: '0.98rem', fontWeight: 700, color: 'var(--warning)' }}>Lưu ý bản quyền &amp; Quy chế thi đấu</h3>
+          <h3 style={{ margin: '0 0 0.3529rem 0', fontSize: '0.98rem', fontWeight: 700, color: 'var(--warning)' }}>Lưu ý bản quyền &amp; Quy chế thi đấu</h3>
           <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
             Mọi đoạn code được sinh bởi AI cần được khai báo minh bạch trong **AI Collaboration Log** nộp kèm dự án. Ban giám khảo có quyền loại các đội thi sao chép mã nguồn bất hợp pháp hoặc không thể giải thích cách hoạt động của giải pháp AI của mình.
           </p>

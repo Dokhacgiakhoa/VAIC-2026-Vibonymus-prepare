@@ -403,22 +403,22 @@ const Tracks = () => {
     <div className="page-content">
       {/* Tiêu đề & Triết lý thi đấu */}
       <div className="card" style={{ position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', top: '-40px', right: '-40px', opacity: 0.05, pointerEvents: 'none' }}>
+        <div style={{ position: 'absolute', top: '-2.3529rem', right: '-2.3529rem', opacity: 0.05, pointerEvents: 'none' }}>
           <Layers size={200} />
         </div>
         <h2><Compass /> Phân tích &amp; Định vị 8 Track thử thách — VAIC 2026</h2>
-        <p className="sub" style={{ margin: '0 0 16px', maxWidth: '80%' }}>
+        <p className="sub" style={{ margin: '0 0 0.9412rem', maxWidth: '80%' }}>
           Căn cứ vào tài liệu hướng dẫn <b>VAIC2026_Hackers-guidebook.md</b>, Vibonymus phân tích chi tiết từng track đề bài, từ đó sẵn sàng thiết kế kiến trúc AI tích hợp sâu sắc đạt chuẩn <b>AI-Native Oath</b> ngay khi BTC công bố đề bài chính thức vào 11:00 ngày 17/07.
         </p>
         
         <div className="oath-box" style={{
-          marginTop: '20px',
-          padding: '16px',
-          borderRadius: '12px',
+          marginTop: '1.1765rem',
+          padding: '0.9412rem',
+          borderRadius: '0.7059rem',
           background: 'rgba(237, 161, 0, 0.04)',
           border: '1px solid rgba(237, 161, 0, 0.15)',
           display: 'flex',
-          gap: '12px',
+          gap: '0.7059rem',
           alignItems: 'center'
         }}>
           <Zap style={{ color: 'var(--warning)', flexShrink: 0 }} size={24} />
@@ -431,11 +431,11 @@ const Tracks = () => {
       {/* 2 PHƯƠNG ÁN CHỌN TRACK KHI CÔNG BỐ ĐỀ BÀI */}
       <div className="card">
         <h2><ShieldCheck /> 2 Phương án lựa chọn Track thi đấu khi công bố đề bài</h2>
-        <p className="sub" style={{ margin: '0 0 16px' }}>Vibonymus chuẩn bị sẵn 2 kịch bản phản ứng nhanh để chốt đề tài ngay sau 11:00 ngày 17/07:</p>
+        <p className="sub" style={{ margin: '0 0 0.9412rem' }}>Vibonymus chuẩn bị sẵn 2 kịch bản phản ứng nhanh để chốt đề tài ngay sau 11:00 ngày 17/07:</p>
         
         <div className="grid-2">
-          <div style={{ border: '1px solid var(--border)', borderRadius: '12px', padding: '16px', background: 'rgba(32, 201, 151, 0.03)' }}>
-            <h3 style={{ margin: '0 0 8px', color: 'var(--s2)', fontSize: '0.98rem', fontWeight: 800 }}>⚡ Phương án 1: Lĩnh vực team giỏi nhất (Năng lực cốt lõi)</h3>
+          <div style={{ border: '1px solid var(--border)', borderRadius: '0.7059rem', padding: '0.9412rem', background: 'rgba(32, 201, 151, 0.03)' }}>
+            <h3 style={{ margin: '0 0 0.4706rem', color: 'var(--s2)', fontSize: '0.98rem', fontWeight: 800 }}>⚡ Phương án 1: Lĩnh vực team giỏi nhất (Năng lực cốt lõi)</h3>
             <p style={{ margin: 0, fontSize: '0.84rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
               <b>Nhóm mục tiêu:</b> Năng Suất Doanh Nghiệp (SME) hoặc Giáo Dục.
               <br />
@@ -444,8 +444,8 @@ const Tracks = () => {
               <b>Thách thức:</b> Số lượng đối thủ cạnh tranh trực tiếp sẽ rất lớn (dự kiến chiếm &gt;80% số đội thi theo thống kê).
             </p>
           </div>
-          <div style={{ border: '1px solid var(--border)', borderRadius: '12px', padding: '16px', background: 'rgba(42, 120, 214, 0.03)' }}>
-            <h3 style={{ margin: '0 0 8px', color: 'var(--s1)', fontSize: '0.98rem', fontWeight: 800 }}>🌊 Phương án 2: Lĩnh vực ít đội thi nhất (Đại dương xanh)</h3>
+          <div style={{ border: '1px solid var(--border)', borderRadius: '0.7059rem', padding: '0.9412rem', background: 'rgba(42, 120, 214, 0.03)' }}>
+            <h3 style={{ margin: '0 0 0.4706rem', color: 'var(--s1)', fontSize: '0.98rem', fontWeight: 800 }}>🌊 Phương án 2: Lĩnh vực ít đội thi nhất (Đại dương xanh)</h3>
             <p style={{ margin: 0, fontSize: '0.84rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
               <b>Nhóm mục tiêu:</b> Phòng Chống Thiên Tai hoặc Nông Nghiệp.
               <br />
@@ -461,7 +461,7 @@ const Tracks = () => {
       <div className="grid-split">
         
         {/* Danh sách 8 Track bên trái */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5882rem' }}>
           {trackData.map((t) => {
             const isSelected = selectedTrack === t.id;
             return (
@@ -469,8 +469,8 @@ const Tracks = () => {
                 key={t.id}
                 onClick={() => setSelectedTrack(t.id)}
                 style={{
-                  padding: '14px 18px',
-                  borderRadius: '12px',
+                  padding: '0.8235rem 1.0588rem',
+                  borderRadius: '0.7059rem',
                   border: isSelected ? '1px solid var(--s1)' : '1px solid var(--border)',
                   background: isSelected ? 'rgba(42, 120, 214, 0.05)' : 'var(--surface-1)',
                   cursor: 'pointer',
@@ -481,7 +481,7 @@ const Tracks = () => {
                   boxShadow: isSelected ? 'none' : 'var(--shadow-sm)'
                 }}
               >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.7059rem' }}>
                   <div style={{ display: 'flex', alignItems: 'center', justifySelf: 'center', justifyContent: 'center' }}>
                     {t.icon}
                   </div>
@@ -498,20 +498,20 @@ const Tracks = () => {
         </div>
 
         {/* Panel Phân tích chi tiết bên phải */}
-        <div className="card" style={{ margin: 0, padding: '24px' }}>
+        <div className="card" style={{ margin: 0, padding: '1.4118rem' }}>
           {/* Header Track */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '20px', borderBottom: '1px solid var(--border)', paddingBottom: '16px' }}>
-            <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: 'rgba(0,0,0,0.03)', display: 'flex', alignItems: 'center', justifySelf: 'center', justifyContent: 'center' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.8235rem', marginBottom: '1.1765rem', borderBottom: '1px solid var(--border)', paddingBottom: '0.9412rem' }}>
+            <div style={{ width: '2.8235rem', height: '2.8235rem', borderRadius: '0.7059rem', background: 'rgba(0,0,0,0.03)', display: 'flex', alignItems: 'center', justifySelf: 'center', justifyContent: 'center' }}>
               {currentTrack.icon}
             </div>
             <div>
               <h3 style={{ margin: 0, fontSize: '1.25rem', fontWeight: 800, color: 'var(--text-primary)' }}>{currentTrack.name}</h3>
-              <p style={{ margin: '4px 0 0', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>{currentTrack.desc}</p>
+              <p style={{ margin: '0.2353rem 0 0', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>{currentTrack.desc}</p>
             </div>
           </div>
 
           {/* Metadata Grid */}
-          <div className="grid-3" style={{ marginBottom: '24px' }}>
+          <div className="grid-3" style={{ marginBottom: '1.4118rem' }}>
             <div className="meta-card">
               <div className="meta-label">Độ khó đề bài</div>
               <div className="meta-value critical">{currentTrack.difficulty}</div>
@@ -527,11 +527,11 @@ const Tracks = () => {
           </div>
 
           {/* Sub-tabs điều hướng thông tin phân tích */}
-          <div style={{ display: 'flex', gap: '10px', borderBottom: '1px solid var(--border)', marginBottom: '20px' }}>
+          <div style={{ display: 'flex', gap: '0.5882rem', borderBottom: '1px solid var(--border)', marginBottom: '1.1765rem' }}>
             <button
               onClick={() => setActiveSubTab('overview')}
               style={{
-                padding: '8px 16px',
+                padding: '0.4706rem 0.9412rem',
                 border: 'none',
                 background: 'none',
                 fontSize: '0.85rem',
@@ -547,7 +547,7 @@ const Tracks = () => {
             <button
               onClick={() => setActiveSubTab('workflow')}
               style={{
-                padding: '8px 16px',
+                padding: '0.4706rem 0.9412rem',
                 border: 'none',
                 background: 'none',
                 fontSize: '0.85rem',
@@ -563,7 +563,7 @@ const Tracks = () => {
             <button
               onClick={() => setActiveSubTab('delegation')}
               style={{
-                padding: '8px 16px',
+                padding: '0.4706rem 0.9412rem',
                 border: 'none',
                 background: 'none',
                 fontSize: '0.85rem',
@@ -579,7 +579,7 @@ const Tracks = () => {
             <button
               onClick={() => setActiveSubTab('ai')}
               style={{
-                padding: '8px 16px',
+                padding: '0.4706rem 0.9412rem',
                 border: 'none',
                 background: 'none',
                 fontSize: '0.85rem',
@@ -595,13 +595,13 @@ const Tracks = () => {
           </div>
 
           {/* Content panel */}
-          <div style={{ minHeight: '220px' }}>
+          <div style={{ minHeight: '12.9412rem' }}>
             
             {/* Overview Panel (SWOT Analysis) */}
             {activeSubTab === 'overview' && (
               <div>
-                <div style={{ marginBottom: '16px' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
+                <div style={{ marginBottom: '0.9412rem' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.4706rem', marginBottom: '0.3529rem' }}>
                     <Target size={16} style={{ color: 'var(--s1)' }} />
                     <span style={{ fontWeight: 800, fontSize: '0.88rem', color: 'var(--text-primary)' }}>Mục tiêu sản phẩm MVP dự kiến:</span>
                   </div>
@@ -609,38 +609,38 @@ const Tracks = () => {
                 </div>
 
                 {/* SWOT Analysis Grid */}
-                <div className="grid-2" style={{ gap: '14px', marginTop: '16px' }}>
-                  <div style={{ padding: '14px', borderRadius: '10px', background: 'rgba(32, 201, 151, 0.04)', border: '1px solid rgba(32, 201, 151, 0.15)' }}>
-                    <div style={{ fontWeight: 800, fontSize: '0.85rem', color: 'var(--s2)', marginBottom: '6px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                <div className="grid-2" style={{ gap: '0.8235rem', marginTop: '0.9412rem' }}>
+                  <div style={{ padding: '0.8235rem', borderRadius: '0.5882rem', background: 'rgba(32, 201, 151, 0.04)', border: '1px solid rgba(32, 201, 151, 0.15)' }}>
+                    <div style={{ fontWeight: 800, fontSize: '0.85rem', color: 'var(--s2)', marginBottom: '0.3529rem', display: 'flex', alignItems: 'center', gap: '0.3529rem' }}>
                       <span>💪 Strengths (S) - Điểm mạnh</span>
                     </div>
                     <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>{currentTrack.swot.s}</p>
                   </div>
 
-                  <div style={{ padding: '14px', borderRadius: '10px', background: 'rgba(240, 62, 62, 0.04)', border: '1px solid rgba(240, 62, 62, 0.15)' }}>
-                    <div style={{ fontWeight: 800, fontSize: '0.85rem', color: 'var(--critical)', marginBottom: '6px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                  <div style={{ padding: '0.8235rem', borderRadius: '0.5882rem', background: 'rgba(240, 62, 62, 0.04)', border: '1px solid rgba(240, 62, 62, 0.15)' }}>
+                    <div style={{ fontWeight: 800, fontSize: '0.85rem', color: 'var(--critical)', marginBottom: '0.3529rem', display: 'flex', alignItems: 'center', gap: '0.3529rem' }}>
                       <span>⚠️ Weaknesses (W) - Điểm yếu</span>
                     </div>
                     <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>{currentTrack.swot.w}</p>
                   </div>
 
-                  <div style={{ padding: '14px', borderRadius: '10px', background: 'rgba(42, 120, 214, 0.04)', border: '1px solid rgba(42, 120, 214, 0.15)' }}>
-                    <div style={{ fontWeight: 800, fontSize: '0.85rem', color: 'var(--s1)', marginBottom: '6px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                  <div style={{ padding: '0.8235rem', borderRadius: '0.5882rem', background: 'rgba(42, 120, 214, 0.04)', border: '1px solid rgba(42, 120, 214, 0.15)' }}>
+                    <div style={{ fontWeight: 800, fontSize: '0.85rem', color: 'var(--s1)', marginBottom: '0.3529rem', display: 'flex', alignItems: 'center', gap: '0.3529rem' }}>
                       <span>🚀 Opportunities (O) - Cơ hội</span>
                     </div>
                     <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>{currentTrack.swot.o}</p>
                   </div>
 
-                  <div style={{ padding: '14px', borderRadius: '10px', background: 'rgba(245, 159, 0, 0.04)', border: '1px solid rgba(245, 159, 0, 0.15)' }}>
-                    <div style={{ fontWeight: 800, fontSize: '0.85rem', color: 'var(--warning)', marginBottom: '6px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                  <div style={{ padding: '0.8235rem', borderRadius: '0.5882rem', background: 'rgba(245, 159, 0, 0.04)', border: '1px solid rgba(245, 159, 0, 0.15)' }}>
+                    <div style={{ fontWeight: 800, fontSize: '0.85rem', color: 'var(--warning)', marginBottom: '0.3529rem', display: 'flex', alignItems: 'center', gap: '0.3529rem' }}>
                       <span>🔥 Threats (T) - Thách thức</span>
                     </div>
                     <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>{currentTrack.swot.t}</p>
                   </div>
                 </div>
 
-                <div style={{ marginTop: '16px', padding: '14px', borderRadius: '10px', background: 'var(--surface-page)', border: '1px solid var(--border)' }}>
-                  <div style={{ fontWeight: 800, fontSize: '0.85rem', color: 'var(--text-primary)', marginBottom: '4px' }}>Thách thức lớn nhất khi vận hành:</div>
+                <div style={{ marginTop: '0.9412rem', padding: '0.8235rem', borderRadius: '0.5882rem', background: 'var(--surface-page)', border: '1px solid var(--border)' }}>
+                  <div style={{ fontWeight: 800, fontSize: '0.85rem', color: 'var(--text-primary)', marginBottom: '0.2353rem' }}>Thách thức lớn nhất khi vận hành:</div>
                   <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>{currentTrack.challenge}</p>
                 </div>
               </div>
@@ -649,7 +649,7 @@ const Tracks = () => {
             {/* Workflow Panel */}
             {activeSubTab === 'workflow' && (
               <div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '14px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.4706rem', marginBottom: '0.8235rem' }}>
                   <PlayCircle size={16} style={{ color: 'var(--s1)' }} />
                   <span style={{ fontWeight: 800, fontSize: '0.88rem', color: 'var(--text-primary)' }}>Ý tưởng luồng vận hành của giải pháp:</span>
                 </div>
@@ -671,20 +671,20 @@ const Tracks = () => {
             {/* Đề xuất Phân công AI Panel (NEWLY MOVED HERE) */}
             {activeSubTab === 'delegation' && (
               <div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '14px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.4706rem', marginBottom: '0.8235rem' }}>
                   <Zap size={16} style={{ color: 'var(--s1)' }} />
                   <span style={{ fontWeight: 800, fontSize: '0.88rem', color: 'var(--text-primary)' }}>Đề xuất Phân công Cộng tác AI chi tiết cho từng thành viên:</span>
                 </div>
 
-                <div className="grid-3" style={{ gap: '14px' }}>
+                <div className="grid-3" style={{ gap: '0.8235rem' }}>
                   {/* Cột PM */}
-                  <div className="meta-card" style={{ display: 'flex', flexDirection: 'column', gap: '8px', padding: '14px', background: 'var(--surface-page)' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', borderBottom: '1px solid var(--border)', paddingBottom: '6px' }}>
+                  <div className="meta-card" style={{ display: 'flex', flexDirection: 'column', gap: '0.4706rem', padding: '0.8235rem', background: 'var(--surface-page)' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.3529rem', borderBottom: '1px solid var(--border)', paddingBottom: '0.3529rem' }}>
                       <User size={14} style={{ color: 'var(--s1)' }} />
                       <span style={{ fontWeight: 800, fontSize: '0.82rem', color: 'var(--s1)' }}>K.AI (PM &amp; Slide)</span>
                     </div>
                     <div style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
-                      <ul style={{ paddingLeft: '14px', margin: 0, display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                      <ul style={{ paddingLeft: '0.8235rem', margin: 0, display: 'flex', flexDirection: 'column', gap: '0.3529rem' }}>
                         {currentTrack.pm.map((item, i) => (
                           <li key={i}>{item}</li>
                         ))}
@@ -693,13 +693,13 @@ const Tracks = () => {
                   </div>
 
                   {/* Cột Frontend */}
-                  <div className="meta-card" style={{ display: 'flex', flexDirection: 'column', gap: '8px', padding: '14px', background: 'var(--surface-page)' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', borderBottom: '1px solid var(--border)', paddingBottom: '6px' }}>
+                  <div className="meta-card" style={{ display: 'flex', flexDirection: 'column', gap: '0.4706rem', padding: '0.8235rem', background: 'var(--surface-page)' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.3529rem', borderBottom: '1px solid var(--border)', paddingBottom: '0.3529rem' }}>
                       <Layout size={14} style={{ color: 'var(--s3)' }} />
                       <span style={{ fontWeight: 800, fontSize: '0.82rem', color: 'var(--s3)' }}>K.AI (Frontend)</span>
                     </div>
                     <div style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
-                      <ul style={{ paddingLeft: '14px', margin: 0, display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                      <ul style={{ paddingLeft: '0.8235rem', margin: 0, display: 'flex', flexDirection: 'column', gap: '0.3529rem' }}>
                         {currentTrack.fe.map((item, i) => (
                           <li key={i}>{item}</li>
                         ))}
@@ -708,13 +708,13 @@ const Tracks = () => {
                   </div>
 
                   {/* Cột Backend */}
-                  <div className="meta-card" style={{ display: 'flex', flexDirection: 'column', gap: '8px', padding: '14px', background: 'var(--surface-page)' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', borderBottom: '1px solid var(--border)', paddingBottom: '6px' }}>
+                  <div className="meta-card" style={{ display: 'flex', flexDirection: 'column', gap: '0.4706rem', padding: '0.8235rem', background: 'var(--surface-page)' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.3529rem', borderBottom: '1px solid var(--border)', paddingBottom: '0.3529rem' }}>
                       <Server size={14} style={{ color: 'var(--s2)' }} />
                       <span style={{ fontWeight: 800, fontSize: '0.82rem', color: 'var(--s2)' }}>Quân (Backend &amp; DB)</span>
                     </div>
                     <div style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
-                      <ul style={{ paddingLeft: '14px', margin: 0, display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                      <ul style={{ paddingLeft: '0.8235rem', margin: 0, display: 'flex', flexDirection: 'column', gap: '0.3529rem' }}>
                         {currentTrack.be.map((item, i) => (
                           <li key={i}>{item}</li>
                         ))}
@@ -728,7 +728,7 @@ const Tracks = () => {
             {/* AI Integration Points Panel */}
             {activeSubTab === 'ai' && (
               <div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '14px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.4706rem', marginBottom: '0.8235rem' }}>
                   <Zap size={16} style={{ color: 'var(--warning)' }} />
                   <span style={{ fontWeight: 800, fontSize: '0.88rem', color: 'var(--text-primary)' }}>Điểm then chốt tích hợp AI (AI-Native Points):</span>
                 </div>
@@ -746,13 +746,13 @@ const Tracks = () => {
                   
                   {/* AI Proposal Section */}
                   <div style={{ 
-                    marginTop: '16px', 
-                    padding: '16px', 
-                    borderRadius: '10px', 
+                    marginTop: '0.9412rem', 
+                    padding: '0.9412rem', 
+                    borderRadius: '0.5882rem', 
                     background: 'rgba(42, 120, 214, 0.04)', 
                     border: '1px solid rgba(42, 120, 214, 0.15)' 
                   }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.4706rem', marginBottom: '0.4706rem' }}>
                       <Zap size={16} style={{ color: 'var(--s1)' }} />
                       <span style={{ fontWeight: 800, fontSize: '0.85rem', color: 'var(--text-primary)' }}>AI kiến nghị kiến trúc &amp; defensibility cho đề tài này:</span>
                     </div>
@@ -761,7 +761,7 @@ const Tracks = () => {
                     </p>
                   </div>
 
-                  <div style={{ marginTop: '10px', fontSize: '0.8rem', color: 'var(--text-muted)', fontStyle: 'italic' }}>
+                  <div style={{ marginTop: '0.5882rem', fontSize: '0.8rem', color: 'var(--text-muted)', fontStyle: 'italic' }}>
                     * Công nghệ dự kiến áp dụng: {currentTrack.tech}
                   </div>
                 </div>

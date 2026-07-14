@@ -7,7 +7,7 @@ const Roles = () => {
       {/* Phân công vai trò */}
       <div className="card">
         <h2><Users /> Phân công vai trò thành viên</h2>
-        <p className="sub" style={{ margin: '0 0 20px' }}>
+        <p className="sub" style={{ margin: '0 0 1.1765rem' }}>
           <b>Triết lý phân vai cộng tác AI-assisted:</b> Team gồm 5 thành viên (theo hồ sơ đăng ký chính thức trên hub.aiforvietnam.org), mỗi người chủ trì mảng thế mạnh dựa trên kỹ năng thật và dùng AI tăng tốc, các thành viên còn lại hỗ trợ chéo để đảm bảo không ai bị cô lập.
         </p>
         <div className="roles-grid">
@@ -58,7 +58,7 @@ const Roles = () => {
       {/* Bảng phân công chéo */}
       <div className="card">
         <h2><Table /> Phân công trách nhiệm chéo (Cross Responsibility Matrix)</h2>
-        <p className="sub" style={{ margin: '0 0 16px' }}>Các mốc phối hợp quan trọng đảm bảo không ai bị cô lập và sản phẩm đồng bộ nhanh chóng.</p>
+        <p className="sub" style={{ margin: '0 0 0.9412rem' }}>Các mốc phối hợp quan trọng đảm bảo không ai bị cô lập và sản phẩm đồng bộ nhanh chóng.</p>
         <div className="cross-table-scroll">
           <table className="cross-table">
             <thead>
