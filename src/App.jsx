@@ -1,16 +1,12 @@
 import React, { useState } from 'react';
 import './App.css';
-import Dashboard from './pages/Dashboard';
-import Agenda from './pages/Agenda';
-import Roles from './pages/Roles';
-import AIResource from './pages/AIResource';
-import Tracks from './pages/Tracks';
+import CompetitionPage from './pages/CompetitionPage';
 import Competitors from './pages/Competitors';
-import Workflow from './pages/Workflow';
+import TeamPage from './pages/TeamPage';
 import Navbar from './components/Navbar';
 
 function App() {
-  const [activeTab, setActiveTab] = useState('dashboard');
+  const [activeTab, setActiveTab] = useState('competition');
 
   React.useEffect(() => {
     window.scrollTo(0, 0);
@@ -18,22 +14,14 @@ function App() {
 
   const renderContent = () => {
     switch (activeTab) {
-      case 'dashboard':
-        return <Dashboard />;
-      case 'agenda':
-        return <Agenda />;
-      case 'roles':
-        return <Roles />;
-      case 'tools':
-        return <AIResource />;
-      case 'tracks':
-        return <Tracks />;
-      case 'teams':
+      case 'competition':
+        return <CompetitionPage />;
+      case 'competitors':
         return <Competitors />;
-      case 'workflow':
-        return <Workflow />;
+      case 'team':
+        return <TeamPage />;
       default:
-        return <Dashboard />;
+        return <CompetitionPage />;
     }
   };
 
