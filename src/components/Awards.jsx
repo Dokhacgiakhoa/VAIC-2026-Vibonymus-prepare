@@ -14,9 +14,9 @@ const Awards = () => {
               Giải thưởng chính (Hiện kim)
             </h3>
             <ul className="checklist" style={{ paddingLeft: '0.8824rem' }}>
-              <li><b>Giải Nhất (Quán quân):</b> 1,000 USD tiền mặt &amp; Cúp vô địch</li>
-              <li><b>Giải Nhì (Á quân):</b> 800 USD tiền mặt</li>
-              <li><b>Giải Ba (Quý quân):</b> 500 USD tiền mặt</li>
+              <li><b>Giải Nhất (Quán quân):</b> 10,000 USD tiền mặt &amp; Bằng khen TW Đoàn TNCS Hồ Chí Minh</li>
+              <li><b>Giải Nhì (Á quân):</b> 5,000 USD tiền mặt</li>
+              <li><b>Giải Ba (Quý quân):</b> 1,000 USD tiền mặt</li>
             </ul>
           </div>
           <div style={{ padding: '1.1765rem', background: 'var(--surface-page)', borderRadius: '0.9412rem', border: '1px solid var(--border)' }}>
@@ -24,8 +24,11 @@ const Awards = () => {
               Giải từ Nhà tài trợ (Tech &amp; Cloud)
             </h3>
             <ul className="checklist" style={{ paddingLeft: '0.8824rem' }}>
-              <li><b>Best PyTorch Award (Meta):</b> 5,000 USD tiền mặt cho đội có thành tích xuất sắc nhất sử dụng PyTorch.</li>
-              <li><b>FPT Award (Top 5):</b> Tài trợ 2,000 USD dưới dạng Cloud Credits từ FPT AI Factory để vận hành sản phẩm thực tế.</li>
+              <li><b>Best PyTorch Award (Meta):</b> 5,000 USD tiền mặt cho đội có kỹ thuật công nghệ xuất sắc nhất sử dụng nền tảng PyTorch.</li>
+              <li><b>FPT Award (Top 5):</b> Gói Cloud Credit 2,000 USD/đội (tổng 10,000 USD) cho mỗi đội trong Top 5 dùng Serverless Inference — FPT AI Factory.</li>
+              <li><b>AI Singapore Award:</b> Gói Computer Credit 5,000 USD cho đội có giải pháp giải quyết bài toán của AI Singapore xuất sắc nhất.</li>
+              <li><b>Best Banking &amp; Finance Solution (SHB):</b> 5,000 USD tiền mặt cho đội có giải pháp AI xuất sắc trong lĩnh vực Ngân hàng &amp; Tài chính.</li>
+              <li><b>AVSE Global Catalyst Prize:</b> 1,000 USD tiền mặt tôn vinh sáng kiến tạo tác động thực chất, hướng tới Việt Nam.</li>
             </ul>
           </div>
         </div>

@@ -510,7 +510,7 @@ const Dashboard = () => {
                       <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>BTC · Sự kiện</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '0.2353rem', color: 'var(--text-primary)' }}>Khai mạc</div>
-                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '0.3529rem', fontSize: '0.75rem' }}>Khung giờ: 09:30-10:00</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '0.3529rem', fontSize: '0.75rem' }}>Khung giờ: 09:00-10:30</div>
                     <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Lễ khai mạc chính thức của VAIC 2026. * Thời gian dự kiến, có thể được điều chỉnh.</div>
                   </div>
                 </div>
@@ -589,7 +589,7 @@ const Dashboard = () => {
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '0.2353rem', color: 'var(--text-primary)' }}>Dev xuyên đêm + Night Owl Stream</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '0.3529rem', fontSize: '0.75rem' }}>Khung giờ: 21:00-05:00</div>
-                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Đêm code đầu tiên. Ban tổ chức phát sóng giao lưu trực tiếp tại bàn các đội.</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Đêm code đầu tiên. Ban tổ chức phát sóng giao lưu trực tiếp tại bàn các đội. Có Ask-Me-Anything Session 1 lúc 22:00-23:00.</div>
                   </div>
                 </div>
               </div>
@@ -939,9 +939,9 @@ const Dashboard = () => {
                       <span className="legend-dot" style={{ background: 'var(--s4)', width: '0.4706rem', height: '0.4706rem', borderRadius: '50%' }}></span>
                       <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>BTC · Sự kiện</span>
                     </div>
-                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '0.2353rem', color: 'var(--text-primary)' }}>Mentor Wave 1 (kỹ thuật)</div>
-                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '0.3529rem', fontSize: '0.75rem' }}>Khung giờ: 09:00-10:30</div>
-                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Rà soát kiến trúc kỹ thuật. Các đội cần đăng ký slot 20 phút trước ngày 16/07.</div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '0.2353rem', color: 'var(--text-primary)' }}>Mentor Room 1 (kỹ thuật)</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '0.3529rem', fontSize: '0.75rem' }}>Khung giờ: 09:00-16:00</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Rà soát kiến trúc kỹ thuật, chạy song song cả ngày với Mentor Room 2. Các đội cần đăng ký slot 20 phút trước ngày 16/07.</div>
                   </div>
                 </div>
 
@@ -953,7 +953,7 @@ const Dashboard = () => {
                       <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>BTC · Sự kiện</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '0.2353rem', color: 'var(--text-primary)' }}>Checkpoint 1</div>
-                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '0.3529rem', fontSize: '0.75rem' }}>Khung giờ: 10:00-12:00</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '0.3529rem', fontSize: '0.75rem' }}>Khung giờ: 11:00</div>
                     <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Nộp tên dự án và mô tả ngắn: project name, track/problem đã chọn, mô tả giải pháp và hướng tiếp cận ban đầu.</div>
                   </div>
                 </div>
@@ -965,9 +965,9 @@ const Dashboard = () => {
                       <span className="legend-dot" style={{ background: 'var(--s4)', width: '0.4706rem', height: '0.4706rem', borderRadius: '50%' }}></span>
                       <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>BTC · Sự kiện</span>
                     </div>
-                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '0.2353rem', color: 'var(--text-primary)' }}>Mentor Wave 2 (UX/business)</div>
-                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '0.3529rem', fontSize: '0.75rem' }}>Khung giờ: 16:00-17:30</div>
-                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Tham khảo góp ý từ các mentor về giao diện trải nghiệm người dùng và mô hình kinh doanh.</div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '0.2353rem', color: 'var(--text-primary)' }}>Mentor Room 2 (UX/business)</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '0.3529rem', fontSize: '0.75rem' }}>Khung giờ: 09:00-16:00</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Tham khảo góp ý từ các mentor về giao diện trải nghiệm người dùng và mô hình kinh doanh, chạy song song cả ngày với Mentor Room 1.</div>
                   </div>
                 </div>
 
@@ -992,7 +992,7 @@ const Dashboard = () => {
                       <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>BTC · Sự kiện</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '0.2353rem', color: 'var(--text-primary)' }}>Checkpoint 2</div>
-                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '0.3529rem', fontSize: '0.75rem' }}>Khung giờ: 21:00-23:00</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '0.3529rem', fontSize: '0.75rem' }}>Khung giờ: 23:00 (hạn chót)</div>
                     <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Nộp link demo hoạt động (live deployed URL) và link kho lưu trữ mã nguồn GitHub public.</div>
                   </div>
                 </div>
@@ -1006,7 +1006,7 @@ const Dashboard = () => {
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '0.2353rem', color: 'var(--text-primary)' }}>Dev đêm cuối</div>
                     <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '0.3529rem', fontSize: '0.75rem' }}>Khung giờ: 23:00-07:00</div>
-                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Đêm chạy nước rút cuối cùng trước khi đóng cổng nộp bài chung cuộc.</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Đêm chạy nước rút cuối cùng trước khi đóng cổng nộp bài chung cuộc. Có Ask-Me-Anything Session 2 lúc 23:00-24:00.</div>
                   </div>
                 </div>
               </div>
@@ -1567,8 +1567,8 @@ const Dashboard = () => {
                       <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>BTC · Sự kiện</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '0.2353rem', color: 'var(--text-primary)' }}>Mở cửa khu vực cộng đồng</div>
-                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '0.3529rem', fontSize: '0.75rem' }}>Khung giờ: 13:00</div>
-                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Khu vực mở dành cho cộng đồng bắt đầu hoạt động, đón khách tham quan.</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '0.3529rem', fontSize: '0.75rem' }}>Khung giờ: 10:30</div>
+                    <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Khu vực mở dành cho cộng đồng bắt đầu hoạt động, đón khách tham quan. Lúc 14:00 có Expert Sharing — chia sẻ từ chuyên gia về cơ hội nghề nghiệp.</div>
                   </div>
                 </div>
 
@@ -1580,7 +1580,7 @@ const Dashboard = () => {
                       <span style={{ fontWeight: 700, textTransform: 'uppercase', fontSize: '0.7rem', color: 'var(--text-muted)' }}>BTC · Sự kiện</span>
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '0.9rem', marginBottom: '0.2353rem', color: 'var(--text-primary)' }}>Công bố Top 10</div>
-                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '0.3529rem', fontSize: '0.75rem' }}>Khung giờ: 15:00</div>
+                    <div style={{ color: 'var(--s1)', fontWeight: 700, marginBottom: '0.3529rem', fontSize: '0.75rem' }}>Khung giờ: 15:30</div>
                     <div style={{ color: 'var(--text-secondary)', lineHeight: '1.4' }}>Công bố 10 đội vào chung kết trên màn hình chính.</div>
                   </div>
                 </div>
