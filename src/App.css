@@ -282,24 +282,24 @@ h2 svg { width: 1.2941rem; height: 1.2941rem; color: var(--theme-color); flex-sh
 .bar-s7 { background: var(--s7-grad); }
 .bar-s8 { background: var(--s8-grad); }
 .bar-critical { background: linear-gradient(135deg, var(--critical), #ff6b6b); }
-.bar-good { background: linear-gradient(135deg, var(--good), #38d9a9); color: #fff; font-weight: 700; }
+.bar-good { background: linear-gradient(135deg, #4a3aa7, #6654cf); color: #fff; font-weight: 700; }
 .bar-meal { background: linear-gradient(135deg, #868e96, #adb5bd); color: #fff; }
 .bar-ai-reset { background: linear-gradient(135deg, var(--warning), #ffd43b); color: #1a1a19; font-weight: 800; }
 .bar-ai-limit {
-  background: repeating-linear-gradient(
-    45deg,
-    rgba(240, 62, 62, 0.15),
-    rgba(240, 62, 62, 0.15) 10px,
-    rgba(245, 159, 0, 0.15) 10px,
-    rgba(245, 159, 0, 0.15) 20px
-  );
-  border: 1px dashed var(--critical) !important;
-  color: var(--critical) !important;
+  background: linear-gradient(135deg, #e8e4ff, #d2c9ff) !important;
+  border: 1px solid rgba(74, 58, 167, 0.3) !important;
+  color: #4a3aa7 !important;
   font-weight: 700;
   font-size: 0.7rem;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.bar-ai-inactive {
+  background: linear-gradient(135deg, #f3f0ff, #e8e4ff) !important;
+  border: 1px dashed rgba(74, 58, 167, 0.25) !important;
+  color: rgba(74, 58, 167, 0.7) !important;
+  font-weight: 700;
 }
 .bar-rest { background: linear-gradient(135deg, #868e96, #adb5bd); color: #fff; }
 .bar-wrapper.past .bar-rest {

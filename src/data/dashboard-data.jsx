@@ -54,7 +54,7 @@ function aiResetBars(dayIdx, ownerLabel, toolLabel) {
     
     if (seg.type === 'inactive') {
       title = 'Chờ Đề';
-      barClass = 'bar-rest';
+      barClass = 'bar-ai-inactive';
       desc = `Chưa công bố đề thi. Quota chưa được kích hoạt cho cuộc thi.`;
     } else if (seg.type === 'active') {
       title = 'AI Active';
@@ -86,7 +86,7 @@ function sharedAiResetBars(dayIdx) {
     
     if (seg.type === 'inactive') {
       title = 'Chờ Đề';
-      barClass = 'bar-rest';
+      barClass = 'bar-ai-inactive';
       desc = `Chưa công bố đề thi. Quota chưa được kích hoạt cho cuộc thi.`;
     } else if (seg.type === 'active') {
       title = 'AI Active';
