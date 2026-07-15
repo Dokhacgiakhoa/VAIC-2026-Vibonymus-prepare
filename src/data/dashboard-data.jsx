@@ -46,6 +46,85 @@ const formatHour = (val) => {
   return `${String(hours).padStart(2, '0')}:${minutes}`;
 };
 
+const DEV_FALLBACK_POOLS = {
+  kai: [
+    { title: 'Code Review chéo', desc: 'AI đã hit limit — chuyển sang review code Backend/API cùng đồng đội thay vì code mới bằng AI.' },
+    { title: 'Viết Docs API', desc: 'Tranh thủ lúc AI reset để viết tài liệu API/README thủ công.' },
+    { title: 'Setup Infra thủ công', desc: 'Cấu hình Docker/ENV, backup DB bằng tay, không cần AI hỗ trợ.' },
+    { title: 'Pair với Quân', desc: 'Ngồi cùng Quân gỡ lỗi tích hợp FE-BE bằng kinh nghiệm, không dùng AI.' }
+  ],
+  quan: [
+    { title: 'Polish CSS thủ công', desc: 'AI đã hit limit — tự tay tinh chỉnh responsive/spacing thay vì nhờ AI generate.' },
+    { title: 'Review UI chéo', desc: 'Kiểm tra giao diện cùng K.AI, ghi chú lỗi hiển thị.' },
+    { title: 'Viết Docs Component', desc: 'Ghi chú cách dùng components cho cả team trong lúc chờ quota.' },
+    { title: 'Test đa trình duyệt', desc: 'Kiểm tra thủ công trên Chrome/Safari/mobile, không cần AI.' }
+  ],
+  quang: [
+    { title: 'Đọc log RAG thủ công', desc: 'AI đã hit limit — tự rà log phản hồi AI để ghi chú case lỗi, chờ quota mới sửa.' },
+    { title: 'Viết AI Collaboration Log', desc: 'Tổng hợp lịch sử prompt/response phục vụ chấm điểm, không cần gọi AI thêm.' },
+    { title: 'Soạn Prompt nháp', desc: 'Phác thảo prompt mới trên giấy/note, để dành test khi có quota trở lại.' },
+    { title: 'Pair với Lâm', desc: 'Hỗ trợ Lâm rà bảo mật luồng AI bằng tay.' }
+  ],
+  lam: [
+    { title: 'Checklist bảo mật thủ công', desc: 'AI đã hit limit — rà OWASP Top 10 bằng tay thay vì dùng AI quét.' },
+    { title: 'Review code bảo mật', desc: 'Đọc code chéo tìm lỗ hổng thủ công, không cần AI.' },
+    { title: 'Viết báo cáo Pentest', desc: 'Tổng hợp kết quả pentest đã chạy trước đó thành báo cáo.' },
+    { title: 'Kiểm tra phần cứng/mạng', desc: 'Test hardware/network thủ công tại chỗ, không phụ thuộc AI.' }
+  ]
+};
+
+function applyAiLimitFallback(dayIdx, ownerKey, bars) {
+  const limitSegments = AI_ACTIVE_SEGMENTS[dayIdx].filter((s) => s.type === 'limit');
+  const pool = DEV_FALLBACK_POOLS[ownerKey];
+  let poolIdx = 0;
+  const result = [];
+
+  bars.forEach((bar) => {
+    if (bar.barClass === 'bar-meal' || bar.barClass === 'bar-rest') {
+      result.push(bar);
+      return;
+    }
+
+    const barEnd = bar.start + bar.duration;
+    const points = new Set([bar.start, barEnd]);
+    limitSegments.forEach((seg) => {
+      if (seg.start > bar.start && seg.start < barEnd) points.add(seg.start);
+      if (seg.end > bar.start && seg.end < barEnd) points.add(seg.end);
+    });
+    const sortedPoints = [...points].sort((a, b) => a - b);
+
+    for (let i = 0; i < sortedPoints.length - 1; i++) {
+      const segStart = sortedPoints[i];
+      const segEnd = sortedPoints[i + 1];
+      if (segEnd - segStart <= 0) continue;
+      const mid = (segStart + segEnd) / 2;
+      const inLimit = limitSegments.some((seg) => mid > seg.start && mid < seg.end);
+
+      if (inLimit) {
+        const fallback = pool[poolIdx % pool.length];
+        poolIdx++;
+        result.push({
+          ...bar,
+          start: segStart,
+          duration: segEnd - segStart,
+          title: fallback.title,
+          desc: fallback.desc,
+          timeLabel: `Khung giờ: ${formatHour(segStart)} - ${formatHour(segEnd)}`,
+          barClass: 'bar-fallback'
+        });
+      } else {
+        result.push({
+          ...bar,
+          start: segStart,
+          duration: segEnd - segStart
+        });
+      }
+    }
+  });
+
+  return result;
+}
+
 function aiResetBars(dayIdx, ownerLabel, toolLabel) {
   return AI_ACTIVE_SEGMENTS[dayIdx].map((seg) => {
     let title = '';
@@ -155,7 +234,7 @@ export const scoringCriteria = [
     color: 'var(--s3)',
     detail: (
       <>
-        <p style={{ margin: '0 0 0.4706rem' }}>Giao diện tinh xảo (K.AI phụ trách), lấy người dùng làm trung tâm, loại bỏ bước nhập liệu dư thừa nhờ AI.</p>
+        <p style={{ margin: '0 0 0.4706rem' }}>Giao diện tinh xảo (Quân phụ trách), lấy người dùng làm trung tâm, loại bỏ bước nhập liệu dư thừa nhờ AI.</p>
         <p style={{ margin: '0 0 0.4706rem' }}><b>Nguồn: Workshop 1 — AI-native Design (20/06).</b> Team chuẩn hóa prompt thiết kế theo khung <b>CRAFT</b>: <b>C</b>ontext, <b>R</b>ole, <b>A</b>udience, <b>F</b>ormat, <b>T</b>ask — và <b>công thức 6 bước</b>: Act as a [ROLE] → Context → Audience → Task → Constraints → Output.</p>
         <p style={{ margin: 0 }}><i>Ví dụ CRAFT (Material_WS1):</i> Context — "Thay vì 'Create a dashboard' → Thử 'Create a dashboard for a small business owner managing TikTok ads...'"; Format — "Thay vì 'Give me ideas' → Thử 'Generate 5 concepts, mỗi concept gồm: User problem, Proposed solution, Key feature, Potential risk.'"</p>
       </>
@@ -223,14 +302,14 @@ export const ganttDays = [
         roleKey: 'kai',
         roleLabel: 'K.AI',
         color: 'var(--s1)',
-        bars: [
+        bars: applyAiLimitFallback(0, 'kai', [
           { start: 0, duration: 8, title: 'Nghỉ ngơi', category: 'K.AI · PM & Backend', timeLabel: 'Khung giờ: 00:00-08:00', desc: 'Ngủ đủ giấc trước khi bước vào ca thi 72 giờ.', barClass: 'bar-rest', opacity: 0.6 },
           { start: 8, duration: 3, title: 'Setup & Prep', category: 'K.AI · PM & Backend', timeLabel: 'Khung giờ: 08:00-11:00', desc: 'Chuẩn bị môi trường code, boilerplate React/Express, test Git repo.', barClass: 'bar-s1' },
           { start: 11, duration: 3, title: 'Phân tích đề & Stack', category: 'K.AI · PM & Backend', timeLabel: 'Khung giờ: 11:00-14:00', desc: 'Phân tích đề bài, chọn track tối ưu, thống nhất database schema.', barClass: 'bar-s1' },
           { start: 14, duration: 4, title: 'Backend Skeleton', category: 'K.AI · PM & Backend', timeLabel: 'Khung giờ: 14:00-18:00', desc: 'Dựng khung Express app, kết nối database, thiết lập Docker.', barClass: 'bar-s1' },
           { start: 18, duration: 1.5, title: 'Ăn tối', category: 'K.AI · PM & Backend', timeLabel: 'Khung giờ: 18:00-19:30', desc: 'Ăn tối nạp năng lượng.', barClass: 'bar-meal' },
           { start: 19.5, duration: 4.5, title: 'API Endpoints', category: 'K.AI · PM & Backend', timeLabel: 'Khung giờ: 19:30-24:00', desc: 'Viết core controllers, dựng API mock data để test chéo.', barClass: 'bar-s1' }
-        ]
+        ])
       },
       {
         roleKey: 'kai-reset',
@@ -242,14 +321,14 @@ export const ganttDays = [
         roleKey: 'quan',
         roleLabel: 'Quân',
         color: 'var(--s2)',
-        bars: [
+        bars: applyAiLimitFallback(0, 'quan', [
           { start: 0, duration: 8, title: 'Nghỉ ngơi', category: 'Quân · Frontend & UI/UX', timeLabel: 'Khung giờ: 00:00-08:00', desc: 'Nghỉ ngơi chuẩn bị cho 72h thi đấu.', barClass: 'bar-rest', opacity: 0.6 },
           { start: 8, duration: 3, title: 'Setup UI kit', category: 'Quân · Frontend & UI/UX', timeLabel: 'Khung giờ: 08:00-11:00', desc: 'Thiết lập UI Component kit, chuẩn bị theme & layouts.', barClass: 'bar-s2' },
           { start: 11, duration: 3, title: 'Wireframes', category: 'Quân · Frontend & UI/UX', timeLabel: 'Khung giờ: 11:00-14:00', desc: 'Vẽ user flow, thiết kế giao diện wireframe thô của app.', barClass: 'bar-s2' },
           { start: 14, duration: 4, title: 'UI Router & Layouts', category: 'Quân · Frontend & UI/UX', timeLabel: 'Khung giờ: 14:00-18:00', desc: 'Code cấu trúc router React, dàn layouts và header/footer.', barClass: 'bar-s2' },
           { start: 18, duration: 1.5, title: 'Ăn tối', category: 'Quân · Frontend & UI/UX', timeLabel: 'Khung giờ: 18:00-19:30', desc: 'Nạp năng lượng.', barClass: 'bar-meal' },
           { start: 19.5, duration: 4.5, title: 'Core Pages', category: 'Quân · Frontend & UI/UX', timeLabel: 'Khung giờ: 19:30-24:00', desc: 'Dựng khung các trang chính, gắn mock state.', barClass: 'bar-s2' }
-        ]
+        ])
       },
       {
         roleKey: 'quan-reset',
@@ -280,14 +359,14 @@ export const ganttDays = [
         roleKey: 'quang',
         roleLabel: 'Quang',
         color: 'var(--s6)',
-        bars: [
-          { start: 0, duration: 8, title: 'Nghỉ ngơi', category: 'Quang · AI Core & Security', timeLabel: 'Khung giờ: 00:00-08:00', desc: 'Nghỉ ngơi hồi phục.', barClass: 'bar-rest', opacity: 0.6 },
-          { start: 8, duration: 3, title: 'LLM API Tests', category: 'Quang · AI Core & Security', timeLabel: 'Khung giờ: 08:00-11:00', desc: 'Kiểm tra API keys, test quota và đo latency các provider.', barClass: 'bar-s6' },
-          { start: 11, duration: 3, title: 'AI Feasibility', category: 'Quang · AI Core & Security', timeLabel: 'Khung giờ: 11:00-14:00', desc: 'Đánh giá các giải pháp AI khả thi, đề xuất grounding schema.', barClass: 'bar-s6' },
-          { start: 14, duration: 4, title: 'AI Agent Service', category: 'Quang · AI Core & Security', timeLabel: 'Khung giờ: 14:00-18:00', desc: 'Viết core logic kết nối LLM, cài đặt Vector DB cho RAG.', barClass: 'bar-s6' },
-          { start: 18, duration: 1.5, title: 'Ăn tối', category: 'Quang · AI Core & Security', timeLabel: 'Khung giờ: 18:00-19:30', desc: 'Ăn tối.', barClass: 'bar-meal' },
-          { start: 19.5, duration: 4.5, title: 'Prompt Config', category: 'Quang · AI Core & Security', timeLabel: 'Khung giờ: 19:30-24:00', desc: 'Dựng System Prompt chính, cấu hình input validation.', barClass: 'bar-s6' }
-        ]
+        bars: applyAiLimitFallback(0, 'quang', [
+          { start: 0, duration: 8, title: 'Nghỉ ngơi', category: 'Quang · AI Core & Grounding', timeLabel: 'Khung giờ: 00:00-08:00', desc: 'Nghỉ ngơi hồi phục.', barClass: 'bar-rest', opacity: 0.6 },
+          { start: 8, duration: 3, title: 'LLM API Tests', category: 'Quang · AI Core & Grounding', timeLabel: 'Khung giờ: 08:00-11:00', desc: 'Kiểm tra API keys, test quota và đo latency các provider.', barClass: 'bar-s6' },
+          { start: 11, duration: 3, title: 'AI Feasibility', category: 'Quang · AI Core & Grounding', timeLabel: 'Khung giờ: 11:00-14:00', desc: 'Đánh giá các giải pháp AI khả thi, đề xuất grounding schema.', barClass: 'bar-s6' },
+          { start: 14, duration: 4, title: 'AI Agent Service', category: 'Quang · AI Core & Grounding', timeLabel: 'Khung giờ: 14:00-18:00', desc: 'Viết core logic kết nối LLM, cài đặt Vector DB cho RAG.', barClass: 'bar-s6' },
+          { start: 18, duration: 1.5, title: 'Ăn tối', category: 'Quang · AI Core & Grounding', timeLabel: 'Khung giờ: 18:00-19:30', desc: 'Ăn tối.', barClass: 'bar-meal' },
+          { start: 19.5, duration: 4.5, title: 'Prompt Config', category: 'Quang · AI Core & Grounding', timeLabel: 'Khung giờ: 19:30-24:00', desc: 'Dựng System Prompt chính, cấu hình input validation.', barClass: 'bar-s6' }
+        ])
       },
       {
         roleKey: 'quang-reset',
@@ -299,14 +378,14 @@ export const ganttDays = [
         roleKey: 'lam',
         roleLabel: 'Lâm',
         color: 'var(--s7)',
-        bars: [
-          { start: 0, duration: 8, title: 'Nghỉ ngơi', category: 'Lâm · AI Core & Security', timeLabel: 'Khung giờ: 00:00-08:00', desc: 'Chuẩn bị năng lượng cho 72h.', barClass: 'bar-rest', opacity: 0.6 },
-          { start: 8, duration: 3, title: 'HW & Net check', category: 'Lâm · AI Core & Security', timeLabel: 'Khung giờ: 08:00-11:00', desc: 'Setup máy chủ demo, kiểm tra độ ổn định đường truyền mạng.', barClass: 'bar-s7' },
-          { start: 11, duration: 3, title: 'Arch Security', category: 'Lâm · AI Core & Security', timeLabel: 'Khung giờ: 11:00-14:00', desc: 'Đánh giá rủi ro kiến trúc, chốt mô hình CV/máy học bổ trợ.', barClass: 'bar-s7' },
-          { start: 14, duration: 4, title: 'Model Inference', category: 'Lâm · AI Core & Security', timeLabel: 'Khung giờ: 14:00-18:00', desc: 'Chạy thử mô hình Computer Vision cục bộ trên máy demo.', barClass: 'bar-s7' },
-          { start: 18, duration: 1.5, title: 'Ăn tối', category: 'Lâm · AI Core & Security', timeLabel: 'Khung giờ: 18:00-19:30', desc: 'Ăn tối.', barClass: 'bar-meal' },
-          { start: 19.5, duration: 4.5, title: 'API Pentest', category: 'Lâm · AI Core & Security', timeLabel: 'Khung giờ: 19:30-24:00', desc: 'Chạy quét bảo mật cơ bản trên các API backend thô đầu tiên.', barClass: 'bar-s7' }
-        ]
+        bars: applyAiLimitFallback(0, 'lam', [
+          { start: 0, duration: 8, title: 'Nghỉ ngơi', category: 'Lâm · Computer Vision & Security', timeLabel: 'Khung giờ: 00:00-08:00', desc: 'Chuẩn bị năng lượng cho 72h.', barClass: 'bar-rest', opacity: 0.6 },
+          { start: 8, duration: 3, title: 'HW & Net check', category: 'Lâm · Computer Vision & Security', timeLabel: 'Khung giờ: 08:00-11:00', desc: 'Setup máy chủ demo, kiểm tra độ ổn định đường truyền mạng.', barClass: 'bar-s7' },
+          { start: 11, duration: 3, title: 'Arch Security', category: 'Lâm · Computer Vision & Security', timeLabel: 'Khung giờ: 11:00-14:00', desc: 'Đánh giá rủi ro kiến trúc, chốt mô hình CV/máy học bổ trợ.', barClass: 'bar-s7' },
+          { start: 14, duration: 4, title: 'Model Inference', category: 'Lâm · Computer Vision & Security', timeLabel: 'Khung giờ: 14:00-18:00', desc: 'Chạy thử mô hình Computer Vision cục bộ trên máy demo.', barClass: 'bar-s7' },
+          { start: 18, duration: 1.5, title: 'Ăn tối', category: 'Lâm · Computer Vision & Security', timeLabel: 'Khung giờ: 18:00-19:30', desc: 'Ăn tối.', barClass: 'bar-meal' },
+          { start: 19.5, duration: 4.5, title: 'API Pentest', category: 'Lâm · Computer Vision & Security', timeLabel: 'Khung giờ: 19:30-24:00', desc: 'Chạy quét bảo mật cơ bản trên các API backend thô đầu tiên.', barClass: 'bar-s7' }
+        ])
       },
       {
         roleKey: 'lam-reset',
@@ -372,7 +451,7 @@ export const ganttDays = [
         roleKey: 'kai',
         roleLabel: 'K.AI',
         color: 'var(--s1)',
-        bars: [
+        bars: applyAiLimitFallback(1, 'kai', [
           { start: 0, duration: 5, title: 'Night Coding', category: 'K.AI · PM & Backend', timeLabel: 'Khung giờ: 00:00-05:00', desc: 'Hiện thực hóa các API Core, củng cố database schema.', barClass: 'bar-s1' },
           { start: 5, duration: 4.5, title: 'Nghỉ ngơi', category: 'K.AI · PM & Backend', timeLabel: 'Khung giờ: 05:00-09:30', desc: 'Ngủ hồi phục sức khoẻ.', barClass: 'bar-rest', opacity: 0.6 },
           { start: 9.5, duration: 2.5, title: 'Submit CP1 & DB', category: 'K.AI · PM & Backend', timeLabel: 'Khung giờ: 09:30-12:00', desc: 'Cùng Yến submit mô tả, tối ưu hoá các trigger/index DB.', barClass: 'bar-s1' },
@@ -380,7 +459,7 @@ export const ganttDays = [
           { start: 13, duration: 5, title: 'FE Integration', category: 'K.AI · PM & Backend', timeLabel: 'Khung giờ: 13:00-18:00', desc: 'Hỗ trợ Quân kết nối UI của frontend với backend API.', barClass: 'bar-s1' },
           { start: 18, duration: 1.5, title: 'Ăn tối', category: 'K.AI · PM & Backend', timeLabel: 'Khung giờ: 18:00-19:30', desc: 'Ăn tối.', barClass: 'bar-meal' },
           { start: 19.5, duration: 4.5, title: 'API Integration', category: 'K.AI · PM & Backend', timeLabel: 'Khung giờ: 19:30-24:00', desc: 'Tích hợp AI service endpoints, rà soát bảo mật SQL.', barClass: 'bar-s1' }
-        ]
+        ])
       },
       {
         roleKey: 'kai-reset',
@@ -392,7 +471,7 @@ export const ganttDays = [
         roleKey: 'quan',
         roleLabel: 'Quân',
         color: 'var(--s2)',
-        bars: [
+        bars: applyAiLimitFallback(1, 'quan', [
           { start: 0, duration: 5, title: 'Night Coding', category: 'Quân · Frontend & UI/UX', timeLabel: 'Khung giờ: 00:00-05:00', desc: 'Code toàn bộ component giao diện động, CSS styling.', barClass: 'bar-s2' },
           { start: 5, duration: 4.5, title: 'Nghỉ ngơi', category: 'Quân · Frontend & UI/UX', timeLabel: 'Khung giờ: 05:00-09:30', desc: 'Ngủ hồi phục.', barClass: 'bar-rest', opacity: 0.6 },
           { start: 9.5, duration: 2.5, title: 'Mock Integrations', category: 'Quân · Frontend & UI/UX', timeLabel: 'Khung giờ: 09:30-12:00', desc: 'Đổ mock data vào các trang, test giao diện responsive.', barClass: 'bar-s2' },
@@ -400,7 +479,7 @@ export const ganttDays = [
           { start: 13, duration: 5, title: 'API Wireup', category: 'Quân · Frontend & UI/UX', timeLabel: 'Khung giờ: 13:00-18:00', desc: 'Kết nối Fetch API thực tế từ backend của K.AI.', barClass: 'bar-s2' },
           { start: 18, duration: 1.5, title: 'Ăn tối', category: 'Quân · Frontend & UI/UX', timeLabel: 'Khung giờ: 18:00-19:30', desc: 'Ăn tối.', barClass: 'bar-meal' },
           { start: 19.5, duration: 4.5, title: 'Animations & UX', category: 'Quân · Frontend & UI/UX', timeLabel: 'Khung giờ: 19:30-24:00', desc: 'Cải tiến UX, thêm hiệu ứng, kiểm tra mobile layout.', barClass: 'bar-s2' }
-        ]
+        ])
       },
       {
         roleKey: 'quan-reset',
@@ -432,15 +511,15 @@ export const ganttDays = [
         roleKey: 'quang',
         roleLabel: 'Quang',
         color: 'var(--s6)',
-        bars: [
-          { start: 0, duration: 5, title: 'Prompt Tuning', category: 'Quang · AI Core & Security', timeLabel: 'Khung giờ: 00:00-05:00', desc: 'Thử nghiệm prompt trong các trường hợp phức tạp, tinh chỉnh RAG.', barClass: 'bar-s6' },
-          { start: 5, duration: 4.5, title: 'Nghỉ ngơi', category: 'Quang · AI Core & Security', timeLabel: 'Khung giờ: 05:00-09:30', desc: 'Ngủ nghỉ.', barClass: 'bar-rest', opacity: 0.6 },
-          { start: 9.5, duration: 2.5, title: 'AI Integration', category: 'Quang · AI Core & Security', timeLabel: 'Khung giờ: 09:30-12:00', desc: 'Kết nối AI service trực tiếp vào cổng Backend.', barClass: 'bar-s6' },
-          { start: 12, duration: 1, title: 'Ăn trưa', category: 'Quang · AI Core & Security', timeLabel: 'Khung giờ: 12:00-13:00', desc: 'Ăn trưa.', barClass: 'bar-meal' },
-          { start: 13, duration: 5, title: 'Model testing', category: 'Quang · AI Core & Security', timeLabel: 'Khung giờ: 13:00-18:00', desc: 'Đo lường độ tin cậy kết quả của Agent, giảm ảo giác.', barClass: 'bar-s6' },
-          { start: 18, duration: 1.5, title: 'Ăn tối', category: 'Quang · AI Core & Security', timeLabel: 'Khung giờ: 18:00-19:30', desc: 'Ăn tối.', barClass: 'bar-meal' },
-          { start: 19.5, duration: 4.5, title: 'System prompts', category: 'Quang · AI Core & Security', timeLabel: 'Khung giờ: 19:30-24:00', desc: 'Cố định prompts, tối ưu hoá chi phí token.', barClass: 'bar-s6' }
-        ]
+        bars: applyAiLimitFallback(1, 'quang', [
+          { start: 0, duration: 5, title: 'Prompt Tuning', category: 'Quang · AI Core & Grounding', timeLabel: 'Khung giờ: 00:00-05:00', desc: 'Thử nghiệm prompt trong các trường hợp phức tạp, tinh chỉnh RAG.', barClass: 'bar-s6' },
+          { start: 5, duration: 4.5, title: 'Nghỉ ngơi', category: 'Quang · AI Core & Grounding', timeLabel: 'Khung giờ: 05:00-09:30', desc: 'Ngủ nghỉ.', barClass: 'bar-rest', opacity: 0.6 },
+          { start: 9.5, duration: 2.5, title: 'AI Integration', category: 'Quang · AI Core & Grounding', timeLabel: 'Khung giờ: 09:30-12:00', desc: 'Kết nối AI service trực tiếp vào cổng Backend.', barClass: 'bar-s6' },
+          { start: 12, duration: 1, title: 'Ăn trưa', category: 'Quang · AI Core & Grounding', timeLabel: 'Khung giờ: 12:00-13:00', desc: 'Ăn trưa.', barClass: 'bar-meal' },
+          { start: 13, duration: 5, title: 'Model testing', category: 'Quang · AI Core & Grounding', timeLabel: 'Khung giờ: 13:00-18:00', desc: 'Đo lường độ tin cậy kết quả của Agent, giảm ảo giác.', barClass: 'bar-s6' },
+          { start: 18, duration: 1.5, title: 'Ăn tối', category: 'Quang · AI Core & Grounding', timeLabel: 'Khung giờ: 18:00-19:30', desc: 'Ăn tối.', barClass: 'bar-meal' },
+          { start: 19.5, duration: 4.5, title: 'System prompts', category: 'Quang · AI Core & Grounding', timeLabel: 'Khung giờ: 19:30-24:00', desc: 'Cố định prompts, tối ưu hoá chi phí token.', barClass: 'bar-s6' }
+        ])
       },
       {
         roleKey: 'quang-reset',
@@ -452,15 +531,15 @@ export const ganttDays = [
         roleKey: 'lam',
         roleLabel: 'Lâm',
         color: 'var(--s7)',
-        bars: [
-          { start: 0, duration: 5, title: 'CV Inference', category: 'Lâm · AI Core & Security', timeLabel: 'Khung giờ: 00:00-05:00', desc: 'Optimize mô hình CV chạy mượt trên thiết bị phần cứng.', barClass: 'bar-s7' },
-          { start: 5, duration: 4.5, title: 'Nghỉ ngơi', category: 'Lâm · AI Core & Security', timeLabel: 'Khung giờ: 05:00-09:30', desc: 'Ngủ nghỉ.', barClass: 'bar-rest', opacity: 0.6 },
-          { start: 9.5, duration: 2.5, title: 'Security audit', category: 'Lâm · AI Core & Security', timeLabel: 'Khung giờ: 09:30-12:00', desc: 'Rà quét mã độc, quét lỗi API endpoints mới viết.', barClass: 'bar-s7' },
-          { start: 12, duration: 1, title: 'Ăn trưa', category: 'Lâm · AI Core & Security', timeLabel: 'Khung giờ: 12:00-13:00', desc: 'Ăn trưa.', barClass: 'bar-meal' },
-          { start: 13, duration: 5, title: 'System pentest', category: 'Lâm · AI Core & Security', timeLabel: 'Khung giờ: 13:00-18:00', desc: 'Thử nghiệm tấn công xâm nhập (pentest), rà bảo mật JWT.', barClass: 'bar-s7' },
-          { start: 18, duration: 1.5, title: 'Ăn tối', category: 'Lâm · AI Core & Security', timeLabel: 'Khung giờ: 18:00-19:30', desc: 'Ăn tối.', barClass: 'bar-meal' },
-          { start: 19.5, duration: 4.5, title: 'Vuln patching', category: 'Lâm · AI Core & Security', timeLabel: 'Khung giờ: 19:30-24:00', desc: 'Vá các lỗ hổng bảo mật phát hiện được, phân quyền DB.', barClass: 'bar-s7' }
-        ]
+        bars: applyAiLimitFallback(1, 'lam', [
+          { start: 0, duration: 5, title: 'CV Inference', category: 'Lâm · Computer Vision & Security', timeLabel: 'Khung giờ: 00:00-05:00', desc: 'Optimize mô hình CV chạy mượt trên thiết bị phần cứng.', barClass: 'bar-s7' },
+          { start: 5, duration: 4.5, title: 'Nghỉ ngơi', category: 'Lâm · Computer Vision & Security', timeLabel: 'Khung giờ: 05:00-09:30', desc: 'Ngủ nghỉ.', barClass: 'bar-rest', opacity: 0.6 },
+          { start: 9.5, duration: 2.5, title: 'Security audit', category: 'Lâm · Computer Vision & Security', timeLabel: 'Khung giờ: 09:30-12:00', desc: 'Rà quét mã độc, quét lỗi API endpoints mới viết.', barClass: 'bar-s7' },
+          { start: 12, duration: 1, title: 'Ăn trưa', category: 'Lâm · Computer Vision & Security', timeLabel: 'Khung giờ: 12:00-13:00', desc: 'Ăn trưa.', barClass: 'bar-meal' },
+          { start: 13, duration: 5, title: 'System pentest', category: 'Lâm · Computer Vision & Security', timeLabel: 'Khung giờ: 13:00-18:00', desc: 'Thử nghiệm tấn công xâm nhập (pentest), rà bảo mật JWT.', barClass: 'bar-s7' },
+          { start: 18, duration: 1.5, title: 'Ăn tối', category: 'Lâm · Computer Vision & Security', timeLabel: 'Khung giờ: 18:00-19:30', desc: 'Ăn tối.', barClass: 'bar-meal' },
+          { start: 19.5, duration: 4.5, title: 'Vuln patching', category: 'Lâm · Computer Vision & Security', timeLabel: 'Khung giờ: 19:30-24:00', desc: 'Vá các lỗ hổng bảo mật phát hiện được, phân quyền DB.', barClass: 'bar-s7' }
+        ])
       },
       {
         roleKey: 'lam-reset',
@@ -522,14 +601,14 @@ export const ganttDays = [
         roleKey: 'kai',
         roleLabel: 'K.AI',
         color: 'var(--s1)',
-        bars: [
+        bars: applyAiLimitFallback(2, 'kai', [
           { start: 0, duration: 4, title: 'Deploy production', category: 'K.AI · PM & Backend', timeLabel: 'Khung giờ: 00:00-04:00', desc: 'Deploy app lên Vercel/Render, chạy giả lập tải cao.', barClass: 'bar-s1' },
           { start: 4, duration: 4.5, title: 'Nghỉ ngơi', category: 'K.AI · PM & Backend', timeLabel: 'Khung giờ: 04:00-08:30', desc: 'Nghỉ ngơi dưỡng sức.', barClass: 'bar-rest', opacity: 0.6 },
           { start: 8.5, duration: 2.5, title: 'Final submit', category: 'K.AI · PM & Backend', timeLabel: 'Khung giờ: 08:30-11:00', desc: 'Nén DB backup, kiểm tra commit cuối và submit bài thi.', barClass: 'bar-s1' },
           { start: 11, duration: 2, title: 'Ăn trưa', category: 'K.AI · PM & Backend', timeLabel: 'Khung giờ: 11:00-13:00', desc: 'Ăn trưa.', barClass: 'bar-meal' },
           { start: 13, duration: 5, title: 'Q&A Practice', category: 'K.AI · PM & Backend', timeLabel: 'Khung giờ: 13:00-18:00', desc: 'Tập trả lời phản biện cùng Yến, rà soát lại log AI.', barClass: 'bar-s1' },
           { start: 18, duration: 6, title: 'Pitch Support', category: 'K.AI · PM & Backend', timeLabel: 'Khung giờ: 18:00-24:00', desc: 'Hỗ trợ Yến trả lời các câu hỏi sâu về kỹ thuật của BGK.', barClass: 'bar-s1' }
-        ]
+        ])
       },
       {
         roleKey: 'kai-reset',
@@ -541,14 +620,14 @@ export const ganttDays = [
         roleKey: 'quan',
         roleLabel: 'Quân',
         color: 'var(--s2)',
-        bars: [
+        bars: applyAiLimitFallback(2, 'quan', [
           { start: 0, duration: 4, title: 'UX polish', category: 'Quân · Frontend & UI/UX', timeLabel: 'Khung giờ: 00:00-04:00', desc: 'Đánh bóng UI, check responsive lần cuối, fix CSS vặt.', barClass: 'bar-s2' },
           { start: 4, duration: 4.5, title: 'Nghỉ ngơi', category: 'Quân · Frontend & UI/UX', timeLabel: 'Khung giờ: 04:00-08:30', desc: 'Nghỉ ngơi.', barClass: 'bar-rest', opacity: 0.6 },
           { start: 8.5, duration: 2.5, title: 'Asset packages', category: 'Quân · Frontend & UI/UX', timeLabel: 'Khung giờ: 08:30-11:00', desc: 'Xuất bản vẽ, kiểm tra logo, check slide hiển thị ok.', barClass: 'bar-s2' },
           { start: 11, duration: 2, title: 'Ăn trưa', category: 'Quân · Frontend & UI/UX', timeLabel: 'Khung giờ: 11:00-13:00', desc: 'Ăn trưa.', barClass: 'bar-meal' },
           { start: 13, duration: 5, title: 'Demo visuals', category: 'Quân · Frontend & UI/UX', timeLabel: 'Khung giờ: 13:00-18:00', desc: 'Chuẩn bị demo video dự phòng, setup máy chiếu tại bàn.', barClass: 'bar-s2' },
           { start: 18, duration: 6, title: 'UI Demo', category: 'Quân · Frontend & UI/UX', timeLabel: 'Khung giờ: 18:00-24:00', desc: 'Trực tiếp thao tác trên app khi Yến pitching trước BGK.', barClass: 'bar-s2' }
-        ]
+        ])
       },
       {
         roleKey: 'quan-reset',
@@ -579,14 +658,14 @@ export const ganttDays = [
         roleKey: 'quang',
         roleLabel: 'Quang',
         color: 'var(--s6)',
-        bars: [
-          { start: 0, duration: 4, title: 'AI Benchmarks', category: 'Quang · AI Core & Security', timeLabel: 'Khung giờ: 00:00-04:00', desc: 'Kiểm tra độ trễ API AI Agent chặng cuối, tối ưu caching.', barClass: 'bar-s6' },
-          { start: 4, duration: 4.5, title: 'Nghỉ ngơi', category: 'Quang · AI Core & Security', timeLabel: 'Khung giờ: 04:00-08:30', desc: 'Nghỉ ngơi.', barClass: 'bar-rest', opacity: 0.6 },
-          { start: 8.5, duration: 2.5, title: 'Freeze AI service', category: 'Quang · AI Core & Security', timeLabel: 'Khung giờ: 08:30-11:00', desc: 'Cố định prompt, đóng gói API AI cho K.AI submit.', barClass: 'bar-s6' },
-          { start: 11, duration: 2, title: 'Ăn trưa', category: 'Quang · AI Core & Security', timeLabel: 'Khung giờ: 11:00-13:00', desc: 'Ăn trưa.', barClass: 'bar-meal' },
-          { start: 13, duration: 5, title: 'Demo prep', category: 'Quang · AI Core & Security', timeLabel: 'Khung giờ: 13:00-18:00', desc: 'Backup sẵn các prompt và dữ liệu RAG chạy local đề phòng mất mạng.', barClass: 'bar-s6' },
-          { start: 18, duration: 6, title: 'Tech support', category: 'Quang · AI Core & Security', timeLabel: 'Khung giờ: 18:00-24:00', desc: 'Túc trực xử lý lỗi kết nối AI khi BGK chạy thử app.', barClass: 'bar-s6' }
-        ]
+        bars: applyAiLimitFallback(2, 'quang', [
+          { start: 0, duration: 4, title: 'AI Benchmarks', category: 'Quang · AI Core & Grounding', timeLabel: 'Khung giờ: 00:00-04:00', desc: 'Kiểm tra độ trễ API AI Agent chặng cuối, tối ưu caching.', barClass: 'bar-s6' },
+          { start: 4, duration: 4.5, title: 'Nghỉ ngơi', category: 'Quang · AI Core & Grounding', timeLabel: 'Khung giờ: 04:00-08:30', desc: 'Nghỉ ngơi.', barClass: 'bar-rest', opacity: 0.6 },
+          { start: 8.5, duration: 2.5, title: 'Freeze AI service', category: 'Quang · AI Core & Grounding', timeLabel: 'Khung giờ: 08:30-11:00', desc: 'Cố định prompt, đóng gói API AI cho K.AI submit.', barClass: 'bar-s6' },
+          { start: 11, duration: 2, title: 'Ăn trưa', category: 'Quang · AI Core & Grounding', timeLabel: 'Khung giờ: 11:00-13:00', desc: 'Ăn trưa.', barClass: 'bar-meal' },
+          { start: 13, duration: 5, title: 'Demo prep', category: 'Quang · AI Core & Grounding', timeLabel: 'Khung giờ: 13:00-18:00', desc: 'Backup sẵn các prompt và dữ liệu RAG chạy local đề phòng mất mạng.', barClass: 'bar-s6' },
+          { start: 18, duration: 6, title: 'Tech support', category: 'Quang · AI Core & Grounding', timeLabel: 'Khung giờ: 18:00-24:00', desc: 'Túc trực xử lý lỗi kết nối AI khi BGK chạy thử app.', barClass: 'bar-s6' }
+        ])
       },
       {
         roleKey: 'quang-reset',
@@ -598,14 +677,14 @@ export const ganttDays = [
         roleKey: 'lam',
         roleLabel: 'Lâm',
         color: 'var(--s7)',
-        bars: [
-          { start: 0, duration: 4, title: 'Clean secrets', category: 'Lâm · AI Core & Security', timeLabel: 'Khung giờ: 00:00-04:00', desc: 'Xoá các API key thử nghiệm, cấu hình khóa môi trường production.', barClass: 'bar-s7' },
-          { start: 4, duration: 4.5, title: 'Nghỉ ngơi', category: 'Lâm · AI Core & Security', timeLabel: 'Khung giờ: 04:00-08:30', desc: 'Nghỉ ngơi.', barClass: 'bar-rest', opacity: 0.6 },
-          { start: 8.5, duration: 2.5, title: 'SSL & Sec check', category: 'Lâm · AI Core & Security', timeLabel: 'Khung giờ: 08:30-11:00', desc: 'Check chứng chỉ SSL, phân quyền DB, đóng cổng truy cập test.', barClass: 'bar-s7' },
-          { start: 11, duration: 2, title: 'Ăn trưa', category: 'Lâm · AI Core & Security', timeLabel: 'Khung giờ: 11:00-13:00', desc: 'Ăn trưa.', barClass: 'bar-meal' },
-          { start: 13, duration: 5, title: 'Local DB backup', category: 'Lâm · AI Core & Security', timeLabel: 'Khung giờ: 13:00-18:00', desc: 'Sao lưu DB dự phòng chạy offline trên máy demo.', barClass: 'bar-s7' },
-          { start: 18, duration: 6, title: 'Tech support', category: 'Lâm · AI Core & Security', timeLabel: 'Khung giờ: 18:00-24:00', desc: 'Hỗ trợ kỹ thuật phần cứng và mạng demo.', barClass: 'bar-s7' }
-        ]
+        bars: applyAiLimitFallback(2, 'lam', [
+          { start: 0, duration: 4, title: 'Clean secrets', category: 'Lâm · Computer Vision & Security', timeLabel: 'Khung giờ: 00:00-04:00', desc: 'Xoá các API key thử nghiệm, cấu hình khóa môi trường production.', barClass: 'bar-s7' },
+          { start: 4, duration: 4.5, title: 'Nghỉ ngơi', category: 'Lâm · Computer Vision & Security', timeLabel: 'Khung giờ: 04:00-08:30', desc: 'Nghỉ ngơi.', barClass: 'bar-rest', opacity: 0.6 },
+          { start: 8.5, duration: 2.5, title: 'SSL & Sec check', category: 'Lâm · Computer Vision & Security', timeLabel: 'Khung giờ: 08:30-11:00', desc: 'Check chứng chỉ SSL, phân quyền DB, đóng cổng truy cập test.', barClass: 'bar-s7' },
+          { start: 11, duration: 2, title: 'Ăn trưa', category: 'Lâm · Computer Vision & Security', timeLabel: 'Khung giờ: 11:00-13:00', desc: 'Ăn trưa.', barClass: 'bar-meal' },
+          { start: 13, duration: 5, title: 'Local DB backup', category: 'Lâm · Computer Vision & Security', timeLabel: 'Khung giờ: 13:00-18:00', desc: 'Sao lưu DB dự phòng chạy offline trên máy demo.', barClass: 'bar-s7' },
+          { start: 18, duration: 6, title: 'Tech support', category: 'Lâm · Computer Vision & Security', timeLabel: 'Khung giờ: 18:00-24:00', desc: 'Hỗ trợ kỹ thuật phần cứng và mạng demo.', barClass: 'bar-s7' }
+        ])
       },
       {
         roleKey: 'lam-reset',

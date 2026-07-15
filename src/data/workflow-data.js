@@ -4,8 +4,8 @@ export const roles = [
   { key: 'kai', name: 'K.AI — Tech Lead / Backend & DB', aiTool: 'Claude Pro', color: 'var(--s1)' },
   { key: 'quan', name: 'Quân — Frontend & UI/UX', aiTool: 'Claude Max 5x', color: 'var(--s2)' },
   { key: 'mai', name: 'Mai — QC & Hiệu suất', aiTool: 'Gemini Pro', color: 'var(--s5)' },
-  { key: 'quang', name: 'Quang — AI Core & Security', aiTool: 'Claude Pro', color: 'var(--s6)' },
-  { key: 'lam', name: 'Lâm — AI Core & Security', aiTool: 'Claude Pro', color: 'var(--s7)' },
+  { key: 'quang', name: 'Quang — AI Core & Grounding', aiTool: 'Claude Pro', color: 'var(--s6)' },
+  { key: 'lam', name: 'Lâm — Computer Vision & Security', aiTool: 'Claude Pro', color: 'var(--s7)' },
   { key: 'yen', name: 'Yến — Business & Pitching', aiTool: 'Gemini Pro', color: 'var(--s8)' },
 ];
 
@@ -73,7 +73,7 @@ export const timelineSteps = [
       kai: 'Tối ưu hóa các truy vấn SQL, nhúng API AI vào Backend, xử lý lỗi bảo mật đầu vào.',
       quan: 'Thêm hiệu ứng animation mượt mà, tối ưu CSS responsive, hoàn thiện các tương tác UX.',
       mai: 'QC vòng 1: kiểm thử end-to-end, báo lỗi ngay lập tức, tổng hợp báo cáo hiệu suất giữa chặng.',
-      quang: 'Đánh giá độ chính xác AI, tinh chỉnh prompt (Prompt Tuning), viết AI Collaboration Log.',
+      quang: 'Đánh giá độ chính xác AI, tinh chỉnh prompt (Prompt Tuning), ghi chú phần AI Collaboration Log của mình.',
       lam: 'Pentest sơ bộ hệ thống, rà soát lỗ hổng bảo mật API và luồng xác thực.',
       yen: 'Chuẩn bị nội dung thuyết minh mô hình kinh doanh, review cùng mentor Wave 2 (UX & kinh doanh).',
     },
@@ -161,14 +161,14 @@ export const aiCollaborationFlow = [
     feedbackLoop: 'Khi phát hiện bug -> Mai ghi nhận qua GitHub Issues, gắn người phụ trách, dùng Gemini Pro soạn mô tả lỗi rõ ràng kèm bước tái hiện.'
   },
   {
-    role: 'Quang (AI Core & Security)',
+    role: 'Quang (AI Core & Grounding)',
     aiTool: 'Claude Pro',
-    usage: 'Dùng Claude Pro để viết/tinh chỉnh System Prompt cho AI Agent, thiết lập grounding (RAG) và rà soát lỗ hổng bảo mật.',
+    usage: 'Dùng Claude Pro để viết/tinh chỉnh System Prompt cho AI Agent và thiết lập grounding (RAG).',
     collaboration: 'Đầu ra là AI Agent hoạt động ổn định để K.AI nhúng vào Backend chính.',
     tasks: [
       'Dùng Claude Pro tóm tắt đề bài và phát hiện các rủi ro kỹ thuật ẩn liên quan AI.',
       'Sinh code khởi tạo System Prompt & định hướng cho RAG agent.',
-      'Quét nhanh các lỗ hổng bảo mật phổ biến (OWASP Top 10) trong code Backend.'
+      'Đo lường độ tin cậy đầu ra của Agent, giảm ảo giác (hallucination) trước mỗi checkpoint.'
     ],
     checklist: [
       'Đã lọc bỏ hoàn toàn thông tin nhạy cảm (API Key, Mật khẩu) ra khỏi prompts.',
@@ -178,13 +178,13 @@ export const aiCollaborationFlow = [
     feedbackLoop: 'Khi AI sinh output bị ảo giác (hallucination) -> Quang điều chỉnh nhiệt độ (Temperature) hoặc Few-shot Examples trong system prompt để định hình lại đầu ra.'
   },
   {
-    role: 'Lâm (AI Core & Security)',
+    role: 'Lâm (Computer Vision & Security)',
     aiTool: 'Claude Pro',
     usage: 'Dùng Claude Pro để debug mô hình AI/Computer Vision (PyTorch, YOLO) và viết script kiểm thử bảo mật (pentest).',
-    collaboration: 'Hỗ trợ Quang chia việc AI Core & Security, backup Quân về Web Dev khi cần gấp.',
+    collaboration: 'Chịu trách nhiệm chính về bảo mật hệ thống; hỗ trợ Quang khi cần đánh giá rủi ro AI, backup Quân về Web Dev khi cần gấp.',
     tasks: [
       'Dùng Claude Pro debug lỗi huấn luyện/inference của mô hình Computer Vision.',
-      'Viết script tự động quét lỗ hổng bảo mật cơ bản (SQLi, XSS) trước mỗi checkpoint.',
+      'Viết script tự động quét lỗ hổng bảo mật cơ bản (OWASP Top 10, SQLi, XSS) trước mỗi checkpoint.',
       'Hỗ trợ sinh nhanh component React khi Quân cần backup gấp trước deadline.'
     ],
     checklist: [

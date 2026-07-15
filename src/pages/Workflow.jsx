@@ -533,7 +533,7 @@ const Workflow = () => {
           }}>
             <CheckCircle2 style={{ color: 'var(--good)', flexShrink: 0 }} size={24} />
             <div style={{ fontSize: '0.85rem', lineHeight: '1.5', color: 'var(--text-secondary)' }}>
-              <b>💡 Nguyên tắc phân vai theo năng lực thật</b>: Mỗi mảng việc có 1 (hoặc 2, với AI Core & Security) người phụ trách chính, dùng AI riêng của mình để tăng tốc (K.AI/Quang/Lâm: Claude Pro · Quân: Claude Max 5x · Mai/Yến: Gemini Pro). Tất cả báo cáo và phản hồi chéo với K.AI ở mỗi mốc đồng bộ để đảm bảo tính đồng bộ, không bị nghẽn mạch (bottleneck).
+              <b>💡 Nguyên tắc phân vai theo năng lực thật</b>: Mỗi mảng việc có 1 người phụ trách chính (riêng AI Core được chia rõ: Quang lo Agent/Grounding, Lâm lo Computer Vision/Security), dùng AI riêng của mình để tăng tốc (K.AI/Quang/Lâm: Claude Pro · Quân: Claude Max 5x · Mai/Yến: Gemini Pro). Tất cả báo cáo và phản hồi chéo với K.AI ở mỗi mốc đồng bộ để đảm bảo tính đồng bộ, không bị nghẽn mạch (bottleneck).
             </div>
           </div>
         </div>

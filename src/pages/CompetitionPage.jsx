@@ -1,16 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Agenda from './Agenda';
 import Awards from '../components/Awards';
 import Tracks from './Tracks';
+import { usePersistedTab } from '../hooks/usePersistedTab';
 
 const SUB_TABS = [
   { id: 'agenda', label: 'Agenda' },
   { id: 'awards', label: 'Giải thưởng' },
   { id: 'guideline', label: 'Guideline' },
 ];
+const SUB_TAB_IDS = SUB_TABS.map((t) => t.id);
 
 const CompetitionPage = () => {
-  const [subTab, setSubTab] = useState('agenda');
+  const [subTab, setSubTab] = usePersistedTab('vaic_competition_subtab', 'agenda', SUB_TAB_IDS);
 
   return (
     <div className="page-content">

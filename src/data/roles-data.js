@@ -12,6 +12,7 @@ export const roleCards = [
       'Thiết kế cơ sở dữ liệu (Database Schema) và lập trình logic API Backend chính — dựa trên kỹ năng DevOps, Vibe Coding, Python sẵn có.',
       'Dùng Claude Pro để brainstorm kiến trúc, review code và soạn tài liệu kỹ thuật.',
       'Làm việc sát với Quân để cung cấp API cho Frontend, và với Quang/Lâm để mở endpoint cho AI Core.',
+      'Tổng hợp AI Collaboration Log từ ghi chú của từng thành viên (lịch sử prompt/response, quyết định kỹ thuật quan trọng) thành 1 tài liệu hoàn chỉnh — hạng mục bắt buộc khi nộp bài, đồng thời là bằng chứng cho tiêu chí Technical Implementation & Defensibility.',
     ],
   },
   {
@@ -43,27 +44,27 @@ export const roleCards = [
   {
     name: 'Quang',
     colorVar: '--s6',
-    title: 'AI Core, Grounding & Security/Pentest',
+    title: 'AI Core, Agent & Grounding (RAG)',
     aiTool: 'Claude Pro',
-    summary: 'Cùng Lâm xây dựng phần lõi AI của sản phẩm và đảm bảo hệ thống an toàn.',
+    summary: 'Chịu trách nhiệm chính xây dựng phần lõi AI của sản phẩm (Agent, RAG); phối hợp Lâm khi cần đánh giá rủi ro AI.',
     responsibilities: [
       'Xây dựng AI Agent, logic lõi (AI Core) và cơ chế grounding (RAG) để AI trả lời đúng ngữ cảnh — dựa trên kỹ năng AI/ML, API/Tích hợp hệ thống.',
-      'Rà soát bảo mật và kiểm thử xâm nhập (Pentest) hệ thống trước mỗi lần nộp bài — dựa trên kỹ năng Bảo mật.',
-      'Dùng Claude Pro để viết/tinh chỉnh prompt, debug logic Agent và tra cứu lỗ hổng bảo mật.',
-      'Cùng lớp, cùng trường với Lâm nên dễ đồng bộ tiến độ, trao đổi trực tiếp ngoài giờ code.',
+      'Tối ưu chất lượng phản hồi AI, giảm ảo giác (hallucination) và đo lường độ tin cậy của Agent trước mỗi checkpoint.',
+      'Dùng Claude Pro để viết/tinh chỉnh prompt, debug logic Agent và tối ưu chi phí token.',
+      'Cùng lớp, cùng trường với Lâm nên dễ đồng bộ tiến độ; Lâm là người chịu trách nhiệm chính về bảo mật/pentest hệ thống.',
     ],
   },
   {
     name: 'Lâm',
     colorVar: '--s7',
-    title: 'AI Core, Grounding & Security/Pentest (cùng Quang)',
+    title: 'Computer Vision, Security & Pentest',
     aiTool: 'Claude Pro',
-    summary: 'Hỗ trợ Quang ở mảng AI Core/bảo mật, đồng thời backup Web Dev khi cần.',
+    summary: 'Chịu trách nhiệm chính về bảo mật hệ thống và mô hình Computer Vision; backup Web Dev khi cần.',
     responsibilities: [
-      'Hỗ trợ xây dựng AI Core (đặc biệt phần Computer Vision/ML) và grounding dữ liệu — dựa trên kinh nghiệm thực tế PyTorch, OpenCV, YOLOv11 (dự án U-Mamba trình bày tại ICISN 2026).',
-      'Pentest và kiểm thử bảo mật hệ thống — dựa trên nền tảng Network Security thực tế (DNS, Zero Trust, DoH/DoT/DoQ từ dự án Zero Trust DNS Server).',
-      'Dùng Claude Pro để debug mô hình AI và viết script kiểm thử bảo mật.',
-      'Backup Quân về Web Development (React/Vite) khi cần gấp trước checkpoint; cùng lớp, cùng trường với Quang nên phối hợp nhanh.',
+      'Xây dựng và tối ưu mô hình Computer Vision/ML chạy trên thiết bị demo — dựa trên kinh nghiệm thực tế PyTorch, OpenCV, YOLOv11 (dự án U-Mamba trình bày tại ICISN 2026).',
+      'Chịu trách nhiệm chính rà soát bảo mật và kiểm thử xâm nhập (Pentest) toàn hệ thống trước mỗi lần nộp bài — dựa trên nền tảng Network Security thực tế (DNS, Zero Trust, DoH/DoT/DoQ từ dự án Zero Trust DNS Server).',
+      'Dùng Claude Pro để debug mô hình CV và viết script kiểm thử bảo mật.',
+      'Backup Quân về Web Development (React/Vite) khi cần gấp trước checkpoint; cùng lớp, cùng trường với Quang nên phối hợp nhanh khi Quang cần đánh giá rủi ro AI.',
     ],
   },
   {
@@ -81,7 +82,7 @@ export const roleCards = [
   },
 ];
 
-export const crossTableHeaders = ['Mốc thời gian phối hợp', 'K.AI (Tech Lead & Backend/DB)', 'Quân (Frontend & UI/UX)', 'Mai (QC & Hiệu suất)', 'Quang (AI Core & Security)', 'Lâm (AI Core & Security)', 'Yến (Business & Pitching)'];
+export const crossTableHeaders = ['Mốc thời gian phối hợp', 'K.AI (Tech Lead & Backend/DB)', 'Quân (Frontend & UI/UX)', 'Mai (QC & Hiệu suất)', 'Quang (AI Core & Grounding)', 'Lâm (Computer Vision & Security)', 'Yến (Business & Pitching)'];
 
 export const crossTableRows = [
   { milestone: 'Nhận đề & Brainstorm (D1, 11:00-14:00)', cells: [
@@ -105,7 +106,7 @@ export const crossTableRows = [
     'Code giao diện React hoàn chỉnh, kết nối API hiển thị dữ liệu',
     'QC vòng 1: kiểm thử end-to-end, báo lỗi, theo dõi tiến độ chung',
     'Tích hợp AI Agent vào Backend, xây dựng grounding (RAG) cho dữ liệu domain',
-    'Pentest sơ bộ hệ thống, hỗ trợ Quang tinh chỉnh grounding',
+    'Pentest sơ bộ hệ thống, quét lỗi bảo mật API vừa viết',
     'Chuẩn bị nội dung thuyết minh mô hình kinh doanh, review cùng mentor Wave 2 (UX & kinh doanh)',
   ] },
   { milestone: 'Chuẩn bị Demo & Slide (D2, 16:00-21:00)', cells: [

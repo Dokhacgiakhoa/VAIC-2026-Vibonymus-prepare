@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Dashboard from './Dashboard';
 import Workflow from './Workflow';
 import Roles from './Roles';
 import AIResource from './AIResource';
 import Preparation from './Preparation';
+import { usePersistedTab } from '../hooks/usePersistedTab';
 
 const SUB_TABS = [
   { id: 'gantt', label: 'Gantt' },
@@ -12,9 +13,10 @@ const SUB_TABS = [
   { id: 'ai', label: 'AI Resource' },
   { id: 'prep', label: 'Chuẩn bị' },
 ];
+const SUB_TAB_IDS = SUB_TABS.map((t) => t.id);
 
 const TeamPage = () => {
-  const [subTab, setSubTab] = useState('gantt');
+  const [subTab, setSubTab] = usePersistedTab('vaic_team_subtab', 'gantt', SUB_TAB_IDS);
 
   return (
     <div className="page-content">

@@ -27,22 +27,22 @@ export const ownedTools = [
     tagBg: 'rgba(12, 166, 120, 0.08)',
   },
   {
-    stage: 'QUANG · AI CORE & SECURITY',
+    stage: 'QUANG · AI CORE & GROUNDING',
     colorVar: '--s6',
     names: 'Claude Pro',
     items: [
-      { label: 'Claude Pro ($20)', text: 'Viết/tinh chỉnh prompt cho AI Agent, thiết kế grounding (RAG), debug logic Agent và tra cứu lỗ hổng bảo mật khi pentest.' },
+      { label: 'Claude Pro ($20)', text: 'Viết/tinh chỉnh prompt cho AI Agent, thiết kế grounding (RAG), debug logic Agent và đo độ tin cậy đầu ra để giảm ảo giác (hallucination).' },
     ],
     tagBg: 'rgba(224, 49, 49, 0.08)',
   },
   {
-    stage: 'LÂM · AI CORE & SECURITY',
+    stage: 'LÂM · COMPUTER VISION & SECURITY',
     colorVar: '--s7',
     names: 'Claude Pro',
     items: [
       { label: 'Claude Pro ($20)', text: 'Debug mô hình AI/Computer Vision, viết script kiểm thử bảo mật (pentest) và backup code Frontend khi cần gấp.' },
     ],
-    tagBg: 'rgba(134, 142, 150, 0.08)',
+    tagBg: 'rgba(12, 133, 153, 0.08)',
   },
   {
     stage: 'YẾN · BUSINESS & PITCHING',
@@ -72,8 +72,8 @@ export const costTableRows = [
   { tool: 'Claude Pro', price: '$20', user: 'K.AI (Tech Lead & Backend/DB)', purpose: 'Kiến trúc kỹ thuật, Database Schema, API Backend, AI Plan.', freeOption: { text: 'Gói cá nhân bắt buộc', colorVar: null } },
   { tool: 'Claude Max 5x', price: '$100', user: 'Quân (Frontend & UI/UX)', purpose: 'Dùng tính năng Claude Design sinh code frontend React, layout & hiệu ứng chuyển động.', freeOption: { text: 'Gói cá nhân bắt buộc để dùng Claude Design', colorVar: null } },
   { tool: 'Gemini Pro', price: '$20', user: 'Mai (QC & Quản lý hiệu suất)', purpose: 'Tổng hợp báo cáo tiến độ, phân tích dữ liệu hiệu suất team.', freeOption: { text: 'Có thể thay thế bằng Google AI Studio (Free)', colorVar: '--s5' } },
-  { tool: 'Claude Pro', price: '$20', user: 'Quang (AI Core & Security)', purpose: 'Prompt AI Agent, grounding (RAG), debug logic Agent, pentest.', freeOption: { text: 'Gói cá nhân bắt buộc', colorVar: null } },
-  { tool: 'Claude Pro', price: '$20', user: 'Lâm (AI Core & Security)', purpose: 'Debug mô hình AI/CV, viết script kiểm thử bảo mật.', freeOption: { text: 'Gói cá nhân bắt buộc', colorVar: null } },
+  { tool: 'Claude Pro', price: '$20', user: 'Quang (AI Core & Grounding)', purpose: 'Prompt AI Agent, grounding (RAG), debug logic Agent, giảm ảo giác.', freeOption: { text: 'Gói cá nhân bắt buộc', colorVar: null } },
+  { tool: 'Claude Pro', price: '$20', user: 'Lâm (Computer Vision & Security)', purpose: 'Debug mô hình AI/CV, viết script kiểm thử bảo mật (pentest).', freeOption: { text: 'Gói cá nhân bắt buộc', colorVar: null } },
   { tool: 'Gemini Pro', price: '$20', user: 'Yến (Business & Pitching)', purpose: 'Nghiên cứu thị trường, tổng hợp business case, phân tích đối thủ.', freeOption: { text: 'Có thể thay thế bằng Google AI Studio (Free)', colorVar: '--s8' } },
 ];
 

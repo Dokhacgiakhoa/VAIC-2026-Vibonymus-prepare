@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import CompetitorsTeam from './competitors/CompetitorsTeam';
 import CompetitorsIndividual from './competitors/CompetitorsIndividual';
+import { usePersistedTab } from '../hooks/usePersistedTab';
 
 const SUB_TABS = [
   { id: 'team', label: 'Team' },
   { id: 'individual', label: 'Cá nhân' },
 ];
+const SUB_TAB_IDS = SUB_TABS.map((t) => t.id);
 
 const Competitors = () => {
-  const [subTab, setSubTab] = useState('team');
+  const [subTab, setSubTab] = usePersistedTab('vaic_competitors_subtab', 'team', SUB_TAB_IDS);
 
   return (
     <div className="page-content">

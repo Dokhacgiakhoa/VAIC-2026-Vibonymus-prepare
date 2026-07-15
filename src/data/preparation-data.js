@@ -37,22 +37,22 @@ export const memberChecklists = [
   {
     name: 'Quang',
     colorVar: '--s6',
-    role: 'AI Core & Security',
+    role: 'AI Core & Grounding',
     items: [
       'Cài sẵn Python, thư viện LangGraph/CrewAI, test thử kết nối tới 1 LLM API (OpenAI/Gemini/Claude).',
       'Đăng nhập sẵn Claude Pro, chuẩn bị trước bộ System Prompt mẫu và few-shot examples tái sử dụng được.',
-      'Ôn lại OWASP Top 10 và các lỗ hổng bảo mật phổ biến để pentest nhanh trong 48h.',
+      'Ôn lại kỹ thuật grounding (RAG) và cách đo độ tin cậy đầu ra AI để giảm ảo giác (hallucination).',
       'Chuẩn bị sẵn tài khoản/API key riêng (đừng trông chờ BTC cấp — xem lưu ý ngân sách API ở Dashboard).',
     ],
   },
   {
     name: 'Lâm',
     colorVar: '--s7',
-    role: 'AI Core & Security',
+    role: 'Computer Vision & Security',
     items: [
       'Cài sẵn PyTorch, OpenCV, thử chạy trước 1 model YOLO nhỏ để chắc chắn môi trường GPU/CPU hoạt động.',
       'Đăng nhập sẵn Claude Pro, ôn lại cách debug lỗi huấn luyện/inference thường gặp.',
-      'Chuẩn bị sẵn script quét lỗ hổng cơ bản (SQLi, XSS) để chạy nhanh trước mỗi checkpoint.',
+      'Ôn lại OWASP Top 10, chuẩn bị sẵn script quét lỗ hổng cơ bản (SQLi, XSS) để pentest nhanh trước mỗi checkpoint.',
       'Ôn lại React cơ bản để backup Quân về Frontend khi cần gấp.',
     ],
   },
