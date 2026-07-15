@@ -1,12 +1,43 @@
 import React from 'react';
 
-// Giới hạn sử dụng AI (Claude Pro/Max, Gemini Pro) làm mới theo chu kỳ rolling 5 giờ,
-// tính từ mốc 11:00 ngày 17/07 (giờ BTC công bố đề, bắt đầu đếm ngược 48h).
-// Giờ trong mảng là giờ tại chỗ của MỖI ngày (0-24), khớp với "start" của bar trong ngày đó.
-const AI_RESET_HOURS_BY_DAY = [
-  [16, 21],
-  [2, 7, 12, 17, 22],
-  [3, 8, 13, 18, 23],
+const AI_ACTIVE_SEGMENTS = [
+  // Day 1 (17/07)
+  [
+    { start: 0, end: 11, type: 'inactive' },
+    { start: 11, end: 14.5, type: 'active' },
+    { start: 14.5, end: 16, type: 'limit' },
+    { start: 16, end: 19.5, type: 'active' },
+    { start: 19.5, end: 21, type: 'limit' },
+    { start: 21, end: 24, type: 'active' }
+  ],
+  // Day 2 (18/07)
+  [
+    { start: 0, end: 0.5, type: 'active' },
+    { start: 0.5, end: 2, type: 'limit' },
+    { start: 2, end: 5.5, type: 'active' },
+    { start: 5.5, end: 7, type: 'limit' },
+    { start: 7, end: 10.5, type: 'active' },
+    { start: 10.5, end: 12, type: 'limit' },
+    { start: 12, end: 15.5, type: 'active' },
+    { start: 15.5, end: 17, type: 'limit' },
+    { start: 17, end: 20.5, type: 'active' },
+    { start: 20.5, end: 22, type: 'limit' },
+    { start: 22, end: 24, type: 'active' }
+  ],
+  // Day 3 (19/07)
+  [
+    { start: 0, end: 1.5, type: 'active' },
+    { start: 1.5, end: 3, type: 'limit' },
+    { start: 3, end: 6.5, type: 'active' },
+    { start: 6.5, end: 8, type: 'limit' },
+    { start: 8, end: 11.5, type: 'active' },
+    { start: 11.5, end: 13, type: 'limit' },
+    { start: 13, end: 16.5, type: 'active' },
+    { start: 16.5, end: 18, type: 'limit' },
+    { start: 18, end: 21.5, type: 'active' },
+    { start: 21.5, end: 23, type: 'limit' },
+    { start: 23, end: 24, type: 'active' }
+  ]
 ];
 
 const formatHour = (val) => {
@@ -16,49 +47,67 @@ const formatHour = (val) => {
 };
 
 function aiResetBars(dayIdx, ownerLabel, toolLabel) {
-  return AI_RESET_HOURS_BY_DAY[dayIdx].flatMap((h) => [
-    {
-      start: h - 1.5,
-      duration: 1.5,
-      title: '⏳ Limit',
-      category: `${ownerLabel} · Quota sắp cạn`,
-      timeLabel: `Khung giờ: ${formatHour(h - 1.5)} - ${formatHour(h)}`,
-      desc: `Dự kiến chạm giới hạn sử dụng ${toolLabel}. Kế hoạch Backup: chuyển sang dùng tài khoản phụ Free, chia sẻ phiên làm việc (pair programming) với đồng đội chưa hết hạn, hoặc tập trung phân tích mã nguồn, kiểm thử, viết tài liệu thủ công để giữ tiến độ.`,
-      barClass: 'bar-ai-limit'
-    },
-    {
-      start: h,
-      duration: 0.4,
-      title: '⚡ Reset',
-      category: `${ownerLabel} · Giới hạn AI`,
-      timeLabel: `Khung giờ: ${formatHour(h)}`,
-      desc: `Cửa sổ sử dụng ${toolLabel} làm mới (rolling 5 giờ, tính từ 11:00 17/07). Tranh thủ hỏi dồn các câu phức tạp ngay sau mốc này.`,
-      barClass: 'bar-ai-reset'
+  return AI_ACTIVE_SEGMENTS[dayIdx].map((seg) => {
+    let title = '';
+    let barClass = '';
+    let desc = '';
+    
+    if (seg.type === 'inactive') {
+      title = 'Chờ Đề';
+      barClass = 'bar-rest';
+      desc = `Chưa công bố đề thi. Quota chưa được kích hoạt cho cuộc thi.`;
+    } else if (seg.type === 'active') {
+      title = 'AI Active';
+      barClass = 'bar-good';
+      desc = `Tài khoản trả phí ${toolLabel} hoạt động bình thường. Tập trung tận dụng tối đa để code core architecture, database schema, và prompt grounding.`;
+    } else {
+      title = '⏳ Limit';
+      barClass = 'bar-ai-limit';
+      desc = `Dự kiến chạm giới hạn sử dụng ${toolLabel}. Kế hoạch Backup: chuyển sang dùng tài khoản phụ Free, chia sẻ phiên làm việc (pair programming) với đồng đội chưa hết hạn, hoặc tập trung phân tích mã nguồn, kiểm thử, viết tài liệu thủ công để giữ tiến độ.`;
     }
-  ]);
+
+    return {
+      start: seg.start,
+      duration: seg.end - seg.start,
+      title: title,
+      category: `${ownerLabel} · Trạng thái AI`,
+      timeLabel: `Khung giờ: ${formatHour(seg.start)} - ${formatHour(seg.end)}`,
+      desc: desc,
+      barClass: barClass
+    };
+  });
 }
 
 function sharedAiResetBars(dayIdx) {
-  return AI_RESET_HOURS_BY_DAY[dayIdx].flatMap((h) => [
-    {
-      start: h - 1.5,
-      duration: 1.5,
-      title: '⏳ Limit',
-      category: 'Cả team · Quota sắp cạn',
-      timeLabel: `Khung giờ: ${formatHour(h - 1.5)} - ${formatHour(h)}`,
-      desc: 'Khoảng thời gian dự kiến các thành viên cạn quota tài khoản trả phí. Thực thi phương án chuyển đổi tài khoản (Free tier), chia sẻ token, hoặc thực hiện review chéo, chuẩn bị slide, thiết kế demo offline.',
-      barClass: 'bar-ai-limit'
-    },
-    {
-      start: h,
-      duration: 0.4,
-      title: '⚡ Reset',
-      category: 'Cả team · Giới hạn AI',
-      timeLabel: `Khung giờ: ${formatHour(h)}`,
-      desc: 'Mốc làm mới giới hạn sử dụng chung cho cả 6 tài khoản AI (Claude Pro/Max 5x, Gemini Pro) — anchor 11:00 17/07, lặp lại mỗi 5 giờ.',
-      barClass: 'bar-ai-reset'
+  return AI_ACTIVE_SEGMENTS[dayIdx].map((seg) => {
+    let title = '';
+    let barClass = '';
+    let desc = '';
+    
+    if (seg.type === 'inactive') {
+      title = 'Chờ Đề';
+      barClass = 'bar-rest';
+      desc = `Chưa công bố đề thi. Quota chưa được kích hoạt cho cuộc thi.`;
+    } else if (seg.type === 'active') {
+      title = 'AI Active';
+      barClass = 'bar-good';
+      desc = `Tài khoản trả phí hoạt động bình thường. Tập trung tận dụng tối đa để code core architecture, database schema, và prompt grounding.`;
+    } else {
+      title = '⏳ Limit';
+      barClass = 'bar-ai-limit';
+      desc = `Khoảng thời gian dự kiến các thành viên cạn quota tài khoản trả phí. Thực thi phương án chuyển đổi tài khoản (Free tier), chia sẻ token, hoặc thực hiện review chéo, chuẩn bị slide, thiết kế demo offline.`;
     }
-  ]);
+
+    return {
+      start: seg.start,
+      duration: seg.end - seg.start,
+      title: title,
+      category: `Cả team · Trạng thái AI`,
+      timeLabel: `Khung giờ: ${formatHour(seg.start)} - ${formatHour(seg.end)}`,
+      desc: desc,
+      barClass: barClass
+    };
+  });
 }
 
 export const scoringCriteria = [
