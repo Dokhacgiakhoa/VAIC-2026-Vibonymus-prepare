@@ -7,7 +7,7 @@ import { usePersistedTab } from '../hooks/usePersistedTab';
 const SUB_TABS = [
   { id: 'agenda', label: 'Agenda' },
   { id: 'awards', label: 'Giải thưởng' },
-  { id: 'guideline', label: 'Guideline' },
+  { id: 'guideline', label: 'Phân tích Track' },
 ];
 const SUB_TAB_IDS = SUB_TABS.map((t) => t.id);
 

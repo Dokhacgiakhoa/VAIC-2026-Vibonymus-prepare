@@ -5,7 +5,7 @@ export const agendaData = [
       { time: "08:00–09:30", desc: "Check-in và tham dự sự kiện." },
       { time: "09:00–10:30", desc: "Lễ khai mạc." },
       { time: "11:00", desc: "<b>CÔNG BỐ TRACK</b> — công bố 08 track & đề bài chi tiết trên màn hình chính. Bắt đầu 48h hackathon.", critical: true },
-      { time: "12:00", desc: "Genius Station chính thức mở cửa (15–20 chuyên gia hỗ trợ 24/7 theo ca xoay 8 giờ)." },
+      { time: "12:00", desc: "Genius Station chính thức mở cửa — 15–20 chuyên gia hỗ trợ liên tục trong 48 giờ theo ca xoay 8 giờ, bao phủ các mảng xử lý ngôn ngữ tự nhiên, thị giác máy tính, AI agents, AI trên thiết bị, hạ tầng kỹ thuật, sản phẩm và UX. Các đội có thể sử dụng kênh hỗ trợ trực tuyến khi cần hỗ trợ từ xa hoặc khi khu vực hỗ trợ trực tiếp quá tải." },
       { time: "16:00–17:30", desc: "Chuỗi workshop từ nhà tài trợ song song: Meta, FPT, SHB, AI Singapore, Điện Máy Xanh." },
       { time: "18:00–19:30", desc: "Ăn tối tự chọn tại khu ẩm thực." },
       { time: "22:00–23:00", desc: "Ask-Me-Anything Session 1." }

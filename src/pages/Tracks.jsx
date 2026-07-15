@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Heart, Compass, Briefcase, Landmark, Leaf, GraduationCap, CloudRain, ShieldAlert, ChevronRight, Zap, Target, Layers, PlayCircle, ShieldCheck, User, Layout, Server } from 'lucide-react';
+import { Heart, Compass, Briefcase, Landmark, Leaf, GraduationCap, CloudRain, ShieldAlert, ChevronRight, Zap, Target, Layers, PlayCircle, ShieldCheck, User, Layout, Server, Info } from 'lucide-react';
 import { trackData } from '../data/tracks-data';
 
 const TRACK_ICONS = { Heart, Compass, Briefcase, Landmark, Leaf, GraduationCap, CloudRain, ShieldAlert };
@@ -41,6 +41,49 @@ const Tracks = () => {
           <Zap style={{ color: 'var(--warning)', flexShrink: 0 }} size={24} />
           <div style={{ fontSize: '0.85rem', lineHeight: '1.5', color: 'var(--text-secondary)' }}>
             <b style={{ color: 'var(--text-primary)', textTransform: 'uppercase' }}>100% AI-Native Oath</b>: Sản phẩm nộp bài bắt buộc phải có AI tham gia trực tiếp xử lý logic cốt lõi (Core Business Flow), có tài liệu <i>AI Collaboration Log</i> chứng minh, không chấp nhận việc dùng AI như một chatbot tĩnh bên lề.
+          </div>
+        </div>
+      </div>
+
+      {/* PHÂN TÍCH TÁC ĐỘNG TỪ CÁC ĐIỀU KHOẢN THỂ LỆ MỚI */}
+      <div className="card">
+        <h2><Info /> Phân tích tác động: các điều khoản thể lệ mới cập nhật</h2>
+        <p className="sub" style={{ margin: '0 0 0.9412rem' }}>5 điểm thể lệ vừa được xác nhận thêm — dưới đây là ảnh hưởng thực tế đến chiến thuật thi đấu và hành động Vibonymus nên chuẩn bị trước 17/07:</p>
+
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.7059rem' }}>
+          <div style={{ border: '1px solid var(--border)', borderRadius: '0.7059rem', padding: '0.9412rem' }}>
+            <h3 style={{ margin: '0 0 0.4706rem', fontSize: '0.95rem', fontWeight: 800 }}>🎙️ TTS/STT ngoài được phép dùng</h3>
+            <p style={{ margin: 0, fontSize: '0.84rem', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
+              Mở khóa hướng demo bằng giọng nói mà không tốn thời gian tự huấn luyện model. Đây là điểm cộng "AI-Native" dễ tạo ấn tượng nếu track chọn có tương tác người dùng cuối (VD: CRM, Y tế, Chính phủ thông minh). <b>Nên chốt sẵn 1 API TTS/STT quen thuộc</b> (VD: ElevenLabs, Whisper API) và thử tích hợp trước, tránh mất thời gian dò API mới giữa lúc chạy nước rút.
+            </p>
+          </div>
+
+          <div style={{ border: '1px solid var(--border)', borderRadius: '0.7059rem', padding: '0.9412rem' }}>
+            <h3 style={{ margin: '0 0 0.4706rem', fontSize: '0.95rem', fontWeight: 800 }}>🏗️ Không có scaffold FE/BE/Model dựng sẵn</h3>
+            <p style={{ margin: 0, fontSize: '0.84rem', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
+              Một phần thời gian đầu của 48h chắc chắn sẽ tiêu tốn cho việc dựng khung dự án (kết nối FE-BE-DB, CI cơ bản, README). Vì BTC chỉ hướng dẫn cách làm lúc bắt đầu thi chứ không cấp sẵn, <b>Vibonymus nên tự chuẩn bị trước 1 boilerplate cá nhân</b> (không phải đề thi) để cắm vào là chạy được ngay, rút ngắn thời gian setup xuống dưới 30 phút.
+            </p>
+          </div>
+
+          <div style={{ border: '1px solid var(--border)', borderRadius: '0.7059rem', padding: '0.9412rem', background: 'rgba(237, 161, 0, 0.04)' }}>
+            <h3 style={{ margin: '0 0 0.4706rem', fontSize: '0.95rem', fontWeight: 800 }}>⚠️ Repo public/private — có điểm mâu thuẫn cần hỏi lại BTC</h3>
+            <p style={{ margin: 0, fontSize: '0.84rem', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
+              Thể lệ cho phép nộp repo private (kèm add tài khoản giám khảo), nhưng Checkpoint 2 (23:00 ngày 18/07) và danh sách hạng mục nộp bài trong guidebook đều ghi rõ yêu cầu <b>"GitHub repository public"</b>. Hai nguồn thông tin đang lệch nhau — nên xác nhận lại với BTC trước khi quyết định để private; nếu không có lý do đặc biệt để giấu code, mặc định để <b>public</b> sẽ an toàn hơn cho việc chấm điểm đúng hạn.
+            </p>
+          </div>
+
+          <div style={{ border: '1px solid var(--border)', borderRadius: '0.7059rem', padding: '0.9412rem' }}>
+            <h3 style={{ margin: '0 0 0.4706rem', fontSize: '0.95rem', fontWeight: 800 }}>🔄 Được đổi track trước Checkpoint 1</h3>
+            <p style={{ margin: 0, fontSize: '0.84rem', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
+              Cho phép Vibonymus có khoảng đệm ~23 giờ (từ 11:00 ngày 17/07 đến 11:00 ngày 18/07) để thử đọc kỹ đề, thấy hướng ban đầu không khả thi thì vẫn kịp xoay sang track khác mà không bị phạt. Nên áp dụng đúng khung <b>"2 Phương án lựa chọn Track"</b> đã có ở trên: chốt sơ bộ trong 30-60 phút đầu, nhưng vẫn giữ tâm thế sẵn sàng đổi nếu phát hiện rủi ro lớn trước Checkpoint 1.
+            </p>
+          </div>
+
+          <div style={{ border: '1px solid var(--border)', borderRadius: '0.7059rem', padding: '0.9412rem' }}>
+            <h3 style={{ margin: '0 0 0.4706rem', fontSize: '0.95rem', fontWeight: 800 }}>📄 Có mẫu đề bài thực tế để tham khảo trước</h3>
+            <p style={{ margin: 0, fontSize: '0.84rem', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
+              File <code>Bank_Problem_Brief_AI_Agents_CRM_VI.md</code> (ngành Ngân hàng, đề bài AI Agent cho CRM) cho thấy trước format và độ chi tiết thực tế của một đề bài thi. <b>Nên đọc trước file này để dựng sẵn khung đọc-hiểu đề nhanh</b> (bối cảnh → yêu cầu đầu ra → tiêu chí chấm), giúp rút ngắn thời gian phân tích đề khi track chính thức công bố lúc 11:00 ngày 17/07.
+            </p>
           </div>
         </div>
       </div>

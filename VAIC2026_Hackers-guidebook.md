@@ -927,3 +927,29 @@ Thông tin liên hệ đặt bàn trực tiếp: 0966.378.633
 
 ---
 
+## Ghi chú bổ sung thể lệ (cập nhật thêm ngoài bản guidebook gốc)
+
+- Được sử dụng API bên ngoài cho TTS và STT trong hệ thống của đội.
+- Team tự dựng repo GitHub từ đầu, không được dựng sẵn cấu trúc folder FE/BE/Model kèm các hàm cơ bản (connect giữa các layer, README, AI log...) — những phần này sẽ được hướng dẫn lúc bắt đầu thi. Không bắt buộc tất cả thành viên phải có AI log riêng.
+- Repo có thể nộp public hoặc private; nếu để private thì cần add tài khoản GitHub của giám khảo vào repo để họ chấm thi.
+- Được phép đổi track trước checkpoint đầu tiên.
+- Mẫu đề bài thi tham khảo: file `Bank_Problem_Brief_AI_Agents_CRM_VI.md` trong `D:\Downloads\vaic-scrapes`.
+
+## Ghi chú đính chính: 3.2. Yêu cầu đối với đội thi
+
+Nội dung này chưa có trong bản scrape gốc (đội trưởng, trách nhiệm chung của đội):
+
+- Các thành viên trong đội thi có trách nhiệm cử một (01) đội trưởng làm người đại diện của đội để trao đổi, làm việc với Ban Tổ chức trong suốt quá trình tham gia Cuộc thi. Trừ trường hợp Ban Tổ chức nhận được thông báo khác có xác nhận của toàn bộ thành viên đội thi, mọi thông tin, xác nhận, yêu cầu và ý kiến do đội trưởng cung cấp hoặc đưa ra với Ban Tổ chức được xem là ý chí và thông tin chính thức của đội thi và có giá trị ràng buộc đối với tất cả thành viên trong đội.
+- Các thành viên trong đội cần cùng tham gia vào quá trình phát triển sản phẩm.
+- Đội thi tự chịu trách nhiệm về nội dung, mã nguồn, dữ liệu và tài nguyên sử dụng trong bài dự thi; đội thi cần tuân thủ thời hạn nộp bài và các yêu cầu kỹ thuật do Ban Tổ chức công bố.
+
+## Ghi chú đính chính: 3.4. Các giá trị cốt lõi đội thi cần lưu tâm
+
+Bản scrape ở dòng 621-632 bị lệch mô tả do lỗi trích xuất PDF (mô tả "Domain Expert" bị gán nhầm vào mục này). Nội dung đúng theo trang web chính thức:
+
+- **100% AI-Native Oath**: Sản phẩm nộp bài bắt buộc phải có AI tham gia trực tiếp xử lý logic cốt lõi, có tài liệu AI Collaboration Log chứng minh.
+- **"Ends in a Startup" Philosophy**: VAIC 2026 không chỉ hướng tới giải thưởng, mà còn khuyến khích các đội xây dựng giải pháp có thể tiếp tục phát triển thành startup, pilot doanh nghiệp hoặc sản phẩm có tác động thực tế.
+- **Genius Station**: Trong 48 giờ thi đấu, các đội có thể nhận hỗ trợ từ Genius Station — nhóm 15–20 chuyên gia AI, kỹ thuật và sản phẩm. Các chuyên gia sẽ hỗ trợ theo ca và có thể kết nối qua kênh Online Emergency Call khi cần.
+
+---
+
