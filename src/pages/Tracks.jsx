@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Heart, Compass, Briefcase, Landmark, Leaf, GraduationCap, CloudRain, ShieldAlert, ChevronRight, Zap, Target, Layers, PlayCircle, ShieldCheck, User, Layout, Server, Info } from 'lucide-react';
+import { Heart, Compass, Briefcase, Landmark, Leaf, GraduationCap, CloudRain, ShieldAlert, ChevronRight, Zap, Target, Layers, PlayCircle, ShieldCheck, Layout, Server, Info, ClipboardCheck, Bot, Eye, TrendingUp } from 'lucide-react';
 import { trackData, calcTrackScore } from '../data/tracks-data';
 
 const TRACK_ICONS = { Heart, Compass, Briefcase, Landmark, Leaf, GraduationCap, CloudRain, ShieldAlert };
@@ -362,50 +362,28 @@ const Tracks = () => {
                 </div>
 
                 <div className="grid-3" style={{ gap: '0.8235rem' }}>
-                  {/* Cột PM */}
-                  <div className="meta-card" style={{ display: 'flex', flexDirection: 'column', gap: '0.4706rem', padding: '0.8235rem', background: 'var(--surface-page)' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.3529rem', borderBottom: '1px solid var(--border)', paddingBottom: '0.3529rem' }}>
-                      <User size={14} style={{ color: 'var(--s1)' }} />
-                      <span style={{ fontWeight: 800, fontSize: '0.82rem', color: 'var(--s1)' }}>K.AI (PM &amp; Slide)</span>
+                  {[
+                    { key: 'kai', label: 'K.AI (Tech Lead · Backend & DB · AI Plan)', color: '--s1', icon: <Server size={14} /> },
+                    { key: 'quan', label: 'Quân (Frontend & UI/UX)', color: '--s3', icon: <Layout size={14} /> },
+                    { key: 'mai', label: 'Mai (QC & Hiệu suất)', color: '--s5', icon: <ClipboardCheck size={14} /> },
+                    { key: 'quang', label: 'Quang (AI Core, Agent & RAG)', color: '--s6', icon: <Bot size={14} /> },
+                    { key: 'lam', label: 'Lâm (Computer Vision & Security)', color: '--s7', icon: <Eye size={14} /> },
+                    { key: 'yen', label: 'Yến (Business & Pitch)', color: '--s8', icon: <TrendingUp size={14} /> }
+                  ].map((member) => (
+                    <div key={member.key} className="meta-card" style={{ display: 'flex', flexDirection: 'column', gap: '0.4706rem', padding: '0.8235rem', background: 'var(--surface-page)' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.3529rem', borderBottom: '1px solid var(--border)', paddingBottom: '0.3529rem' }}>
+                        <span style={{ color: `var(${member.color})`, display: 'flex' }}>{member.icon}</span>
+                        <span style={{ fontWeight: 800, fontSize: '0.82rem', color: `var(${member.color})` }}>{member.label}</span>
+                      </div>
+                      <div style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
+                        <ul style={{ paddingLeft: '0.8235rem', margin: 0, display: 'flex', flexDirection: 'column', gap: '0.3529rem' }}>
+                          {currentTrack[member.key].map((item, i) => (
+                            <li key={i}>{item}</li>
+                          ))}
+                        </ul>
+                      </div>
                     </div>
-                    <div style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
-                      <ul style={{ paddingLeft: '0.8235rem', margin: 0, display: 'flex', flexDirection: 'column', gap: '0.3529rem' }}>
-                        {currentTrack.pm.map((item, i) => (
-                          <li key={i}>{item}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-
-                  {/* Cột Frontend */}
-                  <div className="meta-card" style={{ display: 'flex', flexDirection: 'column', gap: '0.4706rem', padding: '0.8235rem', background: 'var(--surface-page)' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.3529rem', borderBottom: '1px solid var(--border)', paddingBottom: '0.3529rem' }}>
-                      <Layout size={14} style={{ color: 'var(--s3)' }} />
-                      <span style={{ fontWeight: 800, fontSize: '0.82rem', color: 'var(--s3)' }}>K.AI (Frontend)</span>
-                    </div>
-                    <div style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
-                      <ul style={{ paddingLeft: '0.8235rem', margin: 0, display: 'flex', flexDirection: 'column', gap: '0.3529rem' }}>
-                        {currentTrack.fe.map((item, i) => (
-                          <li key={i}>{item}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-
-                  {/* Cột Backend */}
-                  <div className="meta-card" style={{ display: 'flex', flexDirection: 'column', gap: '0.4706rem', padding: '0.8235rem', background: 'var(--surface-page)' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.3529rem', borderBottom: '1px solid var(--border)', paddingBottom: '0.3529rem' }}>
-                      <Server size={14} style={{ color: 'var(--s2)' }} />
-                      <span style={{ fontWeight: 800, fontSize: '0.82rem', color: 'var(--s2)' }}>Quân (Backend &amp; DB)</span>
-                    </div>
-                    <div style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
-                      <ul style={{ paddingLeft: '0.8235rem', margin: 0, display: 'flex', flexDirection: 'column', gap: '0.3529rem' }}>
-                        {currentTrack.be.map((item, i) => (
-                          <li key={i}>{item}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             )}
