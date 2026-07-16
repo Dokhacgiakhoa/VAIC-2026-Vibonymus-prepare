@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Heart, Compass, Briefcase, Landmark, Leaf, GraduationCap, CloudRain, ShieldAlert, ChevronRight, Zap, Target, Layers, PlayCircle, ShieldCheck, User, Layout, Server, Info } from 'lucide-react';
-import { trackData } from '../data/tracks-data';
+import { Heart, Compass, Briefcase, Landmark, Leaf, GraduationCap, CloudRain, ShieldAlert, ChevronRight, Zap, Target, Layers, PlayCircle, ShieldCheck, User, Layout, Server, Info, BarChart3 } from 'lucide-react';
+import { trackData, calcTrackScore } from '../data/tracks-data';
 
 const TRACK_ICONS = { Heart, Compass, Briefcase, Landmark, Leaf, GraduationCap, CloudRain, ShieldAlert };
 
@@ -15,6 +15,7 @@ const Tracks = () => {
 
 
   const currentTrack = trackData.find(t => t.id === selectedTrack) || trackData[2];
+  const currentScore = calcTrackScore(currentTrack.score);
 
   return (
     <div className="page-content">
@@ -43,6 +44,31 @@ const Tracks = () => {
             <b style={{ color: 'var(--text-primary)', textTransform: 'uppercase' }}>100% AI-Native Oath</b>: Sản phẩm nộp bài bắt buộc phải có AI tham gia trực tiếp xử lý logic cốt lõi (Core Business Flow), có tài liệu <i>AI Collaboration Log</i> chứng minh, không chấp nhận việc dùng AI như một chatbot tĩnh bên lề.
           </div>
         </div>
+      </div>
+
+      {/* PHƯƠNG PHÁP CHẤM ĐIỂM 8 TRACK — THANG 100 */}
+      <div className="card">
+        <h2><BarChart3 /> Phương pháp chấm điểm 8 Track (thang 100 điểm)</h2>
+        <p className="sub" style={{ margin: '0 0 0.9412rem' }}>4 tiêu chí định lượng, mỗi tiêu chí tối đa 25 điểm — không chấm cảm tính:</p>
+        <div className="grid-2" style={{ gap: '0.7059rem' }}>
+          <div style={{ border: '1px solid var(--border)', borderRadius: '0.5882rem', padding: '0.8235rem' }}>
+            <div style={{ fontWeight: 800, fontSize: '0.85rem', marginBottom: '0.2353rem' }}>1. Thị trường — /25</div>
+            <p style={{ margin: 0, fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Chấm theo quy mô khách hàng tiềm năng thực tế tại VN (số liệu dẫn nguồn cụ thể cho từng track).</p>
+          </div>
+          <div style={{ border: '1px solid var(--border)', borderRadius: '0.5882rem', padding: '0.8235rem' }}>
+            <div style={{ fontWeight: 800, fontSize: '0.85rem', marginBottom: '0.2353rem' }}>2. Độ phù hợp năng lực đội — /25</div>
+            <p style={{ margin: 0, fontSize: '0.8rem', color: 'var(--text-secondary)' }}><code>(điểm phù hợp / 10) × 25</code> — đối chiếu kỹ năng hiện có của Vibonymus với yêu cầu track.</p>
+          </div>
+          <div style={{ border: '1px solid var(--border)', borderRadius: '0.5882rem', padding: '0.8235rem' }}>
+            <div style={{ fontWeight: 800, fontSize: '0.85rem', marginBottom: '0.2353rem' }}>3. Tính khả thi trong 48h — /25</div>
+            <p style={{ margin: 0, fontSize: '0.8rem', color: 'var(--text-secondary)' }}><code>(10 − độ khó/10) × 25</code> — độ khó đề bài càng cao, điểm khả thi càng thấp.</p>
+          </div>
+          <div style={{ border: '1px solid var(--border)', borderRadius: '0.5882rem', padding: '0.8235rem' }}>
+            <div style={{ fontWeight: 800, fontSize: '0.85rem', marginBottom: '0.2353rem' }}>4. Lợi thế cạnh tranh — /25</div>
+            <p style={{ margin: 0, fontSize: '0.8rem', color: 'var(--text-secondary)' }}><code>25 × (1 − % đội quan tâm)</code> — dữ liệu thật từ 233 đội đã cào được (14/07/2026).</p>
+          </div>
+        </div>
+        <p style={{ margin: '0.9412rem 0 0', fontSize: '0.82rem', color: 'var(--text-muted)' }}>Tổng điểm = 4 tiêu chí cộng lại, tối đa 100. Điểm càng cao, track càng đáng ưu tiên xét theo dữ liệu hiện có.</p>
       </div>
 
       {/* PHÂN TÍCH TÁC ĐỘNG TỪ CÁC ĐIỀU KHOẢN THỂ LỆ MỚI */}
@@ -101,7 +127,7 @@ const Tracks = () => {
               <br />
               <b>Ưu điểm:</b> Tận dụng tối đa thế mạnh xử lý Backend/Database Postgres của Quân và khả năng thiết kế UI/UX giao diện mượt mà của K.AI để dựng sản phẩm mẫu (MVP) hoàn chỉnh, trực quan nhất trong 48h.
               <br />
-              <b>Thách thức:</b> Số lượng đối thủ cạnh tranh trực tiếp sẽ rất lớn (dự kiến chiếm &gt;80% số đội thi theo thống kê).
+              <b>Thách thức:</b> Số lượng đối thủ cạnh tranh trực tiếp rất lớn — SME 41.6% và Giáo dục 45.5% số đội đăng ký quan tâm (dữ liệu thật, 233 đội).
             </p>
           </div>
           <div style={{ border: '1px solid var(--border)', borderRadius: '0.7059rem', padding: '0.9412rem', background: 'rgba(42, 120, 214, 0.03)' }}>
@@ -109,7 +135,7 @@ const Tracks = () => {
             <p style={{ margin: 0, fontSize: '0.84rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
               <b>Nhóm mục tiêu:</b> Phòng Chống Thiên Tai hoặc Nông Nghiệp.
               <br />
-              <b>Ưu điểm:</b> Số lượng đội đăng ký cực kỳ ít (lần lượt chiếm 7.4% và 11.0% theo Competitors Info Graphic), giảm thiểu tối đa cạnh tranh trực diện. Ý tưởng độc lạ dễ gây ấn tượng mạnh với Hội đồng Giám khảo.
+              <b>Ưu điểm:</b> Số lượng đội đăng ký cực kỳ ít — Thiên tai 9.4% và Nông nghiệp 9% (dữ liệu thật, 233 đội), giảm thiểu tối đa cạnh tranh trực diện. Ý tưởng độc lạ dễ gây ấn tượng mạnh với Hội đồng Giám khảo.
               <br />
               <b>Thách thức:</b> Đòi hỏi nghiên cứu kiến thức chuyên ngành phức tạp, khó thu thập dữ liệu kiểm chứng và làm giao diện demo sinh động trong thời gian ngắn.
             </p>
@@ -170,19 +196,33 @@ const Tracks = () => {
             </div>
           </div>
 
-          {/* Metadata Grid */}
-          <div className="grid-3" style={{ marginBottom: '1.4118rem' }}>
-            <div className="meta-card">
-              <div className="meta-label">Độ khó đề bài</div>
-              <div className="meta-value critical">{currentTrack.difficulty}</div>
+          {/* Điểm chấm thang 100 (xem phương pháp chấm ở card phía trên) */}
+          <div style={{ marginBottom: '1.4118rem' }}>
+            <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.5882rem', marginBottom: '0.7059rem' }}>
+              <span style={{ fontSize: '2rem', fontWeight: 900, color: 'var(--theme-color)' }}>{currentScore.total}</span>
+              <span style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--text-muted)' }}>/ 100 điểm</span>
             </div>
-            <div className="meta-card">
-              <div className="meta-label">Dung lượng thị trường</div>
-              <div className="meta-value success">{currentTrack.market}</div>
-            </div>
-            <div className="meta-card">
-              <div className="meta-label">Mức độ phù hợp với Team</div>
-              <div className="meta-value warning">{currentTrack.fit}</div>
+            <div className="grid-4">
+              <div className="meta-card">
+                <div className="meta-label">Thị trường</div>
+                <div className="meta-value success">{currentScore.market}/25</div>
+                <p style={{ margin: '0.3529rem 0 0', fontSize: '0.72rem', color: 'var(--text-muted)', lineHeight: 1.4 }}>{currentScore.marketBasis}</p>
+              </div>
+              <div className="meta-card">
+                <div className="meta-label">Phù hợp năng lực đội</div>
+                <div className="meta-value warning">{currentScore.teamFit}/25</div>
+                <p style={{ margin: '0.3529rem 0 0', fontSize: '0.72rem', color: 'var(--text-muted)', lineHeight: 1.4 }}>{currentScore.teamFitRaw}/10 điểm phù hợp gốc × 2.5</p>
+              </div>
+              <div className="meta-card">
+                <div className="meta-label">Khả thi trong 48h</div>
+                <div className="meta-value critical">{currentScore.feasibility}/25</div>
+                <p style={{ margin: '0.3529rem 0 0', fontSize: '0.72rem', color: 'var(--text-muted)', lineHeight: 1.4 }}>Độ khó đề bài {currentScore.difficultyRaw}/10</p>
+              </div>
+              <div className="meta-card">
+                <div className="meta-label">Lợi thế cạnh tranh</div>
+                <div className="meta-value" style={{ color: 'var(--s1)' }}>{currentScore.competition}/25</div>
+                <p style={{ margin: '0.3529rem 0 0', fontSize: '0.72rem', color: 'var(--text-muted)', lineHeight: 1.4 }}>{currentScore.competitionPercent}% đội (trong 233 đội) đã quan tâm track này</p>
+              </div>
             </div>
           </div>
 

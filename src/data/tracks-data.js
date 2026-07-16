@@ -1,3 +1,18 @@
+/**
+ * Thang điểm 100, chia đều 4 tiêu chí x 25 điểm — công thức áp dụng thống nhất cho cả 8 track:
+ * - market: chấm tay theo quy mô khách hàng tiềm năng thực tế tại VN (đã ghi rõ marketBasis).
+ * - teamFit = (teamFitRaw / 10) × 25 — đối chiếu năng lực hiện có của Vibonymus với yêu cầu track.
+ * - feasibility = (10 − difficultyRaw) / 10 × 25 — độ khó đề bài càng cao, khả thi dựng MVP trong 48h càng thấp.
+ * - competition = 25 × (1 − competitionPercent / 100) — % đội đã đăng ký quan tâm track, dữ liệu thật từ 233 đội cào được (hub.aiforvietnam.org, 14/07/2026).
+ */
+export function calcTrackScore(score) {
+  const teamFit = Math.round((score.teamFitRaw / 10) * 25);
+  const feasibility = Math.round(((10 - score.difficultyRaw) / 10) * 25);
+  const competition = Math.round(25 * (1 - score.competitionPercent / 100));
+  const total = score.market + teamFit + feasibility + competition;
+  return { ...score, teamFit, feasibility, competition, total };
+}
+
 export const trackData = [
   {
     id: 'y-te',
@@ -5,9 +20,10 @@ export const trackData = [
     iconName: 'Heart',
     iconColor: '#ff6b6b',
     desc: 'Ứng dụng AI trong chăm sóc sức khỏe: hỗ trợ chẩn đoán, tối ưu vận hành và nâng cao chất lượng dịch vụ y tế.',
-    difficulty: '8/10 (Cao)',
-    market: 'Rất Lớn',
-    fit: '4/10 (Thấp)',
+    score: {
+      market: 20, marketBasis: 'Thị trường y tế số lớn nhưng bị giới hạn bởi rào cản pháp lý và quy trình kiểm định lâm sàng.',
+      teamFitRaw: 4, difficultyRaw: 8, competitionPercent: 26.6
+    },
     mvp: 'Hệ thống AI Copilot hỗ trợ bác sĩ tóm tắt hồ sơ bệnh án, tra cứu phác đồ điều trị từ nguồn uy tín và gợi ý chẩn đoán sơ bộ.',
     workflow: [
       'Bác sĩ upload hồ sơ/ghi chú bệnh án (dạng text hoặc ghi âm giọng nói).',
@@ -48,9 +64,10 @@ export const trackData = [
     iconName: 'Compass',
     iconColor: '#4dabf7',
     desc: 'Phát triển sản phẩm mới, cải tiến quy trình và ứng dụng phương pháp đổi mới sáng tạo thúc đẩy kinh doanh.',
-    difficulty: '6/10 (Trung bình)',
-    market: 'Lớn',
-    fit: '6/10 (Trung bình)',
+    score: {
+      market: 15, marketBasis: 'Không có phân khúc khách hàng cụ thể — thị trường "mở" nhưng khó định lượng quy mô thực tế.',
+      teamFitRaw: 6, difficultyRaw: 6, competitionPercent: 54.9
+    },
     mvp: 'Nền tảng tự động hóa brainstorming ý tưởng sản phẩm, phân tích đối thủ cạnh tranh và sinh landing page demo bằng AI.',
     workflow: [
       'Người dùng nhập ý tưởng ban đầu sơ sài.',
@@ -91,9 +108,10 @@ export const trackData = [
     iconName: 'Briefcase',
     iconColor: '#20c997',
     desc: 'Xây dựng AI Agent cách mạng hóa vận hành, tự động hóa quy trình nghiệp vụ cho doanh nghiệp vừa và nhỏ (SME).',
-    difficulty: '6/10 (Trung bình)',
-    market: 'Cực Kỳ Rộng Lớn',
-    fit: '9.5/10 (Cực Kỳ Cao)',
+    score: {
+      market: 25, marketBasis: '~921.000 doanh nghiệp SME đang hoạt động tại Việt Nam (Tổng cục Thống kê) — nhóm khách hàng lớn nhất trong 8 track.',
+      teamFitRaw: 9.5, difficultyRaw: 6, competitionPercent: 41.6
+    },
     mvp: 'Hệ thống Multi-Agent đóng vai trò là "Nhân sự ảo chuyên nghiệp" hỗ trợ doanh nghiệp SME tự động phản hồi email khách hàng, đối soát hóa đơn bán hàng và cập nhật tồn kho tự động.',
     workflow: [
       'Khách hàng gửi yêu cầu qua Email hoặc Chatbot.',
@@ -136,9 +154,10 @@ export const trackData = [
     iconName: 'Landmark',
     iconColor: '#748ffc',
     desc: 'Giải pháp cho thành phố thông minh, cải thiện dịch vụ hành chính công số và tương tác với người dân.',
-    difficulty: '7/10 (Cao)',
-    market: 'Lớn (B2G)',
-    fit: '5/10 (Trung bình)',
+    score: {
+      market: 12, marketBasis: 'Mô hình B2G — số đầu mối khách hàng (cơ quan hành chính) giới hạn dù tác động tới hàng chục triệu người dân.',
+      teamFitRaw: 5, difficultyRaw: 7, competitionPercent: 15.5
+    },
     mvp: 'Trợ lý ảo CitizenCopilot giúp người dân tra cứu thủ tục hành chính, tự động điền form giấy tờ công chứng và hướng dẫn quy trình dịch vụ công trực tuyến.',
     workflow: [
       'Người dân mô tả nhu cầu bằng ngôn ngữ tự nhiên (ví dụ: "Tôi muốn đăng ký kết hôn").',
@@ -179,9 +198,10 @@ export const trackData = [
     iconName: 'Leaf',
     iconColor: '#51cf66',
     desc: 'Tối ưu chuỗi cung ứng nông sản, canh tác chính xác và ứng dụng AI thích ứng với biến đổi khí hậu.',
-    difficulty: '8/10 (Cao)',
-    market: 'Trung bình',
-    fit: '4/10 (Thấp)',
+    score: {
+      market: 12, marketBasis: '~9,1 triệu hộ nông dân cả nước, nhưng khả năng chi trả cho SaaS AI thấp và phụ thuộc hạ tầng IoT sẵn có.',
+      teamFitRaw: 4, difficultyRaw: 8, competitionPercent: 9
+    },
     mvp: 'Ứng dụng AI phân tích hình ảnh lá cây phát hiện sâu bệnh hại và lập lịch tưới tiêu, bón phân thông minh dựa trên dự báo thời tiết.',
     workflow: [
       'Nông dân chụp ảnh lá cây bị sâu bệnh tải lên hệ thống.',
@@ -209,7 +229,7 @@ export const trackData = [
     swot: {
       s: 'Mô hình Computer Vision nhận diện sâu bệnh qua ảnh lá cây rất dễ xây dựng demo sinh động, trực quan trên UI.',
       w: 'Team hoàn toàn thiếu các thiết bị cảm biến nông nghiệp IoT thực tế để giả lập dữ liệu tưới tiêu đầu vào.',
-      o: 'Mật độ cạnh tranh cực thấp (chỉ 11% đội chọn), là cơ hội vàng bứt phá điểm số nếu làm tốt phần giao diện.',
+      o: 'Mật độ cạnh tranh thấp nhất giải đấu (chỉ 9% trong 233 đội chọn), là cơ hội vàng bứt phá điểm số nếu làm tốt phần giao diện.',
       t: 'Ý tưởng dễ bị lý thuyết hóa, khó thuyết phục giám khảo nông nghiệp nếu thiếu số liệu kiểm thử thực tế.'
     },
     tech: 'Computer Vision phát hiện sâu bệnh, phân tích dữ liệu cảm biến IoT, mô hình dự báo thời tiết.',
@@ -222,9 +242,10 @@ export const trackData = [
     iconName: 'GraduationCap',
     iconColor: '#fcc419',
     desc: 'Cá nhân hóa việc học, tối ưu tài nguyên giáo dục và hỗ trợ định hướng phát triển học tập cho người học.',
-    difficulty: '5/10 (Trung bình)',
-    market: 'Lớn',
-    fit: '8/10 (Cao)',
+    score: {
+      market: 20, marketBasis: '~22 triệu học sinh - sinh viên toàn quốc (Bộ GD&ĐT) — thị trường EdTech quy mô lớn, đã có hạ tầng số sẵn.',
+      teamFitRaw: 8, difficultyRaw: 5, competitionPercent: 45.5
+    },
     mvp: 'Trình biên soạn giáo án và bài tập cá nhân hóa AI-Tutor. Hệ thống tự động tạo lộ trình ôn thi dựa trên điểm yếu của từng học sinh thông qua các bài kiểm tra ngắn.',
     workflow: [
       'Học sinh làm bài test đánh giá năng lực đầu vào ngắn (10 câu).',
@@ -253,7 +274,7 @@ export const trackData = [
       s: 'Dễ dàng xây dựng kịch bản chatbot AI Tutor tương tác trực quan sinh động, tạo hiệu ứng tốt khi pitching.',
       w: 'Cần thuật toán phân tích vết lỗi sai phức tạp để lập đồ thị concept học tập chính xác.',
       o: 'Phân khúc thị trường rộng lớn, dễ chiếm cảm tình của hội đồng giám khảo nhờ tính nhân văn cao.',
-      t: 'Mức độ cạnh tranh rất cao (đứng thứ 2 toàn giải đấu với 48.5% đội thi đăng ký chọn).'
+      t: 'Mức độ cạnh tranh rất cao (đứng thứ 2 toàn giải đấu với 45.5% trong 233 đội đăng ký chọn).'
     },
     tech: 'AI Tutor cá nhân hóa, RAG kiểm tra kiến thức, thuật toán gợi ý lộ trình học tập dựa trên hành vi.',
     challenge: 'Rất nhiều sản phẩm tương tự trên thị trường, cần tìm được ngách thực sự độc đáo.',
@@ -265,9 +286,10 @@ export const trackData = [
     iconName: 'CloudRain',
     iconColor: '#a6aebb',
     desc: 'Dự báo, mô hình hóa dữ liệu địa lý và xây dựng giải pháp ứng phó — phục hồi trước các thảm họa thiên tai.',
-    difficulty: '9/10 (Rất Cao)',
-    market: 'Xã Hội',
-    fit: '3/10 (Thấp)',
+    score: {
+      market: 8, marketBasis: 'Giá trị xã hội cao nhưng gần như không có mô hình khách hàng trả phí trực tiếp trong 48h.',
+      teamFitRaw: 3, difficultyRaw: 9, competitionPercent: 9.4
+    },
     mvp: 'Bản đồ số dự báo nguy cơ sạt lở và đề xuất luồng cứu hộ tối ưu khi xảy ra bão lũ bằng AI.',
     workflow: [
       'Hệ thống thu thập dữ liệu độ ẩm đất, lượng mưa và ảnh vệ tinh địa hình.',
@@ -295,7 +317,7 @@ export const trackData = [
     swot: {
       s: 'Ý tưởng nhân văn sâu sắc, giải quyết bài toán cấp bách của đất nước, dễ tạo ấn tượng cực mạnh khi thuyết trình.',
       w: 'Team hoàn toàn thiếu kiến thức học thuật về thủy văn học, bản đồ GIS địa lý phức tạp.',
-      o: 'Độ cạnh tranh thấp nhất giải đấu (chỉ 7.4% đội chọn), khả năng giành giải cực cao nếu giải quyết được bài toán thô.',
+      o: 'Độ cạnh tranh thấp thứ nhì giải đấu (chỉ 9.4% trong 233 đội chọn), khả năng giành giải cực cao nếu giải quyết được bài toán thô.',
       t: 'Thời gian 48h là quá ngắn để xử lý dữ liệu viễn thám và dựng bản đồ ngập lụt động chạy mượt mà.'
     },
     tech: 'Học sâu trên dữ liệu viễn thám/vệ tinh, mô hình hóa toán học dòng chảy/lũ lụt.',
@@ -308,9 +330,10 @@ export const trackData = [
     iconName: 'ShieldAlert',
     iconColor: '#fcc419',
     desc: 'Ứng dụng AI để tái định hình ngành tài chính, tự động hóa vận hành, quản trị rủi ro và cá nhân hóa dịch vụ.',
-    difficulty: '7.5/10 (Cao)',
-    market: 'Cực Kỳ Lớn',
-    fit: '6/10 (Trung bình)',
+    score: {
+      market: 24, marketBasis: '~80 triệu tài khoản ngân hàng số tại Việt Nam (NHNN) — quy mô khách hàng cực lớn.',
+      teamFitRaw: 6, difficultyRaw: 7.5, competitionPercent: 31.8
+    },
     mvp: 'Trợ lý phân tích tài chính cá nhân thông minh giúp tự động phân loại giao dịch ngân hàng, lập kế hoạch chi tiêu và gợi ý quỹ đầu tư an sau.',
     workflow: [
       'Người dùng kết nối lịch sử giao dịch sao kê tài khoản ngân hàng.',

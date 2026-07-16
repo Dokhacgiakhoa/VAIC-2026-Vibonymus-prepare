@@ -553,6 +553,11 @@ ul.checklist li b { color: var(--text-primary); }
   grid-template-columns: repeat(3, 1fr);
   gap: 0.7059rem;
 }
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.7059rem;
+}
 .swot-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -920,6 +925,7 @@ ul.checklist li b { color: var(--text-primary); }
 /* Tablet: co grid nhiều cột lại còn 2 cột, giảm padding tổng thể. */
 @media (max-width: 56.25em) {
   .grid-3,
+  .grid-4,
   .roles-grid,
   .tool-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -942,6 +948,7 @@ ul.checklist li b { color: var(--text-primary); }
   }
   .grid-3,
   .grid-2,
+  .grid-4,
   .grid-auto,
   .roles-grid,
   .tool-grid,
