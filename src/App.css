@@ -352,8 +352,8 @@ ul li::marker {
 .badge-now { background: var(--warning); color: #1a1a19; }
 .badge-next { background: var(--good); color: #fff; }
 
-/* Roles Cards */
-.roles-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.9412rem; }
+/* Roles Cards — tự co giãn số cột, mỗi cột luôn giãn hết chiều ngang còn lại */
+.roles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(19.4118rem, 1fr)); gap: 0.9412rem; }
 .role-card { 
   border: 1px solid rgba(90, 73, 204, 0.1); 
   border-top: 1px solid rgba(255, 255, 255, 0.4);
@@ -424,8 +424,7 @@ tbody tr:hover { background: rgba(42, 120, 214, 0.02); }
 .flow-desc { font-size: 0.8rem; color: var(--text-secondary); line-height: 1.5; }
 
 /* AI Tools Cards */
-.tool-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(12.9412rem, 1fr)); gap: 0.8235rem; }
-.tool-card { 
+.tool-card {
   border: 1px solid rgba(90, 73, 204, 0.08); 
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 0.9412rem; 
@@ -566,6 +565,13 @@ ul.checklist li b { color: var(--text-primary); }
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.7059rem;
+}
+
+/* Lưới thẻ tự co giãn số cột theo bề rộng, mỗi cột luôn giãn hết chiều ngang còn lại (không bị bóp hẹp) */
+.auto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19.4118rem, 1fr));
+  gap: 0.9412rem;
 }
 .swot-grid {
   display: grid;
@@ -749,10 +755,10 @@ ul.checklist li b { color: var(--text-primary); }
   opacity: 0.45;
 }
 
-/* AI Requirements Tool Cards */
+/* AI Requirements Tool Cards — tự co giãn số cột, mỗi cột luôn giãn hết chiều ngang còn lại */
 .tool-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(19.4118rem, 1fr));
   gap: 1.1765rem;
   margin-top: 0.9412rem;
 }
@@ -934,9 +940,7 @@ ul.checklist li b { color: var(--text-primary); }
 /* Tablet: co grid nhiều cột lại còn 2 cột, giảm padding tổng thể. */
 @media (max-width: 56.25em) {
   .grid-3,
-  .grid-4,
-  .roles-grid,
-  .tool-grid {
+  .grid-4 {
     grid-template-columns: repeat(2, 1fr);
   }
   .grid-split {
@@ -959,8 +963,6 @@ ul.checklist li b { color: var(--text-primary); }
   .grid-2,
   .grid-4,
   .grid-auto,
-  .roles-grid,
-  .tool-grid,
   .swot-grid {
     grid-template-columns: 1fr;
   }

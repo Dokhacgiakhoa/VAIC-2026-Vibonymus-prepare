@@ -177,7 +177,7 @@ const Tracks = () => {
               <span style={{ fontSize: '2rem', fontWeight: 900, color: 'var(--theme-color)' }}>{currentScore.total}</span>
               <span style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--text-muted)' }}>/ 100 điểm</span>
             </div>
-            <div className="grid-3">
+            <div className="auto-grid">
               <div className="meta-card">
                 <div className="meta-label">Thị trường /20</div>
                 <div className="meta-value success">{currentScore.market}/20</div>
@@ -361,7 +361,7 @@ const Tracks = () => {
                   <span style={{ fontWeight: 800, fontSize: '0.88rem', color: 'var(--text-primary)' }}>Đề xuất Phân công Cộng tác AI chi tiết cho từng thành viên:</span>
                 </div>
 
-                <div className="grid-3" style={{ gap: '0.8235rem' }}>
+                <div className="auto-grid" style={{ gap: '0.8235rem' }}>
                   {[
                     { key: 'kai', label: 'K.AI (Tech Lead · Backend & DB · AI Plan)', color: '--s1', icon: <Server size={14} /> },
                     { key: 'quan', label: 'Quân (Frontend & UI/UX)', color: '--s3', icon: <Layout size={14} /> },

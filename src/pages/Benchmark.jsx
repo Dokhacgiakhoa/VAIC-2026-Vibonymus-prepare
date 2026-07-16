@@ -30,7 +30,7 @@ const Benchmark = () => {
       <div className="card">
         <h2><BarChart3 /> Phương pháp chấm điểm 8 Track (thang 100 điểm)</h2>
         <p className="sub" style={{ margin: '0 0 0.9412rem' }}>6 tiêu chí định lượng dựa trên phân tích chi tiết từng track (workflow, SWOT, dữ liệu thật) — không chấm cảm tính. Xem phân tích chi tiết từng track tại tab <b>Phân tích Track</b>.</p>
-        <div className="grid-2" style={{ gap: '0.7059rem' }}>
+        <div className="auto-grid" style={{ gap: '0.7059rem' }}>
           <div style={{ border: '1px solid var(--border)', borderRadius: '0.5882rem', padding: '0.8235rem' }}>
             <div style={{ fontWeight: 800, fontSize: '0.85rem', marginBottom: '0.2353rem' }}>1. Thị trường — /20</div>
             <p style={{ margin: 0, fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Chấm theo quy mô khách hàng tiềm năng thực tế tại VN (số liệu dẫn nguồn cụ thể cho từng track).</p>
@@ -125,7 +125,7 @@ const Benchmark = () => {
       <div className="card">
         <h2><BarChart3 /> So sánh chi tiết theo từng tiêu chí</h2>
         <p className="sub" style={{ margin: '0 0 0.9412rem' }}>Mỗi tiêu chí so sánh riêng, giữ nguyên thứ tự 8 track — track dẫn đầu ở tiêu chí này chưa chắc dẫn đầu ở tiêu chí khác.</p>
-        <div className="grid-2" style={{ gap: '1.1765rem' }}>
+        <div className="auto-grid" style={{ gap: '1.1765rem' }}>
           {CRITERIA.map((c) => {
             return (
               <div key={c.key} style={{ border: '1px solid var(--border)', borderRadius: '0.7059rem', padding: '0.9412rem' }}>
