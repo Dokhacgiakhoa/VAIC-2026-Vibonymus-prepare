@@ -21,6 +21,8 @@ const CRITERIA = [
 const Benchmark = () => {
   const scoredTracks = trackData.map(t => ({ ...t, s: calcTrackScore(t.score) }));
   const rankedByTotal = [...scoredTracks].sort((a, b) => b.s.total - a.s.total);
+  const rankById = Object.fromEntries(rankedByTotal.map((t, i) => [t.id, i + 1]));
+  const maxTotal = rankedByTotal[0].s.total;
 
   return (
     <div className="page-content">
@@ -60,13 +62,13 @@ const Benchmark = () => {
       {/* BIỂU ĐỒ TỔNG ĐIỂM — DẠNG BENCHMARK SO SÁNH (kiểu CPU/GPU) */}
       <div className="card">
         <h2><TrendingUp /> Biểu đồ Benchmark: xếp hạng tổng điểm 8 Track</h2>
-        <p className="sub" style={{ margin: '0 0 1.1765rem' }}>Độ dài thanh tính theo % so với track dẫn đầu (Năng Suất Doanh Nghiệp SME = 100%) — càng ngắn, càng cách xa track #1.</p>
+        <p className="sub" style={{ margin: '0 0 1.1765rem' }}>Độ dài thanh tính theo % so với track dẫn đầu (Năng Suất Doanh Nghiệp SME = 100%) — càng ngắn, càng cách xa track #1. Thứ tự các track giữ nguyên như danh sách 8 track, không xếp lại theo điểm.</p>
         <div className="flex-column" style={{ gap: '0.7059rem' }}>
-          {rankedByTotal.map((t, i) => {
-            const rank = i + 1;
+          {scoredTracks.map((t) => {
+            const rank = rankById[t.id];
             const medal = rank === 1 ? '#f5c518' : rank === 2 ? '#c0c8d1' : rank === 3 ? '#cd7f32' : 'var(--border)';
             const medalText = rank <= 3 ? '#1a1730' : 'var(--text-secondary)';
-            const relative = Math.round((t.s.total / rankedByTotal[0].s.total) * 100);
+            const relative = Math.round((t.s.total / maxTotal) * 100);
             return (
               <div
                 key={t.id}
@@ -122,15 +124,14 @@ const Benchmark = () => {
       {/* BIỂU ĐỒ SO SÁNH TỪNG TIÊU CHÍ */}
       <div className="card">
         <h2><BarChart3 /> So sánh chi tiết theo từng tiêu chí</h2>
-        <p className="sub" style={{ margin: '0 0 0.9412rem' }}>Mỗi tiêu chí xếp hạng riêng — track dẫn đầu ở tiêu chí này chưa chắc dẫn đầu ở tiêu chí khác.</p>
+        <p className="sub" style={{ margin: '0 0 0.9412rem' }}>Mỗi tiêu chí so sánh riêng, giữ nguyên thứ tự 8 track — track dẫn đầu ở tiêu chí này chưa chắc dẫn đầu ở tiêu chí khác.</p>
         <div className="grid-2" style={{ gap: '1.1765rem' }}>
           {CRITERIA.map((c) => {
-            const ranked = [...scoredTracks].sort((a, b) => b.s[c.key] - a.s[c.key]);
             return (
               <div key={c.key} style={{ border: '1px solid var(--border)', borderRadius: '0.7059rem', padding: '0.9412rem' }}>
                 <div style={{ fontWeight: 800, fontSize: '0.85rem', marginBottom: '0.7059rem' }}>{c.label} <span style={{ color: 'var(--text-muted)', fontWeight: 600 }}>(/{c.max})</span></div>
                 <div className="flex-column" style={{ gap: '0.5882rem' }}>
-                  {ranked.map((t) => (
+                  {scoredTracks.map((t) => (
                     <div key={t.id} className="flex-column" style={{ gap: '0.1765rem' }}>
                       <div className="flex-between" style={{ fontSize: '0.74rem', fontWeight: 700 }}>
                         <span style={{ color: 'var(--text-secondary)' }}>{t.name}</span>
