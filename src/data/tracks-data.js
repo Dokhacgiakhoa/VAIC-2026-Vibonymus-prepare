@@ -1,15 +1,17 @@
 /**
- * Thang điểm 100, chia đều 4 tiêu chí x 25 điểm — công thức áp dụng thống nhất cho cả 8 track:
- * - market: chấm tay theo quy mô khách hàng tiềm năng thực tế tại VN (đã ghi rõ marketBasis).
- * - teamFit = (teamFitRaw / 10) × 25 — đối chiếu năng lực hiện có của Vibonymus với yêu cầu track.
- * - feasibility = (10 − difficultyRaw) / 10 × 25 — độ khó đề bài càng cao, khả thi dựng MVP trong 48h càng thấp.
- * - competition = 25 × (1 − competitionPercent / 100) — % đội đã đăng ký quan tâm track, dữ liệu thật từ 233 đội cào được (hub.aiforvietnam.org, 14/07/2026).
+ * Thang điểm 100, chia 6 tiêu chí định lượng — công thức áp dụng thống nhất cho cả 8 track:
+ * - market /20: chấm tay theo quy mô khách hàng tiềm năng thực tế tại VN (đã ghi rõ marketBasis).
+ * - teamFit /20 = (teamFitRaw / 10) × 20 — đối chiếu năng lực hiện có của Vibonymus với yêu cầu track.
+ * - feasibility /15 = (10 − difficultyRaw) / 10 × 15 — độ khó đề bài càng cao, khả thi dựng MVP trong 48h càng thấp.
+ * - competition /15 = 15 × (1 − competitionPercent / 100) — % đội đã đăng ký quan tâm track, dữ liệu thật từ 233 đội cào được (hub.aiforvietnam.org, 14/07/2026).
+ * - dataReadiness /15: chấm tay theo khả năng có dữ liệu/API giả lập thật để dựng demo thuyết phục trong 48h (đã ghi rõ dataReadinessBasis).
+ * - legalRisk /15: chấm tay theo mức độ AN TOÀN pháp lý/đạo đức dữ liệu — điểm càng cao nghĩa là rủi ro càng THẤP (đã ghi rõ legalRiskBasis).
  */
 export function calcTrackScore(score) {
-  const teamFit = Math.round((score.teamFitRaw / 10) * 25);
-  const feasibility = Math.round(((10 - score.difficultyRaw) / 10) * 25);
-  const competition = Math.round(25 * (1 - score.competitionPercent / 100));
-  const total = score.market + teamFit + feasibility + competition;
+  const teamFit = Math.round((score.teamFitRaw / 10) * 20);
+  const feasibility = Math.round(((10 - score.difficultyRaw) / 10) * 15);
+  const competition = Math.round(15 * (1 - score.competitionPercent / 100));
+  const total = score.market + teamFit + feasibility + competition + score.dataReadiness + score.legalRisk;
   return { ...score, teamFit, feasibility, competition, total };
 }
 
@@ -21,8 +23,10 @@ export const trackData = [
     iconColor: '#ff6b6b',
     desc: 'Ứng dụng AI trong chăm sóc sức khỏe: hỗ trợ chẩn đoán, tối ưu vận hành và nâng cao chất lượng dịch vụ y tế.',
     score: {
-      market: 20, marketBasis: 'Thị trường y tế số lớn nhưng bị giới hạn bởi rào cản pháp lý và quy trình kiểm định lâm sàng.',
-      teamFitRaw: 4, difficultyRaw: 8, competitionPercent: 26.6
+      market: 16, marketBasis: 'Thị trường y tế số lớn nhưng bị giới hạn bởi rào cản pháp lý và quy trình kiểm định lâm sàng.',
+      teamFitRaw: 4, difficultyRaw: 8, competitionPercent: 26.6,
+      dataReadiness: 5, dataReadinessBasis: 'Dữ liệu bệnh án thật cực khó tiếp cận trong 48h vì quy định bảo mật y tế — chỉ có thể demo bằng dữ liệu giả lập.',
+      legalRisk: 3, legalRiskBasis: 'Rủi ro pháp lý rất cao nếu AI gợi ý chẩn đoán/đơn thuốc sai — ảnh hưởng trực tiếp sức khỏe người dùng thực tế.'
     },
     mvp: 'Hệ thống AI Copilot hỗ trợ bác sĩ tóm tắt hồ sơ bệnh án, tra cứu phác đồ điều trị từ nguồn uy tín và gợi ý chẩn đoán sơ bộ.',
     workflow: [
@@ -65,8 +69,10 @@ export const trackData = [
     iconColor: '#4dabf7',
     desc: 'Phát triển sản phẩm mới, cải tiến quy trình và ứng dụng phương pháp đổi mới sáng tạo thúc đẩy kinh doanh.',
     score: {
-      market: 15, marketBasis: 'Không có phân khúc khách hàng cụ thể — thị trường "mở" nhưng khó định lượng quy mô thực tế.',
-      teamFitRaw: 6, difficultyRaw: 6, competitionPercent: 54.9
+      market: 12, marketBasis: 'Không có phân khúc khách hàng cụ thể — thị trường "mở" nhưng khó định lượng quy mô thực tế.',
+      teamFitRaw: 6, difficultyRaw: 6, competitionPercent: 54.9,
+      dataReadiness: 10, dataReadinessBasis: 'Không phụ thuộc dữ liệu ngành cụ thể — có thể tự tạo dữ liệu mẫu tuỳ theo ý tưởng chọn.',
+      legalRisk: 13, legalRiskBasis: 'Không đụng dữ liệu cá nhân/nhạy cảm, rủi ro pháp lý gần như không có.'
     },
     mvp: 'Nền tảng tự động hóa brainstorming ý tưởng sản phẩm, phân tích đối thủ cạnh tranh và sinh landing page demo bằng AI.',
     workflow: [
@@ -109,8 +115,10 @@ export const trackData = [
     iconColor: '#20c997',
     desc: 'Xây dựng AI Agent cách mạng hóa vận hành, tự động hóa quy trình nghiệp vụ cho doanh nghiệp vừa và nhỏ (SME).',
     score: {
-      market: 25, marketBasis: '~921.000 doanh nghiệp SME đang hoạt động tại Việt Nam (Tổng cục Thống kê) — nhóm khách hàng lớn nhất trong 8 track.',
-      teamFitRaw: 9.5, difficultyRaw: 6, competitionPercent: 41.6
+      market: 20, marketBasis: '~921.000 doanh nghiệp SME đang hoạt động tại Việt Nam (Tổng cục Thống kê) — nhóm khách hàng lớn nhất trong 8 track.',
+      teamFitRaw: 9.5, difficultyRaw: 6, competitionPercent: 41.6,
+      dataReadiness: 13, dataReadinessBasis: 'Dễ giả lập dữ liệu CRM, email, tồn kho bằng dataset mẫu hoặc mock API trong vài giờ.',
+      legalRisk: 12, legalRiskBasis: 'Dữ liệu doanh nghiệp mô phỏng, không đụng thông tin cá nhân nhạy cảm.'
     },
     mvp: 'Hệ thống Multi-Agent đóng vai trò là "Nhân sự ảo chuyên nghiệp" hỗ trợ doanh nghiệp SME tự động phản hồi email khách hàng, đối soát hóa đơn bán hàng và cập nhật tồn kho tự động.',
     workflow: [
@@ -155,8 +163,10 @@ export const trackData = [
     iconColor: '#748ffc',
     desc: 'Giải pháp cho thành phố thông minh, cải thiện dịch vụ hành chính công số và tương tác với người dân.',
     score: {
-      market: 12, marketBasis: 'Mô hình B2G — số đầu mối khách hàng (cơ quan hành chính) giới hạn dù tác động tới hàng chục triệu người dân.',
-      teamFitRaw: 5, difficultyRaw: 7, competitionPercent: 15.5
+      market: 10, marketBasis: 'Mô hình B2G — số đầu mối khách hàng (cơ quan hành chính) giới hạn dù tác động tới hàng chục triệu người dân.',
+      teamFitRaw: 5, difficultyRaw: 7, competitionPercent: 15.5,
+      dataReadiness: 4, dataReadinessBasis: 'Không thể giả lập hệ thống lõi (Core) của chính phủ trong 48h — khó dựng demo đầu-cuối thực tế.',
+      legalRisk: 6, legalRiskBasis: 'Dữ liệu công dân (CCCD, hộ khẩu) thuộc nhóm nhạy cảm cao, quy định bảo mật hành chính công nghiêm ngặt.'
     },
     mvp: 'Trợ lý ảo CitizenCopilot giúp người dân tra cứu thủ tục hành chính, tự động điền form giấy tờ công chứng và hướng dẫn quy trình dịch vụ công trực tuyến.',
     workflow: [
@@ -199,8 +209,10 @@ export const trackData = [
     iconColor: '#51cf66',
     desc: 'Tối ưu chuỗi cung ứng nông sản, canh tác chính xác và ứng dụng AI thích ứng với biến đổi khí hậu.',
     score: {
-      market: 12, marketBasis: '~9,1 triệu hộ nông dân cả nước, nhưng khả năng chi trả cho SaaS AI thấp và phụ thuộc hạ tầng IoT sẵn có.',
-      teamFitRaw: 4, difficultyRaw: 8, competitionPercent: 9
+      market: 10, marketBasis: '~9,1 triệu hộ nông dân cả nước, nhưng khả năng chi trả cho SaaS AI thấp và phụ thuộc hạ tầng IoT sẵn có.',
+      teamFitRaw: 4, difficultyRaw: 8, competitionPercent: 9,
+      dataReadiness: 4, dataReadinessBasis: 'Có dataset ảnh bệnh lá công khai (VD: PlantVillage) nhưng thiếu dữ liệu cảm biến IoT thực tế cho phần tưới tiêu.',
+      legalRisk: 13, legalRiskBasis: 'Dữ liệu nông nghiệp không nhạy cảm, rủi ro pháp lý thấp.'
     },
     mvp: 'Ứng dụng AI phân tích hình ảnh lá cây phát hiện sâu bệnh hại và lập lịch tưới tiêu, bón phân thông minh dựa trên dự báo thời tiết.',
     workflow: [
@@ -243,8 +255,10 @@ export const trackData = [
     iconColor: '#fcc419',
     desc: 'Cá nhân hóa việc học, tối ưu tài nguyên giáo dục và hỗ trợ định hướng phát triển học tập cho người học.',
     score: {
-      market: 20, marketBasis: '~22 triệu học sinh - sinh viên toàn quốc (Bộ GD&ĐT) — thị trường EdTech quy mô lớn, đã có hạ tầng số sẵn.',
-      teamFitRaw: 8, difficultyRaw: 5, competitionPercent: 45.5
+      market: 16, marketBasis: '~22 triệu học sinh - sinh viên toàn quốc (Bộ GD&ĐT) — thị trường EdTech quy mô lớn, đã có hạ tầng số sẵn.',
+      teamFitRaw: 8, difficultyRaw: 5, competitionPercent: 45.5,
+      dataReadiness: 12, dataReadinessBasis: 'Dễ tự soạn bộ câu hỏi/đề thi mẫu và dữ liệu học sinh giả lập để demo thuật toán ôn tập.',
+      legalRisk: 11, legalRiskBasis: 'Dữ liệu học sinh có tính nhạy cảm nhẹ (trẻ vị thành niên) nhưng dễ kiểm soát khi dùng dữ liệu giả lập.'
     },
     mvp: 'Trình biên soạn giáo án và bài tập cá nhân hóa AI-Tutor. Hệ thống tự động tạo lộ trình ôn thi dựa trên điểm yếu của từng học sinh thông qua các bài kiểm tra ngắn.',
     workflow: [
@@ -287,8 +301,10 @@ export const trackData = [
     iconColor: '#a6aebb',
     desc: 'Dự báo, mô hình hóa dữ liệu địa lý và xây dựng giải pháp ứng phó — phục hồi trước các thảm họa thiên tai.',
     score: {
-      market: 8, marketBasis: 'Giá trị xã hội cao nhưng gần như không có mô hình khách hàng trả phí trực tiếp trong 48h.',
-      teamFitRaw: 3, difficultyRaw: 9, competitionPercent: 9.4
+      market: 6, marketBasis: 'Giá trị xã hội cao nhưng gần như không có mô hình khách hàng trả phí trực tiếp trong 48h.',
+      teamFitRaw: 3, difficultyRaw: 9, competitionPercent: 9.4,
+      dataReadiness: 3, dataReadinessBasis: 'Dữ liệu viễn thám/vệ tinh và bản đồ ngập động cực kỳ phức tạp, gần như không thể xử lý xong trong 48h.',
+      legalRisk: 9, legalRiskBasis: 'Không đụng dữ liệu cá nhân, nhưng sai số dự báo có thể ảnh hưởng an toàn tính mạng nếu triển khai thật.'
     },
     mvp: 'Bản đồ số dự báo nguy cơ sạt lở và đề xuất luồng cứu hộ tối ưu khi xảy ra bão lũ bằng AI.',
     workflow: [
@@ -331,8 +347,10 @@ export const trackData = [
     iconColor: '#fcc419',
     desc: 'Ứng dụng AI để tái định hình ngành tài chính, tự động hóa vận hành, quản trị rủi ro và cá nhân hóa dịch vụ.',
     score: {
-      market: 24, marketBasis: '~80 triệu tài khoản ngân hàng số tại Việt Nam (NHNN) — quy mô khách hàng cực lớn.',
-      teamFitRaw: 6, difficultyRaw: 7.5, competitionPercent: 31.8
+      market: 19, marketBasis: '~80 triệu tài khoản ngân hàng số tại Việt Nam (NHNN) — quy mô khách hàng cực lớn.',
+      teamFitRaw: 6, difficultyRaw: 7.5, competitionPercent: 31.8,
+      dataReadiness: 9, dataReadinessBasis: 'Có thể dùng dataset giao dịch giả lập (VD: Kaggle) nhưng sao kê ngân hàng thật gần như không thể tiếp cận trong 48h.',
+      legalRisk: 5, legalRiskBasis: 'Dữ liệu tài chính cá nhân thuộc nhóm bảo mật nghiêm ngặt nhất (chuẩn PCI-DSS), rủi ro pháp lý cao.'
     },
     mvp: 'Trợ lý phân tích tài chính cá nhân thông minh giúp tự động phân loại giao dịch ngân hàng, lập kế hoạch chi tiêu và gợi ý quỹ đầu tư an sau.',
     workflow: [

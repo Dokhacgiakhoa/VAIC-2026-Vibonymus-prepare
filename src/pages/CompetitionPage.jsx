@@ -2,12 +2,14 @@ import React from 'react';
 import Agenda from './Agenda';
 import Awards from '../components/Awards';
 import Tracks from './Tracks';
+import Benchmark from './Benchmark';
 import { usePersistedTab } from '../hooks/usePersistedTab';
 
 const SUB_TABS = [
   { id: 'agenda', label: 'Agenda' },
   { id: 'awards', label: 'Giải thưởng' },
   { id: 'guideline', label: 'Phân tích Track' },
+  { id: 'benchmark', label: 'Benchmark' },
 ];
 const SUB_TAB_IDS = SUB_TABS.map((t) => t.id);
 
@@ -31,6 +33,7 @@ const CompetitionPage = () => {
       {subTab === 'agenda' && <Agenda />}
       {subTab === 'awards' && <Awards />}
       {subTab === 'guideline' && <Tracks />}
+      {subTab === 'benchmark' && <Benchmark />}
     </div>
   );
 };

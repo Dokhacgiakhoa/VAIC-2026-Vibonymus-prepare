@@ -180,11 +180,20 @@ h2 { font-family: 'Montserrat', sans-serif; font-size: 1.25rem; font-weight: 700
 h2 svg { width: 1.2941rem; height: 1.2941rem; color: var(--theme-color); flex-shrink: 0; }
 .sub { color: var(--text-secondary); font-size: 0.98rem; margin: 0 0 1.4118rem; font-weight: 500; }
 
-/* Đoạn văn: căn lề 2 bên (justify) + tab lùi đầu dòng đầu tiên */
+/* Đoạn văn: căn lề 2 bên (justify) + gạch đầu dòng hình sao thay vì tab lùi đầu dòng */
 p, .sub {
   text-align: justify;
   text-align-last: left;
-  text-indent: 1.8em;
+  position: relative;
+  padding-left: 1.2941rem;
+}
+p::before, .sub::before {
+  content: '★';
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+  color: var(--theme-color, var(--s1));
+  font-size: 0.8em;
 }
 
 /* Danh sách gạch đầu dòng hình sao thay vì dấu chấm mặc định (giữ nguyên padding có sẵn của từng list) */
