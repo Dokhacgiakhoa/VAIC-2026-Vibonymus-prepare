@@ -25,7 +25,7 @@ const Tracks = () => {
         </div>
         <h2><Compass /> Phân tích &amp; Định vị 8 Track thử thách — VAIC 2026</h2>
         <p className="sub" style={{ margin: '0 0 0.9412rem', maxWidth: '80%' }}>
-          Căn cứ vào tài liệu hướng dẫn <b>VAIC2026_Hackers-guidebook.md</b>, Vibonymus phân tích chi tiết từng track đề bài, từ đó sẵn sàng thiết kế kiến trúc AI tích hợp sâu sắc đạt chuẩn <b>AI-Native Oath</b> ngay khi BTC công bố đề bài chính thức vào 11:00 ngày 17/07.
+          Căn cứ vào tài liệu hướng dẫn chính thức của BTC, Vibonymus phân tích chi tiết từng track đề bài, từ đó sẵn sàng thiết kế kiến trúc AI tích hợp sâu sắc đạt chuẩn <b>AI-Native Oath</b> ngay khi BTC công bố đề bài chính thức vào 11:00 ngày 17/07.
         </p>
         
         <div className="oath-box" style={{
@@ -82,7 +82,7 @@ const Tracks = () => {
           <div style={{ border: '1px solid var(--border)', borderRadius: '0.7059rem', padding: '0.9412rem' }}>
             <h3 style={{ margin: '0 0 0.4706rem', fontSize: '0.95rem', fontWeight: 800 }}>📄 Có mẫu đề bài thực tế để tham khảo trước</h3>
             <p style={{ margin: 0, fontSize: '0.84rem', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-              File <code>Bank_Problem_Brief_AI_Agents_CRM_VI.md</code> (ngành Ngân hàng, đề bài AI Agent cho CRM) cho thấy trước format và độ chi tiết thực tế của một đề bài thi. <b>Nên đọc trước file này để dựng sẵn khung đọc-hiểu đề nhanh</b> (bối cảnh → yêu cầu đầu ra → tiêu chí chấm), giúp rút ngắn thời gian phân tích đề khi track chính thức công bố lúc 11:00 ngày 17/07.
+              Đã có sẵn một đề bài mẫu tham khảo (ngành Ngân hàng, đề bài AI Agent cho CRM) cho thấy trước format và độ chi tiết thực tế của một đề bài thi. <b>Nên đọc trước đề mẫu này để dựng sẵn khung đọc-hiểu đề nhanh</b> (bối cảnh → yêu cầu đầu ra → tiêu chí chấm), giúp rút ngắn thời gian phân tích đề khi track chính thức công bố lúc 11:00 ngày 17/07.
             </p>
           </div>
         </div>
@@ -268,8 +268,8 @@ const Tracks = () => {
                   <p style={{ margin: 0, fontSize: '0.88rem', color: 'var(--text-secondary)', lineHeight: '1.6' }}>{currentTrack.mvp}</p>
                 </div>
 
-                {/* SWOT Analysis Grid */}
-                <div className="grid-2" style={{ gap: '0.8235rem', marginTop: '0.9412rem' }}>
+                {/* SWOT Analysis Grid (2x2 cố định) */}
+                <div className="swot-grid" style={{ marginTop: '0.9412rem' }}>
                   <div style={{ padding: '0.8235rem', borderRadius: '0.5882rem', background: 'rgba(32, 201, 151, 0.04)', border: '1px solid rgba(32, 201, 151, 0.15)' }}>
                     <div style={{ fontWeight: 800, fontSize: '0.85rem', color: 'var(--s2)', marginBottom: '0.3529rem', display: 'flex', alignItems: 'center', gap: '0.3529rem' }}>
                       <span>💪 Strengths (S) - Điểm mạnh</span>

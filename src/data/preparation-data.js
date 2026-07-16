@@ -81,7 +81,7 @@ export const openSourceToLearn = [
 export const logisticsChecklist = [
   'Laptop riêng đã sạc đầy + sạc dự phòng, dây sạc dài (BTC không cấp máy).',
   'Túi ngủ, đồ vệ sinh cá nhân, bình nước, đồ ăn nhẹ cho ca đêm.',
-  'Tải sẵn offline: tài liệu hackathon, VAIC2026_Hackers-guidebook.md, slide template.',
+  'Tải sẵn offline: tài liệu hướng dẫn hackathon, guidebook cuộc thi, slide template.',
   'Đăng ký slot Mentor Wave 1 & 2 (20 phút/slot) trước ngày 16/07.',
   'Test thử kết nối wifi/hotspot dự phòng — tránh phụ thuộc hoàn toàn vào wifi sự kiện.',
   'Thống nhất trước kênh chat chính (Zalo/Discord) và quy ước đặt tên nhánh Git.',

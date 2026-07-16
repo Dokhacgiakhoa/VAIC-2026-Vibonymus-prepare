@@ -55,6 +55,10 @@ function App() {
         {renderContent()}
       </main>
 
+      <footer className="footer-note">
+        © 2026 Vibonymus @ VAIC 2026 — Sản phẩm của <b>K.AI Labs</b>
+      </footer>
+
       {/* Floating Bottom Navigation Bar */}
       <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
     </div>

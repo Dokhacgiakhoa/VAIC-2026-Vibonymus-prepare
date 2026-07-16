@@ -180,6 +180,20 @@ h2 { font-family: 'Montserrat', sans-serif; font-size: 1.25rem; font-weight: 700
 h2 svg { width: 1.2941rem; height: 1.2941rem; color: var(--theme-color); flex-shrink: 0; }
 .sub { color: var(--text-secondary); font-size: 0.98rem; margin: 0 0 1.4118rem; font-weight: 500; }
 
+/* Đoạn văn: căn lề 2 bên (justify) + tab lùi đầu dòng đầu tiên */
+p, .sub {
+  text-align: justify;
+  text-align-last: left;
+  text-indent: 1.8em;
+}
+
+/* Danh sách gạch đầu dòng hình sao thay vì dấu chấm mặc định (giữ nguyên padding có sẵn của từng list) */
+ul li::marker {
+  content: '★  ';
+  color: var(--theme-color, var(--s1));
+  font-size: 0.85em;
+}
+
 .card {
   background: var(--surface-1);
   backdrop-filter: blur(1.0588rem) saturate(160%);
@@ -538,6 +552,11 @@ ul.checklist li b { color: var(--text-primary); }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.7059rem;
+}
+.swot-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8235rem;
 }
 .grid-split {
   display: grid;
@@ -925,7 +944,8 @@ ul.checklist li b { color: var(--text-primary); }
   .grid-2,
   .grid-auto,
   .roles-grid,
-  .tool-grid {
+  .tool-grid,
+  .swot-grid {
     grid-template-columns: 1fr;
   }
   .card {
